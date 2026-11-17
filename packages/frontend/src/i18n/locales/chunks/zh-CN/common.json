@@ -1,17 +1,17 @@
 {
   "common": {
-    "loading": "加载中...",
+    "loading": "加载中…",
     "new": "新建",
     "actions": {
-      "loading": "加载中...",
+      "loading": "加载中…",
       "signUp": "注册",
       "save": "保存",
       "cancel": "取消",
       "back": "返回",
-      "accept": "接受",
+      "accept": "确认",
       "delete": "删除",
       "edit": "编辑",
-      "addSubcategory": "添加子类别",
+      "addSubcategory": "添加子分类",
       "settings": "设置",
       "confirm": "确认",
       "viewTransactions": "查看交易",
@@ -29,7 +29,7 @@
       "copyInviteLink": "复制邀请链接",
       "moveTo": "移至…",
       "learnMore": "了解更多",
-      "undo": "撤消",
+      "undo": "撤销",
       "more": "更多"
     },
     "ui": {
@@ -48,7 +48,7 @@
         "willCreate": "即将创建",
         "needsAttention": "需要注意",
         "invalid": "无效",
-        "optional": "可选",
+        "optional": "选填",
         "skipped": "已跳过"
       },
       "selectField": {
@@ -57,18 +57,18 @@
     },
     "errors": {
       "copyToClipboardFailed": "无法复制到剪贴板",
-      "settingsSaveFailed": "无法保存您的设置。请再试一次。"
+      "settingsSaveFailed": "无法保存你的设置。请重试。"
     },
     "notifications": {
-      "subscriptionCurrencyNotConnected": "订阅摘要无法将 {currencies} 转换为您的基础货币。在“设置”→“货币”中连接货币。",
-      "backgroundJobFailed": "当您离开时，后台作业失败：{error}",
+      "subscriptionCurrencyNotConnected": "订阅摘要无法将 {currencies} 转换为你的基础货币。在“设置”→“货币”中连接货币。",
+      "backgroundJobFailed": "后台任务执行失败：{error}",
       "inviteLinkCopied": "邀请链接已复制到剪贴板"
     },
     "sharing": {
-      "emailNotSent": "未配置电子邮件发送 — 手动共享邀请链接"
+      "emailNotSent": "未配置邮箱发送 — 手动共享邀请链接"
     },
     "labels": {
-      "email": "电子邮件",
+      "email": "邮箱",
       "password": "密码",
       "system": "系统",
       "unknown": "未知",
@@ -76,7 +76,7 @@
     },
     "placeholders": {
       "email": "your{'@'}email.com",
-      "password": "您的密码"
+      "password": "你的密码"
     },
     "dialogs": {
       "createAccount": "创建账户",
@@ -84,9 +84,9 @@
       "editVehicle": "编辑车辆"
     },
     "accountCategories": {
-      "general": "通用",
+      "general": "其他账户",
       "cash": "现金",
-      "currentAccount": "往来账户",
+      "currentAccount": "活期账户",
       "creditCard": "信用卡",
       "saving": "储蓄账户",
       "bonus": "奖金",
@@ -122,7 +122,7 @@
       "slow": "缓慢",
       "average": "平均",
       "fast": "快速",
-      "custom": "自定义折旧率"
+      "custom": "自定义汇率"
     },
     "aiFeatures": {
       "categorization": {
@@ -142,8 +142,8 @@
         "description": "读取上传的发票或收据并查找其所属的交易。"
       },
       "trackerMatching": {
-        "name": "追踪器匹配",
-        "description": "扫描新交易并建议属于智能跟踪器的交易。"
+        "name": "收支追踪匹配",
+        "description": "扫描新交易并建议属于智能收支追踪的交易。"
       },
       "transferMatching": {
         "name": "转账匹配",
@@ -152,20 +152,20 @@
     },
     "transactions": {
       "delete": {
-        "success": "已移至垃圾箱",
+        "success": "已移至回收站",
         "undoSuccess": "已恢复",
-        "undoError": "无法撤消。您仍然可以从垃圾箱中恢复它。",
+        "undoError": "撤销失败，仍可在回收站中恢复这笔交易。",
         "error": "删除交易失败！"
       },
       "submit": {
-        "unexpectedError": "意外错误！"
+        "unexpectedError": "操作失败，请稍后重试。"
       },
       "unlink": {
         "error": "取消交易关联失败！"
       },
       "record": {
-        "addedByTooltip": "该交易由 {handle} 附加到跟踪器",
-        "addedByRule": "根据跟踪器规则添加",
+        "addedByTooltip": "该交易由 {handle} 附加到收支追踪",
+        "addedByRule": "根据收支追踪规则添加",
         "matchedByAi": "AI匹配",
         "externalLinkTooltip": "打开外部链接",
         "locationTooltip": "在地图上打开位置",
@@ -173,18 +173,18 @@
         "hiddenAccount": "隐藏账户",
         "selectRow": "选择交易",
         "unselectableReasons": {
-          "sharedAccount": "无法选择：此交易位于与您共享的账户上，只有其所有者可以编辑它。"
+          "sharedAccount": "无法选择：此交易位于与你共享的账户上，只有其所有者可以编辑它。"
         },
         "payment": {
-          "paidFrom": "从{count}账户支付",
-          "receivedInto": "已收到{count}账户",
-          "partOf": "{total} 付款的一部分",
-          "thisAccount": "（这个账号）",
+          "paidFrom": "从 {count} 个账户支付",
+          "receivedInto": "转入 {count} 个账户",
+          "partOf": "属于总额为 {total} 的一笔付款",
+          "thisAccount": "（当前账户）",
           "loadError": "无法打开此交易。再试一次。"
         }
       }
     },
-    "outOfWallet": "钱包外资金",
+    "outOfWallet": "账外账户",
     "dateSelector": {
       "dialogTitle": "日期范围",
       "dueDate": "到期日",
@@ -199,22 +199,22 @@
       },
       "filterModes": {
         "is": "等于",
-        "before": "前",
-        "after": "后",
-        "between": "之间"
+        "before": "早于",
+        "after": "晚于",
+        "between": "介于"
       },
       "currentMonth": "本月",
       "placeholders": {
-        "day": "尝试: 2025-03-15, 03/15/2025",
-        "month": "尝试：2025 年 1 月，03/2025",
-        "quarter": "尝试：2025 年第一季度、第四季度",
-        "halfYear": "尝试：2025 年 H1、H2",
+        "day": "例如：2025-03-15（年-月-日）",
+        "month": "例如：03/2025（2025 年 3 月）",
+        "quarter": "例如：Q1、Q4 2025",
+        "halfYear": "例如：H1 2025、H2 2025",
         "year": "尝试：2025、2024",
-        "default": "尝试：2025 年，2025 年 1 月第 4 季度"
+        "default": "例如：2025、Q4、Jan 2025"
       }
     },
     "appUpdate": {
-      "title": "可用更新",
+      "title": "有新版本可用",
       "description": "新版本已准备就绪。重新加载以获得最新的改进。",
       "reload": "重新加载"
     },
@@ -240,55 +240,55 @@
     "logo": {
       "tabs": {
         "brand": "品牌",
-        "letters": "字母",
+        "letters": "文字",
         "icon": "图标",
-        "custom": "图像"
+        "custom": "图片"
       },
-      "searchPlaceholder": "品牌名称或域名",
-      "searchHint": "输入品牌名称或域名，例如 amazon.com",
-      "noResults": "未找到匹配品牌。",
-      "noResultsLettersHint": "使用字母代替",
-      "useDomainDirectly": "使用{domain}",
-      "autoLabel": "自动（来自名称）",
-      "domainHint": "要查找确切的品牌，请输入该公司的网站域名（例如 amazon.com）——它始终与正确的徽标匹配。",
-      "searchError": "无法加载徽标 – 请重试",
-      "brandNotConfigured": "此实例上未配置品牌徽标。请管理员设置 VITE_LOGO_DEV_TOKEN，或使用字母代替。",
-      "editAriaLabel": "编辑标志",
-      "dialogTitle": "更改标志",
-      "resetToAuto": "重置为自动",
-      "remove": "删除标志",
-      "pickerDescription": "选择品牌徽标或使用字母代替。",
-      "updatedToast": "标志已更新",
-      "resetToast": "徽标已删除",
-      "updateError": "无法更新徽标。再试一次。",
-      "lettersLabel": "字母 (1–2)",
+      "searchPlaceholder": "品牌名称或官网域名",
+      "searchHint": "输入品牌名称或官网域名，例如 amazon.com",
+      "noResults": "未找到匹配的品牌",
+      "noResultsLettersHint": "改用文字图标",
+      "useDomainDirectly": "使用 {domain} 的图标",
+      "autoLabel": "自动生成（按名称）",
+      "domainHint": "输入品牌的官网域名（例如 amazon.com），可直接获取对应图标。",
+      "searchError": "图标加载失败，请重试。",
+      "brandNotConfigured": "暂未启用品牌图标。请联系管理员配置，或改用文字图标。",
+      "editAriaLabel": "更换图标",
+      "dialogTitle": "更换图标",
+      "resetToAuto": "恢复自动生成",
+      "remove": "移除图标",
+      "pickerDescription": "选择品牌图标，或使用文字图标。",
+      "updatedToast": "图标已更新",
+      "resetToast": "图标已移除",
+      "updateError": "图标更新失败，请重试。",
+      "lettersLabel": "文字（1–2 个字符）",
       "lettersPlaceholder": "AB",
       "colorLabel": "颜色",
       "colorSwatchAriaLabel": "使用颜色{color}",
       "customColorAriaLabel": "选择自定义颜色",
-      "lettersSelectedLabel": "字母“{letters}”",
-      "lettersHint": "1-2 个字母或一个表情符号",
+      "lettersSelectedLabel": "文字“{letters}”",
+      "lettersHint": "输入 1–2 个字符或一个表情符号",
       "chooseImage": "选择图片",
-      "replaceImage": "替换图片",
-      "imageHint": "在您的设备上裁剪为正方形并调整大小为 200×200。",
+      "replaceImage": "更换图片",
+      "imageHint": "在你的设备上裁剪为正方形并调整大小为 200×200。",
       "imageTooLarge": "调整大小后图像仍然超过 50 KB。尝试更简单的图片。",
       "imageUnreadable": "该文件无法作为图像读取。"
     },
     "iconPicker": {
-      "searchPlaceholder": "搜索图标...",
+      "searchPlaceholder": "搜索图标…",
       "clear": "清除图标"
     },
     "importBatchDeleteOverlay": {
       "title": "删除导入的交易",
-      "description": "大量进口批次正在被删除。完成后会重新计算余额，因此应用程序在此之前会被锁定。",
+      "description": "大量进口批次正在被删除。完成后会重新计算余额，因此应用在此之前会被锁定。",
       "deleting": "删除交易",
-      "preparing": "准备工作",
-      "finishing": "整理完毕",
+      "preparing": "准备中",
+      "finishing": "即将完成",
       "takingLong": "这比平常需要更长的时间——大批量可能需要几分钟。保持此页面打开。",
       "unreachableTitle": "无法到达服务器",
-      "unreachableDescription": "删除操作可能仍在运行。关闭以继续使用该应用程序，稍后重新加载以查看结果。",
+      "unreachableDescription": "删除操作可能仍在运行。关闭以继续使用该应用，稍后重新加载以查看结果。",
       "failedTitle": "删除失败",
-      "dismiss": "解雇"
+      "dismiss": "关闭"
     },
     "duration": {
       "years": "{n} 年 | {n} 年",
@@ -296,16 +296,16 @@
     },
     "fire": {
       "targets": {
-        "lean": "精益火",
-        "regular": "火",
-        "fat": "脂肪火"
+        "lean": "节俭型财务自由",
+        "regular": "财务自由（FIRE）",
+        "fat": "宽裕型财务自由"
       },
       "pace": {
         "ahead": "{duration} 领先",
         "behind": "{duration} 后面",
-        "onPace": "步调一致",
-        "backInReach": "回到触手可及的地方",
-        "offTrack": "偏离轨道"
+        "onPace": "符合预期进度",
+        "backInReach": "重新有望达成",
+        "offTrack": "按当前情况暂无法达成"
       }
     },
     "pasteImage": {
@@ -328,7 +328,7 @@
       "error": "删除群组失败"
     },
     "link": {
-      "success": "帐号已添加至群组",
+      "success": "账号已添加至群组",
       "error": "添加账户到群组失败"
     },
     "linkMany": {
@@ -341,10 +341,10 @@
     }
   },
   "validation": {
-    "required": "字段为必填项",
+    "required": "此项必填",
     "minLength": "最小长度为 {length}。",
-    "emailInvalid": "请输入有效的电子邮件地址。",
-    "passwordsNoMatch": "密码不匹配"
+    "emailInvalid": "请输入有效的邮箱地址。",
+    "passwordsNoMatch": "两次输入的密码不一致"
   },
   "notifications": {
     "title": "通知",
@@ -370,11 +370,11 @@
       "sendFailedHint": "打开共享面板重新发送。"
     },
     "goalReached": {
-      "title": "达到的目标：{name}",
-      "message": "您已保存 {amount}。"
+      "title": "已达成目标：{name}",
+      "message": "已累计存下 {amount}。"
     },
     "unrealizedLossAlert": {
-      "title": "{count}持有划线你的亏损警报 | {count} 持仓划过您的亏损警报"
+      "title": "{count}持有划线你的亏损警报 | {count} 持仓划过你的亏损警报"
     }
   },
   "currencyNames": {
@@ -382,7 +382,7 @@
     "USD": "美元",
     "EUR": "欧元",
     "GBP": "英镑",
-    "JPY": "日圆",
+    "JPY": "日元",
     "CHF": "瑞士法郎",
     "CAD": "加元",
     "AUD": "澳元",
@@ -438,8 +438,8 @@
     "ETH": "以太坊"
   },
   "fileDropzone": {
-    "clickOrDrag": "单击或拖动文件至此处",
-    "clickOrDragMultiple": "单击或拖动 CSV 文件至此处",
+    "clickOrDrag": "点击或拖动文件至此处",
+    "clickOrDragMultiple": "点击或拖动 CSV 文件至此处",
     "dropHere": "拖放要上传的文件",
     "dropHereMultiple": "将文件拖放到此处",
     "removeFile": "删除文件",
@@ -457,7 +457,7 @@
       "description": "投资功能在演示模式下不可用。请注册完整账户以访问投资跟踪。"
     },
     "banner": {
-      "message": "您正在探索带有示例数据{time} 的演示。 {signUpLink} 创建您自己的账户。",
+      "message": "你正在探索带有示例数据{time} 的演示。 {signUpLink} 创建你自己的账户。",
       "resets": "在 {time} 中重置",
       "signUp": "注册",
       "timeFormat": {
@@ -465,37 +465,37 @@
         "minutes": "{minutes}m"
       }
     },
-    "sessionExpiredNotice": "您的演示会话已结束。创建一个免费账户以继续，或者如果您已有账户，请在下面登录。"
+    "sessionExpiredNotice": "你的演示会话已结束。创建一个免费账户以继续，或者如果你已有账户，请在下面登录。"
   },
   "billing": {
     "seePlans": "查看计划",
     "trialStartFailed": "无法开始免费试用。再试一次。",
-    "updatePaymentMethod": "更新您的付款方式",
+    "updatePaymentMethod": "更新你的付款方式",
     "planRequired": {
       "essential": "包含在基本计划中",
       "plus": "包含在 Plus 计划中",
-      "hint": "您当前的计划不包含此功能。升级即可解锁。"
+      "hint": "你当前的计划不包含此功能。升级即可解锁。"
     },
     "banner": {
       "trial": "{count} 试用期还剩一天 · {link} | {count} 试用期还剩几天 · {link}",
-      "readOnly": "您的审判已经结束。您可以查看和导出您的数据；订阅以继续编辑。 {link}",
-      "subscriptionEnded": "您的订阅已结束。 {link} 继续编辑您的数据。",
-      "pastDue": "您上次付款失败。 {link} 保留您的计划。"
+      "readOnly": "你的试用已经结束。你可以查看和导出你的数据；订阅以继续编辑。 {link}",
+      "subscriptionEnded": "你的订阅已结束。 {link} 继续编辑你的数据。",
+      "pastDue": "你上次付款失败。 {link} 保留你的计划。"
     }
   },
   "settings": {
     "currencies": {
       "setBase": {
         "overlay": {
-          "title": "更改您的基础货币",
-          "description": "我们正在将每笔金额重新计算为您的新基础货币。这可能需要几分钟 - 请保持此选项卡打开。",
-          "takingLong": "这比平常需要更长的时间。您的数据是安全的——我们仍在努力解决这一问题。",
+          "title": "更改你的基础货币",
+          "description": "我们正在将每笔金额重新计算为你的新基础货币。这可能需要几分钟 - 请保持此选项卡打开。",
+          "takingLong": "这比平常需要更长的时间。你的数据是安全的——我们仍在努力解决这一问题。",
           "failedTitle": "基础货币变更失败",
           "unreachableTitle": "无法验证更改状态",
-          "unreachableDescription": "服务器没有响应。您可以关闭此屏幕 - 如果更改仍在运行，应用程序将再次锁定您的下一个操作。",
-          "dismiss": "解雇",
-          "preparing": "准备好东西……",
-          "finishing": "正在整理中……",
+          "unreachableDescription": "服务器没有响应。你可以关闭此屏幕 - 如果更改仍在运行，应用将再次锁定你的下一个操作。",
+          "dismiss": "关闭",
+          "preparing": "准备好东西…",
+          "finishing": "正在整理中…",
           "steps": {
             "transactions": "更新交易",
             "accounts": "更新账户",
@@ -503,7 +503,7 @@
             "balances": "重建余额历史",
             "investmentTransactions": "更新投资交易",
             "portfolioTransfers": "更新投资组合转移",
-            "holdings": "更新馆藏",
+            "holdings": "正在更新持仓",
             "portfolioBalances": "重建投资组合平衡"
           }
         }
@@ -512,8 +512,8 @@
   },
   "ai": {
     "estimatedCost": {
-      "yourApiKey": "（您的 API 密钥）",
-      "setByEndpoint": "由您的提供商定价"
+      "yourApiKey": "（你的 API 密钥）",
+      "setByEndpoint": "由你的提供商定价"
     }
   },
   "aiUsage": {
@@ -521,31 +521,31 @@
     "used": "用过的",
     "percentUsed": "{percent}%已使用",
     "resetsOn": "在 {date} 上重置",
-    "connectOwnModel": "连接您自己的模型",
+    "connectOwnModel": "连接你自己的模型",
     "gotIt": "知道了",
     "badge": {
       "used": "{percent}% AI 使用量",
       "reached": "已达到 AI 限制"
     },
     "dialog": {
-      "description": "报表解析、分类、收据和预算建议共享此津贴。",
+      "description": "对账单解析、交易分类、票据识别和预算建议共用此额度。",
       "status": {
-        "plusWarning": "您已经使用了本月包含的 AI 的大部分内容。当它用完时，AI 功能会暂停，直到 {date}。",
-        "plusReached": "您已经使用了本月附带的人工智能。 AI 功能暂停，直到 {date}。",
-        "trialWarning": "您本月已经使用了计划中包含的大部分 AI。当它用完时，人工智能功能就会暂停。",
-        "trialReached": "您已使用本月计划中包含的 AI。订阅 Plus 或连接您自己的模型以继续使用 AI 功能。"
+        "plusWarning": "你已经使用了本月包含的 AI 的大部分内容。当它用完时，AI 功能会暂停，直到 {date}。",
+        "plusReached": "你已经使用了本月附带的人工智能。 AI 功能暂停，直到 {date}。",
+        "trialWarning": "你本月已经使用了计划中包含的大部分 AI。当它用完时，人工智能功能就会暂停。",
+        "trialReached": "你已使用本月计划中包含的 AI。订阅 Plus 或连接你自己的模型以继续使用 AI 功能。"
       }
     },
     "options": {
-      "connectDescription": "使用您自己的 Anthropic、OpenAI、Gemini 或本地模型。它从未计入此限制。",
-      "subscribeTitle": "订阅加号",
+      "connectDescription": "使用你自己的 Anthropic、OpenAI、Gemini 或本地模型。它从未计入此限制。",
+      "subscribeTitle": "订阅 Plus",
       "subscribeDescription": "每月获得更多包含的人工智能。",
       "waitTitle": "等待重置",
       "waitDescription": "{date} 中回归了 AI。"
     },
     "meter": {
-      "ok": "在 {date} 上复位。您自己的连接模型永远不会被计算在内。",
-      "warning": "当它用完时，AI 功能将暂停，直到 {date}，除非您连接自己的模型。",
+      "ok": "在 {date} 上复位。你自己的连接模型永远不会被计算在内。",
+      "warning": "当它用完时，AI 功能将暂停，直到 {date}，除非你连接自己的模型。",
       "reached": "一直用到{date}。 AI功能已暂停。"
     }
   },
@@ -553,86 +553,86 @@
     "groupDialog": {
       "editTitle": "编辑组",
       "nameLabel": "名称",
-      "noteLabel": "注意（可选）",
-      "notePlaceholder": "可选注...",
-      "loadingText": "加载中...",
+      "noteLabel": "备注（选填）",
+      "notePlaceholder": "备注（选填）",
+      "loadingText": "加载中…",
       "savingAction": "保存",
       "cancelButton": "取消",
       "editAction": "编辑",
       "deleteAction": "删除组",
       "transactionsLabel": "交易",
       "deleteGroupTitle": "删除组",
-      "deleteGroupDescription": "您确定要删除“{groupName}”吗？交易不会被删除。",
+      "deleteGroupDescription": "你确定要删除“{groupName}”吗？交易不会被删除。",
       "removeTransactionTitle": "从组中删除交易",
       "removeTransactionDescription": "这将导致组中的交易少于 2 个，因此该组将被删除。继续？",
-      "removeTransactionDescriptionNormal": "您确定要从组中删除此交易吗？",
-      "removeButtonText": "消除",
+      "removeTransactionDescriptionNormal": "你确定要从组中删除此交易吗？",
+      "removeButtonText": "移除",
       "removeAndDeleteButtonText": "删除和删除组",
       "removeFromGroup": "从组中删除",
       "saveError": "无法保存群组",
       "removeError": "无法从组中删除交易",
       "manageTransactions": "管理",
       "showMoreNote": "显示更多",
-      "showLessNote": "显示较少",
+      "showLessNote": "收起",
       "summary": {
         "transactions": "交易",
-        "net": "网",
-        "moneyIn": "钱在",
-        "moneyOut": "钱出"
+        "net": "净额",
+        "moneyIn": "流入金额",
+        "moneyOut": "流出金额"
       }
     },
     "transactionGroupRecord": {
-      "transactionCountLabel": "交易"
+      "transactionCountLabel": "笔交易"
     }
   },
   "mcpToolsets": {
     "core": {
       "label": "核",
-      "description": "账户、交易、类别、标签、收款人和报告"
+      "description": "账户、交易、分类、标签、收付款方和报表"
     },
     "subscriptions": {
-      "label": "定期付款",
+      "label": "定期收支",
       "description": "定期付款、周期和计划交易"
     },
     "budgetPlans": {
       "label": "预算计划",
-      "description": "计划、线路、线路目标和储蓄目标"
+      "description": "预算计划、预算项及其目标、储蓄目标"
     },
     "trackers": {
-      "label": "追踪器",
-      "description": "支出跟踪器及其建议"
+      "label": "收支追踪",
+      "description": "支出收支追踪及其建议"
     },
     "automations": {
       "label": "自动化",
-      "description": "规则、收款人别名、忽略的收款人姓名和标签提醒"
+      "description": "规则、收付款方别名、忽略的收付款方姓名和标签提醒"
     },
     "review": {
-      "label": "审查和清理",
+      "label": "核对与整理",
       "description": "转账和退款匹配、重复和待处理交易卡住"
     },
     "groupsTemplates": {
-      "label": "组和模板",
+      "label": "交易组与模板",
       "description": "交易组和交易模板"
     },
     "investments": {
       "label": "投资",
-      "description": "投资组合、控股、证券和投资交易"
+      "description": "投资组合、持仓、证券和投资交易"
     },
     "ventures": {
-      "label": "风险投资",
-      "description": "风险投资平台、交易和活动"
+      "label": "私募投资",
+      "description": "私募投资平台、交易和活动"
     },
     "loansVehicles": {
       "label": "贷款和车辆",
       "description": "贷款及其付款和车辆"
     },
     "currencies": {
-      "label": "货币",
-      "description": "您的货币和汇率"
+      "label": "币种",
+      "description": "你的货币和汇率"
     },
     "imports": {
       "label": "导入与共享",
-      "description": "导入批次（列表、撤消）和银行连接（状态、取消关联账户）；共享是只读的。"
+      "description": "导入批次（列表、撤销）和银行连接（状态、取消关联账户）；共享是只读的。"
     }
   }
 }

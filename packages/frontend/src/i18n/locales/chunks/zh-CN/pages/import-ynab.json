@@ -3,19 +3,19 @@
     "importExport": {
       "ynabImport": {
         "pageTitle": "从 YNAB 导入",
-        "pageDescription": "上传您的 YNAB Register.csv 导出，将账户、交易、类别、收款人和标签导入 MoneyMatter。",
+        "pageDescription": "上传你的 YNAB Register.csv 导出，将账户、交易、分类、收付款方和标签导入 MoneyMatter。",
         "stepper": {
           "steps": {
             "upload": "上传",
-            "preview": "审查",
+            "preview": "核对",
             "results": "完成"
           }
         },
         "fileUpload": {
-          "stepTitle": "将您的 Register.csv 拖放到此处",
+          "stepTitle": "将你的 Register.csv 拖放到此处",
           "description": "YNAB → 预算 → 导出预算 → 解压缩 → 使用 Register.csv 文件。",
           "maxSize": "Up to 10 MB.",
-          "parsing": "正在解析...",
+          "parsing": "正在解析…",
           "continueToPreview": "继续",
           "errors": {
             "invalidFormat": "请上传 .csv 文件。"
@@ -41,13 +41,13 @@
           "transactionsCount": "{count} 交易",
           "startingBalance": "起始余额",
           "currencyPlaceholder": "美元",
-          "currencyLabel": "货币",
+          "currencyLabel": "币种",
           "currencyInvalid": "输入 3 个字母的货币代码（例如 USD）",
           "autoDetected": "自动检测：{code}",
           "undoSkip": "包含在导入中"
         },
         "execute": {
-          "starting": "开始导入...",
+          "starting": "开始导入…",
           "progressCount": "{processed} / {total}",
           "statusQueued": "排队",
           "statusRunning": "输入…",
@@ -57,18 +57,18 @@
         },
         "done": {
           "successTitle": "导入完成",
-          "successDescription": "您的 YNAB 数据现已位于 MoneyMatter 中。",
+          "successDescription": "你的 YNAB 数据现已位于 MoneyMatter 中。",
           "accountsCreated": "已创建账户",
           "accountsSkipped": "已跳过的账户",
-          "categoriesCreated": "已创建类别",
-          "payeesCreated": "创建收款人",
+          "categoriesCreated": "已创建分类",
+          "payeesCreated": "创建收付款方",
           "tagsCreated": "已创建标签",
           "transactionsImported": "导入交易",
           "transfersImported": "导入转移",
           "splitsDetected": "检测到分组",
           "errorsTitle": "{count} 行导入失败",
           "errors": {
-            "payeeCreateFailed": "无法创建收款人“{payeeName}”。其交易是在没有收款人的情况下导入的。",
+            "payeeCreateFailed": "无法创建收付款方“{payeeName}”。其交易是在没有收付款方的情况下导入的。",
             "rowImportFailed": "无法导入该行。"
           },
           "viewTransactions": "查看交易",

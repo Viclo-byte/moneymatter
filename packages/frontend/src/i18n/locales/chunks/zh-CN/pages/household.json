@@ -2,13 +2,13 @@
   "pages": {
     "household": {
       "title": "家庭",
-      "description": "邀请值得信赖的人共享您拥有的所有账户的访问权限。会员可以查看您的账户并（具有写入权限）可以在其中记录交易。",
+      "description": "邀请值得信赖的人共享你拥有的所有账户的访问权限。会员可以查看你的账户并（具有写入权限）可以在其中记录交易。",
       "myHousehold": {
         "title": "我的家人",
-        "description": "这里的人们可以访问您拥有的每个账户。每个账户的共享始终优先于家庭访问。"
+        "description": "这里的人们可以访问你拥有的每个账户。每个账户的共享始终优先于家庭访问。"
       },
       "youOwner": "你——主人",
-      "noMembers": "尚未有人加入您的家庭。",
+      "noMembers": "尚未有人加入你的家庭。",
       "loadMembersError": "无法加载家庭成员。尝试清爽一下。",
       "permissions": {
         "read": "读",
@@ -20,20 +20,20 @@
         "own": "只能编辑自己的交易"
       },
       "invite": {
-        "emailLabel": "电子邮件",
+        "emailLabel": "邮箱",
         "emailPlaceholder": "person{'@'}example.com",
         "permissionLabel": "允许",
         "writeScopeLabel": "写入范围",
         "submit": "发送家庭邀请",
         "sent": "邀请已发送。",
         "error": "无法发送邀请。",
-        "emailDeliveryFailed": "邀请已创建，但无法发送电子邮件。您可以从邀请面板重新发送。"
+        "emailDeliveryFailed": "邀请已创建，但无法发送邮件。你可以从邀请面板重新发送。"
       },
       "revoke": {
-        "action": "消除",
+        "action": "移除",
         "title": "删除家庭成员？",
-        "description": "{handle} 将失去对您家庭中每个账户的访问权限。每个账户的份额（如果有）不受影响。",
-        "confirm": "消除",
+        "description": "{handle} 将失去对你家庭中每个账户的访问权限。每个账户的份额（如果有）不受影响。",
+        "confirm": "移除",
         "success": "会员已删除。",
         "error": "无法删除该成员。"
       },
@@ -45,21 +45,21 @@
       },
       "imIn": {
         "title": "我所在的家庭",
-        "description": "您加入的其他人的家庭。离开后，您将无法访问他们通过这种方式共享的每个账户。",
-        "empty": "您还没有加入其他人的家庭。",
+        "description": "你加入的其他人的家庭。离开后，你将无法访问他们通过这种方式共享的每个账户。",
+        "empty": "你还没有加入其他人的家庭。",
         "unnamedHousehold": "{'@'}{handle}的家",
-        "loadError": "无法加载您所在的家庭。请稍后重试。"
+        "loadError": "无法加载你所在的家庭。请稍后重试。"
       },
       "leave": {
-        "action": "离开",
-        "title": "离开这个家？",
-        "description": "您将无法访问 {owner} 通过其家庭共享的每个账户。每个账户的份额（如果有）不受影响。",
-        "confirm": "离开",
-        "success": "你离开了这个家庭。",
-        "error": "无法离开家。"
+        "action": "退出家庭",
+        "title": "退出此家庭？",
+        "description": "你将无法访问 {owner} 通过其家庭共享的每个账户。每个账户的份额（如果有）不受影响。",
+        "confirm": "退出家庭",
+        "success": "已退出此家庭。",
+        "error": "退出家庭失败，请重试。"
       },
       "pending": {
-        "badge": "待办的",
+        "badge": "待入账",
         "resend": "重新发送",
         "cancel": "取消",
         "cancelTitle": "取消邀请？",
@@ -69,7 +69,7 @@
         "cancelError": "取消邀请失败。",
         "resendSuccess": "邀请已重新发送。",
         "resendError": "重新发送邀请失败。",
-        "resendDeliveryFailed": "邀请已更新，但无法发送电子邮件。稍后再试。"
+        "resendDeliveryFailed": "邀请已更新，但无法发送邮件。稍后再试。"
       }
     }
   }

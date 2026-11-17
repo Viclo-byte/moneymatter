@@ -9,15 +9,15 @@
       },
       "providers": {
         "monobank": {
-          "name": "单一银行",
+          "name": "Monobank",
           "description": "乌克兰数字银行"
         },
         "enableBanking": {
-          "name": "启用银行业务",
+          "name": "Enable Banking",
           "description": "通过 PSD2 开放银行访问 6000 多家欧洲银行"
         },
         "lunchflow": {
-          "name": "午餐流程",
+          "name": "LunchFlow",
           "description": "通过 LunchFlow 同步全球 20,000 多家银行的交易"
         },
         "simplefin": {
@@ -30,27 +30,27 @@
         },
         "akahu": {
           "name": "阿卡胡",
-          "description": "通过 Akahu 个人应用程序免费同步新西兰银行的交易"
+          "description": "通过 Akahu 个人应用免费同步新西兰银行的交易"
         }
       },
       "monobank": {
         "apiTokenLabel": "API令牌",
         "connectionNameLabel": "连接名称（可选）",
-        "tokenPlaceholder": "输入您的 Monobank API 令牌",
+        "tokenPlaceholder": "输入你的 Monobank API 令牌",
         "accountNamePlaceholder": "例如，个人账户",
         "help": {
           "trigger": "我在哪里可以获得 API 令牌？",
-          "title": "获取您的 Monobank API 令牌",
+          "title": "获取你的 Monobank API 令牌",
           "step1": "访问 {link} 并按照说明生成个人令牌。",
           "step2": "安全地存储令牌并将其粘贴到字段中。",
           "note": "不用担心——API 令牌是严格只读的。"
         },
         "backButton": "返回",
-        "connectingButton": "正在连接...",
+        "connectingButton": "正在连接…",
         "connectButton": "连接",
-        "loadingAccounts": "正在加载账户...",
-        "selectAccountsHint": "选择您想要与 MoneyMatter 同步的账户",
-        "syncingButton": "正在同步...",
+        "loadingAccounts": "正在加载账户…",
+        "selectAccountsHint": "选择你想要与 MoneyMatter 同步的账户",
+        "syncingButton": "正在同步…",
         "syncButton": "同步 {count} 账户",
         "syncSuccess": "已连接 {count} 账户。交易在后台同步。",
         "errors": {
@@ -61,38 +61,38 @@
       "enableBankingConnector": {
         "beta": {
           "title": "Beta 功能 - 面向开发人员",
-          "description": "这种集成需要技术知识来设置。您需要注册自己的 Enable Banking 应用程序并提供 API 凭据。设置过程和 API 可能会在未来的更新中发生变化。"
+          "description": "这种集成需要技术知识来设置。你需要注册自己的 Enable Banking 应用并提供 API 凭据。设置过程和 API 可能会在未来的更新中发生变化。"
         },
         "credentials": {
-          "appIdLabel": "应用程序ID",
+          "appIdLabel": "应用ID",
           "appIdHint": "上传证书后从启用银行门户获取",
           "privateKeyLabel": "私钥",
-          "privateKeyHint": "您的 PEM 编码的 RSA 私钥（加密存储）",
+          "privateKeyHint": "你的 PEM 编码的 RSA 私钥（加密存储）",
           "bicLabel": "银行代码："
         },
         "steps": {
-          "loadingCountries": "正在加载国家/地区...",
-          "selectCountryHint": "选择您的银行所在国家/地区",
+          "loadingCountries": "正在加载国家/地区…",
+          "selectCountryHint": "选择你的银行所在国家/地区",
           "countryLabel": "国家",
-          "loadingBanks": "正在加载银行...",
-          "selectBankHint": "在 {country} 中选择您的银行",
+          "loadingBanks": "正在加载银行…",
+          "selectBankHint": "在 {country} 中选择你的银行",
           "bankLabel": "银行",
-          "connectingToBank": "正在连接到 {bank}...",
-          "authDescription": "单击下面的按钮授权访问您的 {bank} 账户。",
-          "authWarning": "您将被重定向到 {bank} 的网站以登录并批准连接。",
+          "connectingToBank": "正在连接到 {bank}…",
+          "authDescription": "点击下面的按钮授权访问你的 {bank} 账户。",
+          "authWarning": "你将被重定向到 {bank} 的网站以登录并批准连接。",
           "authorizeButton": "使用 {bank} 授权",
-          "loadingAccounts": "正在加载账户...",
-          "selectAccountsHint": "选择您想要与 MoneyMatter 同步的账户"
+          "loadingAccounts": "正在加载账户…",
+          "selectAccountsHint": "选择你想要与 MoneyMatter 同步的账户"
         },
         "buttons": {
           "back": "返回",
-          "loading": "加载中...",
-          "next": "下一个",
-          "syncing": "正在同步...",
+          "loading": "加载中…",
+          "next": "下一步",
+          "syncing": "正在同步…",
           "sync": "同步{count}账户 | 同步{count}账户"
         },
         "errors": {
-          "loadCountriesFailed": "无法加载国家/地区。请检查您的凭据。",
+          "loadCountriesFailed": "无法加载国家/地区。请检查你的凭据。",
           "loadAccountsFailed": "无法加载账户",
           "syncFailed": "同步账户失败"
         },
@@ -102,62 +102,62 @@
         "title": "如何获取启用银行凭证",
         "overview": {
           "title": "概述",
-          "text": "启用银行业务要求您注册应用程序并生成安全凭证才能访问银行数据。请按照以下步骤获取您的应用程序 ID 和私钥。"
+          "text": "Enable Banking要求你注册应用并生成安全凭证才能访问银行数据。请按照以下步骤获取你的应用 ID 和私钥。"
         },
         "step1": {
-          "title": "注册并创建应用程序",
-          "intro": "如果您还没有账户，请访问 {link} 并创建一个账户。",
-          "createApp": "然后创建一个应用程序：",
+          "title": "注册并创建应用",
+          "intro": "如果你还没有账户，请访问 {link} 并创建一个账户。",
+          "createApp": "然后创建一个应用：",
           "steps": {
             "login": "登录启用银行门户",
             "navigate": "导航至 {link}",
-            "lookForm": "查看“创建应用程序”表单",
+            "lookForm": "查看“创建应用”表单",
             "selectEnv": "选择{strong}环境",
             "selectEnvStrong": "“生产”",
-            "generateKey": "选中 {strong} 复选框。创建应用程序后，.pem 密钥将作为文件自动保存到您的计算机中。 {warning} 无论出于何种原因 - 您将需要重新创建应用程序",
+            "generateKey": "选中 {strong} 复选框。创建应用后，.pem 密钥将作为文件自动保存到你的计算机中。 {warning} 无论出于何种原因 - 你将需要重新创建应用",
             "generateKeyStrong": "“在浏览器中生成 RSA 私钥”",
             "generateKeyWarning": "如果文件未保存",
             "fillForm": "使用以下值填写表格：",
             "appName": "应用名称：",
             "redirectUrls": "允许的重定向 URL：",
-            "httpsRequired": "启用银行业务仅接受 https 重定向 URL。通过 HTTPS 提供此实例，将 {envVar} 设置为其公共回调 URL（例如 {example}），重新创建后端容器，并在此字段中输入相同的 URL。 {link}",
+            "httpsRequired": "Enable Banking仅接受 https 重定向 URL。通过 HTTPS 提供此实例，将 {envVar} 设置为其公共回调 URL（例如 {example}），重新创建后端容器，并在此字段中输入相同的 URL。 {link}",
             "httpsRequiredLink": "如何设置",
             "appDescription": "应用说明：",
-            "emailProtection": "数据保护事宜的电子邮件：",
+            "emailProtection": "数据保护事宜的邮箱：",
             "privacyUrl": "隐私网址：",
             "termsUrl": "条款网址：",
             "clickRegister": "点击“注册”",
-            "downloadKey": "系统将建议您下载文件。这是您必须保存在某处的 RSA 密钥，因为这是您凭证的一部分"
+            "downloadKey": "系统将建议你下载文件。这是你必须保存在某处的 RSA 密钥，因为这是你凭证的一部分"
           }
         },
         "step2": {
-          "title": "关联您的银行账户",
-          "intro": "在将应用程序与 MoneyMatter 结合使用之前，您必须首先通过 Enable Banking 门户链接您的银行账户。在创建的应用程序磁贴中查找“链接账户”按钮，然后按照此处所需的所有步骤进行操作。",
+          "title": "关联你的银行账户",
+          "intro": "在将应用与 MoneyMatter 结合使用之前，你必须首先通过 Enable Banking 门户关联你的银行账户。在创建的应用磁贴中查找“关联账户”按钮，然后按照此处所需的所有步骤进行操作。",
           "breakdown": "以下是详细分解：",
           "steps": {
-            "clickLink": "点击“链接账户”，等待微调器完成加载",
+            "clickLink": "点击“Link accounts（关联账户）”，等待加载完成。",
             "newFields": "新字段将出现在同一位置：“国家/地区”、“ASPSP”、“使用类型”",
             "country": "国家：",
-            "countryValue": "您的银行所在国家/地区",
+            "countryValue": "你的银行所在国家/地区",
             "aspsp": "ASPSP：",
-            "aspspValue": "您的银行名称",
+            "aspspValue": "你的银行名称",
             "usageType": "使用类型：",
             "usageTypeValue": "私人的",
             "clickSave": "点击“保存”",
-            "redirect": "您将被重定向到银行的身份验证页面。登录，然后选择您要连接的所有账户",
-            "finishAuth": "完成身份验证流程后，您将被重定向回 EnableBanking",
-            "waitAccounts": "等待所选账户显示在“链接账户”字段下的应用程序卡中"
+            "redirect": "你将被重定向到银行的身份验证页面。登录，然后选择你要连接的所有账户",
+            "finishAuth": "完成身份验证流程后，你将被重定向回 EnableBanking",
+            "waitAccounts": "等待所选账户显示在“关联账户”字段下的应用卡中"
           },
-          "warningNotLinked": "某些选定的账户可能未链接。这是您银行方面的问题，您无法自行解决。您只能等待几个小时/几天才能解决问题。如果问题仍未解决，唯一的方法是向 EnableBanking 报告。",
-          "infoAddMore": "如果将来您想连接更多账户，则需要再次重复连接账户的流程。 {strong}，当添加新账户时，您仍然需要选择旧账户 - 基本上您需要选择要连接的所有账户。",
+          "warningNotLinked": "某些选定的账户可能未关联。这是你银行方面的问题，你无法自行解决。你只能等待几个小时/几天才能解决问题。如果问题仍未解决，唯一的方法是向 EnableBanking 报告。",
+          "infoAddMore": "如果将来你想连接更多账户，则需要再次重复连接账户的流程。 {strong}，当添加新账户时，你仍然需要选择旧账户 - 基本上你需要选择要连接的所有账户。",
           "infoAddMoreStrong": "记住"
         },
         "step3": {
-          "title": "获取您的凭据",
+          "title": "获取你的凭据",
           "intro": "从启用银行门户：",
-          "appId": "{strong} 从您的申请详细信息中复制 {code}",
+          "appId": "{strong} 从你的申请详细信息中复制 {code}",
           "appIdStrong": "申请编号：",
-          "appIdCode": "应用程序ID",
+          "appIdCode": "应用ID",
           "appIdExample": "例子：",
           "privateKey": "{strong} 通过某些文本编辑器（MacOS 上的 TextEdit 或 Windows 上的记事本）打开保存的 {code} 文件并复制其全部内容（包括 BEGIN 和 END 行）",
           "privateKeyStrong": "私钥：",
@@ -165,17 +165,17 @@
         },
         "securityNote": {
           "title": "安全说明",
-          "text": "您的私钥以加密方式存储在我们的数据库中，仅用于代表您向 Enable Banking 进行身份验证。令牌仅限于只读数据。但是，切勿与其他人分享您的私钥。"
+          "text": "你的私钥以加密方式存储在我们的数据库中，仅用于代表你向 Enable Banking 进行身份验证。令牌仅限于只读数据。但是，切勿与其他人分享你的私钥。"
         },
         "gotItButton": "知道了"
       },
       "enableBanking": {
         "instructions": {},
         "placeholders": {
-          "appId": "输入您的启用银行 app_id",
-          "privateKey": "-----开始私钥-----\n...\n-----结束私钥-----",
-          "searchCountries": "搜索国家...",
-          "searchBanks": "搜索银行..."
+          "appId": "输入你的启用银行 app_id",
+          "privateKey": "-----开始私钥-----\n…\n-----结束私钥-----",
+          "searchCountries": "搜索国家…",
+          "searchBanks": "搜索银行…"
         },
         "errors": {
           "noAuthUrl": "未从服务器收到授权 URL",
@@ -188,20 +188,20 @@
       },
       "lunchflow": {
         "apiKeyLabel": "API 密钥",
-        "apiKeyPlaceholder": "输入您的 LunchFlow API 密钥",
+        "apiKeyPlaceholder": "输入你的 LunchFlow API 密钥",
         "help": {
           "trigger": "在哪里可以找到我的 API 密钥？",
-          "title": "获取您的午餐流程 API 密钥",
+          "title": "获取你的午餐流程 API 密钥",
           "step1": "打开你的{link}。",
           "step2": "转至设置 → API 目标。",
           "step3": "复制 API 密钥并将其粘贴到字段中。"
         },
         "backButton": "返回",
-        "connectingButton": "正在连接...",
+        "connectingButton": "正在连接…",
         "connectButton": "连接",
-        "loadingAccounts": "正在加载账户...",
+        "loadingAccounts": "正在加载账户…",
         "accountsPreviewHint": "找到 {count} 账户。所有账户都将被导入。",
-        "importingButton": "输入...",
+        "importingButton": "输入…",
         "importButton": "导入 {count} 账户",
         "importSuccess": "已连接 {count} 账户。交易在后台同步。",
         "skipButton": "跳过",
@@ -212,8 +212,8 @@
         }
       },
       "common": {
-        "selectAll": "选择全部",
-        "availableLabel": "可用的",
+        "selectAll": "全选",
+        "availableLabel": "可用",
         "clearAll": "全部清除",
         "noCurrencyBadge": "没有货币",
         "currencyPicker": {
@@ -226,11 +226,11 @@
       },
       "simplefin": {
         "setupTokenLabel": "设置令牌",
-        "setupTokenPlaceholder": "粘贴您的 SimpleFIN 设置令牌",
+        "setupTokenPlaceholder": "粘贴你的 SimpleFIN 设置令牌",
         "help": {
           "trigger": "我在哪里可以获得设置令牌？",
-          "title": "获取您的 SimpleFIN 设置令牌",
-          "step1": "在 {link} 创建一个 SimpleFIN Bridge 账户并连接您的银行。",
+          "title": "获取你的 SimpleFIN 设置令牌",
+          "step1": "在 {link} 创建一个 SimpleFIN Bridge 账户并连接你的银行。",
           "step2": "在 Bridge 仪表板上生成新的设置令牌。",
           "step3": "将令牌粘贴到字段中。"
         },
@@ -239,18 +239,18 @@
           "title": "SimpleFIN 可以导入什么",
           "supported": "银行账户——支票、储蓄、信用卡——得到全面支持。余额和交易自动同步。",
           "unsupported": "不支持经纪和退休账户（股票、ETF、加密货币、401k、IRA）。 SimpleFIN 本身也不真正支持它们——它没有说明哪个账户是经纪账户，而且持仓量采用非官方格式，可以随时更改。",
-          "tryAnyway": "您仍然可以尝试连接它们 - 它们将作为常规账户导入，并具有 SimpleFIN 提供的任何余额和现金交易，但您的头寸不会显示。不保证它能正常工作。"
+          "tryAnyway": "你仍然可以尝试连接它们 - 它们将作为常规账户导入，并具有 SimpleFIN 提供的任何余额和现金交易，但你的头寸不会显示。不保证它能正常工作。"
         },
         "connectButton": "连接",
         "connectingButton": "正在连接…",
         "backButton": "返回",
-        "loadingAccounts": "正在加载账户...",
-        "backfillNote": "我们现在将加载最近 6 个月的交易。您可以随时使用日期范围选择器从账户页面加载较旧的历史记录。",
+        "loadingAccounts": "正在加载账户…",
+        "backfillNote": "我们现在将加载最近 6 个月的交易。你可以随时使用日期范围选择器从账户页面加载较旧的历史记录。",
         "importButton": "选择账户 | 导入 1 个账户 | 导入{count}账户",
         "importingButton": "输入…",
         "errors": {
-          "connectFailed": "无法连接到 SimpleFIN。检查您的设置令牌并重试。",
-          "importFailed": "导入账户失败。请再试一次。"
+          "connectFailed": "无法连接到 SimpleFIN。检查你的设置令牌并重试。",
+          "importFailed": "导入账户失败。请重试。"
         }
       },
       "walutomat": {
@@ -258,65 +258,65 @@
           "trigger": "如何设置 Walutomat API 访问权限？"
         },
         "apiKeyLabel": "API密钥",
-        "apiKeyPlaceholder": "输入您的 Walutomat API 密钥",
+        "apiKeyPlaceholder": "输入你的 Walutomat API 密钥",
         "apiKeyHint": "可在 Walutomat 仪表板的“设置”→“API”下找到",
         "privateKeyLabel": "私钥（PEM）",
-        "privateKeyPlaceholder": "-----开始 RSA 私钥-----\n...\n-----结束 RSA 私钥-----",
+        "privateKeyPlaceholder": "-----开始 RSA 私钥-----\n…\n-----结束 RSA 私钥-----",
         "privateKeyHint": "粘贴 private.key 文件的内容（RSA 4096 位 PEM 格式）",
         "backButton": "返回",
         "connectButton": "连接",
-        "connectingButton": "正在连接...",
-        "loadingWallets": "正在加载钱包...",
+        "connectingButton": "正在连接…",
+        "loadingWallets": "正在加载钱包…",
         "selectWalletsHint": "选择要同步的货币钱包（{count}可用）",
-        "selectAll": "选择全部",
+        "selectAll": "全选",
         "importButton": "导入 {count} 钱包",
-        "importingButton": "输入...",
+        "importingButton": "输入…",
         "importSuccess": "已连接 {count} 账户。交易在后台同步。",
         "errors": {
-          "connectFailed": "无法连接到 Walutomat。检查您的凭据。",
+          "connectFailed": "无法连接到 Walutomat。检查你的凭据。",
           "importFailed": "导入钱包失败。"
         },
         "instructions": {
           "title": "Walutomat API 设置说明",
           "overviewTitle": "概述",
-          "overviewText": "要连接 Walutomat，您需要 API 密钥和 RSA 私钥。 API 密钥对您的账户进行身份验证，而私钥则对每个安全请求进行签名。",
+          "overviewText": "要连接 Walutomat，你需要 API 密钥和 RSA 私钥。 API 密钥对你的账户进行身份验证，而私钥则对每个安全请求进行签名。",
           "step1Title": "生成 RSA 密钥对",
           "step1Intro": "打开终端并运行以下命令：",
           "step1FilesCreated": "这将创建两个文件：{privateKey}（保密！）和 {publicKey}（上传到 Walutomat）。",
           "step2Title": "将公钥上传到 Walutomat",
           "step2Login": "1. 登录",
           "step2GoToSettings": "2. 前往{settings} → {api}",
-          "step2Upload": "3.上传您的{publicKey}文件",
-          "step2ApiKeyGenerated": "4. Walutomat将为您生成API密钥",
+          "step2Upload": "3.上传你的{publicKey}文件",
+          "step2ApiKeyGenerated": "4. Walutomat将为你生成API密钥",
           "step3Title": "在此输入凭据",
           "step3Intro": "你需要两件事：",
           "step3ApiKeyDesc": "{apiKey} — 从 Walutomat API 设置页面复制",
           "step3PrivateKeyDesc": "{privateKey} — 在文本编辑器中打开 {filename} 并复制整个内容（包括 BEGIN/END 行）",
           "securityNoteTitle": "安全说明",
-          "securityNoteText": "您的私钥在存储前已加密，仅用于签署 API 请求。它绝不会暴露或传播给 Walutomat 以外的任何人。",
+          "securityNoteText": "你的私钥在存储前已加密，仅用于签署 API 请求。它绝不会暴露或传播给 Walutomat 以外的任何人。",
           "closeButton": "知道了"
         }
       },
       "akahu": {
         "userTokenLabel": "用户访问令牌",
-        "userTokenPlaceholder": "输入您的 Akahu 用户访问令牌",
-        "userTokenHint": "显示在您的个人应用程序页面 my.akahu.nz 上",
-        "appTokenLabel": "应用程序 ID 令牌",
-        "appTokenPlaceholder": "输入您的 Akahu 应用程序 ID 令牌",
+        "userTokenPlaceholder": "输入你的 Akahu 用户访问令牌",
+        "userTokenHint": "显示在你的个人应用页面 my.akahu.nz 上",
+        "appTokenLabel": "应用 ID 令牌",
+        "appTokenPlaceholder": "输入你的 Akahu 应用 ID 令牌",
         "appTokenHint": "也显示在同一页面上",
         "help": {
           "trigger": "在哪里可以找到我的 Akahu 代币？",
-          "title": "获取您的 Akahu 个人应用令牌",
+          "title": "获取你的 Akahu 个人应用令牌",
           "step1": "登录 Akahu 后打开 {link}。",
-          "step2": "创建个人应用程序（或打开现有应用程序）——首先连接您在 Akahu 中的银行账户。",
-          "step3": "复制用户访问令牌和应用程序 ID 令牌并将其粘贴到上面的字段中。"
+          "step2": "创建个人应用（或打开现有应用）——首先连接你在 Akahu 中的银行账户。",
+          "step3": "复制用户访问令牌和应用 ID 令牌并将其粘贴到上面的字段中。"
         },
         "backButton": "返回",
-        "connectingButton": "正在连接...",
+        "connectingButton": "正在连接…",
         "connectButton": "连接",
-        "loadingAccounts": "正在加载账户...",
+        "loadingAccounts": "正在加载账户…",
         "accountsPreviewHint": "找到 {count} 账户。所有账户都将被导入。",
-        "importingButton": "输入...",
+        "importingButton": "输入…",
         "importButton": "导入 {count} 账户",
         "importSuccess": "已连接 {count} 账户。交易在后台同步。",
         "skipButton": "跳过",
@@ -338,21 +338,21 @@
       "details": {
         "error": {
           "notFoundTitle": "未找到集成",
-          "notFoundDescription": "此集成可能已被删除或链接不正确。检查您的集成列表以找到您正在寻找的内容。",
+          "notFoundDescription": "此集成可能已被删除或链接不正确。检查你的集成列表以找到你正在寻找的内容。",
           "unexpectedTitle": "出了点问题",
           "unexpectedDescription": "我们无法加载此连接。请稍后重试。",
           "backButton": "返回集成"
         },
         "connectionDetails": {
-          "statusActive": "启用",
-          "statusInactive": "停用",
+          "statusActive": "生效中",
+          "statusInactive": "未启用",
           "autoSync": "自动同步"
         },
         "connectionValidity": {
-          "statusExpired": "已到期",
-          "statusActive": "启用",
+          "statusExpired": "已失效",
+          "statusActive": "生效中",
           "daysCount": "{count} 天 | {count}天",
-          "notAvailable": "N/A",
+          "notAvailable": "暂无数据",
           "reconnectButton": "立即重新连接"
         },
         "connectedAccounts": {
@@ -379,13 +379,13 @@
         "fetchAccountsDialog": {
           "title": "连接剩余账户",
           "description": "从 {providerName} 中选择尚未连接的可用账户。",
-          "missingAccountsQuestion": "没有看到您的账户？",
-          "missingAccountsHint": "如果您看不到某些账户，请尝试通过单击 {button} 从 {section} 部分重新连接您的银行连接。",
+          "missingAccountsQuestion": "没有看到你的账户？",
+          "missingAccountsHint": "如果你看不到某些账户，请尝试通过点击 {button} 从 {section} 部分重新连接你的银行连接。",
           "missingAccountsSectionName": "连接有效性",
           "missingAccountsButtonName": "立即重新连接",
           "missingAccountsPersist": "如果问题仍然存在，请报告以供进一步调查。",
-          "sessionExpired": "您的会话已过期。请重新连接您的银行连接以继续。",
-          "loadFailed": "无法加载可用账户。请再试一次。",
+          "sessionExpired": "你的会话已过期。请重新连接你的银行连接以继续。",
+          "loadFailed": "无法加载可用账户。请重试。",
           "noAdditionalAccounts": "没有其他账户可供连接。",
           "connectSelectedButton": "连接选定的账户 ({count})",
           "selectAccountsButton": "选择账户",
@@ -398,7 +398,7 @@
         "summary": {
           "totalBalance": "总余额",
           "accounts": "账户",
-          "accountsCount": "没有账户 | {count} 帐号 | {count}账户",
+          "accountsCount": "没有账户 | {count} 账号 | {count}账户",
           "lastSync": "上次同步",
           "consent": "同意",
           "every": "每{hours}h",
@@ -421,24 +421,24 @@
       "dialogs": {
         "disconnect": {
           "title": "断开集成",
-          "description": "您确定要断开此集成吗？此操作无法撤消。",
+          "description": "你确定要断开此集成吗？此操作无法撤销。",
           "removeAccounts": "同时删除关联账户",
-          "removeAccountsHint": "这将永久删除链接到此集成的所有账户",
-          "disconnecting": "正在断开连接...",
-          "disconnect": "断开"
+          "removeAccountsHint": "这将永久删除关联到此集成的所有账户",
+          "disconnecting": "正在断开连接…",
+          "disconnect": "断开连接"
         },
         "editName": {
           "title": "编辑连接名称",
-          "description": "为您的连接指定一个自定义名称以方便识别。",
+          "description": "为你的连接指定一个自定义名称以方便识别。",
           "label": "连接名称",
           "saving": "保存中…",
           "save": "保存"
         },
         "reconnect": {
           "title": "重新连接集成",
-          "description": "通过启动重连流程，{warning}。您必须完成该流程才能使连接再次处于活动状态。",
-          "warning": "您当前的连接将立即失效",
-          "preparing": "正在准备...",
+          "description": "通过启动重连流程，{warning}。你必须完成该流程才能使连接再次处于活动状态。",
+          "warning": "你当前的连接将立即失效",
+          "preparing": "准备中…",
           "continue": "继续"
         }
       },
@@ -449,15 +449,15 @@
       "updateCredentials": {
         "title": "更新凭据",
         "apiKeyLabel": "API密钥",
-        "apiKeyPlaceholder": "输入您的 API 密钥",
-        "updatingButton": "更新中...",
+        "apiKeyPlaceholder": "输入你的 API 密钥",
+        "updatingButton": "更新中…",
         "updateButton": "更新",
         "success": "凭证更新成功",
         "failed": "无法更新凭据"
       },
       "labels": {
         "free": "自由的",
-        "paid": "有薪酬的",
+        "paid": "已支付",
         "easySetup": "易于设置",
         "mediumSetup": "中等设置",
         "veryDifficultSetup": "设置非常困难"
@@ -478,12 +478,12 @@
         "euUk": "EU & UK"
       },
       "tooltips": {
-        "monobank": "需要从 Monobank 移动应用程序手动复制 API 令牌",
-        "enableBanking": "由于顺利集成需要每月支付数千美元，因此只能通过创建自己的 EnableBanking 开发账户并设置与自己的银行实际连接的“测试”应用程序、存储证书和密钥并将其上传到此处来进行连接。需要中等技术知识",
-        "lunchflow": "只需在 LunchFlow 端连接您的银行，然后创建并粘贴您的 LunchFlow API 密钥",
-        "simplefin": "SimpleFIN Bridge 是一项付费服务​​。您创建一个桥接账户，链接您的银行，然后粘贴设置令牌 - 无需开发人员设置。",
+        "monobank": "需要从 Monobank 移动应用手动复制 API 令牌",
+        "enableBanking": "由于顺利集成需要每月支付数千美元，因此只能通过创建自己的 EnableBanking 开发账户并设置与自己的银行实际连接的“测试”应用、存储证书和密钥并将其上传到此处来进行连接。需要中等技术知识",
+        "lunchflow": "只需在 LunchFlow 端连接你的银行，然后创建并粘贴你的 LunchFlow API 密钥",
+        "simplefin": "SimpleFIN Bridge 是一项付费服务​​。你创建一个桥接账户，关联你的银行，然后粘贴设置令牌 - 无需开发人员设置。",
         "walutomat": "需要生成 RSA 密钥对并将公钥上传到 Walutomat 仪表板",
-        "akahu": "您自己的账户免费：在 my.akahu.nz 创建 Akahu 个人应用程序，在那里连接您的新西兰银行，然后粘贴两个令牌"
+        "akahu": "你自己的账户免费：在 my.akahu.nz 创建 Akahu 个人应用，在那里连接你的新西兰银行，然后粘贴两个令牌"
       }
     },
     "connectionName": {
@@ -491,8 +491,8 @@
     },
     "bankCallback": {
       "processing": {
-        "title": "正在完成授权...",
-        "description": "我们正在验证您的银行连接，请稍候"
+        "title": "正在完成授权…",
+        "description": "我们正在验证你的银行连接，请稍候"
       },
       "error": {
         "title": "授权失败",
@@ -500,7 +500,7 @@
       },
       "success": {
         "title": "连接成功！",
-        "description": "您的银行账户已成功连接。",
+        "description": "你的银行账户已成功连接。",
         "viewAccounts": "查看账户"
       },
       "errors": {

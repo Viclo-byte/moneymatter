@@ -1,25 +1,25 @@
 {
   "settings": {
     "planBilling": {
-      "title": "订阅与支付",
-      "description": "选择订阅并管理您的支付。",
-      "checkoutSuccess": "您的订阅现已激活。",
+      "title": "套餐与账单",
+      "description": "选择订阅并管理你的支付。",
+      "checkoutSuccess": "你的订阅现已激活。",
       "checkoutFailed": "无法打开结帐。请重试。",
       "currentPlanEyebrow": "当前订阅",
       "updatePaymentMethod": "更新付款方式",
       "manageBilling": "管理账单",
       "manageInAppStore": "在 App Store 中管理",
-      "currentPlan": "目前计划",
+      "currentPlan": "当前套餐",
       "recommended": "受到推崇的",
       "previousPlan": "之前的订阅",
-      "yourPlan": "您的订阅",
+      "yourPlan": "你的订阅",
       "planned": "计划",
       "voteOnRoadmap": "在未来规划投票",
       "roadmapNote": "无收费。投票后我们会让你知道几时能达到目标。",
       "saveUpTo": "最高可省 {percent}%",
       "portalFailed": "无法打开支付页面。请重试。",
-      "pastDueNote": "您上次付款失败。 Stripe 将在接下来的几天内自动重试您的卡。通过“管理账单”更新您的付款方式，以在 {date} 之后保持访问权限。",
-      "priceNote": "价格以美元为单位，不含税。结帐时会显示您的当地货币和任何适用的税费。",
+      "pastDueNote": "你上次付款失败。 Stripe 将在接下来的几天内自动重试你的卡。通过“管理账单”更新你的付款方式，以在 {date} 之后保持访问权限。",
+      "priceNote": "价格以美元为单位，不含税。结帐时会显示你的当地货币和任何适用的税费。",
       "cycleHint": {
         "year": "每年是每月的 6 个月。每年计费一次。",
         "month": "取消任何一个月。每年费用减半。"
@@ -32,41 +32,41 @@
       "current": {
         "lifetime": "{plan}·寿命",
         "lifetimeMeta": "一切尽在Plus。没有更新，没有记录卡。",
-        "earlyAdopterNote": "感谢您早早来到这里。现在 Plus 中的所有内容都是您终生拥有的。我们从现在开始添加的功能以及每个用户运行所需的任何费用都属于付费计划。想要它们吗？任何计划永久享受 50% 折扣，结帐时自动应用。",
+        "earlyAdopterNote": "感谢你早早来到这里。现在 Plus 中的所有内容都是你终生拥有的。我们从现在开始添加的功能以及每个用户运行所需的任何费用都属于付费计划。想要它们吗？任何计划永久享受 50% 折扣，结帐时自动应用。",
         "seats": "1 个家庭座位 | {count}家用座椅",
         "subscription": "{tier} · {cycle}",
         "trial": "{count} 试用期还剩一天 | {count} 试用期还剩几天",
-        "trialProgress": "{total} 之日 {used}",
-        "trialEnded": "审判结束",
-        "trialEndedMeta": "您的 {days} 天试用期已结束。选择一个计划并继续添加。",
+        "trialProgress": "试用第 {used} 天，共 {total} 天",
+        "trialEnded": "试用已结束",
+        "trialEndedMeta": "你的 {days} 天试用期已结束。选择一个计划并继续添加。",
         "trialEndsOn": "结束 {date}",
         "trialExcluded": "试用期间无法进行备份恢复",
-        "subscriptionEnded": "订阅结束",
-        "endedMeta": "您的数据是安全的。选择一个计划并继续添加。",
+        "subscriptionEnded": "订阅已结束",
+        "endedMeta": "你的数据是安全的。选择一个计划并继续添加。",
         "renewsOn": "在 {date} 上续订",
-        "activating": "激活您的计划",
+        "activating": "激活你的计划",
         "activatingNote": "付款已收到。 Stripe 通常会在几秒钟内确认。",
-        "activationTimedOut": "您的付款已完成，但计划仍在制定中。一分钟刷新；如果没有任何变化，请联系支持人员。",
-        "activationUnreachable": "我们无法联系服务器来确认您的付款。重新加载页面；如果该计划仍然缺失，请联系支持人员。",
+        "activationTimedOut": "你的付款已完成，但计划仍在制定中。一分钟刷新；如果没有任何变化，请联系支持人员。",
+        "activationUnreachable": "我们无法联系服务器来确认你的付款。重新加载页面；如果该计划仍然缺失，请联系支持人员。",
         "accessContinuesUntil": "访问持续到 {date}",
         "billedByAppStore": "通过 App Store 计费",
         "accessUntil": "访问直到{date}，然后只读",
         "resumesOn": "在 {date} 上自动恢复",
         "pausedNote": "暂停时，该账户是只读的。",
         "noFurtherCharges": "不再收取任何费用",
-        "cancelNote": "改变主意了吗？在计费门户中续订，您的续订日期保持不变。",
+        "cancelNote": "改变主意了吗？在计费门户中续订，你的续订日期保持不变。",
         "monthlyHint": "切换为每年并节省 {amount} 一年。",
-        "noCard": "档案中没有卡",
+        "noCard": "未绑定银行卡",
         "readOnlyHelp": "只读是什么意思？"
       },
       "status": {
         "pastDue": "付款失败",
-        "active": "启用",
+        "active": "生效中",
         "paused": "已暂停",
         "readOnly": "只读",
-        "trial": "附加功能",
-        "processing": "加工",
-        "earlyAdopter": "早期采用者",
+        "trial": "Plus 功能",
+        "processing": "处理中",
+        "earlyAdopter": "早期用户",
         "endsOn": "结束 {date}"
       },
       "cta": {
@@ -77,17 +77,17 @@
         "getTier": "获取{tier}"
       },
       "ctaNote": {
-        "keepIt": "更新您的付款方式以保留它。",
+        "keepIt": "更新你的付款方式以保留它。",
         "viaPortal": "在计费门户中进行了更改。",
-        "viaAppStore": "App Store 中发生计划变更",
+        "viaAppStore": "请在 App Store 中更改订阅套餐",
         "billedToday": "今天结帐了。随时取消。",
         "earlyAdopter": "终生 50% 折扣，结帐时应用"
       },
       "plans": {
-        "essential": "基本的",
-        "plus": "加",
-        "premium": "优质的",
-        "early_adopter": "早期采用者"
+        "essential": "Essential",
+        "plus": "Plus",
+        "premium": "Premium",
+        "early_adopter": "早期用户"
       },
       "cycle": {
         "month": "每月",
@@ -99,37 +99,37 @@
       },
       "tiers": {
         "essential": {
-          "name": "基本的",
+          "name": "Essential",
           "tagline": "手动输入和本地数学的一切。",
           "features": {
             "imports": "CSV、OFX、YNAB、钱包、MS Money 导入",
             "investments": "投资、贷款、车辆",
-            "ownAiKey": "您自己的 API 密钥上的 AI 功能",
+            "ownAiKey": "你自己的 API 密钥上的 AI 功能",
             "backup": "备份导出和恢复",
             "mcp": "MCP服务器访问",
             "seats": "2个家庭座位"
           }
         },
         "plus": {
-          "name": "加",
+          "name": "Plus",
           "tagline": "一切都自带银行联系。",
           "features": {
             "everythingInEssential": "一切尽在 Essential",
             "bankProviders": "银行连接（Monobank、Enable Banking、SimpleFIN、LunchFlow、Walutomat）",
             "ourAiKey": "我们关键的人工智能功能，合理使用上限",
-            "firePlanner": "消防规划师",
+            "firePlanner": "财务自由规划",
             "seats": "5个家庭座位"
           }
         },
         "premium": {
-          "name": "优质的",
-          "tagline": "我们为您运行银行同步。计划 – 帮助我们确定优先顺序。",
+          "name": "Premium",
+          "tagline": "我们为你运行银行同步。计划 – 帮助我们确定优先顺序。",
           "priceTba": "价格待公布",
           "priceNote": "一旦知道银行同步成本就定价。",
           "features": {
             "everythingInPlus": "一切尽在Plus",
-            "builtInBankSync": "应用程序内置银行同步 - 无需设置第三方账户",
-            "realtimePrices": "实时安全价格",
+            "builtInBankSync": "应用内置银行同步 - 无需设置第三方账户",
+            "realtimePrices": "证券实时报价",
             "higherAiCap": "人工智能功能是我们的关键，更高的上限",
             "seats": "10个家庭座位"
           }

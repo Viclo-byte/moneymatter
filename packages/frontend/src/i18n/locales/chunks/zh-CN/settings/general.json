@@ -1,76 +1,76 @@
 {
   "settings": {
     "general": {
-      "title": "通用",
-      "description": "控制如何在应用程序中计算和显示财务数据。",
+      "title": "通用设置",
+      "description": "设置金额计算、记账周期和默认选项。",
       "creditLimit": {
         "label": "在余额中包含信用额度",
-        "description": "启用后，信用额度将从统计和余额趋势图中的账户余额中扣除。这显示了您的实际财务状况而不是可用信用。",
+        "description": "启用后，信用额度将从统计和余额趋势图中的账户余额中扣除。这显示了你的实际财务状况而不是可用信用。",
         "successNotification": "设置更新成功",
         "errorNotification": "更新设置失败"
       },
       "payday": {
-        "label": "付款周期开始于",
-        "description": "您的工资周期开始的日期。仪表板的默认期间从这一天到下个月的前一天。",
+        "label": "每月记账周期起始日",
+        "description": "选择每月记账周期的第一天。总览默认显示从当天到下月前一天的数据。",
         "placeholder": "选择日期",
         "successNotification": "支付周期开始已更新"
       },
       "unrealizedLossAlert": {
-        "label": "未实现损失警报",
-        "description": "当控股损失超过任一阈值时收到通知。每天在市场价格更新后检查；在控股恢复之前不会重复。",
+        "label": "持仓浮亏提醒",
+        "description": "持仓亏损达到任一阈值时通知一次。每日行情更新后检查，持仓恢复前不会重复提醒。",
         "percentLabel": "损失百分比",
-        "percentDescription": "当持有的资产比其成本至少下跌这么多时发出警报。",
+        "percentDescription": "持仓市值较成本下跌达到此比例时提醒。",
         "amountLabel": "损失金额",
-        "amountDescription": "或者当损失达到以您的基础货币计算的该金额时，无论百分比如何。",
+        "amountDescription": "或按本位币计算的亏损达到此金额时提醒，不受亏损比例限制。",
         "successNotification": "已保存丢失警报设置"
       },
       "manualTransferMatching": {
         "label": "与手动账户匹配转账",
-        "description": "允许自动检测到的转账将同步的银行交易与您手动创建的交易链接起来。",
-        "successNotification": "转移匹配设置已更新",
-        "errorNotification": "无法更新传输匹配设置"
+        "description": "允许自动检测到的转账将同步的银行交易与你手动创建的交易关联起来。",
+        "successNotification": "转账匹配设置已更新",
+        "errorNotification": "转账匹配设置更新失败"
       },
       "pendingBankTransactions": {
-        "label": "导入待处理的银行交易",
-        "description": "在银行登记之前导入您的银行报告的交易。它们被标记为待处理，不会更改账户余额，并且可能缺少商家名称和最终详细信息。一旦银行登记或取消它们，它们就会被更新或删除。",
-        "descriptionSelfHost": "在银行登记交易之前存储启用银行交易。它们被标记为待处理，永远不会更改账户余额，并且在预订之前通常缺乏商家详细信息。其他提供商不受影响：SimpleFIN 和 LunchFlow 始终仅导入预订交易，而 Monobank 将每笔交易作为常规交易导入。",
+        "label": "导入银行待入账交易",
+        "description": "导入银行尚未正式入账的交易。这些交易不影响账户余额，商户名称和最终金额可能尚未确定；正式入账或取消后会自动更新或移除。",
+        "descriptionSelfHost": "提前导入 Enable Banking 的待入账交易，此类记录不影响余额，正式入账前可能缺少商户等信息。其他服务商不受此设置影响：SimpleFIN、LunchFlow 仅导入已入账交易，Monobank 则将所有交易按普通记录导入。",
         "successNotification": "待处理交易设置已更新",
         "errorNotification": "无法更新待处理交易设置"
       },
       "bankSyncSchedule": {
         "label": "银行同步时间表",
-        "description": "连接的银行账户会在这些时间自动同步，以您的当地时间显示。选择同一时间两次，每天同步一次。",
+        "description": "连接的银行账户会在这些时间自动同步，以你的当地时间显示。选择同一时间两次，每天同步一次。",
         "placeholder": "选择时间",
         "successNotification": "银行同步时间表已更新",
         "errorNotification": "无法更新银行同步计划"
       },
       "quickStart": {
-        "label": "快速入门指南",
-        "description": "在仪表板上显示入职清单。关闭它以隐藏指南；将其重新打开以随时将其恢复。"
+        "label": "新手引导",
+        "description": "在总览显示新手引导清单，可随时关闭或重新开启。"
       },
       "savingsCategories": {
-        "label": "将类别计为节省",
-        "description": "这些类别（及其子类别）的支出不包括在现金流分析的支出中，因此它计入每月储蓄和储蓄率。",
-        "successNotification": "储蓄类别已更新",
-        "errorNotification": "无法更新储蓄类别"
+        "label": "将分类计为节省",
+        "description": "这些分类（及其子分类）的支出不包括在现金流分析的支出中，因此它计入每月储蓄和储蓄率。",
+        "successNotification": "储蓄分类已更新",
+        "errorNotification": "无法更新储蓄分类"
       },
       "taxCategories": {
-        "label": "税种",
-        "description": "这些类别的支出在资金流向图中显示为税收，而不是支出。包括子类别。",
+        "label": "税费分类",
+        "description": "这些分类的支出在资金流向图中显示为税收，而不是支出。包括子分类。",
         "successNotification": "税种已更新",
         "errorNotification": "无法更新税种"
       },
       "filterCategoriesByType": {
-        "label": "将类别与交易类型相匹配",
-        "description": "交易表格仅列出收入类别的收入和支出的所有其他类别。搜索仍然可以找到每个类别。",
-        "successNotification": "类别列表设置已更新",
-        "errorNotification": "更新类别列表设置失败"
+        "label": "按收支类型筛选分类",
+        "description": "交易表格仅列出收入分类的收入和支出的所有其他分类。搜索仍然可以找到每个分类。",
+        "successNotification": "分类列表设置已更新",
+        "errorNotification": "更新分类列表设置失败"
       },
       "incomeCategories": {
-        "label": "收入类别",
-        "description": "计为收入的类别。包括子类别。",
-        "successNotification": "收入类别已更新",
-        "errorNotification": "无法更新收入类别"
+        "label": "收入分类",
+        "description": "计为收入的分类。包括子分类。",
+        "successNotification": "收入分类已更新",
+        "errorNotification": "无法更新收入分类"
       },
       "accountDropdowns": {
         "defaultAccount": {
@@ -93,8 +93,8 @@
           "description": "默认关闭：银行关联账户上的交易通过同步到达。"
         },
         "hiddenCategories": {
-          "label": "隐藏类别",
-          "description": "选中的类别及其子类别在快捷方式的类别列表中隐藏。",
+          "label": "隐藏分类",
+          "description": "选中的分类及其子分类在快捷方式的分类列表中隐藏。",
           "placeholder": "无"
         },
         "successNotification": "iPhone 添加费用设置已更新",
@@ -114,10 +114,10 @@
         "fields": {
           "externalUrl": {
             "label": "外部网址",
-            "description": "将交易链接到订单页面、预订确认或收据。"
+            "description": "将交易关联到订单页面、预订确认或收据。"
           },
           "externalReference": {
-            "label": "外部参考",
+            "label": "外部流水号",
             "description": "在交易中保留订单号、发票号或预订参考号。"
           },
           "originalAmount": {
@@ -126,12 +126,12 @@
           },
           "location": {
             "label": "地点",
-            "description": "购买地点的 GPS 坐标。从您设备的位置填写或输入它们"
+            "description": "购买地点的 GPS 坐标。从你设备的位置填写或输入它们"
           }
         },
         "mapPicker": {
           "label": "地图选择器",
-          "description": "在地图上选择交易地点并搜索地址。地图图块和搜索来自 OpenStreetMap，它会在地图打开时接收您的 IP 地址。"
+          "description": "在地图上选择交易地点并搜索地址。地图图块和搜索来自 OpenStreetMap，它会在地图打开时接收你的 IP 地址。"
         }
       },
       "defaultPaymentType": {

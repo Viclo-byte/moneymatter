@@ -11,12 +11,12 @@
     "card": {
       "hidden": "隐藏",
       "portfolioType": "{type} 投资组合",
-      "costBasis": "成本基础"
+      "costBasis": "持仓成本"
     },
     "empty": {
       "title": "无投资组合",
-      "description": "创建您的第一个投资组合来开始追踪您的持有、交易和表现。",
-      "createFirstButton": "创建您的第一个组合"
+      "description": "创建你的第一个投资组合来开始追踪你的持有、交易和表现。",
+      "createFirstButton": "创建你的第一个组合"
     },
     "trash": {
       "title": "回收站",
@@ -24,9 +24,9 @@
       "loadError": "无法加载已删除的组合。",
       "deletedAgo": "删除于{time}",
       "restoreButton": "恢复",
-      "restoringButton": "恢复中……",
+      "restoringButton": "恢复中…",
       "purgeButton": "立即删除",
-      "purgingButton": "正在删除……",
+      "purgingButton": "正在删除…",
       "confirmPurgeTitle": "永久删除投资组合？",
       "confirmPurge": "永久删除“{name}”？此操作不可撤销。",
       "tryAgain": "重试",

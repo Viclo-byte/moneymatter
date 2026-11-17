@@ -1,16 +1,16 @@
 {
   "auth": {
     "welcome": {
-      "title": "选择基础货币",
-      "description": "您的基础货币应该是您日常使用的货币。其他货币的所有交易都将依据此货币统计。",
-      "submitButton": "确认货币",
-      "trialStarted": "您的免费试用已经开始，{count} 日的所有内容均已解锁。 {link} | 您的免费试用已开始，{count} 天的所有内容均已解锁。 {link}",
-      "logout": "登出",
+      "title": "选择本位币",
+      "description": "本位币用于统一汇总不同币种的金额。请选择日常使用的主要币种。",
+      "submitButton": "确认本位币",
+      "trialStarted": "你的免费试用已经开始，{count} 日的所有内容均已解锁。 {link} | 你的免费试用已开始，{count} 天的所有内容均已解锁。 {link}",
+      "logout": "退出登录",
       "labels": {
-        "baseCurrency": "基础货币"
+        "baseCurrency": "本位币"
       },
       "placeholders": {
-        "loading": "加载中……"
+        "loading": "加载中…"
       },
       "errors": {
         "unableToLoadCurrencies": "无法加载货币列表。请稍后再试",
@@ -18,7 +18,7 @@
       }
     },
     "oauthCallback": {
-      "completingSignIn": "正在完成登录……",
+      "completingSignIn": "正在完成登录…",
       "errors": {
         "accessDenied": {
           "signIn": "登录被取消或被拒绝访问",
@@ -26,25 +26,25 @@
           "link": "绑定被取消或被拒绝访问"
         },
         "userAlreadyExists": {
-          "signIn": "使用此电子邮件的帐号已存在",
-          "signUp": "使用此电子邮件的账户已存在",
-          "link": "此帐号已绑定到另一个用户"
+          "signIn": "使用此邮箱的账号已存在",
+          "signUp": "使用此邮箱的账户已存在",
+          "link": "此账号已绑定到另一个用户"
         },
         "accountNotLinked": {
-          "signIn": "未找到此电子邮件的帐号。请先注册。",
-          "signUp": "创建帐号失败，请重试。",
-          "link": "绑定帐号失败，请重试。"
+          "signIn": "未找到此邮箱的账号。请先注册。",
+          "signUp": "创建账号失败，请重试。",
+          "link": "绑定账号失败，请重试。"
         },
         "genericError": {
           "signIn": "登录失败。请重试。",
           "signUp": "登录失败。请重试。",
-          "link": "关联账户失败。请再试一次。"
+          "link": "关联账户失败。请重试。"
         },
         "unauthorizedClient": "此应用无权使用此身份验证方式",
         "temporarilyUnavailable": "验证服务暂时不可用。请稍后再试。",
-        "unableToLinkAccount": "我们无法链接此账户，因为此服务器不会将提供商的电子邮件视为已验证。请联系您的管理员。",
-        "emailDoesNotMatch": "此提供商账户上的电子邮件与您的账户电子邮件不匹配。使用具有相同电子邮件地址的提供商账户。",
-        "emailNotVerified": "检查您的电子邮件以验证您的地址，然后重新登录。"
+        "unableToLinkAccount": "我们无法关联此账户，因为此服务器不会将提供商的邮箱视为已验证。请联系你的管理员。",
+        "emailDoesNotMatch": "此提供商账户上的邮箱与你的账户邮箱不匹配。使用具有相同邮箱地址的提供商账户。",
+        "emailNotVerified": "检查你的邮箱以验证你的地址，然后重新登录。"
       }
     }
   }

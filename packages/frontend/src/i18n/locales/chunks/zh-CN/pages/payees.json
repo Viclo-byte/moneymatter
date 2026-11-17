@@ -1,17 +1,17 @@
 {
   "payees": {
     "title": "收付款方",
-    "subtitle": "与您进行交易的商户主列表",
-    "newPayeeButton": "新收款人",
-    "searchPlaceholder": "搜索收款人...",
+    "subtitle": "与你进行交易的商户主列表",
+    "newPayeeButton": "新增收付款方",
+    "searchPlaceholder": "搜索收付款方…",
     "columns": {
       "name": "名称",
       "transactionCount": "# tx",
       "netFlow": "净流量",
       "category": "分类",
-      "categoryHint": "该收款人的有效类别。如果您已设置，则显示默认值 - 否则显示过去交易中最常用的类别。创建新交易时自动填写。",
-      "topCategory": "顶级类别",
-      "defaultCategory": "默认类别",
+      "categoryHint": "该收付款方的有效分类。如果你已设置，则显示默认值 - 否则显示过去交易中最常用的分类。创建新交易时自动填写。",
+      "topCategory": "顶级分类",
+      "defaultCategory": "默认分类",
       "defaultTags": "默认标签"
     },
     "sort": {
@@ -31,103 +31,103 @@
     },
     "bulk": {
       "select": "选择",
-      "selectedCount": "已选择{count}",
+      "selectedCount": "已选 {count} 项",
       "clearSelection": "清除选择",
-      "selectAll": "选择所有已加载的收款人",
+      "selectAll": "选择所有已加载的收付款方",
       "selectRow": "选择{name}",
-      "deleteTitle": "删除{count}收款人？ | 删除{count}收款人？",
-      "deleteDescription": "他们的交易会保留，但会丢失收款人链接。这无法撤消。",
-      "deleteAndIgnoreTitle": "删除并忽略{count}收款人？ | 删除并忽略{count}收款人？",
-      "deleteAndIgnoreDescription": "它们的名字会出现在忽略列表中，因此导入和银行同步不会重新创建它们。他们的交易会保留，但会丢失收款人链接。"
+      "deleteTitle": "删除{count}收付款方？ | 删除{count}收付款方？",
+      "deleteDescription": "他们的交易会保留，但会丢失收付款方关联。这无法撤销。",
+      "deleteAndIgnoreTitle": "删除并忽略{count}收付款方？ | 删除并忽略{count}收付款方？",
+      "deleteAndIgnoreDescription": "它们的名字会出现在忽略列表中，因此导入和银行同步不会重新创建它们。他们的交易会保留，但会丢失收付款方关联。"
     },
     "emptyState": {
-      "title": "还没有收款人",
-      "description": "连接银行以自动检测收款人，或手动创建收款人。"
+      "title": "暂无收付款方",
+      "description": "连接银行以自动检测收付款方，或手动创建收付款方。"
     },
     "form": {
-      "namePlaceholder": "输入收款人姓名",
-      "categoryPlaceholder": "选择一个类别",
+      "namePlaceholder": "输入收付款方姓名",
+      "categoryPlaceholder": "选择分类",
       "categorizationMode": {
         "label": "人工智能分类",
         "enforce": {
-          "label": "始终使用收款人类别",
-          "hint": "始终使用收款人的默认类别。该收款人将跳过 AI 分类。"
+          "label": "始终使用收付款方分类",
+          "hint": "始终使用收付款方的默认分类。该收付款方将跳过 AI 分类。"
         },
         "hint": {
           "label": "用作提示",
-          "hint": "设置收款人的默认类别，但AI仍然可以根据交易详细信息覆盖它。"
+          "hint": "设置收付款方的默认分类，但AI仍然可以根据交易详细信息覆盖它。"
         },
         "off": {
           "label": "关闭",
-          "hint": "收款人的默认类别将被忽略。分类由人工智能或您的其他规则处理。"
+          "hint": "收付款方的默认分类将被忽略。分类由人工智能或你的其他规则处理。"
         }
       }
     },
     "detail": {
       "categorizationSection": "分类",
       "aliasesHeading": "别名",
-      "aliasesEmpty": "还没有别名。当此收款人与另一个商户名称匹配时，新的变体将出现在此处。",
-      "cannotDeleteCanonicalAlias": "无法删除与收款人姓名匹配的别名。改为重命名收款人。",
+      "aliasesEmpty": "还没有别名。当此收付款方与另一个商户名称匹配时，新的变体将出现在此处。",
+      "cannotDeleteCanonicalAlias": "无法删除与收付款方姓名匹配的别名。改为重命名收付款方。",
       "deleteAliasConfirm": "删除这个别名？",
       "addAlias": "添加",
       "addAliasTitle": "添加别名",
-      "addAliasDescription": "未来交易的商户文本标准化为该别名将自动链接到该收款人。过去的交易没有变化。",
+      "addAliasDescription": "未来交易的商户文本标准化为该别名将自动关联到该收付款方。过去的交易没有变化。",
       "addAliasInputLabel": "商户名称",
       "addAliasPlaceholder": "例如ACME 商店 #1234",
-      "aliasDuplicate": "该别名已附加到该收款人。",
+      "aliasDuplicate": "该别名已附加到该收付款方。",
       "aliasUsedByOtherPayee": "该别名已被“{name}”使用。",
-      "deletePayeeTitle": "删除收款人？",
-      "deletePayeeDescription": "关联交易保留其类别，但失去收款人链接。此操作无法撤消。",
-      "deleteAndIgnoreTitle": "删除此收款人并忽略未来的匹配？",
-      "deleteAndIgnoreDescription": "删除此收款人并将其名称（规范+所有别名）添加到忽略名称阻止列表中。未来的同步不会从原始商家文本重新创建它。链接交易保留，但失去收款人链接。",
-      "mergeTitle": "合并到另一个收款人",
-      "mergeDescription": "选择目标收款人。所有交易和别名都会转移到目标；该收款人已被删除。",
+      "deletePayeeTitle": "删除收付款方？",
+      "deletePayeeDescription": "关联交易保留其分类，但失去收付款方关联。此操作无法撤销。",
+      "deleteAndIgnoreTitle": "删除此收付款方并忽略未来的匹配？",
+      "deleteAndIgnoreDescription": "删除此收付款方并将其名称（规范+所有别名）添加到忽略名称阻止列表中。未来的同步不会从原始商家文本重新创建它。关联交易保留，但失去收付款方关联。",
+      "mergeTitle": "合并到另一个收付款方",
+      "mergeDescription": "选择目标收付款方。全部关联交易和别名将转移至目标，当前收付款方随后删除。",
       "confirmMerge": "合并",
-      "topCategoryHint": "与该收款人关联的交易中最常用的类别。当未设置默认类别时用作后备。",
-      "defaultCategoryPlaceholder": "选择一个类别",
+      "topCategoryHint": "与该收付款方关联的交易中最常用的分类。当未设置默认分类时用作后备。",
+      "defaultCategoryPlaceholder": "选择分类",
       "defaultTagsLabel": "自动应用标签",
       "defaultTagsPlaceholder": "选择要自动应用的标签",
-      "defaultTagsHint": "这些标签会自动添加到链接到该收款人的新交易中（银行同步和导入）。",
+      "defaultTagsHint": "这些标签会自动添加到关联到该收付款方的新交易中（银行同步和导入）。",
       "defaultLocationLabel": "默认位置",
       "defaultLocationEmpty": "未设置位置",
-      "defaultLocationHint": "与该收款人关联且没有自己位置的交易在创建时和银行同步期间都会获得该交易。",
+      "defaultLocationHint": "关联此收付款方的交易若未设置地点，将在新建或银行同步时自动使用此默认地点。",
       "clearDefaultLocationTitle": "删除默认位置？",
-      "clearDefaultLocationDescription": "与该收款人关联的新交易将不再获得该位置。现有交易保留。",
+      "clearDefaultLocationDescription": "新交易将不再自动使用此地点，已有交易的地点保持不变。",
       "applyTagsToExisting": "适用于现有交易"
     },
     "logo": {
-      "change": "更改标志",
-      "dialogTitle": "更改标志",
-      "dialogDescription": "搜索代表该收款人的品牌徽标。",
-      "resetToAuto": "重置为自动",
+      "change": "更换图标",
+      "dialogTitle": "更换图标",
+      "dialogDescription": "搜索代表该收付款方的品牌徽标。",
+      "resetToAuto": "恢复自动生成",
       "updatedToast": "徽标已更新。",
       "resetToast": "徽标重置为自动。",
-      "fieldLabel": "标识",
+      "fieldLabel": "图标",
       "domainHint": "要查找确切的品牌，请输入该公司的网站域名（例如 amazon.com）——它始终与正确的徽标匹配。"
     },
     "transactionsDialog": {
       "title": "{name} — 交易",
-      "empty": "没有与该收款人关联的交易。",
-      "unlink": "取消与收款人的关联",
-      "unlinked": "交易与收款人解除关联",
+      "empty": "没有与该收付款方关联的交易。",
+      "unlink": "取消与收付款方的关联",
+      "unlinked": "交易与收付款方解除关联",
       "unlinkConfirmTitle": "取消关联交易？",
-      "unlinkConfirmDescription": "该交易将不再与{name}挂钩。未来的银行同步不会自动重新链接它。",
-      "unlinkConfirmLabel": "取消链接"
+      "unlinkConfirmDescription": "该交易将不再与{name}挂钩。未来的银行同步不会自动重新关联它。",
+      "unlinkConfirmLabel": "取消关联"
     },
     "toasts": {
-      "created": "收款人已创建",
-      "updated": "收款人已更新",
-      "deleted": "收款人已删除",
-      "merged": "收款人合并",
+      "created": "收付款方已创建",
+      "updated": "收付款方已更新",
+      "deleted": "收付款方已删除",
+      "merged": "收付款方合并",
       "aliasDeleted": "别名已删除",
       "aliasAdded": "添加别名",
-      "deletedAndIgnored": "收款人已删除并添加到忽略名称列表中",
+      "deletedAndIgnored": "收付款方已删除并添加到忽略名称列表中",
       "tagsAppliedToExisting": "应用于 {count} 交易的标签",
-      "bulkDeleted": "已删除 {count} 收款人 | 已删除 {count} 收款人",
-      "bulkDeletedAndIgnored": "已删除并忽略 {count} 收款人 | 已删除并忽略 {count} 收款人"
+      "bulkDeleted": "已删除 {count} 收付款方 | 已删除 {count} 收付款方",
+      "bulkDeletedAndIgnored": "已删除并忽略 {count} 收付款方 | 已删除并忽略 {count} 收付款方"
     },
     "errors": {
-      "collision": "同名的收款人已存在。合并代替。",
+      "collision": "已存在同名收付款方，请使用合并功能。",
       "generic": "出了点问题，请重试。"
     },
     "tabs": {
@@ -135,34 +135,34 @@
       "settings": "设置"
     },
     "settings": {
-      "title": "收款人检测设置",
-      "description": "控制应用程序如何从同步交易中自动检测收款人。",
+      "title": "收付款方检测设置",
+      "description": "控制应用如何从同步交易中自动检测收付款方。",
       "howDetectionWorks": "检测的工作原理",
       "payeeFromDescription": {
-        "label": "从交易描述中检测收款人",
-        "description": "当您的银行没有提供专用商户字段时，请退回到交易描述（注释）以自动检测收款人。对于商户字段为空或不存在的银行连接很有用。可能会产生更嘈杂的收款人名称（例如分期付款前缀），您可以稍后重命名或合并。",
+        "label": "从交易描述中检测收付款方",
+        "description": "银行未提供商户字段时，尝试从交易备注识别收付款方。识别名称可能包含分期前缀等多余信息，可在之后重命名或合并。",
         "successNotification": "偏好更新",
         "errorNotification": "无法更新偏好设置"
       },
       "promotionThreshold": {
-        "label": "N次出现后创建收款人",
-        "description": "在自动创建收款人之前，必须有多少笔交易共享相同的商户名称。设置为 1 从第一笔交易创建收款人。",
-        "successNotification": "更新收款人创建阈值",
-        "errorNotification": "无法更新收款人创建阈值"
+        "label": "同一商户出现多少次后自动建立收付款方",
+        "description": "同一商户名称累计出现在指定数量的交易中时，自动新增收付款方。设为 1 表示首次出现时就新增。",
+        "successNotification": "更新收付款方创建阈值",
+        "errorNotification": "无法更新收付款方创建阈值"
       },
       "bulkCategorizationMode": {
-        "label": "对所有收款人应用分类模式",
-        "description": "选择每个现有收款人的分类方式。这会覆盖每个收款人的个人设置。",
+        "label": "对所有收付款方应用分类模式",
+        "description": "选择每个现有收付款方的分类方式。这会覆盖每个收付款方的个人设置。",
         "applyButton": "适用于所有",
-        "confirmTitle": "适用于所有收款人？",
-        "confirmDescription": "所有收款人将切换为{mode}。您稍后仍可以单独更改每个收款人。",
-        "successNotification": "更新了 {count} 收款人。",
-        "errorNotification": "无法更新收款人。请再试一次。"
+        "confirmTitle": "适用于所有收付款方？",
+        "confirmDescription": "所有收付款方将切换为{mode}。你稍后仍可以单独更改每个收付款方。",
+        "successNotification": "更新了 {count} 收付款方。",
+        "errorNotification": "无法更新收付款方。请重试。"
       }
     },
     "ignoredNames": {
       "title": "忽略的商户名称",
-      "description": "永远不应自动创建收款人的原始商家字符串。对于“卡转账”、“来自：<name>”或退款前缀等噪音很有用。您仍然可以手动将这些姓名链接到收款人 - 仅自动匹配被阻止。",
+      "description": "永远不应自动创建收付款方的原始商家字符串。对于“卡转账”、“来自：<name>”或退款前缀等噪音很有用。你仍然可以手动将这些姓名关联到收付款方 - 仅自动匹配被阻止。",
       "addPlaceholder": "例如Spotify",
       "addButton": "添加",
       "addedToast": "添加到被忽略的名称",
@@ -172,11 +172,11 @@
       "removeError": "删除失败",
       "empty": "还没有被忽略的名字。",
       "normalizedLabel": "归一化",
-      "conflictTitle": "现有收款人匹配",
-      "conflictDescription": "规范化名称与“{name}”相同的收款人已存在。继续将删除该收款人（交易保留，丢失链接）。",
-      "forceConfirm": "删除收款人并忽略"
+      "conflictTitle": "现有收付款方匹配",
+      "conflictDescription": "规范化名称与“{name}”相同的收付款方已存在。继续将删除该收付款方（交易保留，丢失关联）。",
+      "forceConfirm": "删除收付款方并忽略"
     },
-    "loadingMore": "加载更多...",
+    "loadingMore": "加载更多…",
     "txCount": "{count} TX"
   }
 }

@@ -1,25 +1,25 @@
 {
   "goals": {
-    "title": "目标",
-    "description": "从您已有的账户中节省资金以实现目标",
-    "newGoal": "新目标",
+    "title": "储蓄目标",
+    "description": "将已有账户的余额计入目标，跟进储蓄进度",
+    "newGoal": "新增储蓄目标",
     "list": {
-      "searchPlaceholder": "搜索目标",
+      "searchPlaceholder": "搜索储蓄目标",
       "filters": {
         "all": "全部",
         "behind": "落后于计划",
-        "archived": "已存档"
+        "archived": "已归档"
       },
       "sections": {
-        "active": "启用",
-        "ended": "结束",
-        "archived": "已存档",
-        "show": "展示",
+        "active": "进行中",
+        "ended": "已结束",
+        "archived": "已归档",
+        "show": "显示",
         "hide": "隐藏"
       },
-      "loadError": "无法加载您的目标。",
+      "loadError": "无法加载你的目标。",
       "emptyState": {
-        "title": "还没有目标",
+        "title": "暂无储蓄目标",
         "description": "将目标指向持有资金的账户。 Progress updates as balances change."
       },
       "noMatch": {
@@ -29,7 +29,7 @@
         "includeArchived": "包括存档的"
       },
       "row": {
-        "saved": "已保存",
+        "saved": "已存金额",
         "ofTarget": "{amount} 的",
         "accountShare": "{name} {share}%",
         "accountFixed": "{name} {amount}",
@@ -45,29 +45,29 @@
     "status": {
       "reached": "达到",
       "ahead": "前进",
-      "onTrack": "步入正轨",
+      "onTrack": "进度正常",
       "behind": "在后面",
       "behindBy": "背后·{count}莫 | 背后·{count}莫",
-      "overdue": "逾期",
+      "overdue": "已逾期",
       "noDate": "无日期",
       "around": "{date}左右",
       "insufficientHistory": "历史不够",
       "noAccounts": "没有账户",
       "paused": "已暂停",
-      "archived": "已存档",
+      "archived": "已归档",
       "noRate": "无汇率"
     },
     "actions": {
       "edit": "编辑",
       "pause": "暂停",
       "resume": "恢复",
-      "archive": "档案",
-      "unarchive": "取消存档",
+      "archive": "归档",
+      "unarchive": "取消归档",
       "delete": "删除"
     },
     "deleteDialog": {
       "title": "删除这个目标？",
-      "description": "目标及其账户份额将被删除。您的账户和交易保持原样。"
+      "description": "目标及其账户份额将被删除。你的账户和交易保持原样。"
     },
     "toasts": {
       "created": "目标已创建",
@@ -75,15 +75,15 @@
       "paused": "目标已暂停",
       "archived": "目标已存档",
       "deleted": "目标已删除",
-      "saveError": "无法挽救目标",
+      "saveError": "目标保存失败",
       "deleteError": "无法删除目标"
     },
     "access": {
       "trialDaysLeft": "目标试用·{n} 还剩一天 | 目标试用·{n} 还剩几天",
       "trialTitle": "免费尝试目标 14 天",
-      "trialDescription": "创建和编辑目标是 Essential 的一部分。开始尝试设定您的第一个目标。",
+      "trialDescription": "创建和编辑目标是 Essential 的一部分。开始尝试设定你的第一个目标。",
       "startTrial": "开始免费试用",
-      "trialEnded": "您的目标试用期已结束。你的目标清晰可见；升级以编辑它们。"
+      "trialEnded": "你的目标试用期已结束。你的目标清晰可见；升级以编辑它们。"
     },
     "details": {
       "backToList": "回到目标",
@@ -95,7 +95,7 @@
       "perMonth": "/mo",
       "actions": {
         "raiseTarget": "提高目标",
-        "more": "更多目标行动"
+        "more": "更多操作"
       },
       "tabs": {
         "progress": "进步",
@@ -104,8 +104,8 @@
       },
       "strip": {
         "target": "目标",
-        "saved": "已保存",
-        "left": "左边",
+        "saved": "已存金额",
+        "left": "剩余",
         "needs": "需求",
         "pace": "步伐",
         "reached": "达到",
@@ -117,7 +117,7 @@
       },
       "accounts": {
         "label": "账户",
-        "count": "{count} 帐号 | {count}账户",
+        "count": "{count} 账号 | {count}账户",
         "showAll": "显示所有 {count} 账户",
         "countedToward": "计入 {name}",
         "shareOf": "{share}% 占 {amount}",
@@ -126,21 +126,21 @@
         "shareOfLeft": "固定金额后剩余的 {share}% 的 {amount}",
         "sharePlain": "{share}%",
         "totalCounted": "总计计数",
-        "readOnlyHint": "读取余额，从不转移资金",
+        "readOnlyHint": "仅统计账户余额，不会实际转移资金",
         "wholeAccount": "全账户",
         "shareHere": "{share}%在这里",
         "shareHereFree": "{share}% 这里 · {free}% 免费",
         "fixedHere": "从此账户修复了 {amount}",
-        "emptyDescription": "在编辑目标中链接账户以跟踪进度。",
+        "emptyDescription": "在编辑目标中关联账户以跟踪进度。",
         "columns": {
           "account": "账户",
           "share": "分享",
           "balance": "余额",
           "counted": "已计算"
         },
-        "archived": "已存档",
-        "percentOfSaved": "{percent}% 已保存",
-        "total": "总计·{count}帐号 | 总计·{count}账户",
+        "archived": "已归档",
+        "percentOfSaved": "占已存金额的 {percent}%",
+        "total": "总计·{count}账号 | 总计·{count}账户",
         "ofBalance": "{amount} 的",
         "unavailableAccount": "账户不可用",
         "balanceUnavailable": "余额不可用"
@@ -157,11 +157,11 @@
           "onTime": "准时",
           "early": "{count}莫早",
           "late": "{count}莫晚",
-          "targetDate": "目标{date}",
+          "targetDate": "目标日期：{date}",
           "savedIn": "保存在 {count} 中",
           "bestMonth": "最佳月份",
           "shareOfGrowth": "本期增长{percent}%",
-          "leftDueInDays": "{amount} 已离开，到期日为 {count} | {amount} 剩余，{count} 天内到期",
+          "leftDueInDays": "还差 {amount}，距离目标日期还有 {count} 天 | 还差 {amount}，距离目标日期还有 {count} 天",
           "leftOverdue": "{amount} 剩余，逾期"
         },
         "timeline": "时间轴",
@@ -171,16 +171,16 @@
           "description": "一个步伐需要 {min} 整整几个月的历史记录；这些账户有 {count}。在“编辑目标”中设置每月计划以立即查看预计到达时间。"
         },
         "notes": {
-          "plannedPace": "Pace 每月使用您计划的 {amount}。",
+          "plannedPace": "Pace 每月使用你计划的 {amount}。",
           "historyPace": "速度是上 {count} 个月的月度变化中位数。 | 速度是过去 {count} 个月的月度变化中位数。",
           "fxDrift": "过去几个月的外币账户包括汇率变动。",
           "marketMoves": "投资账户的市场变动算作进展。预测假设没有增长。",
           "staysReached": "即使稍后余额下降，也能保持达到状态。"
         },
-        "chartAria": "随着时间的推移节省的目标",
+        "chartAria": "储蓄目标累计金额走势",
         "legend": {
-          "saved": "已保存",
-          "projection": "投影",
+          "saved": "已存金额",
+          "projection": "预测",
           "target": "目标"
         },
         "monthlyChange": "每月变化"
@@ -188,23 +188,23 @@
       "staleData": "无法刷新此目标。显示最后加载的数据。"
     },
     "form": {
-      "createTitle": "新目标",
-      "editTitle": "编辑目标",
-      "description": "进度读取您的账户余额。没有钱动。",
+      "createTitle": "新增储蓄目标",
+      "editTitle": "编辑储蓄目标",
+      "description": "进度读取你的账户余额。没有钱动。",
       "nameLabel": "名称",
       "namePlaceholder": "例如汽车或应急基金",
       "targetAmountLabel": "目标金额",
       "targetAmountPlaceholder": "输入金额",
-      "currencyLabel": "货币",
-      "currencyPlaceholder": "选择货币",
+      "currencyLabel": "币种",
+      "currencyPlaceholder": "选择币种",
       "targetDateLabel": "目标日期",
-      "targetDateHint": "选修的。设定一个日期，看看你是否跟上节奏。如果没有，我们将估计您何时能达到目标。",
+      "targetDateHint": "选填。设定一个日期，看看你是否跟上节奏。如果没有，我们将估计你何时能达到目标。",
       "accountsLabel": "账户",
       "noAccounts": "还没有账户",
       "countsNow": "现在计数 {amount}",
       "manageAccounts": "管理账户",
       "addAccounts": "添加账户",
-      "accountsHint": "这些账户的余额计入目标。",
+      "accountsHint": "所选账户的余额将计入目标进度。",
       "plannedMonthlyLabel": "设定每月金额",
       "plannedMonthlyHint": "Off 使用过去 6 个月的月变化中位数。",
       "plannedMonthlyPlaceholder": "输入每月金额",
@@ -217,7 +217,7 @@
         "undated": "达到{target}，无截止日期。",
         "needed": "从今天起大约需要 {amount} 一个月。",
         "covered": "你的账户已经涵盖了它。",
-        "planned": "您计划每月储蓄 {amount}。"
+        "planned": "你计划每月储蓄 {amount}。"
       },
       "thisGoal": "这个目标",
       "createSubmit": "创建目标",
@@ -232,7 +232,7 @@
         "holdDaysRange": "输入 0 到 365 之间的整日"
       },
       "unavailableAccount": "账户不可用",
-      "accountsMissing": "{count} 帐号不可用，不计入 | {count} 账户不可用且不计入在内"
+      "accountsMissing": "{count} 账号不可用，不计入 | {count} 账户不可用且不计入在内"
     },
     "accountsDialog": {
       "title": "{name} 的账户",
@@ -244,7 +244,7 @@
       },
       "searchPlaceholder": "搜索账户",
       "holder": "{share}% 于 {name}",
-      "archived": "已存档",
+      "archived": "已归档",
       "fixedOnly": "已全部使用：{holders} · 仅固定数量",
       "free": "{free}% 免费",
       "wholeAccount": "整个账户·计{amount}",
@@ -261,14 +261,14 @@
       },
       "noMatch": "没有账户匹配“{query}”",
       "marketNote": "投资和加密货币账户的市场变动算作进展。预测假设没有增长。",
-      "total": "未选择账户 | {count} 帐号·计数 {amount} | {count} 账户·计数 {amount}",
+      "total": "未选择账户 | {count} 账号·计数 {amount} | {count} 账户·计数 {amount}",
       "fixToSave": "修复 {name} 保存",
       "done": "完成",
       "emptyState": {
-        "title": "没有可链接的账户",
-        "description": "目标计算您拥有的现金、活期存款、储蓄、投资和加密货币账户。"
+        "title": "没有可关联的账户",
+        "description": "目标计算你拥有的现金、活期存款、储蓄、投资和加密货币账户。"
       },
-      "unavailableCaption": "不可用 · 保留直至您取消勾选为止",
+      "unavailableCaption": "不可用 · 保留直至你取消勾选为止",
       "sharePlaceholder": "100",
       "amountPlaceholder": "金额",
       "order": {
@@ -281,29 +281,29 @@
       "fixedCurrencyNote": "固定金额以账户货币表示。"
     },
     "feasibility": {
-      "summary": "您的目标需要 {needed}/月，您节省了中位数 {saving}/月",
+      "summary": "各目标每月需投入 {needed}，你每月储蓄金额的中位数为 {saving}",
       "short": "还差一个月 {amount}。",
       "showGoals": "显示目标",
       "hideGoals": "隐藏目标",
       "perMonth": "{amount}/月",
       "goalFits": "适合",
       "goalDoesNotFit": "不适合",
-      "footnote": "“通常节省”是过去 12 个完整月份的月度净流量中位数。您自己账户之间的转账被排除在外。首先检查最近日期的目标。",
+      "footnote": "“通常节省”是过去 12 个完整月份的月度净流量中位数。你自己账户之间的转账被排除在外。首先检查最近日期的目标。",
       "dueIn": "到期日为 {count} | 到期日为 {count} 天",
       "dueNote": "一个月内到期或逾期的目标不计入每月总数。"
     },
     "whatIf": {
       "monthly": {
-        "label": "每月朝着这个目标",
-        "placeholder": "汽车",
-        "auto": "汽车{amount}",
+        "label": "每月投入此目标的金额",
+        "placeholder": "自动",
+        "auto": "自动计算：{amount}",
         "autoHint": "Auto {amount} 是最近 {count} 个月的月变化中位数",
         "noAuto": "Auto 的历史记录还不够。输入金额。",
         "useAuto": "使用自动"
       },
       "targetDate": {
         "label": "目标日期",
-        "hint": "选修的。没有它，您将得到一个预计的月份，永远不会“落后”。"
+        "hint": "选填。未设置时仅预测达成月份，不判断是否落后于计划。"
       },
       "shares": {
         "label": "账户份额",
@@ -313,16 +313,16 @@
         "free": "{free}% 免费 · 计数 {amount}",
         "inputLabel": "{name}的份额",
         "placeholder": "0",
-        "capacityPending": "在您加载其他目标之前，无法更改份额。"
+        "capacityPending": "在你加载其他目标之前，无法更改份额。"
       },
       "compare": {
         "title": "现在与如果",
         "from": "来自{date}",
         "now": "现在",
         "whatIf": "如果什么",
-        "monthly": "每月实现目标",
+        "monthly": "每月投入金额",
         "reached": "到达周围",
-        "against": "反对目标",
+        "against": "与目标对比",
         "needed": "每月需求",
         "reachedAlready": "达到",
         "offset": {
@@ -331,17 +331,17 @@
           "late": "{count}莫晚"
         }
       },
-      "autoTag": "汽车",
+      "autoTag": "自动",
       "deposit": {
-        "sentence": "要每月计算 {amount} 来实现此目标，请存入 {deposits}。",
+        "sentence": "若要每月向此目标投入 {amount}，需存入 {deposits}。",
         "item": "{amount} 转换为 {account}"
       },
-      "sandboxHint": "一个沙箱。在您将其应用到“编辑目标”中之前，不会发生任何变化。",
+      "sandboxHint": "此处仅作模拟，只有在“编辑目标”中应用后才会保存。",
       "reset": "重置",
       "apply": "在编辑目标中应用"
     },
     "docs": {
-      "howItWorks": "目标如何运作"
+      "howItWorks": "了解储蓄目标的计算方式"
     }
   }
 }

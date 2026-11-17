@@ -2,12 +2,12 @@
   "settings": {
     "currencies": {
       "page": {
-        "title": "货币",
-        "description": "管理您跟踪的货币和您账户中使用的汇率。"
+        "title": "币种",
+        "description": "管理你跟踪的货币和你账户中使用的汇率。"
       },
       "addNew": {
-        "loading": "加载中...",
-        "selectCurrency": "选择货币",
+        "loading": "加载中…",
+        "selectCurrency": "选择币种",
         "addButton": "添加",
         "sectionLabel": "添加货币",
         "successfullyAdded": "已添加货币",
@@ -17,7 +17,7 @@
       },
       "howItWorks": {
         "trigger": "它是如何运作的？",
-        "body": "您的基本货币是账户余额统计和报告时计算的货币。 每个添加的货币会自动从实时市场汇率更新，或者您也可以设置自定义汇率。"
+        "body": "你的基本货币是账户余额统计和报告时计算的货币。 每个添加的货币会自动从实时市场汇率更新，或者你也可以设置自定义汇率。"
       },
       "row": {
         "baseBadge": "基础",
@@ -48,12 +48,12 @@
         "description": "货币只有在没有账户和/或相关交易时才能被删除/断开连接。",
         "button": "删除货币",
         "buttonShort": "删除",
-        "disabledTooltip": "您不能删除此货币，因为它仍然连接到账户。",
+        "disabledTooltip": "你不能删除此货币，因为它仍然连接到账户。",
         "successfullyDeleted": "删除成功。",
-        "foreignAmountsWarning": "以该货币记录的外币金额将从您的交易中删除。账户货币金额保持不变。",
+        "foreignAmountsWarning": "以该货币记录的外币金额将从你的交易中删除。账户货币金额保持不变。",
         "inUse": {
           "title": "这种货币至今仍在使用。首先删除或更改这些：",
-          "trashed": "（在垃圾箱中）",
+          "trashed": "（在回收站中）",
           "types": {
             "account": "账户",
             "portfolio": "投资组合显示货币",
@@ -61,7 +61,7 @@
             "portfolioCash": "投资组合现金",
             "portfolioTransfer": "投资组合转让",
             "investmentTransaction": "投资交易",
-            "subscription": "定期付款",
+            "subscription": "定期收支",
             "transactionTemplate": "交易模板",
             "budget": "预算",
             "goal": "目标",
@@ -75,13 +75,13 @@
       "setBase": {
         "button": "设为基础货币",
         "buttonShort": "设为基础",
-        "processing": "处理中……",
+        "processing": "处理中…",
         "tooltip": "标记为基本货币。所有统计和仪表盘信息将以此货币显示。\n\n交易将按交易记录日期的汇率重新计算。",
         "dialog": {
           "title": "更改基础货币？",
           "warningTitle": "警告：",
           "warningText": "更改基础货币应是深思熟虑后的决定。即使没有实际限制，理想的做法是只更换一次基础货币。",
-          "descriptionText": "每次您更改基本货币时，所有交易都将使用历史汇率重新计算。 由于浮点数计算法与报价货币汇率之间的正常差异，随着时间的推移，重复重新计算可能会时参考余额产生小幅差异。参考余额将用于显示统计和设置预算限制。",
+          "descriptionText": "每次你更改基本货币时，所有交易都将使用历史汇率重新计算。 由于浮点数计算法与报价货币汇率之间的正常差异，随着时间的推移，重复重新计算可能会时参考余额产生小幅差异。参考余额将用于显示统计和设置预算限制。",
           "roundingTitle": "四舍五入是如何计算的？",
           "roundingIntro": "货币转换采用银行家舍入法（IEEE 754 标准），亦称“向最近偶数舍入”。这能最大限度减少多次计算过程后累积的舍入误差。",
           "roundingHow": "工作方式：",
@@ -89,17 +89,17 @@
           "roundingRule2": "例：0.5 → 0、1.5 → 2、2.5 → 2、3.5 → 4",
           "roundingStandard": "此方法由《国际财务报告准则》/GAAP 所推荐，各大金融系统均使用以防止货币转换中出现系统性偏差。",
           "untouchedWarning": "原始交易金额将永远不会修改！",
-          "processingTimeInfo": "如果您的货币不普遍，可能需要一段时间。",
-          "restrictionWarning": "在修改进行中时，您将无法创建新账户、交易记录和任何与余额相关的交易。",
-          "confirmation": "您确定要继续吗？",
+          "processingTimeInfo": "如果你的货币不普遍，可能需要一段时间。",
+          "restrictionWarning": "在修改进行中时，你将无法创建新账户、交易记录和任何与余额相关的交易。",
+          "confirmation": "你确定要继续吗？",
           "changeButton": "更改基础货币",
           "cancelButton": "取消"
         },
         "successMessage": "已成功更改基础货币。",
         "errors": {
           "changeFailed": "未知错误。更改基本货币失败。",
-          "lockedHousehold": "您仍在 {count} 个家庭账户内。请先在设置 → 家庭内退出家庭账户。 | 您仍在 {count} 个家庭账户内。请先在设置 → 家庭内退出家庭账户。",
-          "lockedShares": "您仍有 {count} 个共享账户。请先从帐号内撤销共享。 | 您仍有 {count} 个共享账户。请先从帐号内撤销共享。",
+          "lockedHousehold": "你仍在 {count} 个家庭账户内。请先在设置 → 家庭内退出家庭账户。 | 你仍在 {count} 个家庭账户内。请先在设置 → 家庭内退出家庭账户。",
+          "lockedShares": "你仍有 {count} 个共享账户。请先从账号内撤销共享。 | 你仍有 {count} 个共享账户。请先从账号内撤销共享。",
           "lockedBudgetPlan": "积极的预算计划正在阻碍变革。先删掉吧。 | {count} 主动预算计划阻碍了这一变化。先删除它们。"
         }
       }

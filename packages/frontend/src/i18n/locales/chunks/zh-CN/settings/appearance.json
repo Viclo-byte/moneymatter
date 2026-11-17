@@ -2,28 +2,28 @@
   "settings": {
     "appearance": {
       "title": "外观",
-      "description": "自定义应用外观和侧边栏显示的部分。",
+      "description": "设置主题、侧边栏和金额显示方式。",
       "theme": {
         "title": "主题",
-        "description": "选择应用外观。“系统”将与您的设备设置匹配。"
+        "description": "选择浅色、深色，或跟随系统主题。"
       },
       "sidebar": {
-        "title": "侧边栏部分",
-        "description": "选择在侧边栏中显示哪些部分。",
-        "alwaysVisibleTooltip": "该部分总是可见。"
+        "title": "侧边栏模块",
+        "description": "选择在侧边栏显示的模块。",
+        "alwaysVisibleTooltip": "此模块始终显示。"
       },
       "sidebarNav": {
         "title": "侧边栏导航",
-        "description": "选择在侧边栏导航账户下面显示的页面。"
+        "description": "选择“账户”菜单下显示的功能入口。"
       },
       "header": {
-        "title": "标题列",
-        "description": "选择可见的标题动作。",
-        "supportButton": "支持按钮"
+        "title": "顶部工具栏",
+        "description": "选择顶部工具栏显示的按钮。",
+        "supportButton": "帮助按钮"
       },
       "currency": {
         "title": "货币符号",
-        "description": "如何显示金额货币。 短货币符号看起来像 Rp、₴ 或 zł 而不是 IDR、UAH 或 PLN，但符号一样的货币（如 USD、CAD、AUD、SGD）均显示为 $。",
+        "description": "可使用简写符号显示金额，例如 ¥、$、€。不同币种可能使用同一符号（如 USD、CAD 均为 $），多币种记账时建议保留币种代码。",
         "narrowSymbol": "使用短货币符号"
       }
     }

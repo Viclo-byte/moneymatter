@@ -8,22 +8,22 @@
           "steps": {
             "upload": "上传",
             "resolve": "地图账户",
-            "review": "审查",
+            "review": "核对",
             "results": "完成"
           }
         },
         "fileUpload": {
-          "stepTitle": "上传您的 OFX​​ 或 QFX 文件",
-          "description": "选择您从银行或信用卡提供商下载的对账单文件。",
+          "stepTitle": "上传你的 OFX​​ 或 QFX 文件",
+          "description": "选择你从银行或信用卡提供商下载的对账单文件。",
           "maxSize": ".ofx 或 .qfx 文件，最大 10 MB",
-          "parsing": "正在读取文件...",
+          "parsing": "正在读取文件…",
           "continue": "继续",
           "errors": {
             "invalidFormatNamed": "“{name}”不是 OFX 或 QFX 文件。"
           }
         },
         "errors": {
-          "uploadUnavailable": "上传的文件不再可用。再次上传您的 OFX​​ 或 QFX 文件。"
+          "uploadUnavailable": "上传的文件不再可用。再次上传你的 OFX​​ 或 QFX 文件。"
         },
         "resolve": {
           "accounts": {
@@ -42,11 +42,11 @@
           },
           "quickActions": {
             "mapExactMatches": "地图精确匹配",
-            "createNewForUnmatched": "创造无与伦比的新",
+            "createNewForUnmatched": "为未匹配项新建记录",
             "reset": "重置",
             "tooltips": {
-              "mapExactMatches": "将每个账户链接到具有相同名称和货币的现有账户。",
-              "createNewForUnmatched": "设置未链接到现有账户的每个账户以创建新账户。",
+              "mapExactMatches": "将每个账户关联到具有相同名称和货币的现有账户。",
+              "createNewForUnmatched": "设置未关联到现有账户的每个账户以创建新账户。",
               "reset": "清除所有选择并重新匹配。"
             }
           },
@@ -69,13 +69,13 @@
             "fitidDuplicate": "文件中发现 {count} 重复的银行交易 ID | 在文件中发现 {count} 重复的银行交易 ID"
           },
           "duplicatesTitle": "{count} 可能重复 | {count} 可能重复",
-          "duplicatesHint": "这些交易看起来就像您已经拥有的交易。无论如何都要检查一行以导入它；未检查的重复项将被跳过。",
+          "duplicatesHint": "这些交易看起来就像你已经拥有的交易。无论如何都要检查一行以导入它；未检查的重复项将被跳过。",
           "back": "返回",
-          "importing": "开始导入...",
+          "importing": "开始导入…",
           "importButton": "进口{count}交易 | 导入{count}交易"
         },
         "execute": {
-          "starting": "开始导入...",
+          "starting": "开始导入…",
           "progressCount": "{processed} 之 {total}",
           "failed": "导入失败。",
           "partialImportNote": "某些交易可能已导入。",
@@ -86,17 +86,17 @@
         },
         "done": {
           "successTitle": "导入完成",
-          "successDescription": "您的 OFX​​ 或 QFX 交易现已存入您的账户中。",
+          "successDescription": "你的 OFX​​ 或 QFX 交易现已存入你的账户中。",
           "partialTitle": "导入时出现 {count} 问题 | 导入时出现 {count} 问题",
           "partialDescription": "大多数交易都是进口的。下面的列表显示了未导入的内容。",
           "emptyTitle": "没有什么新的东西可以导入",
-          "emptyDescription": "每笔交易都被跳过或已经在您的分类帐中。",
+          "emptyDescription": "每笔交易都被跳过或已经在你的分类帐中。",
           "failedTitle": "没有导入任何内容",
           "failedDescription": "无法创建任何交易。检查下面的错误。",
           "accountsCreated": "已创建账户",
           "accountsLinked": "关联账户",
           "accountsSkipped": "已跳过的账户",
-          "payeesCreated": "创建收款人",
+          "payeesCreated": "创建收付款方",
           "transactionsImported": "导入交易",
           "duplicatesSkipped": "跳过重复项",
           "mergedIntoPlanned": "并入计划",
@@ -114,11 +114,11 @@
           "importAnother": "导入另一个文件"
         },
         "leaseExpired": {
-          "title": "您上传的文件不再可用",
-          "description": "经过一段时间的不活动后，OFX 或 QFX 文件的已解析副本已发布。无法保留您的映射选择。再次开始导入。",
+          "title": "你上传的文件不再可用",
+          "description": "经过一段时间的不活动后，OFX 或 QFX 文件的已解析副本已发布。无法保留你的映射选择。再次开始导入。",
           "action": "重新开始"
         },
-        "leaseResourceLabel": "您上传的文件"
+        "leaseResourceLabel": "你上传的文件"
       }
     }
   }

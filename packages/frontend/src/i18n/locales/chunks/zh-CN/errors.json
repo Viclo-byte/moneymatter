@@ -2,25 +2,25 @@
   "errors": {
     "api": {
       "failedToFetch": "无法从服务器获取数据。",
-      "failedToFetchSelfHost": "无法访问服务器。后端可能仍在启动 (~30秒后)，或者您的 ALLOWED_ORIGINS 环境变量不包含此 URL。",
+      "failedToFetchSelfHost": "无法访问服务器。后端可能仍在启动 (~30秒后)，或者你的 ALLOWED_ORIGINS 环境变量不包含此 URL。",
       "unexpectedError": "未知错误。",
-      "sessionExpired": "您的会话已过期。请重新登录",
+      "sessionExpired": "你的会话已过期。请重新登录",
       "payloadTooLarge": "请求过大。请尝试导入更少的项目",
       "tooManyRequests": "尝试次数太多。请稍等片刻，然后重试。"
     },
     "auth": {
-      "reauthenticationRequired": "为了您的安全，请重新登录以进行此更改。",
+      "reauthenticationRequired": "为了你的安全，请重新登录以进行此更改。",
       "passwordTooShort": "密码太短。",
       "passwordTooLong": "密码太长。",
       "providerNotConfigured": "此服务器上未配置此登录提供程序。",
-      "accountAlreadyLinked": "该账户已链接到另一个用户。",
-      "cannotUnlinkLastAccount": "您无法删除唯一的登录方法。",
-      "passkeyAlreadyRegistered": "该密钥已被注册。"
+      "accountAlreadyLinked": "该账户已关联到另一个用户。",
+      "cannotUnlinkLastAccount": "你无法删除唯一的登录方法。",
+      "passkeyAlreadyRegistered": "该通行密钥已被注册。"
     },
     "notFound": {
       "title": "这个页面不存在",
-      "description": "我们找不到您正在寻找的东西。链接可能已损坏，或者页面可能已移动。",
-      "attemptedLabel": "您试图访问： ",
+      "description": "我们找不到你正在寻找的东西。链接可能已损坏，或者页面可能已移动。",
+      "attemptedLabel": "你试图访问： ",
       "goBack": "后退",
       "goHome": "返回首页"
     }

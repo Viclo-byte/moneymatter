@@ -1,17 +1,17 @@
 {
   "oauth": {
     "authorize": {
-      "title": "{name} 想要访问您的 MoneyMatter 数据",
-      "redirect_notice": "批准后，您将被重定向到 {host}。仅当您认识该地址时才继续。",
+      "title": "{name} 想要访问你的 MoneyMatter 数据",
+      "redirect_notice": "批准后，你将被重定向到 {host}。仅当你认识该地址时才继续。",
       "description": "此应用正在请求这些权限：",
       "approve": "同意",
       "deny": "拒绝",
-      "footer": "您随时可从设置 > AI 集成中撤销访问权限。",
+      "footer": "你随时可从设置 > AI 集成中撤销访问权限。",
       "error": "无法处理请求。请重试。",
       "unexpected_response": "服务器返回了意外响应。请重试。",
       "always_granted": "始终授权",
-      "optional": "可选",
-      "delete_warning": "仅授权您完全信任的应用",
+      "optional": "可选授权",
+      "delete_warning": "仅授权你完全信任的应用",
       "unknown_app": "某个应用",
       "steps": {
         "permissions": "权限",
@@ -35,24 +35,24 @@
     },
     "scopes": {
       "finance_read": {
-        "label": "查看您的财务数据",
+        "label": "查看你的财务数据",
         "desc": "阅读账户、交易、预算、分类、标签、投资组合和支出统计信息。"
       },
       "finance_write": {
-        "label": "创建和编辑您的财务数据",
+        "label": "创建和编辑你的财务数据",
         "desc": "增加和更新交易、预算、订阅、投资组合等等。"
       },
       "finance_delete": {
-        "label": "删除您的财务数据",
+        "label": "删除你的财务数据",
         "desc": "永久删除交易、账户、预算和其他记录。"
       },
       "profile_read": {
-        "label": "查看您的个人资料",
-        "desc": "查看您的姓名、电子邮件和默认货币。"
+        "label": "查看你的个人资料",
+        "desc": "查看你的姓名、邮箱和默认货币。"
       },
       "offline_access": {
         "label": "在后台保持连接",
-        "desc": "保持访问功能，无需每次询问您。"
+        "desc": "保持访问功能，无需每次询问你。"
       },
       "unknown": {
         "label": "其他权限",

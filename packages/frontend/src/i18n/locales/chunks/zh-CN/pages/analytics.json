@@ -8,27 +8,27 @@
       "investmentCalculator": "投资预测",
       "pivotReport": "枢",
       "netWorthDrivers": "净资产驱动因素",
-      "investmentContributions": "贡献",
+      "investmentContributions": "投入",
       "netWorthHistory": "净资产历史",
-      "collapse": "坍塌",
+      "collapse": "收起导航",
       "sections": {
         "investments": "投资"
       },
-      "fire": "火"
+      "fire": "财务自由"
     },
     "controls": {
       "options": "选项"
     },
     "cashFlow": {
-      "subtitle": "随着时间的推移，收入与支出的对比，以及钱的去向。",
+      "subtitle": "查看各期收入、支出和结余，了解资金去向。",
       "income": "收入",
       "expenses": "支出",
       "netSavings": "净储蓄",
       "netFlow": "净流量",
       "savingsRate": "储蓄率",
       "loadError": "现金流量数据加载失败",
-      "noData": "未找到交易",
-      "noDataHint": "尝试选择不同的时间段或检查您是否有任何交易",
+      "noData": "未找到交易记录",
+      "noDataHint": "尝试选择不同的时间段或检查你是否有任何交易",
       "showTrendLine": "显示趋势线",
       "showTrendLineHint": "净现金流量平滑平均值",
       "trendLine": "趋势线",
@@ -49,13 +49,13 @@
         "last12Months": "过去 12 个月",
         "thisYear": "今年",
         "previousYear": "上一年",
-        "allTime": "所有时间",
+        "allTime": "全部时间",
         "currentPayPeriod": "当前工资期"
       },
       "composition": {
         "detail": "细节",
         "levelsSummary": "来源 L{sources} · 费用 L{expenses}",
-        "levelsHint": "每侧类别嵌套级别：较高级别将流分解为子类别。",
+        "levelsHint": "每侧分类嵌套级别：较高级别将流分解为子分类。",
         "sources": "来源",
         "level": "级别 {level}",
         "topN": "顶部 {count}",
@@ -66,12 +66,12 @@
         "deficit": "赤字",
         "other": "其他",
         "noData": "此期间无交易",
-        "noDataHint": "选择另一个时间段或单击上图中的一个栏",
+        "noDataHint": "选择另一个时间段或点击上图中的一个栏",
         "loadError": "无法加载合成",
         "amount": "金额",
         "shareOfIncome": "收入份额",
         "shareOfExpenses": "费用分摊",
-        "saved": "已保存",
+        "saved": "净储蓄",
         "pctOfIncome": "收入{pct}",
         "pctSavingsRate": "{pct} 储蓄率",
         "keptAsCash": "作为现金保存",
@@ -96,11 +96,11 @@
         "cumulativeNote": "截至目前累计总数"
       },
       "scope": {
-        "label": "类别范围",
-        "all": "所有类别",
+        "label": "分类范围",
+        "all": "全部分类",
         "up": "上升一级",
         "transactions": "交易",
-        "count": "{count} 类别 | {count}类别",
+        "count": "{count} 分类 | {count}分类",
         "more": "+{count}",
         "allExcept": "除 {list} 外的所有",
         "clear": "清除"
@@ -108,7 +108,7 @@
       "categoryBreakdown": {
         "title": "品类细分",
         "noData": "此期间没有数据",
-        "viewAll": "查看所有类别",
+        "viewAll": "查看所有分类",
         "moreCount": "{count} 更多",
         "noSubcategory": "{name} · 无子类别",
         "byLevel": "按级别",
@@ -125,7 +125,7 @@
         "perPeriod": "每期",
         "granularity": {
           "monthly": "每月",
-          "quarterly": "季刊",
+          "quarterly": "每季度",
           "yearly": "每年"
         }
       },
@@ -135,7 +135,7 @@
         "recent": "最近的"
       },
       "monthlyComparison": {
-        "allCategories": "所有类别",
+        "allCategories": "全部分类",
         "average": "平均",
         "total": "合计",
         "vsPrevious": {
@@ -152,7 +152,7 @@
       "filters": {
         "button": "过滤器",
         "title": "过滤器",
-        "include": "包括",
+        "include": "纳入",
         "exclude": "排除",
         "accounts": "账户",
         "payees": "收付款方",
@@ -169,34 +169,34 @@
       "noDataHint": "此期间没有交易记录"
     },
     "investmentCalculator": {
-      "subtitle": "预测您的投资组合如何通过定期捐款来增长。",
+      "subtitle": "估算定期追加投资后的资产增长情况。",
       "initialBalance": "初始余额",
       "useCurrentBalance": "使用当前余额",
       "monthlyContribution": "每月供款",
       "useAvgNetIncome": "使用平均净收入 →",
       "timeHorizon": "时间范围（年）",
-      "annualReturn": "年回报率(%)",
+      "annualReturn": "预期年收益率（%）",
       "annualReturnPlaceholder": "选择预设",
-      "annualInflation": "年通货膨胀率(%)",
+      "annualInflation": "年通胀率（%）",
       "totalInvested": "总投资",
       "nominalFinalValue": "名义终值",
-      "growth": "生长",
+      "growth": "增长",
       "realFinalValue": "实际终值",
       "realGrowth": "实际增长",
       "realMultiplier": "实际乘数",
-      "realMultiplierTooltip": "考虑到通货膨胀后，您的总投资增长了多少。与名义回报不同，这显示了真实的购买力。 1.5 倍意味着每投资 1 美元，换算成今天的货币就是 1.5 美元。",
+      "realMultiplierTooltip": "考虑到通货膨胀后，你的总投资增长了多少。与名义回报不同，这显示了真实的购买力。 1.5 倍意味着每投资 1 美元，换算成今天的货币就是 1.5 美元。",
       "ofMoneyInvested": "投资的钱",
-      "customIndicator": "风俗",
-      "customReturnRate": "输入率(%)",
+      "customIndicator": "自定义",
+      "customReturnRate": "输入收益率（%）",
       "inflationAdjustedSuffix": "（通货膨胀调整后）",
       "yearN": "年份 {n}",
       "disclaimer": "基于恒定的 {rate}%/年回报。标准普尔 500 指数历史平均值约为每年 10%。不考虑税费。",
-      "useAvgNetIncomeTooltip": "根据您的交易历史记录，您在选定期间的平均每月净收入（收入减去支出）",
-      "inflationTooltip": "每年价格上涨的速度有多快，从而降低了您的资金的实际价值。\n\n~1–2% — 经济非常低且稳定\n~2–3% — 正常（典型目标）\n~4–6% — 高于平均水平\n~7%+ — 危机水平的通货膨胀",
-      "totalInvestedBreakdown": "{initial}初始+{contributions}贡献",
+      "useAvgNetIncomeTooltip": "根据你的交易历史记录，你在选定期间的平均每月净收入（收入减去支出）",
+      "inflationTooltip": "每年价格上涨的速度有多快，从而降低了你的资金的实际价值。\n\n~1–2% — 经济非常低且稳定\n~2–3% — 正常（典型目标）\n~4–6% — 高于平均水平\n~7%+ — 危机水平的通货膨胀",
+      "totalInvestedBreakdown": "{initial}初始+{contributions}投入",
       "configure": "配置",
       "hideInputs": "隐藏",
-      "portfolioReturnOption": "{name}（您的 ~{rate}%/年）",
+      "portfolioReturnOption": "{name}（你的 ~{rate}%/年）",
       "portfolioNoHistoryOption": "{name} — 历史记录不够",
       "presetReturnOption": "{label} (~{rate}%/年)",
       "rangeMin": "最小",
@@ -212,79 +212,79 @@
       "selectedOne": "1 个投资组合",
       "selectedMany": "{n} 组合",
       "searchPlaceholder": "搜索投资组合",
-      "noResults": "没有符合您搜索条件的投资组合"
+      "noResults": "没有符合你搜索条件的投资组合"
     },
     "fire": {
-      "subtitle": "当你的储蓄可以永远支付你的支出时",
-      "planLink": "火灾预案",
+      "subtitle": "估算何时可依靠积累的资产长期覆盖生活支出",
+      "planLink": "规划财务自由",
       "addToDashboard": "添加到仪表板",
-      "addedToDashboard": "FIRE 进度已添加到您的仪表板",
+      "addedToDashboard": "FIRE 进度已添加到你的仪表板",
       "addToDashboardFailed": "无法添加组件。再试一次。",
-      "saveFailed": "无法保存您的 FIRE 假设。再次尝试保留您的更改。",
-      "loading": "加载火灾计划",
-      "loadFailed": "无法加载您的 FIRE 计划的数据。",
+      "saveFailed": "无法保存你的 FIRE 假设。再次尝试保留你的更改。",
+      "loading": "加载财务自由规划中…",
+      "loadFailed": "无法加载你的 FIRE 计划的数据。",
       "adjustAssumptions": "调整假设",
-      "disclaimer": "预测使用历史市场平均值和您最近的支出。它们是估计，而不是建议。回报会有所不同。",
+      "disclaimer": "预测使用历史市场平均值和你最近的支出。它们是估计，而不是建议。回报会有所不同。",
       "callouts": {
-        "contributionClamped": "过去 12 个月您的支出超过收入，因此预测假设没有新的储蓄。",
-        "enterContribution": "输入贡献",
-        "returnBelowInflation": "您的回报假设无法击败通货膨胀（{real} 实际值），因此以今天的货币计算，余额会减少。",
-        "portfolioShortHistory": "您的投资组合的回报仅基于 {years} 年。短期或牛市的历史很少重演。考虑一个市场预设。",
+        "contributionClamped": "过去 12 个月你的支出超过收入，因此预测假设没有新的储蓄。",
+        "enterContribution": "输入投入",
+        "returnBelowInflation": "你的回报假设无法击败通货膨胀（{real} 实际值），因此以今天的货币计算，余额会减少。",
+        "portfolioShortHistory": "你的投资组合的回报仅基于 {years} 年。短期或牛市的历史很少重演。考虑一个市场预设。",
         "portfolioUnavailable": "该计划使用的投资组合已经消失或历史太少。返回切换到世界股票。",
         "customMissing": "输入自定义退货。在此之前，该计划将使用世界库存。",
-        "historyDegraded": "有些资产按成本估值，或者缺少汇率。在价格同步之前，您的余额可能会被低估。",
+        "historyDegraded": "有些资产按成本估值，或者缺少汇率。在价格同步之前，你的余额可能会被低估。",
         "hide": "隐藏警告",
         "hideTitle": "隐藏这个警告？",
-        "hideDescription": "下次您打开计划表时它会回来。",
+        "hideDescription": "下次你打开计划表时它会回来。",
         "dontShowAgain": "不再显示",
         "hideConfirm": "隐藏"
       },
       "assumptions": {
         "title": "假设",
         "spendingLabel": "退休后每年的支出",
-        "spendingPlaceholder": "e.g. 40000",
-        "requiredBadge": "必需的",
-        "autoSpendingHint": "最后 {n} 全月的平均值 × 12，仅您拥有的账户，不包括转账和储蓄类别。典型月份：{typical}。包括贷款和抵押贷款付款。 | 最近 {n} 完整月份的平均值 × 12，仅您拥有的账户，不包括转账和储蓄类别。典型月份：{typical}。包括贷款和抵押贷款付款。",
+        "spendingPlaceholder": "例如：40000",
+        "requiredBadge": "必填",
+        "autoSpendingHint": "最后 {n} 全月的平均值 × 12，仅你拥有的账户，不包括转账和储蓄分类。典型月份：{typical}。包括贷款和抵押贷款付款。 | 最近 {n} 完整月份的平均值 × 12，仅你拥有的账户，不包括转账和储蓄分类。典型月份：{typical}。包括贷款和抵押贷款付款。",
         "backToAuto": "返回自动 ({amount})",
         "excludedLabel": "不计入支出",
-        "excludedPlaceholder": "排除类别",
-        "savingsNote": "储蓄类别也被排除在外。 {link}",
+        "excludedPlaceholder": "排除分类",
+        "savingsNote": "储蓄分类也被排除在外。 {link}",
         "savingsNoteLink": "编辑",
         "contributionLabel": "每月供款",
-        "contributionPlaceholder": "e.g. 1500",
+        "contributionPlaceholder": "例如：1500",
         "autoContributionHint": "{n} 同月的平均净流量。直接存入投资组合的存款不属于现金流，因此请在此处添加。支付到银行账户的股息有两次（收入和回报）。 | {n} 同一月份的平均净流量。直接存入投资组合的存款不属于现金流，因此请在此处添加。支付到银行账户的股息有两次（收入和回报）。",
-        "savingsRate": "您节省了 {pct} 的收入",
-        "countsTitle": "什么对火灾有影响",
+        "savingsRate": "收入的 {pct} 用于储蓄",
+        "countsTitle": "财务自由目标的计算范围",
         "countsCash": "现金和银行账户",
         "countsPortfolios": "投资组合",
-        "countsVentures": "风险投资",
+        "countsVentures": "私募投资",
         "countsVehicles": "车辆",
         "countsLoans": "贷款",
         "countsHint": "现金和投资组合总是很重要。贷款支付已经算作支出，因此默认情况下贷款将被取消。",
         "archivedNote": "从统计数据中排除的 {count} 存档账户仍保留 {amount}。 {link} | 从统计数据中排除的 {count} 存档账户仍保留 {amount}。 {link}",
-        "archivedNoteLink": "审查",
+        "archivedNoteLink": "核对",
         "presetLabel": "{label} · ≈{real} 实际值（{nominal} 名义值，{inflation} 美国通胀率）",
         "inflationLabel": "通货膨胀",
         "inflationBuiltIn": "{pct}% · 内置于此预设中",
-        "inflationBuiltInHint": "市场预设是美国和全球名义回报，因此它们伴随着美国通胀。将它们与当地的通货膨胀率结合起来会得出误导性的数字。选择自定义回报或您的投资组合来自行设定通胀。",
-        "withdrawalLabel": "提现率",
-        "withdrawalCustom": "风俗",
-        "withdrawalPlaceholder": "e.g. 3.8",
-        "withdrawalHint": "您每年提取的储蓄份额。较高的比率意味着较小的火灾数量，但耗尽的风险较大。 4%的规则来自美国30年退休的数据。",
+        "inflationBuiltInHint": "市场预设是美国和全球名义回报，因此它们伴随着美国通胀。将它们与当地的通货膨胀率结合起来会得出误导性的数字。选择自定义回报或你的投资组合来自行设定通胀。",
+        "withdrawalLabel": "年度提取率",
+        "withdrawalCustom": "自定义",
+        "withdrawalPlaceholder": "例如：3.8",
+        "withdrawalHint": "每年从储蓄中提取的比例。提取率越高，所需资产越少，但资产提前耗尽的风险也越高。4% 规则基于美国市场和 30 年退休期的数据。",
         "more": "更多",
-        "moreSummary": "瘦 {lean}× · 胖 {fat}× · 海岸 {age}",
-        "leanLabel": "精益火乘数",
-        "leanPlaceholder": "e.g. 0.7",
-        "fatLabel": "脂肪火倍增器",
-        "fatPlaceholder": "e.g. 1.5",
+        "moreSummary": "节俭型 {lean} 倍 · 宽裕型 {fat} 倍 · 自然增长型目标年龄 {age} 岁",
+        "leanLabel": "节俭型目标系数",
+        "leanPlaceholder": "例如：0.7",
+        "fatLabel": "宽裕型目标系数",
+        "fatPlaceholder": "例如：1.5",
         "baristaLabel": "每月兼职收入",
-        "baristaPlaceholder": "e.g. 1000",
+        "baristaPlaceholder": "例如：1000",
         "birthYearLabel": "出生年份",
-        "birthYearPlaceholder": "e.g. 1990",
-        "coastAgeLabel": "海岸火灾目标年龄",
-        "coastAgePlaceholder": "e.g. 65"
+        "birthYearPlaceholder": "例如：1990",
+        "coastAgeLabel": "自然增长型目标年龄",
+        "coastAgePlaceholder": "例如：65"
       },
-      "auto": "汽车",
+      "auto": "自动",
       "perYear": "{amount}/年",
       "perMonth": "{amount}/月",
       "notWithinHorizon": "50年内不会",
@@ -304,18 +304,18 @@
         "reached": {
           "eyebrowFor": "{type}达到",
           "title": "你经济独立",
-          "supports": "您的资金支持 {amount}/月",
-          "pctOfSpending": "您支出的 {pct}% · 在 {rate}% 提款",
+          "supports": "你的资金支持 {amount}/月",
+          "pctOfSpending": "可覆盖 {pct}% 的支出 · 年度提取率 {rate}%",
           "yearsCovered": "可覆盖不足一年的支出 | 可覆盖 1 年的支出 | 可覆盖 {n} 年的支出",
-          "drawdown": "您每月提款约为 {amount}。",
+          "drawdown": "你每月提款约为 {amount}。",
           "noNewSavings": "预测假设没有新的节省。"
         },
         "unreachable": {
           "title": "目前的储蓄无法达到",
           "noSavingsTitle": "没有新的储蓄。",
-          "noSavingsClamped": "您在过去 12 个月中的支出超过了收入，因此供款设置为 0。",
-          "noSavings": "您每月的供款额为 0 或更少。",
-          "enterContribution": "输入贡献",
+          "noSavingsClamped": "你在过去 12 个月中的支出超过了收入，因此供款设置为 0。",
+          "noSavings": "你每月的供款额为 0 或更少。",
+          "enterContribution": "输入投入",
           "lowReturnTitle": "回报无法击败通胀。",
           "lowReturn": "以今天的货币计算，余额减少了。",
           "tooSlow": "按照这个速度，需要50多年的时间。",
@@ -329,33 +329,33 @@
         "next": "下一页： {goal} · {date}",
         "nextGoal": "{goal} 于 {duration}",
         "nextUnreachable": "下一篇： {goal} · 未达到这些数字",
-        "targetReached": "达到消防目标",
+        "targetReached": "已达成财务自由目标",
         "supportsToday": "今天支持 {amount}/月",
-        "negativeNetWorth": "净资产低于零。您的贡献首先弥补差距，然后再增加。"
+        "negativeNetWorth": "净资产低于零。你的投入首先弥补差距，然后再增加。"
       },
       "chips": {
         "lean": {
-          "name": "精益火",
-          "description": "您支出的 {pct}%"
+          "name": "节俭型财务自由",
+          "description": "你支出的 {pct}%"
         },
         "regular": {
-          "name": "普通火灾",
+          "name": "标准型财务自由",
           "description": "目前的生活方式"
         },
         "fat": {
-          "name": "脂肪火",
-          "description": "您支出的 {pct}%"
+          "name": "宽裕型财务自由",
+          "description": "你支出的 {pct}%"
         },
         "barista": {
-          "name": "咖啡师火",
+          "name": "半退休型财务自由",
           "description": "兼职收入涵盖部分",
           "withIncome": "兼职 {amount}/月"
         },
         "coast": {
-          "name": "海岸火灾",
+          "name": "自然增长型财务自由",
           "description": "今天需要在 {age} 退休",
           "needsBirthYear": "需要你的出生年份",
-          "pastAge": "您已超过 {age} 的海岸年龄",
+          "pastAge": "已超过设定的自然增长型目标年龄（{age} 岁）",
           "notMeaningful": "仅靠增长无法实现 0% 或更低的实际回报"
         },
         "others": "其他的",
@@ -364,10 +364,10 @@
         "growthOnly": "仅增长",
         "reached": "达到",
         "reachedCoast": "已达到·现在可以选择保存",
-        "reachedBaristaCovers": "兼职收入足以支付您的支出",
+        "reachedBaristaCovers": "兼职收入足以支付你的支出",
         "actions": {
           "enterSpending": "首先输入支出",
-          "changeCoastAge": "更改海岸年龄",
+          "changeCoastAge": "调整目标年龄",
           "changeReturn": "更改退货",
           "addPartTimeIncome": "添加兼职收入",
           "addBirthYear": "添加出生年份"
@@ -391,30 +391,30 @@
         },
         "details": {
           "title": "自 {month} 以来的步伐",
-          "moved": "您的 FIRE 日期从 {from} 更改为 {to}。",
-          "withinBand": "您的火灾日期在 {month} 预报 ({date}) 的 {tolerance} 范围内。",
-          "backInReach": "在 {month} 的数字上，火灾是遥不可及的。现在是{date}。",
-          "offTrack": "{month} 预测为 {date}。从今天的数字来看，火灾是遥不可及的。",
+          "moved": "你的 FIRE 日期从 {from} 更改为 {to}。",
+          "withinBand": "预计达成日期与 {month} 的预测（{date}）相差不超过 {tolerance}。",
+          "backInReach": "按 {month} 的数据原本无法达成财务自由；按当前数据，预计可在 {date} 达成。",
+          "offTrack": "{month} 预测可在 {date} 达成财务自由；按当前数据暂时无法达成。",
           "metric": "公制",
           "today": "今天",
           "change": "变化",
-          "fireDate": "火灾日期",
-          "saved": "现已保存",
+          "fireDate": "预计达成日期",
+          "saved": "目前已积累",
           "spending": "开支",
           "saving": "保存",
-          "expected": "{amount}预计",
+          "expected": "预期 {amount}",
           "sooner": "{duration} 早点",
           "later": "{duration} 稍后",
           "sameMonth": "同月",
           "outOfReach": "遥不可及",
-          "band": "按节奏意味着在 {tolerance} 之内（还有 2% 的时间需要开火）。",
-          "recorded": "截至 {date} 的余额、现金流和假设是根据您的数据实时重新计算的。",
-          "notRecorded": "截至 {date} 的余额和现金流量将根据您的数据实时重新计算。您当时的假设没有被记录，所以使用今天的假设。"
+          "band": "预计达成日期与原预测相差不超过 {tolerance} 时，视为符合预期进度（阈值为距目标剩余时间的 2%）。",
+          "recorded": "截至 {date} 的余额、现金流和假设是根据你的数据实时重新计算的。",
+          "notRecorded": "截至 {date} 的余额和现金流量将根据你的数据实时重新计算。你当时的假设没有被记录，所以使用今天的假设。"
         }
       },
       "chart": {
-        "ariaLabel": "净资产历史记录和通往 FIRE 号码的预计路径",
-        "actual": "实际的",
+        "ariaLabel": "净资产历史与达到财务自由目标所需资产的预测走势",
+        "actual": "实际",
         "projected": "预计",
         "range": "±2 点返回",
         "today": "今天",
@@ -431,8 +431,8 @@
       },
       "empty": {
         "noData": {
-          "title": "规划您的财务独立之路",
-          "description": "此页面填写您的账户和交易。尚未跟踪任何内容，因此请从您的年度支出开始。添加账户后，计划将切换为实时数字。"
+          "title": "规划你的财务独立之路",
+          "description": "此页面填写你的账户和交易。尚未跟踪任何内容，因此请从你的年度支出开始。添加账户后，计划将切换为实时数字。"
         },
         "shortHistory": {
           "title": "尚未有完整月份的交易 | 仅 1 个完整月的交易 | 仅{n}整月交易",
@@ -440,14 +440,14 @@
         },
         "noSpending": {
           "title": "尚未记录任何支出",
-          "description": "您最近几个月没有我们可以使用的费用。输入您的年度支出以查看您的计划。"
+          "description": "你最近几个月没有我们可以使用的费用。输入你的年度支出以查看你的计划。"
         },
         "enterSpending": "输入支出",
         "addAccount": "添加账户"
       },
       "trial": {
         "daysLeft": "FIRE策划师试用·{n}还剩一天 | FIRE策划师试用·{n}还剩几天",
-        "ended": "您的 14 天 FIRE planner 试用期已结束。升级到 Plus 以继续规划您的 FIRE 之路。",
+        "ended": "你的 14 天 FIRE planner 试用期已结束。升级到 Plus 以继续规划你的 FIRE 之路。",
         "startFailed": "无法启动 FIRE planner 试用。重新加载页面以重试。"
       }
     }
@@ -455,8 +455,8 @@
   "pivotReport": {
     "subtitle": "按任何维度分解支出，将其按时间排列并进行比较。",
     "controls": {
-      "rows": "行数",
-      "columns": "专栏",
+      "rows": "行维度",
+      "columns": "显示列",
       "measure": "措施",
       "settings": "设置"
     },
@@ -484,14 +484,14 @@
       "percentChange": "％ 改变"
     },
     "filters": {
-      "period": "时期",
+      "period": "周期",
       "allCategories": "全部",
       "button": "过滤器",
       "categories": "分类",
       "payees": "收付款方",
       "accounts": "账户",
       "reset": "重置",
-      "resetTooltip": "重置为默认值"
+      "resetTooltip": "恢复默认设置"
     },
     "periods": {
       "last6Months": "过去 6 个月",
@@ -500,10 +500,10 @@
       "previousYear": "上一年",
       "last3Years": "过去 3 年",
       "last5Years": "过去 5 年",
-      "allTime": "所有时间"
+      "allTime": "全部时间"
     },
     "savedViews": {
-      "trigger": "意见",
+      "trigger": "视图",
       "empty": "尚未保存视图",
       "saveCurrent": "保存当前视图",
       "customView": "自定义视图",
@@ -511,61 +511,61 @@
       "dialogDescription": "将当前布局和过滤器保存为可重用视图。",
       "nameLabel": "查看名称",
       "namePlaceholder": "例如杂货手表",
-      "savedToast": "查看已保存",
-      "deletedToast": "查看已删除",
+      "savedToast": "视图已保存",
+      "deletedToast": "视图已删除",
       "saveError": "无法保存视图"
     },
     "table": {
       "total": "合计",
-      "net": "网",
+      "net": "净额",
       "collapseAll": "全部折叠",
       "expandAll": "全部展开",
-      "expandRow": "扩张",
-      "collapseRow": "坍塌"
+      "expandRow": "展开",
+      "collapseRow": "收起"
     },
     "states": {
       "emptyTitle": "此选择没有数据",
       "emptyHint": "尝试更宽的周期或不同的过滤器。",
       "errorTitle": "无法加载报告",
-      "errorHint": "出了点问题。请再试一次。"
+      "errorHint": "出了点问题。请重试。"
     }
   },
   "netWorthDrivers": {
-    "subtitle": "你节省了多少增长，以及市场回报了多少。您自己的账户之间的转账均不计算在内。",
+    "subtitle": "你节省了多少增长，以及市场回报了多少。你自己的账户之间的转账均不计算在内。",
     "portfolioFilter": {
       "scopeHint": "仅过滤投资持有和增长。保存的金额和账户现金不受影响。"
     },
     "calcInfo": {
       "trigger": "这是如何计算的",
       "title": "这是如何计算的",
-      "savedHeading": "已保存",
-      "savedBody": "你留出的钱——收入减去支出。在您自己的账户之间转移资金或将资金转移到投资组合中并不算作储蓄。",
+      "savedHeading": "净储蓄",
+      "savedBody": "你留出的钱——收入减去支出。在你自己的账户之间转移资金或将资金转移到投资组合中并不算作储蓄。",
       "grownHeading": "长大了",
-      "grownBody": "市场对你的持股做了什么——价格变化，加上股息，减去费用。你投入的钱永远不会被算作增长。",
+      "grownBody": "市场对你的持仓做了什么——价格变化，加上股息，减去费用。你投入的钱永远不会被算作增长。",
       "exampleHeading": "例子",
       "exampleBody": "你赚了 10,000 美元，进行投资，它就会增长到 12,000 美元。也就是说，节省了 10,000 美元，增加了 2,000 美元 — 10,000 美元只计算一次，称为“节省”，只有 2,000 美元才算作“增加”。",
-      "noteBody": "增长是根据每个时期的价格变动而计算的，而不仅仅是在您卖出时计算的。出售已经上涨的东西并不会增加第二次上涨。"
+      "noteBody": "增长是根据每个时期的价格变动而计算的，而不仅仅是在你卖出时计算的。出售已经上涨的东西并不会增加第二次上涨。"
     },
     "granularity": {
       "monthly": "每月",
-      "quarterly": "季刊",
+      "quarterly": "每季度",
       "yearly": "每年"
     },
     "chart": {
       "title": "保存与成长",
       "subtitle": "所选期间的累计总数。",
-      "saved": "已保存",
+      "saved": "净储蓄",
       "grown": "长大了",
       "totalGained": "总收益",
       "thisPeriod": "这个时期",
       "periodSavings": "储蓄",
       "periodGrowth": "增长",
-      "allocationContext": "您的净资产的 {share}% 投资于投资（{reference}% 投资于 {date}）",
-      "allocationContextNoReference": "{share}% 您的净资产用于投资"
+      "allocationContext": "你的净资产的 {share}% 投资于投资（{reference}% 投资于 {date}）",
+      "allocationContextNoReference": "{share}% 你的净资产用于投资"
     },
     "breakdownChart": {
       "title": "按期间细分",
-      "subtitle": "每个时期您节省了多少以及市场回报了多少。",
+      "subtitle": "每个时期你节省了多少以及市场回报了多少。",
       "periodTotal": "本期收获",
       "others": "其他的",
       "grownTotal": "总增长"
@@ -579,23 +579,23 @@
     "states": {
       "loadError": "无法加载报告",
       "noData": "此期间没有可显示的内容",
-      "noDataHint": "一旦您的收入、支出或投资在此范围内，它们就会显示在此处。",
-      "noPortfoliosHint": "一旦您添加具有定价持股的投资组合，投资就会出现增长。",
+      "noDataHint": "一旦你的收入、支出或投资在此范围内，它们就会显示在此处。",
+      "noPortfoliosHint": "一旦你添加具有定价持仓的投资组合，投资就会出现增长。",
       "noPortfoliosTitle": "还没有投资",
-      "noPortfoliosPlaceholder": "该报告将您的净资产变化分为您的储蓄和您的投资增长。添加投资组合以开始跟踪增长。",
+      "noPortfoliosPlaceholder": "该报告将你的净资产变化分为你的储蓄和你的投资增长。添加投资组合以开始跟踪增长。",
       "noPortfoliosAction": "添加投资组合"
     },
     "target": {
       "title": "增长交叉",
-      "subtitle": "投资组合规模中，市场增长（而不是您的储蓄）发挥了大部分作用。",
-      "targetShareLabel": "增长占您每月收益的比例",
-      "savingsLabel": "预计每月节省",
-      "savingsPlaceholder": "e.g. 1,000",
+      "subtitle": "投资组合规模中，市场增长（而不是你的储蓄）发挥了大部分作用。",
+      "targetShareLabel": "增长占你每月收益的比例",
+      "savingsLabel": "预计每月储蓄",
+      "savingsPlaceholder": "例如：1,000",
       "savingsResetToAverage": "使用我的平均值 ({amount})",
-      "currentShareLine": "今天的增长覆盖了您每月收益的 ~{current}% — 您的目标是 {target}%。",
+      "currentShareLine": "今天的增长覆盖了你每月收益的 ~{current}% — 你的目标是 {target}%。",
       "valueNeeded": "所需的投资组合价值",
       "progressLine": "你是 {pct}% 的方式 — {current} 或 {needed}。",
-      "progressReached": "目标已达成——你的投资组合已经在那里了。",
+      "progressReached": "已达成目标，投资组合市值已达到目标金额。",
       "gapLabel": "差距",
       "gapValue": "更需要{amount}",
       "reached": "达到目标",
@@ -603,20 +603,20 @@
       "etaValue": "~{years} 年",
       "etaReached": "达到",
       "etaHint": "如果你继续储蓄并且回报保持不变。",
-      "noReturn": "选择正的预期回报来查看目标值。",
+      "noReturn": "请设置大于零的预期收益率，以计算目标资产。",
       "assumptionsLabel": "假设",
-      "disclaimer": "根据当今的价值观和您的假设进行的直接预测，而不是财务建议。"
+      "disclaimer": "根据当今的价值观和你的假设进行的直接预测，而不是财务建议。"
     }
   },
   "investmentContributions": {
-    "subtitle": "随着时间的推移，您向投资组合中转移了多少现金，以及它们去了哪里。",
+    "subtitle": "随着时间的推移，你向投资组合中转移了多少现金，以及它们去了哪里。",
     "average": "平均",
     "portfolioFilter": {
-      "scopeHint": "过滤哪些投资组合计入贡献。"
+      "scopeHint": "过滤哪些投资组合计入投入。"
     },
     "granularity": {
       "monthly": "每月",
-      "quarterly": "季刊",
+      "quarterly": "每季度",
       "yearly": "每年"
     },
     "cards": {
@@ -628,20 +628,20 @@
       "vsPrevious": "与之前相比"
     },
     "states": {
-      "noData": "此范围内没有贡献",
+      "noData": "此范围内没有投入",
       "noDataHint": "在此期间将资金转移到投资组合中，请在此处查看。",
       "noPortfoliosTitle": "还没有投资组合",
-      "noPortfoliosPlaceholder": "创建投资组合并开始投资以跟踪您的贡献。",
+      "noPortfoliosPlaceholder": "创建投资组合并开始投资以跟踪你的投入。",
       "noPortfoliosAction": "添加投资组合",
-      "loadError": "无法加载贡献"
+      "loadError": "无法加载投入"
     }
   },
   "netWorthHistory": {
-    "subtitle": "您的资产、负债和净值如何随时间变化",
+    "subtitle": "你的资产、负债和净值如何随时间变化",
     "granularity": {
       "weekly": "每周",
       "monthly": "每月",
-      "quarterly": "季刊",
+      "quarterly": "每季度",
       "yearly": "每年"
     },
     "kindFilter": {
@@ -654,7 +654,7 @@
       "cash": "现金及账户",
       "investments": "投资",
       "vehicles": "车辆",
-      "ventures": "风险投资"
+      "ventures": "私募投资"
     },
     "assetFilter": {
       "all": "所有资产",
@@ -666,8 +666,8 @@
       "currentNetWorth": "目前净资产",
       "periodChange": "期间变更",
       "annualized": "≈ {pct} / 年",
-      "averageLiabilities": "在所选期间，您的平均负债为 {amount}。",
-      "noLiabilities": "您在所选期间没有负债。"
+      "averageLiabilities": "在所选期间，你的平均负债为 {amount}。",
+      "noLiabilities": "你在所选期间没有负债。"
     },
     "chart": {
       "assets": "资产",
@@ -683,8 +683,8 @@
     },
     "degraded": {
       "title": "一些值是估计的",
-      "unpricedSecurities": "{securities} 没有最新的价格数据，因此它们按成本价显示，可能会低估您的净资产。",
-      "unpricedSecuritiesTruncated": "{securities} 及其他（{count} 证券总计）没有近期价格数据；它们按成本显示，可能低估您的净资产。",
+      "unpricedSecurities": "{securities} 没有最新的价格数据，因此它们按成本价显示，可能会低估你的净资产。",
+      "unpricedSecuritiesTruncated": "{securities} 及其他（{count} 证券总计）没有近期价格数据；它们按成本显示，可能低估你的净资产。",
       "fxFallback": "缺少 {currencies} 的汇率。这些金额使用最早的可用汇率，或者在不存在汇率时使用 1:1。"
     },
     "states": {

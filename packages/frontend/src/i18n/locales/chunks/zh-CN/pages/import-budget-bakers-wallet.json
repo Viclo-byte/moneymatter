@@ -3,12 +3,12 @@
     "importExport": {
       "budgetBakersWalletImport": {
         "pageTitle": "从钱包导入 (BudgetBakers)",
-        "pageDescription": "导入 BudgetBakers 从电子钱包应用程序导出的交易。",
+        "pageDescription": "导入 BudgetBakers 从电子钱包应用导出的交易。",
         "fileUpload": {
-          "stepTitle": "上传您的电子钱包 CSV 文件",
+          "stepTitle": "上传你的电子钱包 CSV 文件",
           "description": "上传一个或多个电子钱包 CSV 导出文件以导入交易。所有文件必须具有相同的列。",
           "maxSize": "最大文件大小：10 MB",
-          "parsing": "正在解析...",
+          "parsing": "正在解析…",
           "errors": {
             "invalidFormatNamed": "“{name}”不是 CSV 文件。",
             "parseFailed": "无法解析文件。请检查格式并重试。",
@@ -33,19 +33,19 @@
         },
         "accountRow": {
           "transactionsCount": "{count} 交易 | {count} 交易 | {count}交易",
-          "modeLabel": "行动",
+          "modeLabel": "操作",
           "modePlaceholder": "选择动作",
           "modeCreateNew": "创建新账户",
-          "modeLinkExisting": "链接到现有账户",
+          "modeLinkExisting": "关联到现有账户",
           "currentBalanceLabel": "当前余额（可选）",
-          "currentBalancePlaceholder": "e.g. 1234.56",
+          "currentBalancePlaceholder": "例如：1234.56",
           "currentBalanceHint": "留空将从导入交易的总和开始。",
           "linkTargetLabel": "现有账户",
           "linkTargetPlaceholder": "选择账户",
           "keepBalanceNote": "现有账户的当前余额将被保留。历史将会被回填。"
         },
         "execute": {
-          "starting": "开始导入...",
+          "starting": "开始导入…",
           "progressCount": "{processed} / {total}",
           "statusQueued": "排队",
           "statusRunning": "输入…",
@@ -56,7 +56,7 @@
         },
         "done": {
           "successTitle": "导入完成",
-          "successDescription": "您的钱包数据已成功导入。",
+          "successDescription": "你的钱包数据已成功导入。",
           "partialTitle": "导入时出现 {count} 错误",
           "partialDescription": "某些行已成功导入，但其他行遇到错误。",
           "allFailedTitle": "导入失败",
@@ -64,7 +64,7 @@
           "accountsCreated": "已创建账户",
           "accountsLinked": "关联账户",
           "accountsSkipped": "已跳过的账户",
-          "categoriesCreated": "已创建类别",
+          "categoriesCreated": "已创建分类",
           "tagsCreated": "已创建标签",
           "transactionsImported": "导入交易",
           "transfersImported": "导入转移",
@@ -75,7 +75,7 @@
           "errorsOverflow": "+{count} 更多",
           "errors": {
             "rowImportFailed": "无法导入该行。",
-            "payeeDefaultTagsFailed": "交易已导入，但无法应用收款人的默认标签。",
+            "payeeDefaultTagsFailed": "交易已导入，但无法应用收付款方的默认标签。",
             "accountBalanceDesync": "导入后账户余额无法更新，并且可能不正确。"
           },
           "balanceWarningTitle": "部分账户余额可能不正确",
@@ -87,7 +87,7 @@
           "steps": {
             "upload": "上传",
             "resolve": "解决",
-            "review": "审查",
+            "review": "核对",
             "results": "完成"
           }
         },
@@ -105,11 +105,11 @@
           },
           "quickActions": {
             "mapExactMatches": "地图精确匹配",
-            "createNewForUnmatched": "创造无与伦比的新",
+            "createNewForUnmatched": "为未匹配项新建记录",
             "reset": "重置",
             "tooltips": {
-              "mapExactMatchesAccounts": "链接名称与现有账户完全匹配的每个账户",
-              "mapExactMatchesCategories": "链接名称与现有类别完全匹配的每个类别",
+              "mapExactMatchesAccounts": "关联名称与现有账户完全匹配的每个账户",
+              "mapExactMatchesCategories": "链接名称与现有分类完全匹配的每个分类",
               "createNewForUnmatched": "设置所有尚未解析的行以创建新条目",
               "reset": "清除所有选择并再次按名称自动匹配"
             }
@@ -134,7 +134,7 @@
           "importing": "输入…"
         },
         "errors": {
-          "fileMissing": "没有加载文件。请再次上传您的电子钱包导出内容。"
+          "fileMissing": "没有加载文件。请再次上传你的电子钱包导出内容。"
         }
       }
     }

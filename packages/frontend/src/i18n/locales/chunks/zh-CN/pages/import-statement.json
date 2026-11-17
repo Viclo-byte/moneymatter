@@ -2,12 +2,12 @@
   "pages": {
     "statementParser": {
       "pageTitle": "对账单解析",
-      "pageDescription": "上传银行对账单（PDF、CSV 或 TXT）、收据照片或银行应用程序屏幕截图，以使用 AI 提取交易。在设置中添加您自己的 AI 模型以进行无限制访问。",
+      "pageDescription": "上传银行对账单（PDF、CSV 或 TXT）、收据照片或银行应用屏幕截图，以使用 AI 提取交易。在设置中添加你自己的 AI 模型以进行无限制访问。",
       "stepper": {
         "steps": {
           "upload": "上传",
           "account": "账户",
-          "review": "审查",
+          "review": "核对",
           "results": "导入"
         }
       },
@@ -15,16 +15,16 @@
         "accountTitle": "选择账户",
         "accountDescription": "选择或创建交易账户"
       },
-      "selectCurrency": "选择货币",
+      "selectCurrency": "选择币种",
       "selectExistingAccount": "选择现有账户",
       "accountNamePlaceholder": "例如，主要银行账户",
       "selectAccount": "选择一个账户",
-      "searchAccounts": "搜索账户...",
+      "searchAccounts": "搜索账户…",
       "uploadExtract": {
         "supportedFormats": "支持的格式：PDF、CSV、TXT、JPG、PNG、WebP（最大 10MB）",
-        "clickOrDragStatements": "单击或拖动语句文件至此处",
+        "clickOrDragStatements": "点击上传或将对账单文件拖到此处",
         "filesLabel": "文件",
-        "analyzingFiles": "正在分析文件...",
+        "analyzingFiles": "正在分析文件…",
         "totalForFiles": "{count} 文件总数",
         "estimateFailedSome": "无法分析 {total} 文件的 {count}：",
         "extractionFailedSome": "无法解析 {total} 文件的 {count}。其余的已准备好导入。",
@@ -40,10 +40,10 @@
         "unreadableFiles": "无法读取：{files}",
         "fileStatus": {
           "pending": "未分析",
-          "estimating": "正在分析...",
+          "estimating": "正在分析…",
           "estimated": "准备好",
           "estimateFailed": "无法分析",
-          "extracting": "正在解析...",
+          "extracting": "正在解析…",
           "extracted": "{count} 交易 | {count}交易",
           "failed": "失败"
         },
@@ -55,7 +55,7 @@
         "extractButton": "提取交易",
         "progressMessage": "这可能需要 30-60 秒，具体取决于文档大小",
         "foundLabel": "成立：",
-        "transactions": "交易",
+        "transactions": "笔交易",
         "fromLabel": "从",
         "inLabel": "in",
         "continueMessage": "继续为这些交易选择账户。",
@@ -75,13 +75,13 @@
           }
         },
         "status": {
-          "sendingFile": "正在向 AI 发送文件...",
-          "readingDocument": "AI正在阅读文档...",
-          "analyzingStructure": "分析语句结构...",
-          "extractingData": "正在提取交易数据...",
-          "processingTransactions": "处理交易...",
-          "finalizing": "正在完成提取...",
-          "almostDone": "快完成了..."
+          "sendingFile": "正在向 AI 发送文件…",
+          "readingDocument": "AI正在阅读文档…",
+          "analyzingStructure": "正在分析对账单结构…",
+          "extractingData": "正在提取交易数据…",
+          "processingTransactions": "处理交易…",
+          "finalizing": "正在完成提取…",
+          "almostDone": "快完成了…"
         },
         "tokenFormat": "{inputTokens}K 输入，~{outputTokens}K 输出",
         "pdfPasswordLabel": "PDF密码",
@@ -105,23 +105,23 @@
         "currency": "货币：",
         "currencyNotDetected": "无法检测对账单货币。请手动选择货币：",
         "currencyMismatch": "对账单货币 ({statementCurrency}) 与账户货币 ({accountCurrency}) 不同。交易将使用账户货币导入。",
-        "yourCurrenciesGroup": "您的货币",
+        "yourCurrenciesGroup": "你的货币",
         "allCurrenciesGroup": "所有货币",
-        "createNew": "创造新的",
+        "createNew": "新建",
         "back": "返回",
         "importTransactions": "进口交易",
         "checkForDuplicates": "检查是否有重复项"
       },
       "createAccountDialog": {
         "title": "创建账户用于导入",
-        "description": "创建一个新账户以导入您的对账单交易。",
+        "description": "创建一个新账户以导入你的对账单交易。",
         "accountNameLabel": "账户名称",
-        "currencyLabel": "货币",
+        "currencyLabel": "币种",
         "fromStatement": "（摘自声明）",
-        "currencyLocked": "货币被锁定以匹配语句 ({currency})。",
-        "currencyWillBeAdded": "注意：{currency} 将添加到您的货币中。",
+        "currencyLocked": "币种需与对账单一致，固定为 {currency}。",
+        "currencyWillBeAdded": "注意：{currency} 将添加到你的货币中。",
         "cancel": "取消",
-        "creating": "创造...",
+        "creating": "创建中…",
         "createAccount": "创建账户",
         "validation": {
           "nameRequired": "账户名称为必填项",
@@ -131,7 +131,7 @@
         "error": "创建账户失败"
       },
       "transactionReview": {
-        "checkingDuplicates": "检查重复项...",
+        "checkingDuplicates": "检查重复项…",
         "extractedLabel": "提取：",
         "fromFiles": "来自 {count} 声明",
         "duplicatesLabel": "潜在的重复：",
@@ -150,10 +150,10 @@
         "backButton": "返回",
         "continueButton": "继续导入",
         "transactionCount": "（{count}交易）",
-        "duplicateCheckFailed": "我们无法根据您的现有交易检查此对账单，因此无法获得下面的重复计数。导入前查看列表。",
+        "duplicateCheckFailed": "我们无法根据你的现有交易检查此对账单，因此无法获得下面的重复计数。导入前查看列表。",
         "noDescription": "无描述"
       },
-      "droppedRowsWarning": "AI 响应中的 {count} 行无法读取并被跳过。下面导入的计数可能低于您文件中的计数。 | AI 响应中的 {count} 行无法读取并被跳过。下面导入的计数可能低于您文件中的计数。",
+      "droppedRowsWarning": "AI 响应中的 {count} 行无法读取并被跳过。下面导入的计数可能低于你文件中的计数。 | AI 响应中的 {count} 行无法读取并被跳过。下面导入的计数可能低于你文件中的计数。",
       "errors": {
         "estimateFailed": "无法分析文件",
         "extractFailed": "提取交易失败",
@@ -161,7 +161,7 @@
       },
       "importResults": {
         "readyTitle": "准备导入",
-        "readyDescription": "查看下面的摘要并单击“导入交易”继续。",
+        "readyDescription": "查看下面的摘要并点击“导入交易”继续。",
         "accountLabel": "账户：",
         "statementsLabel": "声明：",
         "toImportLabel": "要导入的交易：",
@@ -169,21 +169,21 @@
         "backButton": "返回",
         "importButton": "导入{count}交易",
         "importingTitle": "导入交易",
-        "importingDescription": "我们正在导入您的交易，请稍候...",
+        "importingDescription": "我们正在导入你的交易，请稍候…",
         "failedTitle": "导入失败",
         "failedDescription": "没有进口任何东西。以下详细信息来自服务器。",
-        "jobFailedDescription": "导入在完成之前就停止了。某些交易可能已经创建。再次导入此对账单之前请检查您的交易。",
+        "jobFailedDescription": "导入在完成之前就停止了。某些交易可能已经创建。再次导入此对账单之前请检查你的交易。",
         "tryAgainButton": "重试",
         "completeTitle": "导入完成！",
         "completeWithIssuesTitle": "导入已完成，但存在问题",
-        "successDescription": "您的交易已成功导入。",
+        "successDescription": "你的交易已成功导入。",
         "partialDescription": "某些交易无法导入。",
         "importedLabel": "进口：",
         "skippedLabel": "跳过：",
         "errorsTitle": "导入错误",
         "transactionNumberHeader": "交易 ＃",
         "errorHeader": "错误",
-        "batchIdNote": "进口批次ID：{batchId}。您可以使用此 ID 查找和管理所有导入的交易。",
+        "batchIdNote": "进口批次ID：{batchId}。你可以使用此 ID 查找和管理所有导入的交易。",
         "viewTransactionsButton": "查看交易",
         "startNewImportButton": "开始新的导入",
         "rowErrors": {

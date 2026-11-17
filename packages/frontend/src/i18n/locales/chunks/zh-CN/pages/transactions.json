@@ -17,7 +17,7 @@
       "transactionType": {
         "label": "交易类型：",
         "income": "收入",
-        "expense": "费用",
+        "expense": "支出",
         "allTypes": "所有类型"
       },
       "amountRange": {
@@ -46,87 +46,87 @@
         "only": "仅有的"
       },
       "search": {
-        "placeholder": "搜索票据、收款人和标签"
+        "placeholder": "搜索备注、收付款方和标签"
       },
       "tags": {
         "allTags": "所有标签",
         "tagSingular": "标签",
         "tagPlural": "标签",
         "selected": "已选择",
-        "searchPlaceholder": "搜索标签...",
+        "searchPlaceholder": "搜索标签…",
         "blankOption": "没有标签"
       },
       "payees": {
         "label": "收付款方",
-        "selectedOne": "已选择 1 个收款人",
-        "selectedMany": "{n} 已选择收款人"
+        "selectedOne": "已选择 1 个收付款方",
+        "selectedMany": "{n} 已选择收付款方"
       },
       "removeFilter": "移除过滤器",
       "menu": {
         "type": "类型",
         "tags": "标签",
-        "budgets": "追踪器",
+        "budgets": "收支追踪",
         "amount": "金额范围"
       },
       "transferNature": {
-        "label": "转移种类",
+        "label": "转账类型",
         "disabledTooltip": "上面的过滤器排除了传输，因此传输类型没有影响。",
         "commonTransfer": "账户之间",
         "outOfWallet": "钱包外资金",
-        "toPortfolio": "到投资组合",
-        "toVenture": "去冒险",
-        "selectedCount": "已选择{n}"
+        "toPortfolio": "转入投资组合",
+        "toVenture": "转入私募投资",
+        "selectedCount": "已选 {n} 项"
       }
     },
     "list": {
-      "noMoreData": "没有更多交易",
-      "loadingMore": "加载更多...",
+      "noMoreData": "已加载全部交易",
+      "loadingMore": "加载更多…",
       "detailsTitle": "交易详情",
       "detailsDescription": "查看和编辑交易"
     },
     "bulkEdit": {
-      "selectAll": "选择全部",
+      "selectAll": "全选",
       "selectAllShort": "全部",
       "cancelSelection": "取消选择",
       "editButton": "编辑",
-      "selectedCount": "已选择{count}",
+      "selectedCount": "已选 {count} 项",
       "matchingCount": "总计：{count}",
-      "dialogTitle": "编辑{count}交易",
+      "dialogTitle": "批量编辑 {count} 笔交易",
       "dialogDescription": "更改将应用​​于所有选定的交易。只有填充的字段才会更新。",
       "categoryLabel": "分类",
-      "categoryPlaceholder": "选择类别...",
+      "categoryPlaceholder": "选择分类…",
       "payeeLabel": "收付款方",
-      "payeePlaceholder": "选择收款人...",
+      "payeePlaceholder": "选择收付款方…",
       "tagsLabel": "标签",
-      "tagsPlaceholder": "选择标签...",
-      "noteLabel": "笔记",
-      "notePlaceholder": "输入备注...",
+      "tagsPlaceholder": "选择标签…",
+      "noteLabel": "备注",
+      "notePlaceholder": "输入备注…",
       "applyButton": "应用更改",
-      "applyingButton": "正在申请...",
+      "applyingButton": "应用中…",
       "confirmTitle": "确认更改",
-      "confirmDescription": "您即将更新 {count} 交易：",
+      "confirmDescription": "你即将更新 {count} 交易：",
       "confirmCategoryLabel": "分类",
       "confirmPayeeLabel": "收付款方",
       "confirmTagsLabel": "标签",
-      "confirmNoteLabel": "笔记",
+      "confirmNoteLabel": "备注",
       "cancelButton": "取消",
       "confirmApplyButton": "应用",
       "successMessage": "已成功更新{count}交易",
-      "unexpectedError": "发生意外错误",
-      "tagModeLabel": "标记动作",
+      "unexpectedError": "操作失败，请稍后重试。",
+      "tagModeLabel": "标签处理方式",
       "tagModeAdd": "添加到现有标签",
       "tagModeReplace": "替换所有标签",
       "tagModeRemove": "删除这些标签",
       "tagModeAddShort": "添加",
-      "tagModeReplaceShort": "代替",
-      "tagModeRemoveShort": "消除",
+      "tagModeReplaceShort": "替换",
+      "tagModeRemoveShort": "移除",
       "tagModeAddHint": "保留当前标签并添加这些标签。",
       "tagModeReplaceHint": "删除所有当前标签，然后添加这些标签。",
       "tagModeRemoveHint": "仅删除这些标签。其他标签保留。",
       "totals": {
         "income": "收入",
-        "expense": "费用",
-        "net": "网",
+        "expense": "支出",
+        "net": "收支净额",
         "transfers": "转账"
       }
     },
@@ -134,50 +134,50 @@
       "bulkActions": {
         "createNewGroup": "创建新组",
         "addToExistingGroup": "添加到现有组",
-        "groupButton": "团体"
+        "groupButton": "分组"
       },
       "addToGroupDialog": {
         "title": "添加到现有组",
-        "searchPlaceholder": "搜索组...",
+        "searchPlaceholder": "搜索组…",
         "noGroupsMessage": "还没有组。先创建一个。",
-        "noSearchResultsMessage": "没有与您的搜索匹配的组。",
-        "addingText": "添加...",
+        "noSearchResultsMessage": "没有与你的搜索匹配的组。",
+        "addingText": "添加中…",
         "buttonLabel": "添加到群组",
         "cancelButton": "取消",
-        "transactionCountLabel": "交易"
+        "transactionCountLabel": "笔交易"
       },
       "createGroupDialog": {
         "title": "创建交易组",
-        "descriptionPrefix": "团体",
+        "descriptionPrefix": "将以下交易分为一组",
         "groupNameLabel": "名称",
         "groupNamePlaceholder": "例如5月工资调拨",
-        "noteLabel": "注意（可选）",
-        "notePlaceholder": "可选描述...",
-        "creatingText": "创造...",
+        "noteLabel": "备注（选填）",
+        "notePlaceholder": "可选描述…",
+        "creatingText": "创建中…",
         "buttonLabel": "创建群组",
         "cancelButton": "取消"
       },
       "groupsPage": {
         "title": "交易组",
-        "searchPlaceholder": "搜索组...",
+        "searchPlaceholder": "搜索组…",
         "noGroupsMessage": "还没有交易组。",
         "emptyStateHint": "在交易页面选择交易，然后点击“创建组”即可开始。",
-        "transactionCountLabel": "交易",
-        "deleteError": "删除群组失败。请再试一次。",
+        "transactionCountLabel": "笔交易",
+        "deleteError": "删除群组失败。请重试。",
         "loadError": "无法加载事务组",
         "description": "捆绑相关交易，例如旅行或传输链，并一起查看它们。",
-        "noMatchTitle": "没有符合您搜索条件的群组",
+        "noMatchTitle": "没有符合你搜索条件的群组",
         "moreActions": "{name} 的更多操作",
         "columns": {
           "name": "名称",
           "transactions": "交易",
           "date": "日期",
-          "net": "网"
+          "net": "收支净额"
         },
         "sort": {
           "label": "对组进行排序",
-          "dateDesc": "最新的优先",
-          "dateAsc": "最老的在前",
+          "dateDesc": "最新在前",
+          "dateAsc": "最早在前",
           "nameAsc": "名称 A-Z",
           "nameDesc": "名称 Z-A",
           "amountDesc": "净值：从高到低",
@@ -194,18 +194,18 @@
     },
     "excludeFromStats": {
       "label": "排除在统计之外",
-      "tooltip": "远离报告、仪表板组件、预算计划和跟踪器。它仍然计入您的余额并保留在交易列表中。"
+      "tooltip": "远离报告、仪表板组件、预算计划和收支追踪。它仍然计入你的余额并保留在交易列表中。"
     },
     "planned": {
       "label": "计划",
-      "confirmedLabel": "确认的",
+      "confirmedLabel": "已确认",
       "plannedTooltip": "计划交易",
       "expiredTooltip": "预计{days}天前，没有匹配的银行交易",
       "mergedTooltip": "已从 {date} 的计划条目确认"
     },
     "pending": {
-      "label": "待办的",
-      "tooltip": "银行尚未登记这笔交易。不会影响账户余额。"
+      "label": "待入账",
+      "tooltip": "银行尚未正式入账，此记录不影响账户余额。"
     },
     "table": {
       "columns": {
@@ -214,44 +214,44 @@
         "category": "分类",
         "payee": "收付款方",
         "amount": "金额",
-        "refAmount": "基础金额",
+        "refAmount": "本位币金额",
         "originalAmount": "原金额",
-        "note": "笔记",
+        "note": "备注",
         "tags": "标签",
         "categorizationSource": "分类依据",
-        "group": "团体",
+        "group": "交易组",
         "refund": "退款",
         "split": "拆分"
       },
       "outOfWallet": "钱包外资金",
-      "hint": "单击单元格进行编辑，或 ↗ 打开完整交易。选择要批量编辑的行。",
+      "hint": "点击单元格进行编辑，或 ↗ 打开完整交易。选择要批量编辑的行。",
       "plannedRows": "{count} 计划交易",
       "emptyTitle": "没有交易符合这些过滤器",
       "emptyDescription": "尝试调整或重置过滤器。",
       "columnConfig": {
         "title": "表格设置",
-        "columns": "专栏",
-        "visibleCount": "{count}可见",
-        "resetDefaults": "重置为默认值",
+        "columns": "显示列",
+        "visibleCount": "显示 {count} 列",
+        "resetDefaults": "恢复默认设置",
         "alwaysShowLockedCells": {
           "label": "始终显示锁定的单元格",
-          "description": "您无法在每一行上对单元格进行着色，而不仅仅是在悬停时。"
+          "description": "你无法在每一行上对单元格进行着色，而不仅仅是在悬停时。"
         }
       },
       "categorizationSourceValues": {
-        "manual": "手动的",
+        "manual": "手动设置",
         "ai": "AI",
         "user_rule": "用户规则",
         "subscription_rule": "订阅规则",
-        "payee_rule": "收款人规则"
+        "payee_rule": "收付款方规则"
       },
       "viewToggle": {
         "list": "列表视图",
         "table": "表格视图"
       },
       "fullscreen": {
-        "enter": "对焦模式",
-        "exit": "退出对焦模式"
+        "enter": "专注模式",
+        "exit": "退出专注模式"
       }
     },
     "bulkDelete": {
@@ -259,16 +259,16 @@
       "externalTooltip": "选择包含银行同步交易，无法删除。",
       "confirmButton": "删除",
       "confirmTitle": "删除{count}交易？",
-      "confirmDescription": "它们会在垃圾箱中保留 30 天，在此之前您可以将其恢复。转会对双方都有影响。",
-      "successMessage": "1 笔交易移至垃圾箱 | {count} 交易已移至垃圾箱",
-      "skippedMessage": "1 被跳过，因为它与付款、投资组合或风险投资相关。 | {count} 被跳过，因为它们与付款、投资组合或企业相关联。",
-      "noneDeletedMessage": "没有任何内容被移至垃圾箱：1 笔交易与付款、投资组合或企业相关联。 | 没有任何内容被移至垃圾箱：{count} 交易与付款、投资组合或企业相关联。",
-      "unexpectedError": "删除交易失败。请再试一次。"
+      "confirmDescription": "它们会在回收站中保留 30 天，在此之前你可以将其恢复。转会对双方都有影响。",
+      "successMessage": "1 笔交易移至回收站 | {count} 交易已移至回收站",
+      "skippedMessage": "1 被跳过，因为它与付款、投资组合或私募投资相关。 | {count} 被跳过，因为它们与付款、投资组合或企业相关联。",
+      "noneDeletedMessage": "没有任何内容被移至回收站：1 笔交易与付款、投资组合或企业相关联。 | 没有任何内容被移至回收站：{count} 交易与付款、投资组合或企业相关联。",
+      "unexpectedError": "删除交易失败。请重试。"
     },
     "inlineEdit": {
       "saveFailed": "无法保存 {field}。再试一次。",
-      "bankTitle": "由您的银行设置",
-      "bankDescription": "通过您的银行连接同步日期、账户和金额。此交易中的其他所有内容均由您更改。",
+      "bankTitle": "由你的银行设置",
+      "bankDescription": "通过你的银行连接同步日期、账户和金额。此交易中的其他所有内容均由你更改。",
       "managedTitle": "在别处管理",
       "managedDescription": "该交易属于投资组合、投资、工具或贷款。从其自己的页面更改它，以便余额保持正确。",
       "gotIt": "知道了",
@@ -276,38 +276,38 @@
       "tooManyTags": "每笔交易最多 {max} 标签"
     },
     "savedViews": {
-      "trigger": "意见",
+      "trigger": "筛选视图",
       "empty": "尚未保存视图。设置过滤器，然后将它们保存为视图。",
-      "modified": "过滤器已更改",
+      "modified": "筛选条件已更改",
       "update": "使用当前过滤器更新“{name}”",
       "updateShort": "更新视图",
-      "revert": "恢复",
+      "revert": "还原",
       "saveNew": "另存为新视图",
-      "actions": "查看操作",
+      "actions": "视图操作",
       "rename": "重命名",
       "moveUp": "向上移动",
       "moveDown": "下移",
       "saveTitle": "保存视图",
       "renameTitle": "重命名视图",
-      "dialogDescription": "视图保留当前的过滤器和排序，以便您可以一键再次应用它们。",
+      "dialogDescription": "视图保留当前的过滤器和排序，以便你可以一键再次应用它们。",
       "nameLabel": "名称",
       "namePlaceholder": "例如杂货，过去 3 个月",
-      "savedToast": "查看已保存",
-      "updatedToast": "查看已更新",
-      "deletedToast": "查看已删除",
-      "saveError": "无法保存您的观点。再试一次。",
+      "savedToast": "视图已保存",
+      "updatedToast": "视图已更新",
+      "deletedToast": "视图已删除",
+      "saveError": "无法保存你的观点。再试一次。",
       "deleteTitle": "删除视图“{name}”？",
-      "deleteDescription": "您的交易不受影响。这无法撤消。",
+      "deleteDescription": "你的交易不受影响。这无法撤销。",
       "filtersCount": "{count}过滤器 | {count}过滤器"
     },
     "trashPage": {
-      "title": "垃圾",
+      "title": "回收站",
       "description": "最先删除的是最新的。每一个都将在 {days} 天后永久删除。选择一个，看看会带来什么。",
       "expiringBanner": "{count}将在{days}内永久删除。",
       "expiringCount": "1 笔交易 | {count} 交易",
       "expiringDays": "1 天 | {count}天",
-      "loadError": "无法加载垃圾箱",
-      "emptyTitle": "垃圾箱已空",
+      "loadError": "无法加载回收站",
+      "emptyTitle": "回收站为空",
       "emptyDescription": "已删除的交易将在此处保留 {days} 天，然后才会被永久删除。",
       "daysLeft": "还剩 1 天 | {count} 剩余天数",
       "deletedOn": "已删除 {date}",
@@ -316,48 +316,48 @@
       "restore": "恢复",
       "deletePermanently": "永久删除",
       "deleteConfirmTitle": "永久删除？",
-      "deleteConfirmDescription": "该交易将被永久删除。这无法撤消。",
+      "deleteConfirmDescription": "该交易将被永久删除。这无法撤销。",
       "notifications": {
         "restored": "交易已恢复",
         "restoreError": "恢复交易失败",
         "deleted": "交易永久删除",
         "deleteError": "删除交易失败",
-        "restoredWithDroppedRefundLinks": "已恢复。 1 个退款链接无法恢复，因为它不再适用。 | 已恢复。 {count} 退款链接无法恢复，因为它们不再适用。"
+        "restoredWithDroppedRefundLinks": "已恢复。 1 个退款关联无法恢复，因为它不再适用。 | 已恢复。 {count} 退款关联无法恢复，因为它们不再适用。"
       },
       "comesBack": {
-        "title": "回来了",
-        "basics": "类别、备注及收款人",
-        "splits": "1 分割 | {n} 分体式",
-        "tags": "1 个标签 | {n} 的标签",
+        "title": "恢复时一并保留",
+        "basics": "分类、备注及收付款方",
+        "splits": "1 条拆分明细 | {n} 条拆分明细",
+        "tags": "1 个标签 | {n} 个标签",
         "attachments": "1 个附件 | {n} 附件",
-        "otherLeg": "另一腿：{accountName}·{amountText}",
+        "otherLeg": "转账另一端：{accountName} · {amountText}",
         "balance": "账户余额重新计算",
         "balances": "两个余额均重新计算",
-        "counterpartInTrash": "当链接事务恢复时也会返回。",
+        "counterpartInTrash": "当关联事务恢复时也会返回。",
         "links": {
-          "refund": "退款链接为“{name}”",
-          "tracker": "追踪器“{name}”",
+          "refund": "退款关联为“{name}”",
+          "tracker": "收支追踪“{name}”",
           "group": "组“{name}”",
           "subscription": "订阅“{name}”",
           "subscriptionPeriod": "认购到期付款 {name}",
-          "unnamed": "无题"
+          "unnamed": "未命名"
         }
       }
     }
   },
   "records": {
     "upcomingSection": {
-      "title": "即将推出",
-      "overdueBadge": "逾期",
-      "scheduledBadge": "预定",
+      "title": "待确认交易",
+      "overdueBadge": "已逾期",
+      "scheduledBadge": "已计划",
       "payAction": "标记已付款",
       "hideToggle": "隐藏即将付款",
-      "expectedBadge": "预期的",
-      "unconfirmedBadge": "未证实",
+      "expectedBadge": "预计",
+      "unconfirmedBadge": "待确认",
       "morePlans": "+{count} 更多计划",
       "morePlansAtLeast": "+{count}+更多计划",
       "deletePlanTitle": "删除计划交易？",
-      "deletePlanDescription": "它会在垃圾箱中保留 30 天，在此之前您可以将其恢复。",
+      "deletePlanDescription": "它会在回收站中保留 30 天，在此之前你可以将其恢复。",
       "plansLoadFailed": "无法加载计划交易",
       "confirmAction": "确认",
       "confirmTooltip": "资金转移——记录并更新余额",

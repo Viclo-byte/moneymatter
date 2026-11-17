@@ -1,13 +1,13 @@
 {
   "auth": {
     "verifyEmail": {
-      "title": "检查您的电子邮箱",
+      "title": "请查收验证邮件",
       "description": "我们已将验证链接发送至",
-      "descriptionYourEmail": "您的电子邮件地址",
-      "descriptionContinued": "。请点击链接以验证您的账户。",
-      "didntReceive": "没有收到电子邮件？请检查您的垃圾邮件文件夹或",
+      "descriptionYourEmail": "你的邮箱",
+      "descriptionContinued": "。请点击关联以验证你的账户。",
+      "didntReceive": "没有收到邮件？请检查你的垃圾邮件文件夹或",
       "resend": "点击此处重新发送",
-      "sending": "发送中……",
+      "sending": "发送中…",
       "resendIn": "{count}秒后可重新发送",
       "backToSignIn": "返回登录",
       "resendSuccess": "验证邮件已发送！请检查收件箱。",

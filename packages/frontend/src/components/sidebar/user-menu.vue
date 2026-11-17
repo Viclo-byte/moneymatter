@@ -135,7 +135,7 @@ const isRealCommit = /^[0-9a-f]{40}$/.test(commitHash);
     </a>
     <a
       v-else-if="isRealCommit"
-      :href="`https://github.com/letehaha/moneymatter/commit/${commitHash}`"
+      :href="`https://github.com/Viclo-byte/moneymatter/commit/${commitHash}`"
       target="_blank"
       rel="noopener noreferrer"
       class="bg-muted hover:bg-accent text-foreground flex shrink-0 items-center gap-1 rounded-md px-1.5 py-0.5 font-mono transition-colors"

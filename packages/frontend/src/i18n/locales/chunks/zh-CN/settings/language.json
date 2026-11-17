@@ -9,9 +9,9 @@
       },
       "contribute": {
         "title": "缺少翻译或翻译错误？",
-        "description": "社区语言在 Crowdin 平台上翻译。您可以请求新的语言、建议修改或自行翻译——无需编程。",
+        "description": "社区语言在 Crowdin 平台上翻译。你可以请求新的语言、建议修改或自行翻译——无需编程。",
         "requestNote": "不想使用 Crowdin？请在{boardLink}请求语言。",
-        "requestNoteLink": "功能板",
+        "requestNoteLink": "功能建议平台",
         "action": "在 Crowdin 上贡献翻译"
       }
     }

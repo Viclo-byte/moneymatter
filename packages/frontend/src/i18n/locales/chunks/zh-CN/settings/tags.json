@@ -3,9 +3,9 @@
     "tags": {
       "title": "标签",
       "addButton": "添加标签",
-      "empty": "还没有标签。创建您的第一个标签来组织您的交易。",
+      "empty": "还没有标签。创建你的第一个标签来组织你的交易。",
       "tabs": {
-        "details": "细节",
+        "details": "详情",
         "reminders": "提醒事项"
       },
       "form": {
@@ -17,13 +17,13 @@
         "icon": "图标",
         "iconPlaceholder": "选择图标",
         "description": "说明",
-        "descriptionPlaceholder": "可选描述",
+        "descriptionPlaceholder": "说明（选填）",
         "saveButton": "保存",
         "previewPlaceholder": "标签名称"
       },
       "delete": {
         "title": "删除标签？",
-        "description": "这将永久删除“{name}”并将其从所有交易中删除。此操作无法撤消。",
+        "description": "这将永久删除“{name}”并将其从所有交易中删除。此操作无法撤销。",
         "deleteButton": "删除",
         "cancelButton": "取消"
       },
@@ -38,8 +38,8 @@
       "reminders": {
         "addButton": "添加提醒",
         "empty": "还没有提醒。创建提醒以获取有关此标签的活动的通知。",
-        "enabled": "启用",
-        "disabled": "残疾人",
+        "enabled": "已启用",
+        "disabled": "已停用",
         "form": {
           "createTitle": "创建提醒",
           "editTitle": "编辑提醒",
@@ -48,37 +48,37 @@
           "amountThreshold": "金额门槛",
           "amountThresholdPlaceholder": "输入阈值金额",
           "amountThresholdHint": "当此标签上的支出超过此金额时收到通知",
-          "frequency": "频率",
+          "frequency": "重复频率",
           "frequencyPlaceholder": "选择频率",
-          "dayOfMonth": "一个月中的哪一天",
+          "dayOfMonth": "每月提醒日",
           "dayOfMonthPlaceholder": "选择日期",
           "dayOfMonthHint": "对于天数较少的月份，将使用最后一天",
-          "isEnabled": "启用",
+          "isEnabled": "已启用",
           "saveButton": "保存"
         },
         "types": {
           "amountThreshold": "金额门槛",
           "amountThresholdDescription": "消费超过一定金额时通知",
-          "existenceCheck": "活动检查",
+          "existenceCheck": "记账情况检查",
           "existenceCheckDescription": "当有带有此标签的交易时通知"
         },
         "frequencies": {
-          "immediate": "即时",
+          "immediate": "立即",
           "immediateDescription": "交易被标记时触发（24 小时冷却时间）",
-          "daily": "日常的",
+          "daily": "每天",
           "dailyDescription": "每天检查一次",
           "weekly": "每周",
           "weeklyDescription": "每周一检查",
           "monthly": "每月",
           "monthlyDescription": "检查每个月的特定日期",
-          "quarterly": "季刊",
+          "quarterly": "每季度",
           "quarterlyDescription": "每 3 个月检查一次（一月、四月、七月、十月）",
           "yearly": "每年",
           "yearlyDescription": "每年一月检查一次"
         },
         "delete": {
           "title": "删除提醒？",
-          "description": "这将永久删除该提醒。此操作无法撤消。",
+          "description": "这将永久删除该提醒。此操作无法撤销。",
           "deleteButton": "删除",
           "cancelButton": "取消"
         },

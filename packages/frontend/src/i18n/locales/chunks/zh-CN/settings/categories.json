@@ -2,10 +2,10 @@
   "settings": {
     "categories": {
       "title": "分类",
-      "description": "使用分类和子分类管理您的交易。拖动一个类别以将其移动到其他父级分类下，或移动到顶层。",
+      "description": "使用分类和子分类管理你的交易。拖动一个分类以将其移动到其他父级分类下，或移动到顶层。",
       "addButton": "添加分类",
-      "organizeButton": "整理",
-      "empty": "尚无类别。创建您的第一个类别以开始操作。",
+      "organizeButton": "分类与备注",
+      "empty": "尚无分类。创建你的第一个分类以开始操作。",
       "categoriesCount": "{n} 个分类 | {n} 个分类",
       "organizeHint": "拖动到一个新的父级，或拖放此处为顶层。",
       "dropToTopLevel": "将“{name}”拖放到此处，使其成为顶层分类",

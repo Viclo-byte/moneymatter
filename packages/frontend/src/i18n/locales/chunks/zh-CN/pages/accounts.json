@@ -5,15 +5,15 @@
     "createVehicle": "添加车辆",
     "actionsMenu": "账户操作",
     "sections": {
-      "archived": "已存档",
+      "archived": "已归档",
       "manual": "手动账户",
-      "sharedWithMe": "与我分享",
+      "sharedWithMe": "他人共享",
       "vehicles": "车辆",
-      "bankConnections": "银行联系"
+      "bankConnections": "银行连接"
     },
     "empty": {
       "title": "还没有账户",
-      "description": "连接您的银行或创建手动账户以开始跟踪您的财务、余额和交易。",
+      "description": "手动添加现金、银行卡等账户，或连接银行自动同步余额和交易。",
       "connectBank": "连接银行账户",
       "createManual": "创建手动账户"
     },
@@ -22,7 +22,7 @@
       "assets": "资产",
       "liabilities": "负债",
       "vehicles": "车辆",
-      "projected": "预计 {amount} · {count} 计划通过 {date} 进入 | 预计 {amount} · {count} 计划通过 {date} 进入"
+      "projected": "预计余额 {amount} · 截至 {date} 有 {count} 笔计划交易 | 预计余额 {amount} · 截至 {date} 有 {count} 笔计划交易"
     },
     "sharedBy": "共享者 {handle}",
     "viaHousehold": "通过{handle}的家庭分享",
@@ -31,24 +31,24 @@
     "noBanksConnected": "尚未连接银行 — 连接银行即可自动同步余额。",
     "reconnect": "重新连接",
     "manageConnection": "管理连接",
-    "accountsCount": "{count} 帐号 | {count}账户",
-    "inGroupSubtitle": "在{name}",
+    "accountsCount": "{count} 个账户 | {count} 个账户",
+    "inGroupSubtitle": "所属分组：{name}",
     "sort": {
-      "auto": "汽车",
+      "auto": "自动排序",
       "name": "名称",
       "balance": "余额",
       "ariaLabel": "对账户进行排序",
       "direction": {
-        "aToZ": "A to Z",
-        "zToA": "Z to A",
-        "highestFirst": "最高的第一个",
-        "lowestFirst": "最低的优先"
+        "aToZ": "名称升序",
+        "zToA": "名称降序",
+        "highestFirst": "余额从高到低",
+        "lowestFirst": "余额从低到高"
       }
     },
     "status": {
-      "active": "启用",
+      "active": "生效中",
       "expiringSoon": "即将到期",
-      "expired": "已到期"
+      "expired": "已失效"
     }
   }
 }

@@ -7,7 +7,7 @@
         "title": "证券价格同步",
         "description": "手动触发所有持有证券的价格同步",
         "button": "触发价格同步",
-        "buttonLoading": "正在同步...",
+        "buttonLoading": "正在同步…",
         "notifications": {
           "success": "证券价格同步成功完成",
           "failed": "触发价格同步失败",
@@ -16,22 +16,22 @@
         }
       },
       "priceUpload": {
-        "title": "手动安全价格上传",
+        "title": "手动上传证券价格",
         "description": "通过 CSV 或 JSON 文件上传证券的历史价格数据",
-        "button": "上传安全价格",
-        "dialogTitle": "上传安全价格",
+        "button": "上传证券价格",
+        "dialogTitle": "上传证券价格",
         "selectSecurity": {
           "searchLabel": "搜索符号或名称",
           "searchPlaceholder": "AAPL",
-          "searching": "正在寻找...",
+          "searching": "正在寻找…",
           "failed": "搜索证券失败。",
           "noResults": "没有结果。",
           "changeButton": "变化"
         },
         "dateRangeInfo": {
-          "loading": "正在加载日期范围信息...",
+          "loading": "正在加载日期范围信息…",
           "title": "可用汇率日期范围（{currency}）：",
-          "tooltipText": "您只能上传我们有可用汇率的日期的证券价格。否则将无法将证券价格转换为其他货币。如果您需要较旧的数据，请先上传汇率。否则，根据您在后续步骤中选择的选项，记录将被自动过滤（忽略）或上传请求将失败。"
+          "tooltipText": "你只能上传我们有可用汇率的日期的证券价格。否则将无法将证券价格转换为其他货币。如果你需要较旧的数据，请先上传汇率。否则，根据你在后续步骤中选择的选项，记录将被自动过滤（忽略）或上传请求将失败。"
         },
         "fileUpload": {
           "title": "上传文件",
@@ -42,9 +42,9 @@
           }
         },
         "fieldMapper": {
-          "title": "地图字段",
+          "title": "对应数据字段",
           "description": "将文件的字段与下面的必填字段相匹配。",
-          "selectField": "选择字段...",
+          "selectField": "选择字段…",
           "dateFormatLabel": "日期格式",
           "dateFormatDescription": "选择文件中使用的日期格式",
           "dateFormats": {
@@ -65,7 +65,7 @@
           "title": "数据预览",
           "recordsCount": "{count} 记录即将上传 | {count}记录将上传",
           "recordsPeriod": "对于 {oldest} 和 {newest} 之间的时间段",
-          "loadingExisting": "正在加载现有价格进行比较...",
+          "loadingExisting": "正在加载现有价格进行比较…",
           "warnings": {
             "significantDifferences": "检测到显着的价格差异",
             "differencesDetails": "{count}记录与现有数据相比价格差异大于4%。请仔细审查。 | {count} 记录与现有数据相比价格差异大于 4%。请仔细审查。"
@@ -77,8 +77,8 @@
             "existingPrice": "现价",
             "difference": "不同之处 （％）"
           },
-          "noExistingPrice": "N/A",
-          "scrollForMore": "滚动查看更多...",
+          "noExistingPrice": "暂无数据",
+          "scrollForMore": "滚动查看更多…",
           "noDifferences": "未发现有显着差异的记录。",
           "backButton": "返回映射",
           "continueButton": "继续选项"
@@ -95,7 +95,7 @@
           },
           "backButton": "返回",
           "uploadButton": "上传价格",
-          "uploadingButton": "正在上传..."
+          "uploadingButton": "正在上传…"
         },
         "result": {
           "title": "上传完成！",
@@ -127,7 +127,7 @@
           "icon": "图标",
           "recipients": "接收者",
           "recipientsPlaceholder": "可选：填写用户 ID 或邮箱，以逗号分隔，例如 12, jane{'@'}example.com。留空表示所有活跃用户",
-          "recipientsError": "使用正整数 ID 或有效电子邮件，以逗号分隔"
+          "recipientsError": "使用正整数 ID 或有效邮箱，以逗号分隔"
         },
         "icons": {
           "info": "信息",
@@ -139,8 +139,8 @@
         "confirm": {
           "title": "发送给所有活跃用户？",
           "titleSelected": "发送给{count}用户？",
-          "description": "这将为过去 30 天内的每个活跃用户创建一个通知。它无法撤消。",
-          "descriptionSelected": "未知的 ID 和电子邮件将被跳过。它无法撤消。",
+          "description": "这将为过去 30 天内的每个活跃用户创建一个通知。它无法撤销。",
+          "descriptionSelected": "未知的 ID 和邮箱将被跳过。它无法撤销。",
           "button": "发送"
         },
         "notifications": {

@@ -3,7 +3,7 @@
     "importExport": {
       "csvImport": {
         "pageTitle": "从 CSV 导入交易",
-        "pageDescription": "上传您的银行 CSV 导出或交易历史文件，以将交易导入您的账户。",
+        "pageDescription": "上传你的银行 CSV 导出或交易历史文件，以将交易导入你的账户。",
         "stepper": {
           "stepOf": "{total} 的步骤 {current}",
           "steps": {
@@ -11,13 +11,13 @@
             "map": "地图列",
             "resolveAccounts": "账户",
             "resolveCategories": "分类",
-            "review": "审查",
+            "review": "核对",
             "results": "完成"
           }
         },
         "steps": {
           "uploadTitle": "上传 CSV 文件",
-          "uploadDescription": "选择您的 CSV 文件开始",
+          "uploadDescription": "选择你的 CSV 文件开始",
           "mappingTitle": "地图列",
           "mappingDescription": "将 CSV 列与交易字段匹配",
           "reviewTitle": "检查重复项",
@@ -28,11 +28,11 @@
         "fileUpload": {
           "stepTitle": "上传 CSV 文件",
           "description": "上传一个或多个 CSV 文件以导入交易。所有文件必须具有相同的列。",
-          "dragDrop": "将您的 CSV 文件拖放到此处",
+          "dragDrop": "将你的 CSV 文件拖放到此处",
           "orBrowse": "或点击浏览",
           "maxSize": "最大文件大小：50MB",
           "removeFile": "删除文件",
-          "parsing": "正在解析...",
+          "parsing": "正在解析…",
           "continueToMapping": "继续测绘",
           "errors": {
             "invalidFormat": "文件格式无效。请上传 CSV 文件。",
@@ -58,13 +58,13 @@
           "filesCount": "{count} 文件 | {count} 文件",
           "totalRows": "总行数",
           "delimiter": "分隔符",
-          "extracting": "正在提取...",
-          "detecting": "检测重复项...",
+          "extracting": "正在提取…",
+          "detecting": "检测重复项…",
           "nextExtract": "下一步：提取值",
           "continueToDuplicates": "继续重复检查"
         },
         "execute": {
-          "starting": "开始导入...",
+          "starting": "开始导入…",
           "progressCount": "{processed} / {total}",
           "statusQueued": "排队",
           "statusRunning": "输入…",
@@ -85,7 +85,7 @@
           "errors": "错误",
           "rawData": "原始数据",
           "duplicatesTitle": "{count} 发现潜在重复项",
-          "duplicatesHint": "检查您想要导入的行；未检查的重复项将被跳过。",
+          "duplicatesHint": "检查你想要导入的行；未检查的重复项将被跳过。",
           "skip": "跳过",
           "match": "匹配",
           "csvTransaction": "CSV交易",
@@ -95,12 +95,12 @@
           "invalidWillBeSkipped": "无效的行将被跳过。",
           "duplicatesWillBeSkipped": "重复项将被跳过。",
           "backToMapping": "返回映射",
-          "importing": "输入...",
+          "importing": "输入…",
           "importButton": "导入{count}交易",
           "unpriceableTitle": "{count} 行无法定价 — 未找到汇率",
-          "unpriceableDescription": "这些行使用的货币没有存储汇率，无法转换为基础货币。您必须跳过它们或取消导入。",
+          "unpriceableDescription": "这些行使用的货币没有存储汇率，无法转换为基础货币。你必须跳过它们或取消导入。",
           "unpriceableWillBeSkipped": "无价将被跳过",
-          "currency": "货币",
+          "currency": "币种",
           "skipAndImport": "跳过并导入",
           "cancelImport": "取消导入",
           "noInvalidRows": "没有无效行",
@@ -117,9 +117,9 @@
           "skippedDuplicates": "跳过（重复）",
           "accountsCreated": "已创建账户",
           "accountsSkipped": "已跳过的账户",
-          "categoriesCreated": "已创建类别",
+          "categoriesCreated": "已创建分类",
           "tagsCreated": "已创建标签",
-          "payeesCreated": "创建收款人",
+          "payeesCreated": "创建收付款方",
           "importErrors": "导入错误",
           "rowNumber": "排 ＃",
           "error": "错误",
@@ -128,7 +128,7 @@
           "viewTransactions": "查看交易",
           "startNewImport": "开始新的导入",
           "skippedUnpriceable": "跳过（未定价）",
-          "importFailed": "导入交易失败。请再试一次。",
+          "importFailed": "导入交易失败。请重试。",
           "successCallout": "{count} 交易导入成功",
           "failed": "失败",
           "noErrors": "没有错误",
@@ -142,13 +142,13 @@
         "file": "文件",
         "totalRows": "总行数",
         "delimiter": "分隔符",
-        "detecting": "检测重复项..."
+        "detecting": "检测重复项…"
       },
       "common": {
-        "selectOption": "选择选项...",
-        "selectColumn": "选择列...",
+        "selectOption": "选择选项…",
+        "selectColumn": "选择列…",
         "noneOptional": "无（可选）",
-        "selectAction": "选择动作..."
+        "selectAction": "选择动作…"
       },
       "transactionTypeMapping": {
         "columnLabel": "交易类型栏",
@@ -156,7 +156,7 @@
         "expenseValuesLabel": "费用值",
         "commaSeparatedHint": "逗号分隔值",
         "uncoveredValues": "类型列中的这些值尚未分配给收入或支出：{values}。将每一项添加到上面的列表中以继续。",
-        "selectColumn": "选择列...",
+        "selectColumn": "选择列…",
         "incomeValuesPlaceholder": "例如，信用、存款、收入",
         "expenseValuesPlaceholder": "例如，借记、提款、费用",
         "methodOptions": {
@@ -166,27 +166,27 @@
         "amountSignInfo": "ℹ️ 交易类型将自动确定：负数 = 支出，正数 = 收入"
       },
       "currencyMapping": {
-        "selectCurrency": "选择货币...",
+        "selectCurrency": "选择货币…",
         "methodOptions": {
           "dataSourceColumn": "从 CSV 列映射",
           "existingCurrency": "所有交易使用相同的货币"
         }
       },
       "categoryMapping": {
-        "selectCategory": "选择类别..."
+        "selectCategory": "选择分类…"
       },
       "accountMapping": {
-        "selectAccount": "选择账户..."
+        "selectAccount": "选择账户…"
       },
       "accountAssignment": {
         "title": "账户分配",
-        "howToAssign": "您想如何分配账户？",
+        "howToAssign": "你想如何分配账户？",
         "description": "选择如何将账户分配给导入的交易",
         "accountColumn": "账户栏",
         "columnDescription": "选择包含账户名称的 CSV 列",
         "accountLabel": "账户",
         "singleAccountDescription": "所有导入的交易都将分配到该账户",
-        "mapOnNextStep": "您将在下一步中将每个 CSV 账户映射到您的现有账户",
+        "mapOnNextStep": "你将在下一步中将每个 CSV 账户映射到你的现有账户",
         "options": {
           "mapToExisting": "将每个 CSV 账户映射到现有账户（在下一步中）",
           "assignToSingle": "全部分配给单个现有账户"
@@ -194,10 +194,10 @@
       },
       "accountMappingTable": {
         "title": "账户映射",
-        "description": "将 CSV 账户名称映射到您现有的账户或创建新账户。仅显示具有匹配货币的账户。",
+        "description": "将 CSV 账户名称映射到你现有的账户或创建新账户。仅显示具有匹配货币的账户。",
         "csvAccountName": "CSV 账户名称",
-        "currency": "货币",
-        "action": "行动",
+        "currency": "币种",
+        "action": "操作",
         "targetAccount": "目标账户",
         "actions": {
           "createNew": "创建新账户",
@@ -207,16 +207,16 @@
         "willBeCreated": "将使用 {currency} 货币创建新账户“{name}”",
         "defaultCurrency": "默认",
         "mappedTo": "映射到“{name}”",
-        "selectAccount": "选择账户..."
+        "selectAccount": "选择账户…"
       },
       "categoryMappingTable": {
-        "csvCategoryName": "CSV 类别名称"
+        "csvCategoryName": "CSV 分类名称"
       },
       "categoryAssignment": {
         "options": {
-          "mapToExisting": "将每个 CSV 类别映射到现有类别（下一步）",
-          "createNew": "从 CSV 值创建新类别",
-          "assignToSingle": "将所有内容分配给单个现有类别"
+          "mapToExisting": "将每个 CSV 分类映射到现有分类（下一步）",
+          "createNew": "从 CSV 值创建新分类",
+          "assignToSingle": "将所有内容分配给单个现有分类"
         }
       },
       "tagMappingTable": {
@@ -225,18 +225,18 @@
       "resolveValues": {
         "selectAction": "选择动作",
         "actions": {
-          "createNew": "创造新的",
+          "createNew": "新建",
           "linkExisting": "链接到现有的",
           "skip": "跳过"
         },
         "quickActions": {
           "mapExactMatches": "地图精确匹配",
-          "createNewForUnmatched": "创造无与伦比的新",
+          "createNewForUnmatched": "为未匹配项新建记录",
           "skipAll": "全部跳过",
           "reset": "重置",
           "tooltips": {
             "mapExactMatchesAccounts": "将每个 CSV 账户链接到具有相同名称和货币的现有账户。没有完全匹配的账户保持不变。",
-            "mapExactMatchesCategories": "将每个 CSV 类别链接到同名的现有类别。没有完全匹配的类别保持不变。",
+            "mapExactMatchesCategories": "将每个 CSV 分类链接到同名的现有分类。没有完全匹配的分类保持不变。",
             "mapExactMatchesTags": "将每个 CSV 标签链接到具有相同名称的现有标签。没有完全匹配的标签保持不变。",
             "createNewForUnmatched": "将未链接到现有条目的每一行设置为“新建”。已链接的行保持不变。",
             "skipAll": "跳过每个标签 - 不会导入或创建任何标签。",
@@ -247,8 +247,8 @@
           "sectionTitle": "账户映射",
           "resolvedCount": "{resolved} 或 {total} 已解决",
           "csvName": "CSV账户",
-          "currency": "货币",
-          "action": "行动",
+          "currency": "币种",
+          "action": "操作",
           "target": "目标账户",
           "selectTarget": "选择一个账户",
           "noMatchingCurrency": "没有账户匹配货币 {currency}",
@@ -260,14 +260,14 @@
           "skippedNote": "{count} 账户将被跳过。他们的交易将不会被导入。"
         },
         "categories": {
-          "sectionTitle": "类别映射",
-          "csvName": "CSV类别"
+          "sectionTitle": "分类映射",
+          "csvName": "CSV分类"
         },
         "tags": {
           "sectionTitle": "标签映射",
           "resolvedCount": "{resolved} 或 {total} 已解决",
           "csvName": "CSV 标签",
-          "action": "行动",
+          "action": "操作",
           "target": "目标标签",
           "selectTarget": "选择一个标签",
           "willCreate": "将创建“{name}”",
@@ -276,28 +276,28 @@
           "loadFailed": "加载标签失败",
           "empty": "在 CSV 中找不到标签"
         },
-        "detectError": "无法继续。请再试一次。",
+        "detectError": "无法继续。请重试。",
         "extractFailed": "无法加载要解析的值。请返回并重试。",
         "retry": "重试",
         "footer": {
           "back": "返回",
-          "next": "下一个"
+          "next": "下一步"
         }
       },
       "mapColumns": {
-        "columnsTitle": "专栏",
+        "columnsTitle": "显示列",
         "assignmentsTitle": "作业",
         "fieldHeader": "场地",
         "csvColumnHeader": "CSV 列",
         "exampleHeader": "示例数据",
         "howToAssignHeader": "如何分配",
         "usingHeader": "使用",
-        "optionalSuffix": "（选修的）",
+        "optionalSuffix": "（选填）",
         "choosePlaceholder": "选择…",
         "alreadyMatchedSuffix": "（已经匹配）",
         "amountSignNote": "由金额符号确定",
         "back": "返回",
-        "next": "下一个",
+        "next": "下一步",
         "missingHint": "还需要：{fields}",
         "fields": {
           "date": "日期",
@@ -305,7 +305,7 @@
           "description": "说明",
           "category": "分类",
           "account": "账户",
-          "currency": "货币",
+          "currency": "币种",
           "transactionType": "交易类型",
           "payee": "收付款方"
         },
@@ -327,7 +327,7 @@
           "error": "错误"
         },
         "rowErrors": {
-          "payeeDefaultTagsFailed": "交易已导入，但无法应用收款人的默认标签。",
+          "payeeDefaultTagsFailed": "交易已导入，但无法应用收付款方的默认标签。",
           "accountUnresolved": "无法解析该行的账户，因此跳过该行。",
           "readBackFailed": "该事务已创建但无法读回，因此导入的计数中缺少该事务。",
           "generic": "无法导入该行。"

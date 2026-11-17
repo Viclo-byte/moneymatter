@@ -7,10 +7,10 @@
     "dragHint": "拖动以重新排序",
     "toggleAriaLabel": "启用自动化",
     "menuAriaLabel": "自动化操作",
-    "disabledPill": "残疾人",
+    "disabledPill": "已停用",
     "mcpTip": {
       "trigger": "尖端",
-      "text": "您可以通过 MCP 连接使用 AI 管理自动化 - 要求它重新组织您的规则，或检查重复和冲突。",
+      "text": "你可以通过 MCP 连接使用 AI 管理自动化 - 要求它重新组织你的规则，或检查重复和冲突。",
       "link": "设置 MCP 连接"
     },
     "statusFilter": {
@@ -21,9 +21,9 @@
     },
     "pausedMissingRef": "已暂停 — {refType}“{label}”已删除",
     "pausedMissingRefUnnamed": "已暂停：此规则引用的 {refType} 已删除",
-    "matchStats": "{count} 比赛 · 最后 {date} | {count} 比赛 · 最后 {date}",
+    "matchStats": "已匹配 {count} 笔 · 最近一次 {date} | 已匹配 {count} 笔 · 最近一次 {date}",
     "matchStatsNever": "从未匹配过",
-    "loadError": "无法加载自动化。检查您的连接并重试。",
+    "loadError": "无法加载自动化。检查你的连接并重试。",
     "reorderDisabledFiltered": "清除状态过滤器以重新排序",
     "density": {
       "comfortable": "详细的",
@@ -36,16 +36,16 @@
       "day": "天",
       "more": "+{count} 更多",
       "less": "显示较少",
-      "noteReplace": "设置注释",
+      "noteReplace": "设置备注",
       "noteAppend": "附加",
       "notePrepend": "前置",
       "note": {
         "containsAny": "注意有",
-        "notContainsAny": "注释缺少",
-        "startsWithAny": "注释开始",
-        "endsWithAny": "注释结束",
+        "notContainsAny": "备注缺少",
+        "startsWithAny": "备注开始",
+        "endsWithAny": "备注结束",
         "equalsAny": "注意是",
-        "isEmpty": "注释为空"
+        "isEmpty": "备注为空"
       },
       "merchant": {
         "containsAny": "商家有",
@@ -57,33 +57,33 @@
       }
     },
     "refType": {
-      "category": "类别",
+      "category": "分类",
       "tag": "标签",
       "account": "账户",
       "accountGroup": "账户组",
       "bankConnection": "银行连接",
-      "payee": "收款人"
+      "payee": "收付款方"
     },
     "emptyState": {
       "title": "还没有自动化",
       "description": "当交易从银行同步或文件导入到达时，自动化会对其进行分类、标记和注释。",
-      "cta": "创建您的第一个自动化"
+      "cta": "创建你的第一个自动化"
     },
     "delete": {
       "title": "删除自动化？",
-      "description": "“{name}”将停止在新交易上运行。已分类的交易保留其类别、标签和注释。",
+      "description": "“{name}”将停止在新交易上运行。已分类的交易保留其分类、标签和备注。",
       "confirm": "删除"
     },
     "notifications": {
       "deleteSuccess": "自动化已删除。",
-      "deleteError": "无法删除自动化。请再试一次。",
-      "toggleError": "无法更改自动化的状态。请再试一次。",
-      "reorderError": "无法保存新订单。请再试一次。",
+      "deleteError": "无法删除自动化。请重试。",
+      "toggleError": "无法更改自动化的状态。请重试。",
+      "reorderError": "无法保存新订单。请重试。",
       "staleReference": "此自动化指向已删除的内容。打开它并选择一个替代品。",
       "openRule": "开放规则"
     },
     "fields": {
-      "note": "笔记",
+      "note": "备注",
       "merchant": "商人",
       "payee": "收付款方",
       "amount": "金额",
@@ -108,12 +108,12 @@
       "equals": "等于"
     },
     "actions": {
-      "set_category": "设置类别",
-      "set_payee": "设置收款人",
+      "set_category": "设置分类",
+      "set_payee": "设置收付款方",
       "add_tags": "添加标签",
-      "set_note": "设置注释",
+      "set_note": "设置备注",
       "noteMode": {
-        "replace": "代替",
+        "replace": "替换",
         "append": "附加",
         "prepend": "前置"
       }
@@ -122,7 +122,7 @@
       "titleNew": "新自动化",
       "titleEdit": "编辑自动化",
       "back": "回到自动化",
-      "enabled": "启用",
+      "enabled": "已启用",
       "nameLabel": "名称",
       "namePlaceholder": "例如来自比德龙卡的杂货",
       "conditionsHeader": "匹配 {match} 这些条件",
@@ -139,7 +139,7 @@
       "amountPlaceholder": "输入金额",
       "minPlaceholder": "最低金额",
       "maxPlaceholder": "最大金额",
-      "currencyPlaceholder": "选择货币",
+      "currencyPlaceholder": "选择币种",
       "currency": {
         "transaction": "交易币种",
         "base": "基础货币（{code}）",
@@ -153,10 +153,10 @@
       "actionsHeader": "然后这样做",
       "addAction": "添加动作",
       "removeAction": "删除动作",
-      "categoryPlaceholder": "选择一个类别",
-      "payeePlaceholder": "选择收款人",
+      "categoryPlaceholder": "选择分类",
+      "payeePlaceholder": "选择收付款方",
       "tagsPlaceholder": "选择标签",
-      "notePlaceholder": "输入注释文本",
+      "notePlaceholder": "输入备注文本",
       "saveSuccess": "自动化已保存。",
       "notFound": {
         "title": "未找到自动化",
@@ -170,12 +170,12 @@
       },
       "preview": {
         "title": "预览",
-        "run": "预览比赛",
+        "run": "预览匹配结果",
         "hint": "完成规则以预览它将匹配哪些交易。",
         "summary": "此规则可能适用于最后 {scanned} 交易的 {matched}",
-        "empty": "没有匹配项",
+        "empty": "未找到匹配项",
         "stale": "自预览运行以来，情况发生了变化。",
-        "error": "无法运行预览。请再试一次。"
+        "error": "无法运行预览。请重试。"
       },
       "errors": {
         "nameRequired": "输入此自动化的名称。",
@@ -192,15 +192,15 @@
         "amountBoundsRequired": "输入最小和最大金额。",
         "amountRange": "最小金额不得大于最大金额。",
         "dayRange": "输入 1 到 31 之间的日期范围，第一天不能晚于最后一天。",
-        "categoryRequired": "选择一个类别。",
-        "payeeRequired": "选择收款人。",
+        "categoryRequired": "选择一个分类。",
+        "payeeRequired": "选择收付款方。",
         "tagsRequired": "至少选择一个标签。",
-        "noteRequired": "输入注释文本。",
-        "noteTooLong": "注释不得超过 {max} 个字符。",
-        "saveFailed": "无法保存自动化。请再试一次。",
+        "noteRequired": "输入备注文本。",
+        "noteTooLong": "备注不得超过 {max} 个字符。",
+        "saveFailed": "无法保存自动化。请重试。",
         "transactionTypeDuplicate": "只允许一种交易类型条件"
       },
-      "noResults": "没有结果"
+      "noResults": "未找到结果"
     },
     "summary": {
       "missingRef": "（已删除）",
@@ -210,34 +210,34 @@
       },
       "transactionTypeValue": {
         "income": "收入",
-        "expense": "费用"
+        "expense": "支出"
       }
     },
     "applyToHistory": {
       "trigger": "适用于过去的交易",
-      "saveFirst": "首先保存您的更改",
+      "saveFirst": "首先保存你的更改",
       "pickTitle": "将规则应用于过去的交易",
-      "pickHint": "选择一个规则。在发生任何变化之前，您将检查匹配的交易。",
+      "pickHint": "选择一个规则。在发生任何变化之前，你将检查匹配的交易。",
       "title": "将“{name}”应用于过去的交易",
-      "noRules": "您还没有任何自动化。",
+      "noRules": "你还没有任何自动化。",
       "summary": "{count} 过去的交易符合此规则 | {count} 过去的交易符合此规则",
-      "moreMatches": "仅列出 {shown} 最近的比赛。应用这些，然后再次运行。",
-      "scanCapped": "仅检查您 {limit} 最近的交易。",
+      "moreMatches": "仅列出最近匹配的 {shown} 笔交易。可先应用本批结果，再重新运行。",
+      "scanCapped": "仅检查你 {limit} 最近的交易。",
       "emptyState": {
         "settledTitle": "全部都追上了",
         "settledDescription": "对于唯一匹配的过去交易，该规则没有任何可更改的内容。 | 对于匹配过去交易的 {count}，此规则没有任何可更改的内容。",
         "noneTitle": "还没有匹配项",
-        "noneDescription": "您的同步或导入账户中过去的交易均不符合这些条件。"
+        "noneDescription": "你的同步或导入账户中过去的交易均不符合这些条件。"
       },
-      "selectAll": "选择全部",
-      "selectedCount": "已选择{count}",
-      "irreversible": "这无法撤消。仔细查看清单。",
+      "selectAll": "全选",
+      "selectedCount": "已选 {count} 项",
+      "irreversible": "这无法撤销。仔细查看清单。",
       "applyAction": "适用于{count}交易",
       "confirm": {
         "title": "应用这个规则吗？",
         "action": "应用",
         "description": "{count}交易将立即更新。",
-        "payeeNote": "这些交易的收款人将被视为您设置的，因此自动收款人检测以后不会更改它。"
+        "payeeNote": "这些交易的收付款方将被视为你设置的，因此自动收付款方检测以后不会更改它。"
       },
       "success": "应用于{applied}交易",
       "successWithSkipped": "适用于{applied}交易，{skipped}跳过",

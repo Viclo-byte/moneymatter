@@ -2,24 +2,24 @@
   "settings": {
     "security": {
       "title": "安全设置",
-      "description": "管理您的登录方法、活动会话和密码",
+      "description": "管理你的登录方法、活动会话和密码",
       "tabs": {
         "loginMethods": "登录方式",
-        "activeSessions": "活跃会话",
+        "activeSessions": "登录设备",
         "password": "密码",
         "backup": "备份与恢复",
-        "dangerZone": "危险区域"
+        "dangerZone": "高风险操作"
       },
       "loginMethods": {
         "title": "登录方式",
-        "description": "管理您登录账户的方式",
+        "description": "管理你登录账户的方式",
         "oauth": {
-          "connectedAs": "连接为 {email}",
+          "connectedAs": "已关联 {email}",
           "accountName": "{provider}账户",
           "notConnected": "未连接",
-          "disconnect": "断开",
+          "disconnect": "断开连接",
           "disconnectConfirmTitle": "断开{provider}？",
-          "disconnectConfirmDescription": "您将无法再使用此 {provider} 账户登录。您可以随时重新连接。",
+          "disconnectConfirmDescription": "你将无法再使用此 {provider} 账户登录。你可以随时重新连接。",
           "connect": "连接"
         },
         "password": {
@@ -30,16 +30,16 @@
           "setupInTab": "在密码选项卡中设置"
         },
         "passkeys": {
-          "title": "万能钥匙",
-          "noPasskeys": "没有注册密钥",
-          "passkeyCount": "{count} 密钥已注册",
-          "addButton": "添加密钥",
-          "passkeyName": "万能钥匙",
+          "title": "通行密钥",
+          "noPasskeys": "尚未添加通行密钥",
+          "passkeyCount": "已添加 {count} 个通行密钥",
+          "addButton": "添加通行密钥",
+          "passkeyName": "通行密钥",
           "added": "添加了 {date}",
           "rename": "重命名",
-          "renamePlaceholder": "输入密钥名称",
-          "deleteConfirmTitle": "删除密钥？",
-          "deleteConfirmDescription": "“{name}”将无法再登录您的账户。此操作无法撤消。"
+          "renamePlaceholder": "输入通行密钥名称",
+          "deleteConfirmTitle": "移除通行密钥？",
+          "deleteConfirmDescription": "“{name}”将无法再登录你的账户。此操作无法撤销。"
         },
         "warningOneMethod": "在断开 OAuth 账户之前添加另一种登录方法。",
         "notifications": {
@@ -47,21 +47,21 @@
           "oauthDisconnectSuccess": "{provider} 账户已断开",
           "oauthDisconnectFailed": "{provider}账户断开连接失败",
           "passkeyAddSuccess": "密钥添加成功",
-          "passkeyAddFailed": "添加密钥失败。确保您的设备支持密钥。",
-          "passkeyRemoveSuccess": "密钥已删除",
-          "passkeyRemoveFailed": "无法删除密钥",
+          "passkeyAddFailed": "添加通行密钥失败。确保你的设备支持密钥。",
+          "passkeyRemoveSuccess": "通行密钥已删除",
+          "passkeyRemoveFailed": "无法移除通行密钥",
           "passkeyRenameFailed": "重命名密钥失败"
         }
       },
       "activeSessions": {
-        "title": "活跃会话",
-        "description": "管理您当前登录的设备",
-        "currentBadge": "当前的",
+        "title": "登录设备",
+        "description": "管理你当前登录的设备",
+        "currentBadge": "当前设备",
         "unknownLocation": "地点未知",
         "lastActive": "最后活跃：{date}",
-        "noSessions": "未找到活动会话",
-        "loadError": "我们无法加载您的活动会话。",
-        "revokeAllButton": "退出所有其他会话",
+        "noSessions": "暂无其他登录设备",
+        "loadError": "我们无法加载你的活动会话。",
+        "revokeAllButton": "退出其他所有设备",
         "deviceTypes": {
           "unknownDevice": "未知设备",
           "unknownBrowser": "未知浏览器"
@@ -81,8 +81,8 @@
       },
       "passwordSection": {
         "title": "密码",
-        "descriptionChange": "更改您的密码",
-        "descriptionSet": "为您的账户设置密码",
+        "descriptionChange": "更改你的密码",
+        "descriptionSet": "为你的账户设置密码",
         "labels": {
           "currentPassword": "当前密码",
           "newPassword": "新密码",
@@ -100,9 +100,9 @@
         },
         "strength": {
           "veryWeak": "很弱",
-          "weak": "虚弱的",
-          "fair": "公平的",
-          "strong": "强的",
+          "weak": "弱",
+          "fair": "中等",
+          "strong": "强",
           "veryStrong": "很强"
         },
         "requirements": {
@@ -113,79 +113,79 @@
         },
         "validation": {
           "minLength": "密码必须至少为 8 个字符",
-          "passwordsNoMatch": "密码不匹配"
+          "passwordsNoMatch": "两次输入的密码不一致"
         },
         "notifications": {
           "changeSuccess": "密码修改成功",
           "changeFailed": "更改密码失败",
           "setSuccess": "密码设置成功",
           "setFailed": "设置密码失败",
-          "unexpectedError": "发生意外错误",
+          "unexpectedError": "操作失败，请稍后重试。",
           "updateFailed": "更新密码失败"
         },
         "errors": {
           "incorrectCurrentPassword": "当前密码不正确。",
-          "passwordAlreadySet": "您的账户已有密码。使用表格来更改它。"
+          "passwordAlreadySet": "你的账户已有密码。使用表格来更改它。"
         }
       },
-      "dangerZone": "危险区域",
+      "dangerZone": "高风险操作",
       "wipeData": {
-        "title": "擦除所有数据",
-        "warningFull": "{strong} 此操作将删除工作区中的所有内容。您的登录信息将保留，以便您可以重新开始。",
+        "title": "清空全部数据",
+        "warningFull": "{strong}此操作会清空当前账本的全部数据，但保留登录账号，以便重新开始记账。",
         "warningStrong": "警告：",
-        "button": "擦除数据",
+        "button": "清空数据",
         "dialog": {
-          "title": "擦除所有数据？",
-          "description": "这将永久删除工作区中的所有内容，包括：",
+          "title": "清空全部记账数据？",
+          "description": "以下记账数据将被永久删除，无法撤销：",
           "list": {
             "accounts": "账户和余额",
             "transactions": "交易、退款和转账",
-            "budgets": "预算、跟踪器、标签和类别",
-            "portfolios": "投资、投资组合和持股",
-            "settings": "用户设置、AI 密钥和登录状态",
-            "baseCurrency": "基础货币和汇率"
+            "budgets": "预算、收支追踪、标签和分类",
+            "portfolios": "投资、投资组合和持仓",
+            "settings": "个人设置、AI 密钥和新手引导进度",
+            "baseCurrency": "本位币和汇率设置"
           },
-          "kept": "您的登录名和个人资料仍然保留。您将从入门流程重新开始。",
+          "kept": "登录账号和个人资料会保留。清空后需重新完成初始设置。",
           "typeConfirm": "要确认，请在下面输入 {phrase}：",
-          "confirmLabel": "擦除数据",
-          "confirmLoading": "擦拭…"
+          "confirmLabel": "清空数据",
+          "confirmLoading": "清空中…"
         },
         "sharingDialog": {
-          "title": "您正在与其他用户共享数据",
+          "title": "你正在与其他用户共享数据",
           "warning": "其他人将立即失去访问权限",
-          "description": "擦除数据会撤销对以下共享资源的访问权限：",
-          "householdsCount": "{count} 家庭成员将失去访问权限。 | {count} 家庭成员将失去访问权限。",
-          "confirmLabel": "无论如何都要擦"
+          "description": "清空数据将立即撤销以下共享资源的访问权限：",
+          "householdsCount": "另外 {count} 位家庭成员也将失去访问权限。 | 另外 {count} 位家庭成员也将失去访问权限。",
+          "confirmLabel": "仍要清空"
         },
         "notifications": {
-          "success": "所有数据均已擦除。新鲜开始。",
-          "failed": "无法擦除数据。请再试一次。"
+          "success": "全部记账数据已清空，可以重新开始记账。",
+          "failed": "数据清空失败，请重试。"
         }
       },
       "deleteAccount": {
-        "title": "删除您的账户",
-        "warningFull": "一旦您删除账户，就无法回头。 {strong} 请一定。",
-        "warningStrong": "您的所有数据将被永久删除。",
-        "button": "删除我的账户",
+        "title": "注销账号",
+        "warningFull": "注销后无法恢复。{strong}请确认不再需要此账号。",
+        "warningStrong": "你的所有数据将被永久删除。",
+        "button": "注销账号",
         "dialog": {
-          "title": "你绝对确定吗？",
-          "description": "此操作无法撤消。这将永久删除您的账户并删除您的所有数据，包括：",
+          "title": "确定注销账号？",
+          "description": "此操作无法撤销，将永久注销登录账号，并删除以下全部记账数据：",
           "dataList": {
             "accounts": "所有账户和交易",
-            "categories": "所有类别、预算和跟踪器",
+            "categories": "所有分类、预算和收支追踪",
             "portfolios": "所有投资组合",
             "settings": "所有设置和首选项"
           },
           "confirmFull": "请输入{email}进行确认",
-          "placeholder": "输入您的电子邮件",
-          "acceptButton": "删除我的账户",
-          "acceptButtonLoading": "正在删除...",
-          "appStoreWarning": "删除您的账户并不会取消您的 App Store 订阅，Apple 将继续向您收费。首先在您的{link}中取消它。",
+          "placeholder": "输入你的邮箱",
+          "acceptButton": "注销账号",
+          "acceptButtonLoading": "注销中…",
+          "appStoreWarning": "注销账号不会取消 App Store 订阅，Apple 仍会继续扣费。请先前往{link}取消订阅。",
           "appStoreWarningLink": "应用商店订阅"
         },
         "notifications": {
-          "success": "您的账户已成功删除",
-          "failed": "尝试删除您的账户时发生错误"
+          "success": "账号已注销",
+          "failed": "账号注销失败，请重试。"
         }
       },
       "backup": {
@@ -193,65 +193,65 @@
           "title": "下载备份",
           "description": "将所有数据的完整、可恢复的副本保存为 zip 文件。",
           "button": "下载",
-          "loading": "正在准备...",
+          "loading": "准备中…",
           "success": "备份已下载",
-          "failed": "无法创建备份。请再试一次。",
-          "downloadBlocked": "备份已创建，但您的浏览器阻止了下载。检查您的下载设置并重试。",
+          "failed": "无法创建备份。请重试。",
+          "downloadBlocked": "备份已创建，但你的浏览器阻止了下载。检查你的下载设置并重试。",
           "limitations": {
             "trigger": "有局限性",
-            "title": "备份遗漏了什么",
-            "intro": "您的备份包括您的所有数据。为了安全起见，一些加密项目无法随身携带，需要在恢复后重新设置：",
+            "title": "备份不包含哪些内容？",
+            "intro": "你的备份包括你的所有数据。为了安全起见，一些加密项目无法随身携带，需要在恢复后重新设置：",
             "items": {
-              "bankConnectionsTerm": "银行联系",
-              "bankConnections": "{term} — 访问令牌已加密并绑定到此服务器，因此您将在恢复后重新连接每个银行。",
+              "bankConnectionsTerm": "银行连接",
+              "bankConnections": "{term} — 访问令牌已加密并绑定到此服务器，因此你将在恢复后重新连接每个银行。",
               "aiKeysTerm": "人工智能 API 密钥",
-              "aiKeys": "{term} — 加密存储，因此您需要在恢复后重新输入它们。"
+              "aiKeys": "{term} — 加密存储，因此你需要在恢复后重新输入它们。"
             },
-            "included": "其他一切——账户、交易、类别、预算、跟踪器、投资、贷款、标签、收款人和订阅——都包括在内。"
+            "included": "其他一切——账户、交易、分类、预算、收支追踪、投资、贷款、标签、收付款方和订阅——都包括在内。"
           }
         },
         "restore": {
           "title": "从备份恢复",
           "description": "将所有当前数据替换为备份 zip 的内容。",
           "button": "选择备份文件",
-          "reading": "正在读取文件...",
+          "reading": "正在读取文件…",
           "failedGeneric": "备份恢复失败",
           "invalidFileType": "请选择 .zip 备份文件。",
           "fileTooLarge": "该备份太大而无法恢复（最大 {max}）。",
-          "readFailed": "无法读取该文件。请再试一次。",
+          "readFailed": "无法读取该文件。请重试。",
           "confirm": {
             "title": "从备份恢复？",
-            "warning": "这将替换您当前的所有数据",
-            "description": "您账户中当前的所有内容都将被永久删除并替换为此备份的内容。此操作无法撤消。",
+            "warning": "这将替换你当前的所有数据",
+            "description": "你账户中当前的所有内容都将被永久删除并替换为此备份的内容。此操作无法撤销。",
             "selectedFile": "所选文件：{name}",
             "confirmLabel": "恢复",
             "reconnectTitle": "恢复后，再次设置这些",
-            "reconnectBankConnections": "重新连接您的银行连接",
-            "reconnectAiKeys": "重新输入您的 AI API 密钥（如果您使用的话）"
+            "reconnectBankConnections": "重新连接你的银行连接",
+            "reconnectAiKeys": "重新输入你的 AI API 密钥（如果你使用的话）"
           },
           "acknowledge": {
             "title": "共享资源将失去访问权限",
-            "description": "您拥有其他人当前可以访问的资源。恢复将删除该访问权限。",
+            "description": "你拥有其他人当前可以访问的资源。恢复将删除该访问权限。",
             "householdsCount": "{count}共享户 | {count} 共享户",
             "checkbox": "我了解这些共享资源将失去访问权限。",
-            "confirmLabel": "无论如何恢复"
+            "confirmLabel": "确认继续恢复"
           },
           "progress": {
-            "title": "恢复您的数据",
+            "title": "正在恢复数据",
             "description": "这可能需要一些时间。请保持此窗口打开。",
-            "inserted": "{count} 记录已恢复",
+            "inserted": "已恢复 {count} 条记录",
             "phases": {
-              "validating": "正在验证备份...",
-              "preparingSecurities": "准备证券...",
-              "wiping": "清除当前数据...",
-              "restoring": "正在恢复记录...",
-              "finalizing": "正在敲定..."
+              "validating": "正在验证备份…",
+              "preparingSecurities": "准备证券…",
+              "wiping": "清除当前数据…",
+              "restoring": "正在恢复记录…",
+              "finalizing": "即将完成…"
             }
           },
           "summary": {
             "title": "恢复完成",
-            "description": "您的数据已从备份中恢复。",
-            "recordsHeading": "恢复记录",
+            "description": "你的数据已从备份中恢复。",
+            "recordsHeading": "恢复结果",
             "warningsHeading": "警告",
             "noRecords": "没有恢复任何记录。",
             "doneButton": "完成"
@@ -273,20 +273,20 @@
           "failed": {
             "title": "恢复失败",
             "genericError": "恢复备份时出现问题。",
-            "unconfirmed": "无法确认恢复状态。重新加载页面并检查您的数据。",
+            "unconfirmed": "无法确认恢复状态。重新加载页面并检查你的数据。",
             "closeButton": "关闭",
-            "technicalDetails": "技术细节"
+            "technicalDetails": "错误详情"
           },
           "overlay": {
-            "title": "恢复您的数据",
-            "description": "请保持此选项卡打开。我们正在用您的备份替换您的数据 - 这可能需要一些时间。",
-            "preparing": "正在准备……",
-            "finishing": "整理完毕",
-            "takingLong": "这比平常需要更长的时间。您的数据仍在恢复中 - 请保持此选项卡打开。",
+            "title": "恢复你的数据",
+            "description": "请保持此选项卡打开。我们正在用你的备份替换你的数据 - 这可能需要一些时间。",
+            "preparing": "准备中…",
+            "finishing": "即将完成",
+            "takingLong": "这比平常需要更长的时间。你的数据仍在恢复中 - 请保持此选项卡打开。",
             "unreachableTitle": "无法到达服务器",
-            "unreachableDescription": "恢复运行期间我们失去了联系。可能还在完成中。您可以忽略它并重新加载页面进行检查。",
+            "unreachableDescription": "恢复运行期间我们失去了联系。可能还在完成中。你可以忽略它并重新加载页面进行检查。",
             "failedTitle": "恢复失败",
-            "dismiss": "解雇"
+            "dismiss": "关闭"
           }
         },
         "attachmentsNotIncluded": "交易附件（收据、发票和其他文件）不包含在备份中，也不会被恢复。"

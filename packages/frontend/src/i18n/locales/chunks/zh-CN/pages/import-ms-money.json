@@ -3,24 +3,24 @@
     "importExport": {
       "msMoneyImport": {
         "pageTitle": "从 Microsoft Money 导入",
-        "pageDescription": "从 Microsoft Money .mny 文件中获取您的账户、类别和交易。",
+        "pageDescription": "从 Microsoft Money .mny 文件中获取你的账户、分类和交易。",
         "stepper": {
           "steps": {
             "upload": "上传",
             "resolve": "地图数据",
-            "review": "审查",
+            "review": "核对",
             "execute": "导入",
             "done": "完成"
           }
         },
         "fileUpload": {
-          "stepTitle": "上传您的资金文件",
+          "stepTitle": "上传你的资金文件",
           "description": "选择保存在计算机上的 .mny 文件 Microsoft Money。",
           "maxSize": ".mny 文件，最大 50 MB",
           "passwordLabel": "文件密码（可选）",
           "passwordPlaceholder": "输入文件密码",
-          "passwordHint": "保留空白，除非您在 Microsoft Money 中设置了密码。",
-          "parsing": "正在读取文件...",
+          "passwordHint": "保留空白，除非你在 Microsoft Money 中设置了密码。",
+          "parsing": "正在读取文件…",
           "continue": "继续",
           "errors": {
             "invalidFormatNamed": "“{name}”不是 .mny 文件。",
@@ -28,10 +28,10 @@
           }
         },
         "errors": {
-          "uploadUnavailable": "上传的文件不再可用。请再次上传您的资金文件。"
+          "uploadUnavailable": "上传的文件不再可用。请再次上传你的资金文件。"
         },
         "resolve": {
-          "prepareFailed": "无法准备账户和类别映射。重新加载页面并重试。",
+          "prepareFailed": "无法准备账户和分类映射。重新加载页面并重试。",
           "accounts": {
             "sectionTitle": "账户",
             "currentBalanceLabel": "当前余额",
@@ -45,11 +45,11 @@
           },
           "quickActions": {
             "mapExactMatches": "地图精确匹配",
-            "createNewForUnmatched": "创造无与伦比的新",
+            "createNewForUnmatched": "为未匹配项新建记录",
             "reset": "重置",
             "tooltips": {
-              "mapExactMatchesAccounts": "链接每个名称与您已有的账户完全匹配的账户。",
-              "mapExactMatchesCategories": "链接名称与您已有的类别完全匹配的每个类别。",
+              "mapExactMatchesAccounts": "关联每个名称与你已有的账户完全匹配的账户。",
+              "mapExactMatchesCategories": "链接名称与你已有的分类完全匹配的每个分类。",
               "createNewForUnmatched": "将每个未决定的行设置为“创建新的”。",
               "reset": "清除所有选择并重新匹配。"
             }
@@ -73,7 +73,7 @@
             "orphanRowSkipped": "{count} 事务已跳过",
             "transferCounterpartNotImported": "{count} 作为钱包外进口的转移支线",
             "rowLimitReached": "{count} 超出限制的交易已被删除",
-            "accountCurrencyMissing": "{count} 账户文件中没有货币，因此使用了您的基础货币 - 如果错误，请在账户步骤中进行更改",
+            "accountCurrencyMissing": "{count} 账户文件中没有货币，因此使用了你的基础货币 - 如果错误，请在账户步骤中进行更改",
             "rowMissingDate": "跳过没有可读日期的 {count} 交易",
             "accountNameMissing": "{count} 账户没有姓名",
             "accountNameDuplicated": "{count} 账户共享一个名称",
@@ -82,16 +82,16 @@
           },
           "includeVoided": {
             "label": "导入 {count} 无效交易",
-            "hint": "Microsoft Money 将作废的条目保留在收银机中，但从不将其应用到您的余额中，因此它们会以零导入并标记为“作废” - 保留其日期、收款人、类别、备忘录和支票号码。"
+            "hint": "Microsoft Money 将作废的条目保留在收银机中，但从不将其应用到你的余额中，因此它们会以零导入并标记为“作废” - 保留其日期、收付款方、分类、备忘录和支票号码。"
           },
           "duplicatesTitle": "{count} 可能重复",
-          "duplicatesHint": "这些看起来已经像是您已经进行的交易。无论如何都要检查一行以导入它；未检查的重复项将被跳过。",
+          "duplicatesHint": "这些看起来已经像是你已经进行的交易。无论如何都要检查一行以导入它；未检查的重复项将被跳过。",
           "back": "返回",
-          "importing": "开始导入...",
+          "importing": "开始导入…",
           "importButton": "导入{count}交易"
         },
         "execute": {
-          "starting": "开始导入...",
+          "starting": "开始导入…",
           "progressCount": "{processed} 之 {total}",
           "failed": "导入失败。",
           "partialImportNote": "某些交易可能已经导入。",
@@ -102,7 +102,7 @@
         },
         "done": {
           "successTitle": "导入完成",
-          "successDescription": "您的资金文件中的所有内容现在都在您的账户中。",
+          "successDescription": "你的资金文件中的所有内容现在都在你的账户中。",
           "partialTitle": "导入时存在 {count} 问题",
           "partialDescription": "大多数行都着陆了。下面的列表显示了没有的内容。",
           "emptyTitle": "没有什么新的东西可以导入",
@@ -112,8 +112,8 @@
           "accountsCreated": "已创建账户",
           "accountsLinked": "关联账户",
           "accountsSkipped": "已跳过的账户",
-          "categoriesCreated": "已创建类别",
-          "payeesCreated": "创建收款人",
+          "categoriesCreated": "已创建分类",
+          "payeesCreated": "创建收付款方",
           "transactionsImported": "导入交易",
           "transfersImported": "导入转移",
           "outOfWalletImported": "钱包外转账",
@@ -134,11 +134,11 @@
           "importAnother": "导入另一个文件"
         },
         "leaseExpired": {
-          "title": "您上传的文件不再可用",
-          "description": "经过一段时间的不活动后，您的 Money 文件的已解析副本已发布。无法保留您的映射选择，因此导入需要再次从上传步骤开始。",
+          "title": "你上传的文件不再可用",
+          "description": "经过一段时间的不活动后，你的 Money 文件的已解析副本已发布。无法保留你的映射选择，因此导入需要再次从上传步骤开始。",
           "action": "重新开始"
         },
-        "leaseResourceLabel": "您上传的文件"
+        "leaseResourceLabel": "你上传的文件"
       }
     }
   }

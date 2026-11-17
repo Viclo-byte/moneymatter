@@ -8,18 +8,18 @@
       },
       "empty": {
         "title": "尚无账户组",
-        "description": "按银行、货币或用途对账户分组，让您的账户列表整洁有序。"
+        "description": "按银行、货币或用途对账户分组，让你的账户列表整洁有序。"
       },
       "loadError": {
         "title": "无法加载群组",
-        "description": "加载账户组时出现问题。请检查您的网络连接后重试。",
+        "description": "加载账户组时出现问题。请检查你的网络连接后重试。",
         "retry": "重试"
       },
       "row": {
-        "bankBadgeTooltip": "此分组是在您连接银行时自动创建的，但它并不代表银行链接本身。您可以自由重命名、移动账户或删除分组，账户仍会继续同步，不受影响。",
+        "bankBadgeTooltip": "此分组是在你连接银行时自动创建的，但它并不代表银行链接本身。你可以自由重命名、移动账户或删除分组，账户仍会继续同步，不受影响。",
         "accountsCount": "{count} 个账号 | {count} 个账号",
         "noAccounts": "无账户",
-        "accountsElsewhere": "{count} 已同步其他群组帐号 | {count} 同步其他群组的账户",
+        "accountsElsewhere": "{count} 已同步其他群组账号 | {count} 同步其他群组的账户",
         "manageConnection": "管理连接"
       },
       "update": {
@@ -31,7 +31,7 @@
         "unlinkTooltip": "从组中删除",
         "removeConfirmTitle": "从该组中删除“{name}”？",
         "removeConfirmDescription": "该账户并未被删除——它只是离开了该组。",
-        "removeConfirmAction": "消除"
+        "removeConfirmAction": "移除"
       },
       "delete": {
         "button": "删除组",
@@ -43,15 +43,15 @@
       "dialogs": {
         "rename": {
           "title": "重命名组",
-          "description": "单击徽标可选择银行徽标、缩写或颜色。",
+          "description": "点击徽标可选择银行徽标、缩写或颜色。",
           "submit": "保存更改"
         },
         "move": {
           "title": "移动“{name}”",
           "description": "它的子组和账户也随之移动。",
-          "parentLabel": "家长组",
-          "parentPlaceholder": "选择父组",
-          "noParent": "没有父母",
+          "parentLabel": "上级分组",
+          "parentPlaceholder": "选择上级分组",
+          "noParent": "不设上级分组",
           "hint": "选择“无父组”以使其成为顶级组。",
           "submit": "移动"
         },
@@ -60,12 +60,12 @@
           "description": "一个账户属于一个组。从另一组中选择一个会将其移至此处。",
           "searchPlaceholder": "搜索账户",
           "sections": {
-            "ungrouped": "不在一个团体中",
+            "ungrouped": "未分组",
             "inOtherGroups": "在其他组中",
             "alreadyInGroup": "已在 {name}"
           },
           "inGroupCaption": "在{path}",
-          "noResults": "没有符合您搜索条件的账户",
+          "noResults": "没有符合你搜索条件的账户",
           "noAccounts": "没有可添加的账户",
           "summary": {
             "selected": "已选择{selected}",
@@ -78,10 +78,10 @@
       "tree": {
         "groupsCount": "{count}组 | {count}组",
         "syncedBadge": "已同步",
-        "expand": "扩张",
-        "collapse": "坍塌",
+        "expand": "展开",
+        "collapse": "收起",
         "renameTooltip": "重命名",
-        "moreActions": "更多行动",
+        "moreActions": "更多操作",
         "menu": {
           "rename": "重命名和更改徽标",
           "move": "移至另一组",
@@ -91,21 +91,21 @@
         }
       },
       "organize": {
-        "button": "组织",
+        "button": "分类与备注",
         "hint": "将一个组拖到另一个组上以将其嵌套",
         "save": "保存更改",
         "topLevel": "顶级",
         "dropToTopLevel": "放到这里使“{name}”成为顶级组",
-        "movesCount": "{count}搬家 | {count} 动作",
+        "movesCount": "{count} 项调整 | {count} 项调整",
         "moveInside": "移入内部",
-        "moved": "搬家了",
-        "saveSuccess": "团体重组",
+        "moved": "已移动",
+        "saveSuccess": "账户分组已调整",
         "saveFailed": "无法保存 {count} 移动。再试一次。 | 无法保存 {count} 动作。再试一次。",
         "staleMovesRemoved": "删除了不再适用的 {count} 排队移动 | 删除了不再适用的 {count} 排队移动",
         "dropErrors": {
           "currentParent": "已经在这个组了",
           "insideItself": "无法在自己的子组内移动组",
-          "alreadyTopLevel": "已经是顶级团体了"
+          "alreadyTopLevel": "此分组已在顶层"
         }
       }
     }

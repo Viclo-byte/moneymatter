@@ -1,25 +1,25 @@
 {
   "settings": {
     "navigation": {
-      "currencies": "货币",
+      "currencies": "币种",
       "categories": "分类",
       "tags": "标签",
       "accountsGroups": "账户组",
       "importData": "导入/导出",
-      "ai": "AI",
-      "security": "证券",
-      "admin": "行政",
-      "sharedWithMe": "与我分享",
+      "ai": "AI 与外部连接",
+      "security": "账号安全",
+      "admin": "管理后台",
+      "sharedWithMe": "他人共享",
       "household": "家庭",
-      "personalGroup": "个人的",
-      "workspaceGroup": "工作空间",
-      "appearance": "外貌",
+      "personalGroup": "个人设置",
+      "workspaceGroup": "记账设置",
+      "appearance": "外观",
       "language": "语言",
-      "general": "通用",
+      "general": "通用设置",
       "payees": "收付款方",
-      "planBilling": "计划和计费",
-      "collapse": "坍塌",
-      "resize": "调整导航大小"
+      "planBilling": "套餐与账单",
+      "collapse": "收起导航",
+      "resize": "调整导航栏宽度"
     },
     "backToSettings": "返回设置"
   }

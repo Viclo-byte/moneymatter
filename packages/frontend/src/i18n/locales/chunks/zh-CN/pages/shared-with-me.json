@@ -4,31 +4,31 @@
       "title": "与我分享",
       "loadError": "无法加载共享资源。",
       "empty": {
-        "title": "尚未与您分享任何内容",
-        "description": "当有人与您共享账户时，该账户会显示在此处。"
+        "title": "尚未与你分享任何内容",
+        "description": "当有人与你共享账户时，该账户会显示在此处。"
       },
       "sections": {
         "account": "账户",
         "household": "家庭",
-        "budget": "与您分享的追踪器"
+        "budget": "与你分享的收支追踪"
       },
       "sharedBy": "共享者 {handle}",
       "viaHousehold": "经由{handle}户",
-      "unnamedResource": "无题",
+      "unnamedResource": "未命名",
       "permissions": {
         "read": "读",
         "write": "写",
         "manage": "管理"
       },
-      "leave": "离开",
+      "leave": "退出共享",
       "leaveTitle": "留下分享吗？",
-      "leaveDescription": "您将无法访问 {owner} 拥有的 {resource}。业主不会收到通知。",
-      "leaveConfirm": "离开",
-      "leaveSuccess": "您已离开共享。",
-      "leaveError": "无法离开共享。",
+      "leaveDescription": "你将无法访问 {owner} 拥有的 {resource}。业主不会收到通知。",
+      "leaveConfirm": "退出共享",
+      "leaveSuccess": "已退出共享。",
+      "leaveError": "退出共享失败，请重试。",
       "pending": {
         "heading": "待处理的邀请",
-        "review": "审查"
+        "review": "核对"
       }
     }
   }

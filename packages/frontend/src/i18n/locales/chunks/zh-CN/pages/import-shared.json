@@ -11,13 +11,13 @@
         "unnamedAccount": "导入后账户余额无法更新，并且可能不正确。"
       },
       "jobFailure": {
-        "interrupted": "导入因服务器重新启动而中断。有些行可能已经被导入；重试之前，请从导入历史记录中撤消此导入。",
+        "interrupted": "导入因服务器重新启动而中断。有些行可能已经被导入；重试之前，请从导入历史记录中撤销此导入。",
         "baseCurrencyChangeInProgress": "基础货币变更正在进行中。等待其完成，然后重试导入。",
-        "accountCurrencyMismatch": "货币必须匹配才能链接现有账户：{mismatches}。链接具有相同货币的账户或创建一个新账户。",
-        "categoryNameTooLong": "类别名称“{name}”太长（{length}字符）；最大为{max}。",
-        "payeeNameTooLong": "收款人姓名“{name}”太长（{length}字符）；最大为{max}。",
+        "accountCurrencyMismatch": "货币必须匹配才能关联现有账户：{mismatches}。关联具有相同货币的账户或创建一个新账户。",
+        "categoryNameTooLong": "分类名称“{name}”太长（{length}字符）；最大为{max}。",
+        "payeeNameTooLong": "收付款方姓名“{name}”太长（{length}字符）；最大为{max}。",
         "accountMappingMissing": "文件中的这些账户没有映射：{accounts}。返回并绘制每个的地图。",
-        "linkedAccountNotFound": "链接到“{account}”的账户不再存在。返回并选择另一个账户或创建一个新账户。"
+        "linkedAccountNotFound": "关联到“{account}”的账户不再存在。返回并选择另一个账户或创建一个新账户。"
       },
       "importResults": {
         "findTransfers": "查找接送服务"
@@ -26,7 +26,7 @@
   },
   "importShared": {
     "action": {
-      "createNew": "创造新的",
+      "createNew": "新建",
       "linkExisting": "链接到现有的",
       "skip": "跳过"
     },
@@ -38,8 +38,8 @@
     },
     "columns": {
       "sourceName": "来源名称",
-      "currency": "货币",
-      "action": "行动",
+      "currency": "币种",
+      "action": "操作",
       "target": "目标"
     },
     "account": {
@@ -50,14 +50,14 @@
       "willSkip": "不会被进口"
     },
     "category": {
-      "selectTarget": "选择类别",
+      "selectTarget": "选择分类",
       "willCreate": "将创建{name}",
-      "empty": "没有要映射的类别"
+      "empty": "没有要映射的分类"
     },
     "recalculateBalance": {
       "label": "更新导入交易的账户余额",
       "hint": "早于账户最新现有交易的交易将被视为回填，不会更改其当前余额。",
-      "loadFailedHint": "无法加载您保存的首选项 - 默认为关闭。"
+      "loadFailedHint": "无法加载你保存的首选项 - 默认为关闭。"
     },
     "balanceChanges": {
       "title": "账户余额变动",
@@ -88,16 +88,16 @@
       "fieldLabels": {
         "amount": "金额",
         "date": "日期",
-        "note": "笔记",
+        "note": "备注",
         "category": "分类"
       },
       "importAnywayAriaLabel": "无论如何导入行 {row}"
     },
     "aiMapping": {
       "action": "人工智能匹配",
-      "tooltipCategories": "让 AI 将每个源类别链接到最接近的现有类别。您已链接到类别的行保持不变。",
-      "failed": "AI匹配失败。请再试一次。",
-      "inProgress": "AI匹配正在进行中……"
+      "tooltipCategories": "让 AI 将每个源分类链接到最接近的现有分类。你已链接到分类的行保持不变。",
+      "failed": "AI匹配失败。请重试。",
+      "inProgress": "AI匹配正在进行中…"
     },
     "categoryPreset": {
       "menuTrigger": "应用映射",

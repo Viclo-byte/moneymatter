@@ -3,14 +3,14 @@
     "editMode": {
       "customize": "定制",
       "addWidgets": "添加组件",
-      "emptyState": "单击“自定义”以添加组件",
+      "emptyState": "点击“自定义”以添加组件",
       "removeWidget": "删除组件"
     },
     "widgets": {
       "common": {
         "includePlanned": "包括计划交易",
         "includePlannedTooltip": "计算此组件数量中待处理的计划交易。",
-        "includePlannedSaveError": "无法保存计划的交易设置。请再试一次。"
+        "includePlannedSaveError": "无法保存计划的交易设置。请重试。"
       },
       "balanceTrend": {
         "title": "余额趋势",
@@ -18,7 +18,7 @@
           "total": "合计",
           "accounts": "账户",
           "portfolios": "投资组合",
-          "ventures": "风险投资",
+          "ventures": "私募投资",
           "vehicles": "车辆",
           "loans": "贷款"
         },
@@ -26,7 +26,7 @@
           "accounts": "账户：",
           "portfolios": "投资组合：",
           "total": "全部的：",
-          "ventures": "风险投资：",
+          "ventures": "私募投资：",
           "vehicles": "车辆：",
           "loans": "贷款："
         },
@@ -45,11 +45,11 @@
           "percentThreshold": "最小变化%",
           "percentThresholdTooltip": "连续两天之间余额变化的最小百分比可标记为峰值。必须超过此阈值或绝对阈值。低值显示更多标记。",
           "absoluteThreshold": "最小变化 {symbol}",
-          "absoluteThresholdTooltip": "符合峰值条件的最小绝对余额变化（以您的基础货币计）。必须超过此阈值或百分比阈值。",
+          "absoluteThresholdTooltip": "符合峰值条件的最小绝对余额变化（以你的基础货币计）。必须超过此阈值或百分比阈值。",
           "maxMarkers": "最大标记数",
           "maxMarkersTooltip": "图表上显示的峰值标记的最大数量。当尖峰数量超过此限制时，仅显示最重要的尖峰。",
           "resetDefaults": "重置默认值",
-          "accept": "接受",
+          "accept": "确认",
           "validation": {
             "outOfRange": "值超出允许范围",
             "integer": "必须是整数"
@@ -69,9 +69,9 @@
         "componentsSettings": {
           "description": "选择计入总余额线的组件。",
           "vehicles": "车辆",
-          "ventures": "风险投资",
+          "ventures": "私募投资",
           "loans": "贷款",
-          "loansTooltip": "启用后，您的未偿还贷款余额将从总额（真实净值）中减去。关闭时，贷款将被忽略，因此总计仅显示资产。",
+          "loansTooltip": "启用后，你的未偿还贷款余额将从总额（真实净值）中减去。关闭时，贷款将被忽略，因此总计仅显示资产。",
           "allIncluded": "所有组件",
           "excluding": "不包括{items}"
         },
@@ -98,10 +98,10 @@
         "showAll": "查看全部"
       },
       "subscriptions": {
-        "title": "订阅和账单",
+        "title": "定期收支",
         "titleSubscriptions": "订阅",
         "titleBills": "账单",
-        "titleAll": "定期付款",
+        "titleAll": "定期收支",
         "titleInstallments": "分期付款",
         "configTypeAll": "全部",
         "configTypeSubscriptions": "订阅",
@@ -109,13 +109,13 @@
         "configTypeInstallments": "分期付款",
         "activeSummary": "{count} 项已启用",
         "perYear": "每年",
-        "incomeSummary": "{count} 活跃 · {amount}/月收入",
+        "incomeSummary": "{count} 项已启用 · 每月收入 {amount}",
         "percentOfIncome": "占平均收入的 {percent}%",
         "settings": {
           "title": "设置",
-          "show": "展示",
-          "incomeWindow": "收入窗口",
-          "incomeWindowTooltip": "我们对您在此期间的收到交易进行平均，以计算用于经常性付款的收入百分比。",
+          "show": "显示",
+          "incomeWindow": "平均收入统计周期",
+          "incomeWindowTooltip": "我们对你在此期间的收到交易进行平均，以计算用于经常性付款的收入百分比。",
           "lookbackOption": {
             "1": "上个月",
             "3": "过去 3 个月",
@@ -126,20 +126,20 @@
         }
       },
       "categoryTracker": {
-        "title": "类别监视列表",
-        "addCategory": "添加类别",
-        "selectCategories": "选择类别",
+        "title": "分类监视列表",
+        "addCategory": "添加分类",
+        "selectCategories": "选择分类",
         "showTrend": "显示 6 个月趋势",
         "sort": {
           "title": "排序方式",
-          "custom": "自定义顺序",
+          "custom": "自定义排序",
           "spendDesc": "支出最高的优先",
           "spendAsc": "最低消费优先"
         }
       },
       "cashFlow": {
         "title": "现金流",
-        "description": "显示您的净储蓄：所选期间的收入减去支出，以及之前期间的趋势",
+        "description": "显示你的净储蓄：所选期间的收入减去支出，以及之前期间的趋势",
         "vsPrevious": "与之前相比",
         "notAvailable": "暂无数据",
         "income": "收入",
@@ -147,13 +147,13 @@
         "saved": "净储蓄",
         "previousPeriodsTrend": "前期趋势",
         "viewDetails": "查看详情",
-        "savingsRateLine": "显示储蓄率线",
+        "savingsRateLine": "显示储蓄率曲线",
         "savingsRate": "储蓄率",
         "noIncome": "没有收入"
       },
       "netWorth": {
         "title": "净资产",
-        "description": "您的净资产在选定期间如何变化。计算每项余额变化：账户、投资、贷款和资产价值。",
+        "description": "你的净资产在选定期间如何变化。计算每项余额变化：账户、投资、贷款和资产价值。",
         "vsPrevious": "与之前相比",
         "start": "开始",
         "end": "结束",
@@ -164,7 +164,7 @@
         "viewHistory": "查看历史记录",
         "loadFailed": "无法加载净值数据。",
         "components": {
-          "ventures": "风险投资",
+          "ventures": "私募投资",
           "vehicles": "车辆",
           "loans": "贷款"
         },
@@ -172,7 +172,7 @@
           "title": "计入净资产",
           "loans": "贷款",
           "vehicles": "车辆",
-          "ventures": "风险投资"
+          "ventures": "私募投资"
         },
         "trendTooltip": {
           "change": "变化",
@@ -190,7 +190,7 @@
         "vsLastMonth": "与上个月相比",
         "runwayUnit": "个月",
         "runwayLabel": "开支",
-        "loadFailed": "无法加载您的账户",
+        "loadFailed": "无法加载你的账户",
         "runwayHint": {
           "description": "通常建议保留一笔足以支付 3 至 6 个月费用的应急基金。",
           "critical": "不到 1 个月：缓冲非常少",
@@ -204,11 +204,11 @@
         "noDebt": "无债务",
         "assets": "资产",
         "liabilities": "负债",
-        "loadFailed": "无法加载您的资产和负债",
+        "loadFailed": "无法加载你的资产和负债",
         "buckets": {
           "cash": "现金",
           "investments": "投资",
-          "ventures": "风险投资",
+          "ventures": "私募投资",
           "vehicles": "车辆",
           "loans": "贷款",
           "creditAndOverdrafts": "信贷和透支"
@@ -235,7 +235,7 @@
           "ariaLabel": "本月支出"
         },
         "tooltip": {
-          "spent": "花费",
+          "spent": "已支出",
           "forecast": "预报",
           "spikeFrom": "花费在{date}"
         },
@@ -245,15 +245,15 @@
           "averageMonth": "平均月数"
         },
         "hints": {
-          "noHistory": "比较会在您的第一个完整月后出现。",
+          "noHistory": "比较会在你的第一个完整月后出现。",
           "plannedFailed": "无法加载计划的交易。预测可能不包括它们。",
           "fewMonths": "迄今为止 {n} 整月的平均值。 | 迄今为止 {n} 完整月份的平均值。"
         },
-        "loadFailed": "无法加载您的支出。",
+        "loadFailed": "无法加载你的支出。",
         "settings": {
           "spikes": {
             "title": "尖刺痕迹",
-            "summary": "当月支出≥{percent}%的天数",
+            "summary": "单日支出占当月总支出达到 {percent}% 的日期",
             "inputLabel": "标记到达的一天",
             "hint": "上个月总支出的份额，1–100%。标记以“与上个月相比”模式显示。"
           },
@@ -268,9 +268,9 @@
       },
       "taxes": {
         "title": "平均税率",
-        "description": "您的税收类别中的支出占收入的比例，是在组件设置中选择的期间内的平均值。条形图显示过去 12 个月。",
+        "description": "你的税收分类中的支出占收入的比例，是在组件设置中选择的期间内的平均值。条形图显示过去 12 个月。",
         "ofIncome": "收入的",
-        "vsTrailingRate": "{delta} pp 与 12 个月利率 {rate}",
+        "vsTrailingRate": "较近 12 个月平均税率 {rate} 变动 {delta} 个百分点",
         "average": "平均 {amount}",
         "amount": "税收",
         "shareOfIncome": "收入份额",
@@ -281,8 +281,8 @@
         "loadFailed": "无法加载税务数据。",
         "noCategories": {
           "title": "尚无税种",
-          "description": "选择哪些类别算作税，以查看您的税率。",
-          "action": "选择类别"
+          "description": "选择哪些分类算作税，以查看你的税率。",
+          "action": "选择分类"
         },
         "config": {
           "months": {
@@ -317,11 +317,11 @@
       "trackers": {
         "spentOfLimit": "{spent} 之 {limit}",
         "inOut": "{income} 输入、{expense} 输出",
-        "net": "网",
+        "net": "净额",
         "noLimit": "无限制",
-        "empty": "还没有追踪器",
-        "ended": "结束",
-        "create": "创建跟踪器"
+        "empty": "还没有收支追踪",
+        "ended": "已结束",
+        "create": "创建收支追踪"
       },
       "tagAnalysis": {
         "title": "标签分析",
@@ -342,7 +342,7 @@
           "percentBaseTags": "选定的标签",
           "percentBaseIncome": "收入",
           "includeTransfersLabel": "包括接送服务",
-          "includeTransfersDescription": "将转账至您自己的账户和投资组合计为支出"
+          "includeTransfersDescription": "将转账至你自己的账户和投资组合计为支出"
         }
       },
       "emptyState": "所选时间间隔内没有数据。",
@@ -352,16 +352,16 @@
           "description": "跟踪一段时间内的余额"
         },
         "categoryTracker": {
-          "name": "类别监视列表",
-          "description": "观察选定类别的支出和收入"
+          "name": "分类监视列表",
+          "description": "观察选定分类的支出和收入"
         },
         "spendingCategories": {
-          "name": "支出类别",
+          "name": "支出分类",
           "description": "看看你的钱去哪儿了"
         },
         "latestRecords": {
           "name": "最新记录",
-          "description": "您最近的交易"
+          "description": "你最近的交易"
         },
         "subscriptions": {
           "name": "订阅和账单",
@@ -373,15 +373,15 @@
         },
         "netWorth": {
           "name": "净资产",
-          "description": "您的总净资产如何随时间变化，包括投资、贷款和资产。"
+          "description": "你的总净资产如何随时间变化，包括投资、贷款和资产。"
         },
         "creditUtilization": {
           "name": "信用额度使用率",
-          "description": "您账户中的信用限额使用情况"
+          "description": "你账户中的信用限额使用情况"
         },
         "cashAccounts": {
           "name": "现金及账户",
-          "description": "您账户中的现金总额、自上个月以来的变化以及涵盖了多少个月的费用"
+          "description": "你账户中的现金总额、自上个月以来的变化以及涵盖了多少个月的费用"
         },
         "assetsLiabilities": {
           "name": "资产及负债",
@@ -393,11 +393,11 @@
         },
         "plannedOverview": {
           "name": "计划概览",
-          "description": "待处理的计划交易和您的预计余额"
+          "description": "待处理的计划交易和你的预计余额"
         },
         "fireProgress": {
-          "name": "火灾进展",
-          "description": "您距离财务独立有多近"
+          "name": "财务自由进度",
+          "description": "你距离财务独立有多近"
         },
         "taxes": {
           "name": "平均税率",
@@ -405,20 +405,20 @@
         },
         "budget": {
           "name": "预算",
-          "description": "当前预算期间还剩下什么（逐行列出）"
+          "description": "逐项查看当前预算周期的可用额度"
         },
         "trackers": {
-          "name": "追踪器",
-          "description": "每个活动跟踪器的使用限制及其网络"
+          "name": "收支追踪",
+          "description": "查看各追踪项目的额度使用情况和收支净额"
         },
         "goals": {
-          "name": "目标",
-          "description": "实现您的储蓄目标的进展",
+          "name": "储蓄目标",
+          "description": "实现你的储蓄目标的进展",
           "savedOfTarget": "{saved} 之 {target}",
           "empty": {
-            "title": "没有积极的目标",
-            "description": "设定一个目标，看看你离目标有多近。",
-            "action": "创建一个目标"
+            "title": "暂无进行中的储蓄目标",
+            "description": "设置储蓄目标，随时查看完成进度。",
+            "action": "新增储蓄目标"
           },
           "locked": {
             "title": "目标已锁定",
@@ -432,7 +432,7 @@
         },
         "tagAnalysis": {
           "name": "标签分析",
-          "description": "查看您的支出如何在选定的标签（如需求、愿望和储蓄）之间分配"
+          "description": "查看你的支出如何在选定的标签（如需求、愿望和储蓄）之间分配"
         }
       }
     },
@@ -450,7 +450,7 @@
   "widgets": {
     "subscriptionsOverview": {
       "payAction": "标记已付款",
-      "listTitle": "即将推出",
+      "listTitle": "待处理",
       "dueCount": "{count}到期",
       "daysLate": "{count}d 晚了",
       "overdueCount": "{count}逾期",
@@ -467,8 +467,8 @@
     "latestRecords": {
       "settings": {
         "excludeTitle": "排除交易",
-        "excludeTransfersDescription": "隐藏您自己账户之间的转账",
-        "excludeOutOfWalletDescription": "隐藏您未跟踪的账户的转入和转出",
+        "excludeTransfersDescription": "隐藏你自己账户之间的转账",
+        "excludeOutOfWalletDescription": "隐藏你未跟踪的账户的转入和转出",
         "balanceAdjustmentsTitle": "平衡调整",
         "excludeBalanceAdjustmentsDescription": "隐藏余额调整交易",
         "plannedTitle": "计划交易",
@@ -480,17 +480,17 @@
         "tagsStyleTitle": "标签",
         "tagsStyleNames": "名称",
         "tagsStyleBars": "酒吧",
-        "tagsStyleSaveError": "无法保存标签样式。请再试一次。",
+        "tagsStyleSaveError": "无法保存标签样式。请重试。",
         "showAccountTitle": "账户",
         "showAccountDescription": "在每笔交易上显示账户徽标",
-        "showAccountSaveError": "无法保存账户设置。请再试一次。"
+        "showAccountSaveError": "无法保存账户设置。请重试。"
       },
-      "overdueBadge": "逾期",
-      "scheduledBadge": "预定",
+      "overdueBadge": "已逾期",
+      "scheduledBadge": "已计划",
       "payAction": "标记已付款"
     },
     "fireProgress": {
-      "title": "火灾进展",
+      "title": "财务自由进度",
       "config": {
         "style": {
           "label": "风格",
@@ -498,20 +498,20 @@
           "numbers": "数字"
         }
       },
-      "openPlan": "开火计划",
+      "openPlan": "查看财务自由规划",
       "loadFailed": "无法加载 FIRE 进度。",
       "toType": "至 {type}",
-      "ringLabelFor": "达到 {type} 目标的 {pct}%，{duration} 剩余",
+      "ringLabelFor": "已完成 {type} 目标的 {pct}%，预计还需 {duration}",
       "ringLabelReachedFor": "{type} 目标已达成",
-      "ringLabelUnreachableFor": "已达到 {type} 目标的 {pct}%，但按照您当前的速度无法达到",
+      "ringLabelUnreachableFor": "已完成 {type} 目标的 {pct}%，按当前进度暂无法达成",
       "timeTo": "到{type}的时间",
       "unitYears": "{n} 年 | {n} 年 | {n} 年",
       "unitMonths": "{n} MOS | {n}莫 | {n} MOS",
       "atAge": "年龄 {age}",
       "nextMilestone": "下一个里程碑",
-      "saved": "已保存",
+      "saved": "已存金额",
       "progress": "进步",
-      "coastFire": "海岸火灾",
+      "coastFire": "自然增长型财务自由",
       "reached": "达到",
       "milestoneIn": "{pct}% 于 {duration}",
       "typeNumber": "{type}号",
@@ -526,11 +526,11 @@
       "chart": {
         "today": "今天",
         "typeTarget": "{type} · {amount}",
-        "ariaLabel": "净资产路径：迄今为止的实际历史，根据您的 FIRE 数字进行预测"
+        "ariaLabel": "净资产路径：迄今为止的实际历史，根据你的 FIRE 数字进行预测"
       },
       "setup": {
         "title": "规划你的 FIRE 之路",
-        "description": "使用您的账户和支出。如果您还没有数据，则为两个数字。",
+        "description": "根据账户余额和支出估算。暂无数据时，只需手动填写两个金额即可开始。",
         "action": "设置"
       },
       "locked": {

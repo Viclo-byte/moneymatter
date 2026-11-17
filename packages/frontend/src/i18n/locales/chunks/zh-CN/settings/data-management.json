@@ -2,7 +2,7 @@
   "settings": {
     "dataManagement": {
       "title": "导入数据",
-      "description": "从各种来源导入您的财务数据",
+      "description": "从各种来源导入你的财务数据",
       "tabs": {
         "import": "导入",
         "export": "导出"
@@ -14,7 +14,7 @@
       },
       "csv": {
         "title": "导入 CSV",
-        "description": "从 CSV 文件导入交易。您可以根据需要映射列、处理重复项以及创建新账户或类别。",
+        "description": "从 CSV 文件导入交易。你可以根据需要映射列、处理重复项以及创建新账户或分类。",
         "button": "导入 CSV 文件",
         "cta": "导入 CSV 文件",
         "listDescription": "映射列并处理重复项"
@@ -25,14 +25,14 @@
       },
       "ynab": {
         "title": "从 YNAB 导入",
-        "listDescription": "账户、交易、类别和收款人"
+        "listDescription": "账户、交易、分类和收付款方"
       },
       "budget-bakers-wallet": {
         "title": "钱包（BudgetBakers）",
         "listDescription": "多币种自动转账配对"
       },
       "ms-money": {
-        "title": "微软金钱",
+        "title": "Microsoft Money",
         "listDescription": "从 Microsoft Money 导入 .mny 文件"
       },
       "messageImport": {
@@ -47,7 +47,7 @@
         "whichImporterHint": "不确定该使用哪一个？",
         "groups": {
           "filesAndText": "文件和文本",
-          "fromOtherApps": "从其他应用程序",
+          "fromOtherApps": "从其他应用",
           "history": "历史"
         },
         "requestMore": {
@@ -55,13 +55,13 @@
         }
       },
       "export": {
-        "cardTitle": "导出您的数据",
-        "backupOrExportHint": "不确定您是否需要导出或备份？",
+        "cardTitle": "导出你的数据",
+        "backupOrExportHint": "不确定你是否需要导出或备份？",
         "form": {
-          "title": "导出您的数据",
-          "description": "选择您想要的格式和数据部分。确认后即开始下载。",
+          "title": "导出你的数据",
+          "description": "选择你想要的格式和数据部分。确认后即开始下载。",
           "confirmLabel": "下载",
-          "confirmLoading": "正在准备……",
+          "confirmLoading": "准备中…",
           "back": "返回导出"
         },
         "format": {
@@ -71,29 +71,29 @@
           "xlsx": "Excel"
         },
         "groups": {
-          "label": "包括什么",
-          "selectAll": "选择全部",
+          "label": "选择导出内容",
+          "selectAll": "全选",
           "deselectAll": "取消全选",
           "transactions": "交易和账户",
-          "transactionsDescription": "交易、账户、余额历史、类别、标签、车辆",
-          "budgets": "追踪器",
-          "budgetsDescription": "具有链接类别和支出总额的自定义跟踪器",
+          "transactionsDescription": "交易、账户、余额历史、分类、标签、车辆",
+          "budgets": "收支追踪",
+          "budgetsDescription": "具有关联分类和支出总额的自定义收支追踪",
           "subscriptions": "订阅和提醒",
           "subscriptionsDescription": "定期订阅和账单提醒",
           "investments": "投资",
-          "investmentsDescription": "投资组合、持股、投资交易、转让"
+          "investmentsDescription": "投资组合、持仓、投资交易、转让"
         },
         "notifications": {
-          "success": "导出准备就绪 - 您的下载将立即开始。",
+          "success": "导出准备就绪 - 你的下载将立即开始。",
           "successWithCount": "导出准备就绪 – 已导出 {count} 行。",
-          "failed": "无法导出您的数据。请再试一次。",
-          "downloadBlocked": "已准备好导出，但您的浏览器阻止了下载。检查地址栏是否有下载提示。",
-          "tooLarge": "您的数据对于单次导出来说太大。请联系支持人员。"
+          "failed": "无法导出你的数据。请重试。",
+          "downloadBlocked": "已准备好导出，但你的浏览器阻止了下载。检查地址栏是否有下载提示。",
+          "tooLarge": "你的数据对于单次导出来说太大。请联系支持人员。"
         },
         "dateRange": {
           "label": "日期范围（可选）",
-          "helper": "仅过滤事件表（交易、余额历史记录、投资活动）。账户、类别和其他参考表保持完整。",
-          "placeholder": "所有时间",
+          "helper": "仅过滤事件表（交易、余额历史记录、投资活动）。账户、分类和其他参考表保持完整。",
+          "placeholder": "全部时间",
           "clear": "明确日期范围"
         },
         "accounts": {

@@ -1,33 +1,33 @@
 {
   "auth": {
     "signup": {
-      "title": "注册帐号",
-      "divider": "或者继续使用电子邮件",
+      "title": "创建账号",
+      "divider": "或使用邮箱注册",
       "submitButton": "注册",
-      "alreadyHaveAccount": "已经有帐号了？",
+      "alreadyHaveAccount": "已有账号？",
       "signInLink": "登录",
       "labels": {
-        "displayName": "显示名",
+        "displayName": "昵称",
         "verifyPassword": "确认密码"
       },
       "placeholders": {
-        "displayName": "例：李大刚",
+        "displayName": "例如：小明",
         "verifyPassword": "确认密码"
       },
       "errors": {
-        "invalidEmail": "请输入有效的电邮地址。",
+        "invalidEmail": "请输入有效的邮箱地址。",
         "passwordTooShort": "密码太短了。",
         "passwordTooLong": "密码太长了。",
         "invalidPassword": "密码无效。",
-        "userExists": "使用此电邮的用户已存在。",
+        "userExists": "此邮箱已注册，请直接登录。",
         "signupsDisabled": "此实例的管理员禁止新用户注册。",
-        "genericErrorRetry": "发生错误。请再试一次。",
+        "genericErrorRetry": "发生错误。请重试。",
         "oauthFailed": "无法使用 {provider} 登录。请重试。",
         "oauthNotConfigured": "此服务器上未配置 {provider} 登录。"
       }
     },
     "shared": {
-      "divider": "或者继续",
+      "divider": "或使用",
       "passkeyButton": {
         "signIn": "使用通行密钥登录",
         "register": "添加通行密钥"

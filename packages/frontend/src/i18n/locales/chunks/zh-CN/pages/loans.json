@@ -8,41 +8,41 @@
     },
     "actions": {
       "more": "更多",
-      "moreAriaLabel": "更多行动",
+      "moreAriaLabel": "更多操作",
       "excludeFromStats": "从统计数据中排除",
-      "linkPayments": "链接以前的付款"
+      "linkPayments": "关联以前的付款"
     },
     "linkPayments": {
-      "title": "链接以前的付款",
-      "description": "选择您已为此贷款支付的交易，将其记录为付款。",
-      "emptyTitle": "无匹配交易",
+      "title": "关联以前的付款",
+      "description": "选择你已为此贷款支付的交易，将其记录为付款。",
+      "emptyTitle": "没有符合条件的交易",
       "emptyDescription": "没有交易与这些过滤器匹配。尝试扩大日期范围或清除过滤器。",
-      "selectedCount": "已选择{count}",
+      "selectedCount": "已选 {count} 项",
       "clearSelection": "清除",
       "linkSelected": "链接 {count}",
-      "success": "将 {count} 付款链接到贷款。 | 将 {count} 付款链接到贷款。",
-      "preAnchorWarning": "{count} 选定的付款日期早于贷款的余额锚点 ({date}) — 它仅作为历史记录链接，不会减少未偿余额。 | {count} 选定的付款日期早于贷款的余额锚点 ({date}) — 它们仅作为历史记录链接，不会减少未偿余额。",
-      "error": "无法关联所选付款。请再试一次。",
+      "success": "将 {count} 付款关联到贷款。 | 将 {count} 付款关联到贷款。",
+      "preAnchorWarning": "{count} 选定的付款日期早于贷款的余额锚点 ({date}) — 它仅作为历史记录关联，不会减少未偿余额。 | {count} 选定的付款日期早于贷款的余额锚点 ({date}) — 它们仅作为历史记录关联，不会减少未偿余额。",
+      "error": "无法关联所选付款。请重试。",
       "overpayTitle": "付款超过余额",
-      "overpayDescription": "所选付款加起来比剩余贷款余额多 {amount}。无论如何链接它们？",
+      "overpayDescription": "所选付款加起来比剩余贷款余额多 {amount}。无论如何关联它们？",
       "overpayConfirmButton": "无论如何链接"
     },
     "dialog": {
       "createTitle": "添加贷款",
-      "createDescription": "跟踪抵押贷款、汽车贷款、学生贷款或任何其他负债。您可以稍后编辑任何内容。",
+      "createDescription": "跟踪抵押贷款、汽车贷款、学生贷款或任何其他负债。你可以稍后编辑任何内容。",
       "editTitle": "编辑贷款",
       "editDescription": "更新贷款条款。费率、期限或计划付款的更改会记录在事件时间表中。"
     },
     "settings": {
       "title": "设置",
       "editTitle": "编辑贷款详细信息",
-      "editDescription": "更新名称、余额、费率、期限、付款字段或贷方信息。",
+      "editDescription": "修改贷款名称、未还本金、利率、期限、还款计划或贷款机构信息。",
       "editButton": "编辑",
       "excludeFromStatsTitle": "从统计中排除",
       "excludeFromStatsDescription": "将这笔贷款从净资产、图表和报告中隐藏起来，而不进行存档。",
       "archiveTitle": "档案借阅",
-      "archiveDescription": "从侧边栏和账户列表中隐藏贷款。您可以随时恢复它。",
-      "archiveButton": "档案",
+      "archiveDescription": "从侧边栏和账户列表中隐藏贷款。你可以随时恢复它。",
+      "archiveButton": "归档",
       "archivedTitle": "这笔贷款已存档",
       "archivedDescription": "它在侧边栏和账户选择器中隐藏，并在贷款页面的“已存档”下列出。恢复它以恢复跟踪。",
       "unarchiveButton": "恢复",
@@ -50,10 +50,10 @@
       "archiveConfirmDescription": "{name} 将移至此页面上的“已存档”部分，并在侧边栏和账户选择器中隐藏。",
       "archiveAlsoExclude": "也从统计中排除",
       "deleteTitle": "删除贷款",
-      "deleteDescription": "永久删除贷款及其历史记录。此操作无法撤消。",
+      "deleteDescription": "永久删除贷款及其历史记录。此操作无法撤销。",
       "deleteButton": "删除",
       "deleteConfirmTitle": "永久删除这笔贷款吗？",
-      "deleteConfirmDescription": "{name}及其所有事件将被永久删除。此操作无法撤消。",
+      "deleteConfirmDescription": "{name}及其所有事件将被永久删除。此操作无法撤销。",
       "toggleSuccess": "设置已更新",
       "toggleError": "无法更新设置",
       "archiveSuccess": "贷款已存档",
@@ -66,7 +66,7 @@
     "empty": {
       "title": "还没有贷款",
       "description": "在此跟踪抵押贷款、汽车贷款、学生贷款和其他负债。",
-      "createFirstButton": "添加您的第一笔贷款"
+      "createFirstButton": "添加你的第一笔贷款"
     },
     "paidOff": {
       "sectionTitle": "还清了",
@@ -76,8 +76,8 @@
       "interestPaid": "已付利息（预计）"
     },
     "archivedList": {
-      "sectionTitle": "已存档",
-      "badge": "已存档",
+      "sectionTitle": "已归档",
+      "badge": "已归档",
       "outstanding": "杰出的"
     },
     "aggregate": {
@@ -95,7 +95,7 @@
         "balance": "余额",
         "apr": "年利率",
         "monthly": "每月",
-        "payoff": "付清",
+        "payoff": "还清贷款",
         "interestLeft": "剩余利息"
       },
       "paidPercent": "{value}% 已付",
@@ -106,14 +106,14 @@
       "mortgage": "住房贷款",
       "auto": "车辆",
       "student": "学生",
-      "personal": "个人的",
+      "personal": "个人设置",
       "heloc": "赫洛克",
       "business": "商业",
       "medical": "医疗的",
       "other": "其他"
     },
     "warnings": {
-      "no_planned_payment": "没有计划付款 - 预计付款不可用。",
+      "no_planned_payment": "尚未设置计划月供，无法预测还清日期。",
       "payment_below_interest": "计划还款额不包括每月利息——贷款将会增加。"
     },
     "detail": {
@@ -122,16 +122,16 @@
       "paidOffBadge": "还清了",
       "summary": {
         "outstanding": "当前余额",
-        "principalOnlyTooltip": "余额仅反映本金付款。利息不会自动累积——您的贷款人的声明才是事实的来源。",
+        "principalOnlyTooltip": "余额仅反映本金付款。利息不会自动累积——你的贷款人的声明才是事实的来源。",
         "apr": "年利率",
-        "originalPrincipal": "原校长",
+        "originalPrincipal": "贷款本金",
         "term": "学期",
         "termMonths": "{count} 月 | {count}个",
         "startDate": "开始日期",
         "paymentDay": "付款日",
         "dayOfMonth": "每月 {day}",
-        "accountNumber": "帐号",
-        "balanceAnchor": "余额截至",
+        "accountNumber": "账号",
+        "balanceAnchor": "余额日期",
         "balanceAnchorTooltip": "未清余额自该日起固定。在此日期之前的付款将保留历史记录，但不会更改付款进度。",
         "actualDuration": "实际持续时间"
       },
@@ -148,36 +148,36 @@
         "cost": {
           "title": "这笔贷款的费用是多少",
           "totalLabel": "总成本",
-          "principal": "主要的",
+          "principal": "本金",
           "interest": "利息（预计）",
           "estimateFootnote": "利息是摊销计划的估计——付款记录为本金，因此不会存储确切的利息分割。",
           "effectiveCost": "有效成本：{percent} 借款金额利息"
         },
         "chart": {
           "title": "平衡之旅",
-          "titleHint": "您的贷款随着时间的推移实际记录的余额，与原始摊销计划相比。",
+          "titleHint": "你的贷款随着时间的推移实际记录的余额，与原始摊销计划相比。",
           "noData": "没有足够的历史记录来绘制这笔贷款的余额历程。"
         }
       },
       "projection": {
-        "title": "投影",
-        "paidLabel": "有薪酬的",
+        "title": "预测",
+        "paidLabel": "已偿还",
         "paidOfOriginal": "{original} 的 {paid} 已付款",
-        "payoffDate": "还款日期",
+        "payoffDate": "预计还清日期",
         "monthsRemaining": "剩余月份数",
         "totalInterestRemaining": "剩余利息总额",
         "nextMonthInterest": "下个月的利息",
-        "nextMonthPrincipal": "下个月的校长",
+        "nextMonthPrincipal": "下月应还本金",
         "plannedPayment": "计划付款"
       },
       "events": {
         "title": "时间轴",
-        "empty": "尚无历史记录 – 汇率变化、余额修正和注释将显示在此处。",
-        "rateChange": "汇率从 {from}% 更改为 {to}%",
+        "empty": "尚无历史记录 – 汇率变化、余额修正和备注将显示在此处。",
+        "rateChange": "利率由 {from}% 调整为 {to}%",
         "termChange": "期限从 {from} 更改为 {to} 个月",
         "plannedPaymentChange": "计划付款从 {from} 更改为 {to}",
         "paidOff": "贷款还清",
-        "balanceCorrection": "未结余额从 {from} 更正为 {to}"
+        "balanceCorrection": "未还本金由 {from} 更正为 {to}"
       },
       "payments": {
         "title": "最近付款",
@@ -189,13 +189,13 @@
       "recordPayment": "记录付款",
       "payoffChart": {
         "title": "收益预测",
-        "titleHint": "预测您的贷款何时将按照最低、计划和自定义每月还款额全额还清，以及每种情况的还款日期和总利息。在自定义付款字段中输入任意金额即可使用数字，并立即查看它如何改变您的还款日期和总利息。",
+        "titleHint": "预测你的贷款何时将按照最低、计划和自定义每月还款额全额还清，以及每种情况的还款日期和总利息。在自定义付款字段中输入任意金额即可使用数字，并立即查看它如何改变你的还款日期和总利息。",
         "customPaymentLabel": "定制支付",
         "applyAsPlanned": "按计划付款申请",
         "applyConfirmTitle": "按计划付款申请吗？",
         "applyConfirmDescription": "这将贷款的计划每月付款设置为 {amount}。",
         "applySuccess": "计划付款已更新。",
-        "applyError": "无法更新计划付款。请再试一次。",
+        "applyError": "无法更新计划付款。请重试。",
         "belowInterest": "这笔付款不包括每月利息，因此余额永远不会减少。",
         "paidOff": "这笔贷款已还清——没有什么可以预测的了。",
         "enterPaymentPrompt": "在上面输入付款金额以预测收益。",

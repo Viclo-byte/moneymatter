@@ -1,71 +1,71 @@
 {
   "budgets": {
-    "title": "追踪器",
-    "description": "跟踪支出并监控财务事件",
-    "notFound": "未找到追踪器",
-    "notFoundDescription": "我们找不到这个追踪器。它可能已被删除，或者您可能无权访问它。",
-    "backToList": "返回追踪器",
-    "newBudget": "新追踪器",
-    "createBudget": "创建追踪器",
+    "title": "收支追踪",
+    "description": "按分类或事项归集交易，跟进支出额度和收入目标。",
+    "notFound": "未找到收支追踪",
+    "notFoundDescription": "我们找不到这个收支追踪。它可能已被删除，或者你可能无权访问它。",
+    "backToList": "返回收支追踪",
+    "newBudget": "新收支追踪",
+    "createBudget": "创建收支追踪",
     "creation": {
-      "success": "追踪器已创建",
-      "error": "意外错误！",
-      "nameLabel": "追踪器名称",
+      "success": "收支追踪已创建",
+      "error": "操作失败，请稍后重试。",
+      "nameLabel": "收支追踪名称",
       "namePlaceholder": "输入姓名",
       "fromDateLabel": "开始日期",
       "toDateLabel": "迄今为止",
-      "limitPlaceholder": "输入限制",
-      "submitButton": "添加追踪器"
+      "limitPlaceholder": "输入额度",
+      "submitButton": "添加收支追踪"
     },
     "limitKind": {
-      "label": "限位类型",
-      "whatToChoose": "选择什么？",
-      "guideTitle": "哪个限制适合？",
-      "goalNote": "存钱买东西？相反，{goalLink}：目标跟踪您保存的内容，跟踪器跟踪流入或流出的内容。",
+      "label": "额度类型",
+      "whatToChoose": "如何选择？",
+      "guideTitle": "选择合适的追踪方式",
+      "goalNote": "存钱买东西？相反，{goalLink}：目标跟踪你保存的内容，收支追踪跟踪流入或流出的内容。",
       "goalLink": "创建一个目标",
       "kinds": {
         "spending": {
-          "label": "开支",
-          "hint": "最多花这么多。当支出超出时间时发出警告。",
-          "guide": "对于一件事或一个事件：一次旅行、一次装修、一年的杂货。当您花费的速度快于时间流逝时发出警告。",
-          "amountLabel": "限制"
+          "label": "支出上限",
+          "hint": "控制支出不超过设定金额，消费进度过快时提醒。",
+          "guide": "适用于旅行、装修、全年食品支出等预算。支出进度快于时间进度时会提醒。",
+          "amountLabel": "支出上限"
         },
         "income_target": {
           "label": "收入目标",
-          "hint": "至少赚这么多。当你跟上节奏时，就会变成绿色，超越就是胜利。",
+          "hint": "争取收入达到目标，进度正常时显示绿色，超出目标表示超额完成。",
           "guide": "对于你想带来的钱：年薪、自由职业收入、租金收入。正常行驶时呈绿色；超越就是胜利。",
           "amountLabel": "目标金额"
         },
         "income_cap": {
           "label": "收入上限",
-          "hint": "保持在这个收入以下，例如税收或福利门槛。当您靠近时发出警告。",
-          "guide": "对于收入，您必须低于：小企业税收起征点、福利或学生援助收入限额。当您靠近时发出警告。",
+          "hint": "控制收入不超过设定上限，例如税收或补贴资格门槛，接近上限时提醒。",
+          "guide": "对于收入，你必须低于：小企业税收起征点、福利或学生援助收入限额。当你靠近时发出警告。",
           "amountLabel": "帽"
         }
       }
     },
     "list": {
-      "loadError": "无法加载跟踪器。",
-      "tabCategory": "类别追踪器",
-      "tabManual": "手动追踪器",
+      "loadError": "无法加载收支追踪。",
+      "tabCategory": "分类收支追踪",
+      "tabManual": "手动收支追踪",
       "edit": "编辑",
       "delete": "删除",
-      "deleteSuccess": "追踪器删除成功！",
-      "deleteError": "意外错误！",
-      "updateSuccess": "追踪器更新成功！",
-      "updateError": "更新追踪器失败",
+      "deleteSuccess": "收支追踪删除成功！",
+      "deleteError": "操作失败，请稍后重试。",
+      "updateSuccess": "收支追踪更新成功！",
+      "updateError": "更新收支追踪失败",
       "unlinkTransactionsSuccess": "交易解绑成功！",
       "deleteDialog": {
-        "title": "您想删除该跟踪器吗？",
-        "description": "单击“接受”后，所有关联交易都将从跟踪器中取消链接，但仍保留在系统中。"
+        "title": "你想删除该收支追踪吗？",
+        "description": "点击“接受”后，所有关联交易都将从收支追踪中取消链接，但仍保留在系统中。"
       },
       "limitLabel": "限额：{amount}",
       "transactionsCount": "{count} 交易",
-      "categoriesCount": "{count}类别",
-      "noTransactions": "还没有交易",
+      "categoriesCount": "{count}分类",
+      "noTransactions": "暂无交易记录",
       "noTimePeriod": "无时间段",
       "status": {
-        "ended": "结束",
+        "ended": "已结束",
         "lastDay": "最后一天",
         "oneDayLeft": "还剩 1 天",
         "daysLeft": "{count} 剩余天数",
@@ -75,219 +75,219 @@
       },
       "income": "收入",
       "expenses": "支出",
-      "net": "网",
-      "used": "用过的",
-      "earned": "赢得",
-      "archive": "档案",
-      "unarchive": "取消存档",
-      "archivedLabel": "已存档",
+      "net": "净额",
+      "used": "已使用",
+      "earned": "已收入",
+      "archive": "归档",
+      "unarchive": "取消归档",
+      "archivedLabel": "已归档",
       "archiveError": "无法更新存档状态",
       "showArchived": "显示已存档",
       "hideArchived": "隐藏已存档",
       "emptyState": {
-        "title": "还没有追踪器",
-        "description": "创建跟踪器以开始跟踪您的支出或监控特定事件。"
+        "title": "还没有收支追踪",
+        "description": "创建收支追踪以开始跟踪你的支出或监控特定事件。"
       },
-      "searchPlaceholder": "搜索追踪器",
+      "searchPlaceholder": "搜索收支追踪",
       "filters": {
         "all": "全部",
         "autoAdd": "自动添加",
         "handPicked": "精挑细选",
-        "archived": "已存档"
+        "archived": "已归档"
       },
       "groups": {
         "active": "现在活跃",
-        "upcoming": "即将推出",
+        "upcoming": "待处理",
         "noDates": "没有日期",
-        "ended": "结束",
-        "archived": "已存档",
-        "show": "展示",
+        "ended": "已结束",
+        "archived": "已归档",
+        "show": "显示",
         "hide": "隐藏"
       },
       "showMoreEnded": "显示{count}更多已结束",
       "row": {
-        "auto": "汽车",
+        "auto": "自动",
         "transactions": "{count} 交易 | {count}交易",
         "moreCategories": "+{count} 更多",
-        "noLimit": "没有限制",
+        "noLimit": "未设额度",
         "archiveSuggestion": "档案？"
       },
       "menu": {
-        "moreActions": "更多行动",
+        "moreActions": "更多操作",
         "open": "打开",
         "duplicate": "复制"
       },
-      "duplicateSuccess": "跟踪器重复",
-      "duplicateError": "复制追踪器失败",
-      "archiveSuccess": "追踪器已存档",
-      "unarchiveSuccess": "追踪器未存档",
+      "duplicateSuccess": "收支追踪重复",
+      "duplicateError": "复制收支追踪失败",
+      "archiveSuccess": "收支追踪已存档",
+      "unarchiveSuccess": "收支追踪未存档",
       "noMatch": {
         "title": "没有匹配“{query}”",
-        "titleNoQuery": "没有跟踪器与这些过滤器匹配",
-        "description": "尝试其他名称，或包含存档的跟踪器。",
+        "titleNoQuery": "没有收支追踪与这些过滤器匹配",
+        "description": "尝试其他名称，或包含存档的收支追踪。",
         "includeArchived": "包括存档的"
       },
       "archivePrompt": {
         "title": "存档“{name}”？",
         "endedDaysAgo": "{count} 天前 | {count} 几天前",
         "endedMonthsAgo": "{count} 一个月前 | {count} 个月前",
-        "description": "结束了{ago}。已存档的跟踪器移至已存档组并保留其交易和统计数据。您可以随时取消存档。",
-        "dontAsk": "不要索要这个追踪器",
+        "description": "结束了{ago}。已存档的收支追踪移至已存档组并保留其交易和统计数据。你可以随时取消存档。",
+        "dontAsk": "不要索要这个收支追踪",
         "notNow": "现在不要",
-        "dismissError": "更新追踪器失败",
-        "dismissSuccess": "知道了。我们不建议再次存档此跟踪器。"
+        "dismissError": "更新收支追踪失败",
+        "dismissSuccess": "知道了。我们不建议再次存档此收支追踪。"
       }
     },
     "settings": {
-      "nameLabel": "追踪器名称",
-      "namePlaceholder": "输入追踪器名称",
+      "nameLabel": "收支追踪名称",
+      "namePlaceholder": "输入收支追踪名称",
       "limitPlaceholder": "输入限额（可选）",
       "startDateLabel": "开始日期",
       "endDateLabel": "结束日期",
       "notSet": "未设置"
     },
     "addTransactionsDialog": {
-      "title": "将交易添加到跟踪器",
+      "title": "将交易添加到收支追踪",
       "addSelected": "添加选定的",
       "clearSelection": "清除选择"
     },
     "manualBudget": {
       "edit": "编辑",
-      "editTitle": "编辑追踪器"
+      "editTitle": "编辑收支追踪"
     },
     "share": {
       "sharedByBadge": "共享者 {handle}"
     },
     "details": {
-      "statsLoadError": "无法加载此跟踪器的总计。",
+      "statsLoadError": "无法加载此收支追踪的总计。",
       "transactionsCount": "{count} 交易 | {count}交易",
       "tagsCount": "{count} 标签 | {count} 的标签",
       "strip": {
-        "limit": "限制",
-        "spent": "花费",
-        "left": "左边",
+        "limit": "上限",
+        "spent": "已支出",
+        "left": "剩余",
         "overBy": "经过",
-        "earned": "赢得",
+        "earned": "已收入",
         "toGo": "To go",
         "headroom": "净空",
         "aboveTargetBy": "高于目标",
         "income": "收入",
         "expenses": "支出",
-        "net": "网",
+        "net": "净额",
         "transactions": "交易",
         "perDay": "{amount}/天"
       },
       "tabs": {
-        "limits": "限制"
+        "limits": "分项额度"
       },
       "autoAdds": "自动添加",
       "membersLabel": "会员：{count}",
       "actions": {
         "share": "分享",
-        "setLimits": "设定限制",
-        "removeLimits": "消除限制",
+        "setLimits": "设置分项额度",
+        "removeLimits": "移除分项额度",
         "duplicate": "复制",
         "openInTransactions": "在交易中打开",
-        "more": "更多行动"
+        "more": "更多操作"
       },
       "shareDialog": {
         "title": "分享“{name}”"
       },
       "removeLimitsDialog": {
-        "title": "取消所有限制？",
-        "description": "该线及其限制将被删除。关联交易保留在跟踪器中。 | 所有 {count} 线路及其限制将被删除。关联交易保留在跟踪器中。"
+        "title": "移除全部分项额度？",
+        "description": "该预算项及其限制将被删除。关联交易保留在收支追踪中。 | 所有 {count} 预算项及其限制将被删除。关联交易保留在收支追踪中。"
       },
       "edit": {
-        "limitHint": "清除它即可无限制地跟踪。",
-        "datesHint": "更改日期不会添加或删除已链接的交易。"
+        "limitHint": "留空则仅汇总收支，不限制金额。",
+        "datesHint": "更改日期不会添加或删除已关联的交易。"
       }
     },
     "lines": {
-      "addLine": "添加行",
+      "addLine": "添加预算项",
       "empty": {
-        "title": "将支出分成几行",
-        "titleWithLimit": "将 {amount} 分成几行",
-        "description": "线是一组有其自身限制的类别。不符合行的支出显示为“其他”。"
+        "title": "按预算项细分支出",
+        "titleWithLimit": "将 {amount} 分配到各预算项",
+        "description": "线是一组有其自身限制的分类。不符合行的支出显示为“其他”。"
       },
       "columns": {
-        "line": "线",
-        "limit": "限制",
-        "spent": "花费",
-        "left": "左边"
+        "line": "预算项",
+        "limit": "上限",
+        "spent": "已支出",
+        "left": "剩余"
       },
       "usage": "{percent}% · {spent} 之 {limit}",
       "overUsage": "由{limit}的{amount}·{spent}过来",
       "spentOnly": "{amount}花",
-      "categoriesCount": "{count} 类别 | {count}类别",
+      "categoriesCount": "{count} 分类 | {count}分类",
       "ofLimit": "{limit} 的",
       "editLimitAria": "编辑 {name} 的限制",
       "noLimitPlaceholder": "无限制",
       "other": {
         "title": "其他支出",
-        "hint": "不在任何一行"
+        "hint": "尚未归入任何预算项"
       },
       "total": {
-        "title": "总计·{count}线 | 共·{count}行数",
+        "title": "合计 · {count} 个预算项 | 合计 · {count} 个预算项",
         "limitOfOverall": "{sum} 之 {limit}"
       },
       "menu": {
-        "ariaLabel": "线路动作",
-        "edit": "编辑行",
-        "delete": "删除行"
+        "ariaLabel": "预算项操作",
+        "edit": "编辑预算项",
+        "delete": "删除预算项"
       },
       "delete": {
-        "title": "删除行？",
+        "title": "删除此预算项？",
         "description": "“{name}”将被删除，其支出将显示在“其他”下。交易不受影响。"
       },
       "dialog": {
-        "addTitle": "添加行",
-        "editTitle": "编辑行",
+        "addTitle": "添加预算项",
+        "editTitle": "编辑预算项",
         "nameLabel": "名称",
         "namePlaceholder": "例如酒店",
         "nameRequired": "输入姓名",
         "categoriesLabel": "分类",
-        "categoriesPlaceholder": "选择类别",
-        "categoriesRequired": "至少选择一个类别",
-        "limitLabel": "限制（可选）",
+        "categoriesPlaceholder": "选择分类",
+        "categoriesRequired": "至少选择一个分类",
+        "limitLabel": "额度（选填）",
         "limitPlaceholder": "无限制",
-        "limitHint": "留空可让团体消费无限制。"
+        "limitHint": "留空则仅归集交易，不设金额上限。"
       },
       "notifications": {
         "limitsRemoved": "限制已取消",
-        "created": "已添加线路",
-        "updated": "线路已更新",
-        "deleted": "线路已删除",
-        "createError": "无法添加行",
-        "updateError": "无法更新线路",
-        "deleteError": "无法删除该行"
+        "created": "预算项已添加",
+        "updated": "预算项已更新",
+        "deleted": "预算项已删除",
+        "createError": "预算项添加失败",
+        "updateError": "无法更新预算项",
+        "deleteError": "预算项删除失败"
       }
     },
     "rules": {
       "heading": "自动添加",
       "switchLabel": "自动添加匹配交易",
-      "switchHintOn": "您在该日期范围内的具有任何这些类别或标签的交易都会被添加。",
-      "switchHintOff": "仅您手动添加的交易进行计数。",
+      "switchHintOn": "你在该日期范围内的具有任何这些分类或标签的交易都会被添加。",
+      "switchHintOff": "仅统计手动加入的交易。",
       "switchHintTurnedOff": "关闭此功能会保留已添加的每笔交易。",
       "categoriesLabel": "分类",
-      "categoriesPlaceholder": "选择类别",
+      "categoriesPlaceholder": "选择分类",
       "tagsLabel": "标签",
       "tagsPlaceholder": "选择标签",
-      "needsCategoryOrTag": "至少选择一个类别或标签",
+      "needsCategoryOrTag": "至少选择一个分类或标签",
       "cleanupLabel": "删除停止匹配的交易",
-      "cleanupHint": "每 6 小时检查一次。您手动添加的交易永远不会被删除。",
+      "cleanupHint": "每 6 小时检查一次。你手动添加的交易永远不会被删除。",
       "checkedAt": "已检查 {when}",
       "unlinked": "删除了 {count} 交易。不会再次自动添加。 | 删除了 {count} 交易。它们不会再次自动添加。",
       "confirm": {
         "title": "保存新的匹配规则？",
-        "description": "保存后，您的所有交易都会根据新规则进行检查，并添加匹配的交易。",
-        "descriptionWithCleanup": "保存后，您的所有交易都会根据新规则进行检查。添加匹配的规则，删除添加的规则不再匹配的规则。您手动添加的交易会保留。",
+        "description": "保存后，你的所有交易都会根据新规则进行检查，并添加匹配的交易。",
+        "descriptionWithCleanup": "保存后，你的所有交易都会根据新规则进行检查。添加匹配的规则，删除添加的规则不再匹配的规则。你手动添加的交易会保留。",
         "saveAndCheck": "保存并检查"
       },
       "rejected": {
         "title": "没有再次添加",
-        "description": "您删除了这些或将它们作为 AI 建议拒绝，因此它们被跳过。允许一个，如果仍然匹配，则会将其添加回来。",
+        "description": "你删除了这些或将它们作为 AI 建议拒绝，因此它们被跳过。允许一个，如果仍然匹配，则会将其添加回来。",
         "summary": "{count} 交易不会再添加 | {count}交易将不会再次添加",
-        "review": "审查",
+        "review": "核对",
         "aiBadge": "人工智能建议",
         "allowAgain": "再次允许",
         "allowed": "再次允许",
@@ -298,18 +298,18 @@
       "fields": {
         "heading": "智能追踪",
         "switchLabel": "为我查找匹配的交易",
-        "switchHint": "每晚检查新的和编辑的交易。确定的匹配项已为您添加，其余的等待您的审核。",
+        "switchHint": "每晚检查新的和编辑的交易。确定的匹配项已为你添加，其余的等待你的审核。",
         "needsStartDate": "首先设定一个开始日期，AI 从那里开始查找。",
         "noAi": "在{link}中设置一个AI模型来使用它。",
         "noAiLink": "设置 → 人工智能",
-        "allowanceUsed": "AI津贴用完。 {link} 以保持其运行。",
-        "running": "匹配正在运行。完成后您可以更改它们。",
-        "descriptionLabel": "这个追踪器里有什么？",
+        "allowanceUsed": "AI 额度已用完。{link}以继续使用。",
+        "running": "匹配正在运行。完成后你可以更改它们。",
+        "descriptionLabel": "这个收支追踪里有什么？",
         "descriptionPlaceholder": "例如希腊两周：航班、渡轮、租车、岛上酒店",
         "descriptionRequired": "描述这里属于什么，以便人工智能知道要寻找什么。",
         "preWindowLabel": "还要查看开始日期之前",
         "preWindowPlaceholder": "选择向后看多远",
-        "preWindowHint": "赶上提前预订的航班和酒店。",
+        "preWindowHint": "包含在此之前预订的机票、酒店等相关支出。",
         "preWindowOptions": {
           "none": "别看早了",
           "twoWeeks": "2周",
@@ -318,47 +318,47 @@
           "threeMonths": "3个月",
           "sixMonths": "6个月"
         },
-        "costNote": "第一次扫描检查从回顾窗口到结束日期的每笔交易。大范围可能会耗尽您每月的人工智能津贴，或者如果您使用自己的密钥，则会直接花费您的费用。",
-        "usesIncluded": "使用附带的人工智能。计入您每月的人工智能津贴。",
-        "usesOwnModel": "使用您自己的型号·{model}"
+        "costNote": "首次扫描会检查从回溯起始日到结束日期之间的所有交易。时间跨度越大，消耗的 AI 额度越多；使用个人 API 密钥时，由对应服务商按用量计费。",
+        "usesIncluded": "使用内置 AI，并计入每月 AI 额度。",
+        "usesOwnModel": "使用你自己的型号·{model}"
       },
       "pausedUntil": "暂停直到{date}",
-      "connectOwnModel": "连接您自己的模型",
+      "connectOwnModel": "连接你自己的模型",
       "plan": {
-        "locked": "智能跟踪是 Plus 的一部分。升级或连接您自己的 AI 密钥以继续使用它。",
-        "connectOwnKey": "连接您自己的密钥",
+        "locked": "智能跟踪是 Plus 的一部分。升级或连接你自己的 AI 密钥以继续使用它。",
+        "connectOwnKey": "连接你自己的密钥",
         "upgrade": "升级",
         "startTrial": "开始免费试用",
         "trialDaysLeft": "免费试用：{n} 还剩一天 | 免费试用：{n} 还剩几天",
-        "trialHint": "包括 {days} 天的免费试用。当您打开智能跟踪时它就会开始。"
+        "trialHint": "包括 {days} 天的免费试用。当你打开智能跟踪时它就会开始。"
       },
       "turnedOn": "智能追踪已开启。一两分钟后即可得到第一个结果。",
-      "undo": "撤消",
+      "undo": "撤销",
       "unlinked": "未链接。 AI不会再添加它。 | 未链接的 {count} 交易。 AI不会再添加它们。",
       "relinkError": "无法添加回交易。再试一次。",
       "strip": {
-        "tip": "让人工智能找到该追踪器的交易",
+        "tip": "让人工智能找到该收支追踪的交易",
         "turnOn": "打开",
         "hide": "隐藏",
-        "scanning": "寻找匹配交易...",
+        "scanning": "寻找匹配交易…",
         "startedAt": "开始 {time}",
         "toReview": "{count} 待审核",
         "checkedAt": "检查{when}",
-        "review": "审查",
+        "review": "核对",
         "idle": "智能追踪已开启·没有什么新内容可供回顾",
         "settings": "设置",
         "paused": "已暂停",
-        "allowanceUsed": "AI津贴已用完",
+        "allowanceUsed": "AI 额度已用完",
         "unavailable": "AI连接停止工作",
         "fixInSettings": "在设置中修复",
-        "ended": "智能追踪已停止 · 追踪器已于 14 天前结束",
+        "ended": "智能追踪已停止 · 收支追踪已于 14 天前结束",
         "noStartDate": "设置开始日期以使用智能跟踪"
       },
       "hideTip": {
         "title": "隐藏这个提示？",
-        "description": "您仍然可以在跟踪器的设置中打开智能跟踪。",
+        "description": "你仍然可以在收支追踪的设置中打开智能跟踪。",
         "neverShow": "不再显示",
-        "neverShowHint": "将其隐藏在每个跟踪器上，而不仅仅是这个。",
+        "neverShowHint": "将其隐藏在每个收支追踪上，而不仅仅是这个。",
         "confirm": "隐藏"
       },
       "review": {
@@ -378,7 +378,7 @@
         "skipped": "跳过。 AI不会再建议了。 | 跳过 {count} 事务。 AI不会再推荐它们。",
         "acceptError": "无法添加建议的交易。再试一次。",
         "rejectError": "无法跳过建议的交易。再试一次。",
-        "restoreError": "无法撤消跳过。再试一次。"
+        "restoreError": "无法撤销跳过。再试一次。"
       }
     }
   }
