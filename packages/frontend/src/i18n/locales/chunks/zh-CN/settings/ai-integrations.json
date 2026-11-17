@@ -2,63 +2,63 @@
   "settings": {
     "aiIntegrations": {
       "mcpServer": {
-        "title": "MCP server",
-        "description": "Use this URL to connect AI assistants to your MoneyMatter account. Your data is shared read-only.",
-        "copyTooltip": "Copy URL",
-        "copiedNotification": "MCP server URL copied to clipboard"
+        "title": "MCP服务器",
+        "description": "使用此 URL 将 AI 助手连接到您的 MoneyMatter 账户。您的数据以只读方式共享。",
+        "copyTooltip": "复制网址",
+        "copiedNotification": "MCP 服务器 URL 已复制到剪贴板"
       },
       "quickConnect": {
-        "title": "Quick connect",
-        "description": "Choose an AI assistant below. Click the button to open its settings, then follow the steps.",
-        "openSettings": "Open settings",
+        "title": "快速连接",
+        "description": "在下面选择一个人工智能助手。单击该按钮打开其设置，然后按照步骤操作。",
+        "openSettings": "打开设置",
         "claude": {
           "steps": {
-            "createConnector": "Click the {icon} icon next to \"Connectors\" to create a new connector",
-            "selectCustom": "Select {action}",
-            "enterName": "For \"Name\" enter {value}",
-            "pasteUrl": "For \"Remote MCP server URL\" paste {value}",
-            "finish": "Leave Advanced settings empty and click {action}",
-            "authorize": "You will be redirected to MoneyMatter to authorize access"
+            "createConnector": "单击“连接器”旁边的 {icon} 图标以创建新连接器",
+            "selectCustom": "选择{action}",
+            "enterName": "对于“名称”，输入 {value}",
+            "pasteUrl": "对于“远程 MCP 服务器 URL”，粘贴 {value}",
+            "finish": "将高级设置留空并单击 {action}",
+            "authorize": "您将被重定向到 MoneyMatter 以授权访问"
           }
         },
         "chatgpt": {
           "steps": {
-            "addConnector": "Click {action}",
-            "pasteUrl": "For \"URL\" paste {value}",
-            "clickAdd": "Click {action}",
-            "authorize": "You will be redirected to MoneyMatter to authorize access"
+            "addConnector": "点击{action}",
+            "pasteUrl": "对于“URL”，粘贴 {value}",
+            "clickAdd": "点击{action}",
+            "authorize": "您将被重定向到 MoneyMatter 以授权访问"
           }
         }
       },
       "actions": {
-        "addCustomConnector": "Add custom connector",
-        "addConnector": "Add connector",
-        "add": "Add"
+        "addCustomConnector": "添加自定义连接器",
+        "addConnector": "添加连接器",
+        "add": "添加"
       },
       "connectedApps": {
-        "title": "Active connectors",
-        "description": "Apps that have access to your financial data. You can revoke access at any time.",
-        "emptyTitle": "No apps connected yet.",
-        "emptyDescription": "Use the buttons above to connect an AI assistant.",
-        "connectedAt": "Connected: {date}",
-        "lastUsed": "Last used: {time}",
-        "scope": "Scope: {scopes}",
-        "revoke": "Revoke"
+        "title": "有源连接器",
+        "description": "可以访问您的财务数据的应用程序。您可以随时撤销访问权限。",
+        "emptyTitle": "尚未连接任何应用程序。",
+        "emptyDescription": "使用上面的按钮连接人工智能助手。",
+        "connectedAt": "已连接：{date}",
+        "lastUsed": "最后使用：{time}",
+        "scope": "适用范围：{scopes}",
+        "revoke": "撤销"
       },
       "revokeDialog": {
-        "title": "Revoke access?",
-        "description": "This will immediately disconnect the app and invalidate all its tokens. You can reconnect later.",
-        "confirm": "Revoke access",
-        "successNotification": "App access revoked successfully",
-        "errorNotification": "Failed to revoke app access"
+        "title": "撤销访问权限？",
+        "description": "这将立即断开应用程序并使其所有令牌失效。您可以稍后重新连接。",
+        "confirm": "撤销访问权限",
+        "successNotification": "应用程序访问权限已成功撤销",
+        "errorNotification": "无法撤销应用程序访问权限"
       },
       "scopes": {
-        "financeRead": "Read financial data",
-        "financeWrite": "Edit financial data",
-        "financeDelete": "Delete financial data",
-        "profileRead": "Read profile",
-        "offlineAccess": "Offline access",
-        "toolset": "Tools: {name}"
+        "financeRead": "读取财务数据",
+        "financeWrite": "编辑财务数据",
+        "financeDelete": "删除财务数据",
+        "profileRead": "阅读个人资料",
+        "offlineAccess": "离线访问",
+        "toolset": "工具：{name}"
       }
     }
   }

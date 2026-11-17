@@ -1,0 +1,33 @@
+services:
+  backend:
+    image: viclo/moneymatter-be:zh-local
+    pull_policy: never
+    build:
+      context: ./release
+      dockerfile: Dockerfile.backend
+    environment:
+      NODE_OPTIONS: --max-old-space-size=512
+      TZ: Asia/Shanghai
+    healthcheck:
+      start_period: 20m
+  frontend:
+    image: viclo/moneymatter-fe:zh-local
+    pull_policy: never
+    build:
+      context: ./release
+      dockerfile: Dockerfile.frontend
+    environment:
+      TZ: Asia/Shanghai
+  redis:
+    command: ['redis-server', '--appendonly', 'yes']
+    logging:
+      driver: json-file
+      options:
+        max-size: 10m
+        max-file: '3'
+  db:
+    logging:
+      driver: json-file
+      options:
+        max-size: 10m
+        max-file: '3'

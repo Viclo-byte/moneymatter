@@ -2,93 +2,93 @@
   "settings": {
     "tags": {
       "title": "标签",
-      "addButton": "Add tag",
-      "empty": "No tags yet. Create your first tag to organize your transactions.",
+      "addButton": "添加标签",
+      "empty": "还没有标签。创建您的第一个标签来组织您的交易。",
       "tabs": {
-        "details": "Details",
-        "reminders": "Reminders"
+        "details": "细节",
+        "reminders": "提醒事项"
       },
       "form": {
-        "createTitle": "Create tag",
-        "editTitle": "Edit tag",
-        "name": "Name",
-        "namePlaceholder": "Tag name",
-        "color": "Color",
-        "icon": "Icon",
-        "iconPlaceholder": "Select icon",
-        "description": "Description",
-        "descriptionPlaceholder": "Optional description",
-        "saveButton": "Save",
-        "previewPlaceholder": "Tag name"
+        "createTitle": "创建标签",
+        "editTitle": "编辑标签",
+        "name": "名称",
+        "namePlaceholder": "标签名称",
+        "color": "颜色",
+        "icon": "图标",
+        "iconPlaceholder": "选择图标",
+        "description": "说明",
+        "descriptionPlaceholder": "可选描述",
+        "saveButton": "保存",
+        "previewPlaceholder": "标签名称"
       },
       "delete": {
-        "title": "Delete tag?",
-        "description": "This will permanently delete \"{name}\" and remove it from all transactions. This action cannot be undone.",
-        "deleteButton": "Delete",
-        "cancelButton": "Cancel"
+        "title": "删除标签？",
+        "description": "这将永久删除“{name}”并将其从所有交易中删除。此操作无法撤消。",
+        "deleteButton": "删除",
+        "cancelButton": "取消"
       },
       "notifications": {
-        "createSuccess": "Tag created",
-        "createFailed": "Failed to create tag",
-        "updateSuccess": "Tag updated",
-        "updateFailed": "Failed to update tag",
-        "deleteSuccess": "Tag deleted",
-        "deleteFailed": "Failed to delete tag"
+        "createSuccess": "标签已创建",
+        "createFailed": "创建标签失败",
+        "updateSuccess": "标签已更新",
+        "updateFailed": "更新标签失败",
+        "deleteSuccess": "标签已删除",
+        "deleteFailed": "删除标签失败"
       },
       "reminders": {
-        "addButton": "Add reminder",
-        "empty": "No reminders yet. Create a reminder to get notified about this tag's activity.",
-        "enabled": "Enabled",
-        "disabled": "Disabled",
+        "addButton": "添加提醒",
+        "empty": "还没有提醒。创建提醒以获取有关此标签的活动的通知。",
+        "enabled": "启用",
+        "disabled": "残疾人",
         "form": {
-          "createTitle": "Create reminder",
-          "editTitle": "Edit reminder",
-          "type": "Reminder type",
-          "typePlaceholder": "Select type",
-          "amountThreshold": "Amount threshold",
-          "amountThresholdPlaceholder": "Enter threshold amount",
-          "amountThresholdHint": "Get notified when spending on this tag exceeds this amount",
-          "frequency": "Frequency",
-          "frequencyPlaceholder": "Select frequency",
-          "dayOfMonth": "Day of month",
-          "dayOfMonthPlaceholder": "Select day",
-          "dayOfMonthHint": "For months with fewer days, the last day will be used",
-          "isEnabled": "Enabled",
-          "saveButton": "Save"
+          "createTitle": "创建提醒",
+          "editTitle": "编辑提醒",
+          "type": "提醒类型",
+          "typePlaceholder": "选择类型",
+          "amountThreshold": "金额门槛",
+          "amountThresholdPlaceholder": "输入阈值金额",
+          "amountThresholdHint": "当此标签上的支出超过此金额时收到通知",
+          "frequency": "频率",
+          "frequencyPlaceholder": "选择频率",
+          "dayOfMonth": "一个月中的哪一天",
+          "dayOfMonthPlaceholder": "选择日期",
+          "dayOfMonthHint": "对于天数较少的月份，将使用最后一天",
+          "isEnabled": "启用",
+          "saveButton": "保存"
         },
         "types": {
-          "amountThreshold": "Amount threshold",
-          "amountThresholdDescription": "Notify when spending exceeds a certain amount",
-          "existenceCheck": "Activity check",
-          "existenceCheckDescription": "Notify when there are transactions with this tag"
+          "amountThreshold": "金额门槛",
+          "amountThresholdDescription": "消费超过一定金额时通知",
+          "existenceCheck": "活动检查",
+          "existenceCheckDescription": "当有带有此标签的交易时通知"
         },
         "frequencies": {
-          "immediate": "Immediate",
-          "immediateDescription": "Triggers when transactions are tagged (24h cooldown)",
-          "daily": "Daily",
-          "dailyDescription": "Check every day",
-          "weekly": "Weekly",
-          "weeklyDescription": "Check every Monday",
-          "monthly": "Monthly",
-          "monthlyDescription": "Check on a specific day each month",
-          "quarterly": "Quarterly",
-          "quarterlyDescription": "Check every 3 months (Jan, Apr, Jul, Oct)",
-          "yearly": "Yearly",
-          "yearlyDescription": "Check once per year in January"
+          "immediate": "即时",
+          "immediateDescription": "交易被标记时触发（24 小时冷却时间）",
+          "daily": "日常的",
+          "dailyDescription": "每天检查一次",
+          "weekly": "每周",
+          "weeklyDescription": "每周一检查",
+          "monthly": "每月",
+          "monthlyDescription": "检查每个月的特定日期",
+          "quarterly": "季刊",
+          "quarterlyDescription": "每 3 个月检查一次（一月、四月、七月、十月）",
+          "yearly": "每年",
+          "yearlyDescription": "每年一月检查一次"
         },
         "delete": {
-          "title": "Delete reminder?",
-          "description": "This will permanently delete this reminder. This action cannot be undone.",
-          "deleteButton": "Delete",
-          "cancelButton": "Cancel"
+          "title": "删除提醒？",
+          "description": "这将永久删除该提醒。此操作无法撤消。",
+          "deleteButton": "删除",
+          "cancelButton": "取消"
         },
         "notifications": {
-          "createSuccess": "Reminder created",
-          "createFailed": "Failed to create reminder",
-          "updateSuccess": "Reminder updated",
-          "updateFailed": "Failed to update reminder",
-          "deleteSuccess": "Reminder deleted",
-          "deleteFailed": "Failed to delete reminder"
+          "createSuccess": "已创建提醒",
+          "createFailed": "创建提醒失败",
+          "updateSuccess": "提醒已更新",
+          "updateFailed": "更新提醒失败",
+          "deleteSuccess": "提醒已删除",
+          "deleteFailed": "删除提醒失败"
         }
       }
     }

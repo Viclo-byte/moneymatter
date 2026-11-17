@@ -1,0 +1,2 @@
+FROM letehaha/budget-tracker-be@sha256:bc7ea3198019dc53be50af313e1fbc5445ca925a32464c62454556fbf07bb65b
+COPY --chown=nodejs:nodejs backend-dist/ /app/packages/backend/dist/

@@ -2,335 +2,335 @@
   "pages": {
     "importExport": {
       "csvImport": {
-        "pageTitle": "Import transactions from CSV",
-        "pageDescription": "Upload your bank CSV export or transaction history file to import transactions into your account.",
+        "pageTitle": "从 CSV 导入交易",
+        "pageDescription": "上传您的银行 CSV 导出或交易历史文件，以将交易导入您的账户。",
         "stepper": {
-          "stepOf": "Step {current} of {total}",
+          "stepOf": "{total} 的步骤 {current}",
           "steps": {
-            "upload": "Upload",
-            "map": "Map columns",
-            "resolveAccounts": "Accounts",
-            "resolveCategories": "Categories",
-            "review": "Review",
-            "results": "Done"
+            "upload": "上传",
+            "map": "地图列",
+            "resolveAccounts": "账户",
+            "resolveCategories": "分类",
+            "review": "审查",
+            "results": "完成"
           }
         },
         "steps": {
-          "uploadTitle": "Upload CSV file",
-          "uploadDescription": "Select your CSV file to begin",
-          "mappingTitle": "Map columns",
-          "mappingDescription": "Match CSV columns to transaction fields",
-          "reviewTitle": "Review duplicates",
-          "reviewDescription": "Check for duplicate transactions",
-          "completeTitle": "Import complete",
-          "completeDescription": "Review import results"
+          "uploadTitle": "上传 CSV 文件",
+          "uploadDescription": "选择您的 CSV 文件开始",
+          "mappingTitle": "地图列",
+          "mappingDescription": "将 CSV 列与交易字段匹配",
+          "reviewTitle": "检查重复项",
+          "reviewDescription": "检查是否存在重复交易",
+          "completeTitle": "导入完成",
+          "completeDescription": "查看导入结果"
         },
         "fileUpload": {
-          "stepTitle": "Upload CSV file",
-          "description": "Upload one or more CSV files to import transactions. All files must have the same columns.",
-          "dragDrop": "Drag and drop your CSV file here",
-          "orBrowse": "or click to browse",
-          "maxSize": "Maximum file size: 50MB",
-          "removeFile": "Remove file",
-          "parsing": "Parsing...",
-          "continueToMapping": "Continue to mapping",
+          "stepTitle": "上传 CSV 文件",
+          "description": "上传一个或多个 CSV 文件以导入交易。所有文件必须具有相同的列。",
+          "dragDrop": "将您的 CSV 文件拖放到此处",
+          "orBrowse": "或点击浏览",
+          "maxSize": "最大文件大小：50MB",
+          "removeFile": "删除文件",
+          "parsing": "正在解析...",
+          "continueToMapping": "继续测绘",
           "errors": {
-            "invalidFormat": "Invalid file format. Please upload a CSV file.",
-            "invalidFormatNamed": "{name} is not a CSV file",
-            "fileTooLarge": "File size ({size}) exceeds maximum allowed (50MB)",
-            "parseFailed": "Failed to parse file. Please check the format and try again.",
+            "invalidFormat": "文件格式无效。请上传 CSV 文件。",
+            "invalidFormatNamed": "{name} 不是 CSV 文件",
+            "fileTooLarge": "文件大小 ({size}) 超出允许的最大值 (50MB)",
+            "parseFailed": "无法解析文件。请检查格式并重试。",
             "merge": {
-              "emptySelection": "Select at least one CSV file",
-              "fileReadFailed": "Couldn't read \"{file}\"",
-              "fileEmpty": "\"{file}\" is empty",
-              "fileNoDataRows": "\"{file}\" has no data rows",
-              "headerMismatch": "Columns in \"{file}\" don't match the first file. All files must have the same columns in the same order.",
-              "forbiddenHeader": "\"{file}\" uses a reserved column name",
-              "tooManyRows": "Selected files total more than {max} rows. Remove some files or rows and try again.",
-              "parseError": "Couldn't parse \"{file}\". Make sure it's a valid CSV."
+              "emptySelection": "选择至少一个 CSV 文件",
+              "fileReadFailed": "无法读取“{file}”",
+              "fileEmpty": "“{file}”为空",
+              "fileNoDataRows": "“{file}”没有数据行",
+              "headerMismatch": "“{file}”中的列与第一个文件不匹配。所有文件必须具有相同顺序的相同列。",
+              "forbiddenHeader": "“{file}”使用保留的列名",
+              "tooManyRows": "选定的文件总数超过 {max} 行。删除一些文件或行，然后重试。",
+              "parseError": "无法解析“{file}”。确保它是有效的 CSV。"
             }
           }
         },
         "columnMapping": {
-          "stepTitle": "Map columns",
-          "description": "Map your CSV columns to the required fields",
-          "file": "File",
-          "filesCount": "{count} file | {count} files",
-          "totalRows": "Total rows",
-          "delimiter": "Delimiter",
-          "extracting": "Extracting...",
-          "detecting": "Detecting duplicates…",
-          "nextExtract": "Next: Extract values",
-          "continueToDuplicates": "Continue to duplicate check"
+          "stepTitle": "地图列",
+          "description": "将 CSV 列映射到必填字段",
+          "file": "文件",
+          "filesCount": "{count} 文件 | {count} 文件",
+          "totalRows": "总行数",
+          "delimiter": "分隔符",
+          "extracting": "正在提取...",
+          "detecting": "检测重复项...",
+          "nextExtract": "下一步：提取值",
+          "continueToDuplicates": "继续重复检查"
         },
         "execute": {
-          "starting": "Starting import…",
+          "starting": "开始导入...",
           "progressCount": "{processed} / {total}",
-          "statusQueued": "Queued",
-          "statusRunning": "Importing…",
-          "statusCompleted": "Complete",
-          "statusFailed": "Failed",
-          "failed": "Import failed.",
-          "partialImportNote": "Some rows may have already been imported before this failure. Re-importing could create duplicates."
+          "statusQueued": "排队",
+          "statusRunning": "输入…",
+          "statusCompleted": "完全的",
+          "statusFailed": "失败",
+          "failed": "导入失败。",
+          "partialImportNote": "在此失败之前，某些行可能已经导入。重新导入可能会产生重复项。"
         },
         "review": {
-          "stepTitle": "Review import",
-          "description": "Review the data before importing",
-          "totalRows": "Total rows",
-          "validRows": "Valid rows",
-          "invalidRows": "Invalid rows",
-          "duplicates": "Duplicates",
-          "invalidRowsTitle": "Invalid rows",
-          "rowNumber": "Row #",
-          "errors": "Errors",
-          "rawData": "Raw data",
-          "duplicatesTitle": "{count} potential duplicates found",
-          "duplicatesHint": "Check rows you want to import anyway; unchecked duplicates are skipped.",
-          "skip": "Skip",
-          "match": "Match",
-          "csvTransaction": "CSV transaction",
-          "existingTransaction": "Existing transaction",
-          "importSummary": "Import summary",
-          "willBeImported": "transactions will be imported.",
-          "invalidWillBeSkipped": "invalid rows will be skipped.",
-          "duplicatesWillBeSkipped": "duplicates will be skipped.",
-          "backToMapping": "Back to mapping",
-          "importing": "Importing...",
-          "importButton": "Import {count} transactions",
-          "unpriceableTitle": "{count} row(s) cannot be priced — no exchange rate found",
-          "unpriceableDescription": "These rows use a currency that has no stored exchange rate and cannot be converted to your base currency. You must skip them or cancel the import.",
-          "unpriceableWillBeSkipped": "unpriceable will be skipped",
-          "currency": "Currency",
-          "skipAndImport": "Skip & import",
-          "cancelImport": "Cancel import",
-          "noInvalidRows": "No invalid rows",
-          "noDuplicates": "No duplicates",
-          "expand": "Show full data",
-          "collapse": "Hide full data"
+          "stepTitle": "审核导入",
+          "description": "导入前检查数据",
+          "totalRows": "总行数",
+          "validRows": "有效行数",
+          "invalidRows": "无效行",
+          "duplicates": "重复项",
+          "invalidRowsTitle": "无效行",
+          "rowNumber": "排 ＃",
+          "errors": "错误",
+          "rawData": "原始数据",
+          "duplicatesTitle": "{count} 发现潜在重复项",
+          "duplicatesHint": "检查您想要导入的行；未检查的重复项将被跳过。",
+          "skip": "跳过",
+          "match": "匹配",
+          "csvTransaction": "CSV交易",
+          "existingTransaction": "现有交易",
+          "importSummary": "进口总结",
+          "willBeImported": "交易将被导入。",
+          "invalidWillBeSkipped": "无效的行将被跳过。",
+          "duplicatesWillBeSkipped": "重复项将被跳过。",
+          "backToMapping": "返回映射",
+          "importing": "输入...",
+          "importButton": "导入{count}交易",
+          "unpriceableTitle": "{count} 行无法定价 — 未找到汇率",
+          "unpriceableDescription": "这些行使用的货币没有存储汇率，无法转换为基础货币。您必须跳过它们或取消导入。",
+          "unpriceableWillBeSkipped": "无价将被跳过",
+          "currency": "货币",
+          "skipAndImport": "跳过并导入",
+          "cancelImport": "取消导入",
+          "noInvalidRows": "没有无效行",
+          "noDuplicates": "没有重复项",
+          "expand": "显示完整数据",
+          "collapse": "隐藏完整数据"
         },
         "results": {
-          "completeTitle": "Import complete!",
-          "completeWithIssuesTitle": "Import completed with issues",
-          "successDescription": "All transactions have been successfully imported.",
-          "partialDescription": "Some transactions could not be imported.",
-          "imported": "Imported",
-          "skippedDuplicates": "Skipped (duplicates)",
-          "accountsCreated": "Accounts created",
-          "accountsSkipped": "Accounts skipped",
-          "categoriesCreated": "Categories created",
-          "tagsCreated": "Tags created",
-          "payeesCreated": "Payees created",
-          "importErrors": "Import errors",
-          "rowNumber": "Row #",
-          "error": "Error",
-          "batchIdLabel": "Batch ID",
-          "batchIdDescription": "Use this ID to find all transactions from this import.",
-          "viewTransactions": "View transactions",
-          "startNewImport": "Start new import",
-          "skippedUnpriceable": "Skipped (unpriced)",
-          "importFailed": "Failed to import transactions. Please try again.",
-          "successCallout": "{count} transactions imported successfully",
-          "failed": "Failed",
-          "noErrors": "No errors",
-          "balanceWarningTitle": "Account balances may be out of sync",
-          "balanceWarningBody": "The transactions were imported, but some account balances could not be updated afterwards. Review these accounts and adjust their balances manually if needed."
+          "completeTitle": "导入完成！",
+          "completeWithIssuesTitle": "导入已完成，但存在问题",
+          "successDescription": "所有交易均已成功导入。",
+          "partialDescription": "某些交易无法导入。",
+          "imported": "进口",
+          "skippedDuplicates": "跳过（重复）",
+          "accountsCreated": "已创建账户",
+          "accountsSkipped": "已跳过的账户",
+          "categoriesCreated": "已创建类别",
+          "tagsCreated": "已创建标签",
+          "payeesCreated": "创建收款人",
+          "importErrors": "导入错误",
+          "rowNumber": "排 ＃",
+          "error": "错误",
+          "batchIdLabel": "批次编号",
+          "batchIdDescription": "使用此 ID 查找本次导入的所有交易。",
+          "viewTransactions": "查看交易",
+          "startNewImport": "开始新的导入",
+          "skippedUnpriceable": "跳过（未定价）",
+          "importFailed": "导入交易失败。请再试一次。",
+          "successCallout": "{count} 交易导入成功",
+          "failed": "失败",
+          "noErrors": "没有错误",
+          "balanceWarningTitle": "账户余额可能不同步",
+          "balanceWarningBody": "交易已导入，但部分账户余额随后无法更新。检查这些账户并根据需要手动调整其余额。"
         }
       },
       "columnMapping": {
-        "stepTitle": "Map columns",
-        "description": "Map your CSV columns to the required fields",
-        "file": "File",
-        "totalRows": "Total rows",
-        "delimiter": "Delimiter",
-        "detecting": "Detecting duplicates…"
+        "stepTitle": "地图列",
+        "description": "将 CSV 列映射到必填字段",
+        "file": "文件",
+        "totalRows": "总行数",
+        "delimiter": "分隔符",
+        "detecting": "检测重复项..."
       },
       "common": {
-        "selectOption": "Select option...",
-        "selectColumn": "Select column...",
-        "noneOptional": "None (optional)",
-        "selectAction": "Select action..."
+        "selectOption": "选择选项...",
+        "selectColumn": "选择列...",
+        "noneOptional": "无（可选）",
+        "selectAction": "选择动作..."
       },
       "transactionTypeMapping": {
-        "columnLabel": "Transaction type column",
-        "incomeValuesLabel": "Income values",
-        "expenseValuesLabel": "Expense values",
-        "commaSeparatedHint": "Comma-separated values",
-        "uncoveredValues": "These values in the type column aren't assigned to Income or Expense yet: {values}. Add each one to a list above to continue.",
-        "selectColumn": "Select column...",
-        "incomeValuesPlaceholder": "e.g., Credit, Deposit, Income",
-        "expenseValuesPlaceholder": "e.g., Debit, Withdrawal, Expense",
+        "columnLabel": "交易类型栏",
+        "incomeValuesLabel": "收入值",
+        "expenseValuesLabel": "费用值",
+        "commaSeparatedHint": "逗号分隔值",
+        "uncoveredValues": "类型列中的这些值尚未分配给收入或支出：{values}。将每一项添加到上面的列表中以继续。",
+        "selectColumn": "选择列...",
+        "incomeValuesPlaceholder": "例如，信用、存款、收入",
+        "expenseValuesPlaceholder": "例如，借记、提款、费用",
         "methodOptions": {
-          "amountSign": "From amount sign (negative = expense, positive = income)",
-          "dataSourceColumn": "From column (specify values)"
+          "amountSign": "来自金额符号（负=费用，正=收入）",
+          "dataSourceColumn": "来自列（指定值）"
         },
-        "amountSignInfo": "ℹ️ Transaction types will be determined automatically: negative amounts = expenses, positive amounts = income"
+        "amountSignInfo": "ℹ️ 交易类型将自动确定：负数 = 支出，正数 = 收入"
       },
       "currencyMapping": {
-        "selectCurrency": "Select currency...",
+        "selectCurrency": "选择货币...",
         "methodOptions": {
-          "dataSourceColumn": "Map from CSV column",
-          "existingCurrency": "Use same currency for all transactions"
+          "dataSourceColumn": "从 CSV 列映射",
+          "existingCurrency": "所有交易使用相同的货币"
         }
       },
       "categoryMapping": {
-        "selectCategory": "Select category..."
+        "selectCategory": "选择类别..."
       },
       "accountMapping": {
-        "selectAccount": "Select account..."
+        "selectAccount": "选择账户..."
       },
       "accountAssignment": {
-        "title": "Account assignment",
-        "howToAssign": "How do you want to assign accounts?",
-        "description": "Choose how accounts should be assigned to imported transactions",
-        "accountColumn": "Account column",
-        "columnDescription": "Select the CSV column that contains account names",
-        "accountLabel": "Account",
-        "singleAccountDescription": "All imported transactions will be assigned to this account",
-        "mapOnNextStep": "You'll map each CSV account to your existing accounts on the next step",
+        "title": "账户分配",
+        "howToAssign": "您想如何分配账户？",
+        "description": "选择如何将账户分配给导入的交易",
+        "accountColumn": "账户栏",
+        "columnDescription": "选择包含账户名称的 CSV 列",
+        "accountLabel": "账户",
+        "singleAccountDescription": "所有导入的交易都将分配到该账户",
+        "mapOnNextStep": "您将在下一步中将每个 CSV 账户映射到您的现有账户",
         "options": {
-          "mapToExisting": "Map each CSV account to existing accounts (on next step)",
-          "assignToSingle": "Assign all to single existing account"
+          "mapToExisting": "将每个 CSV 账户映射到现有账户（在下一步中）",
+          "assignToSingle": "全部分配给单个现有账户"
         }
       },
       "accountMappingTable": {
-        "title": "Account mapping",
-        "description": "Map CSV account names to your existing accounts or create new ones. Only accounts with matching currency will be shown.",
-        "csvAccountName": "CSV account name",
-        "currency": "Currency",
-        "action": "Action",
-        "targetAccount": "Target account",
+        "title": "账户映射",
+        "description": "将 CSV 账户名称映射到您现有的账户或创建新账户。仅显示具有匹配货币的账户。",
+        "csvAccountName": "CSV 账户名称",
+        "currency": "货币",
+        "action": "行动",
+        "targetAccount": "目标账户",
         "actions": {
-          "createNew": "Create new account",
-          "mapToExisting": "Map to existing account"
+          "createNew": "创建新账户",
+          "mapToExisting": "映射到现有账户"
         },
-        "noMatchingCurrency": "No accounts available with matching currency ({currency})",
-        "willBeCreated": "New account \"{name}\" will be created with {currency} currency",
-        "defaultCurrency": "default",
-        "mappedTo": "mapped to \"{name}\"",
-        "selectAccount": "Select account..."
+        "noMatchingCurrency": "没有可用匹配货币的账户 ({currency})",
+        "willBeCreated": "将使用 {currency} 货币创建新账户“{name}”",
+        "defaultCurrency": "默认",
+        "mappedTo": "映射到“{name}”",
+        "selectAccount": "选择账户..."
       },
       "categoryMappingTable": {
-        "csvCategoryName": "CSV category name"
+        "csvCategoryName": "CSV 类别名称"
       },
       "categoryAssignment": {
         "options": {
-          "mapToExisting": "Map each CSV category to existing categories (on next step)",
-          "createNew": "Create new categories from CSV values",
-          "assignToSingle": "Assign all to single existing category"
+          "mapToExisting": "将每个 CSV 类别映射到现有类别（下一步）",
+          "createNew": "从 CSV 值创建新类别",
+          "assignToSingle": "将所有内容分配给单个现有类别"
         }
       },
       "tagMappingTable": {
-        "csvTagName": "CSV tag value"
+        "csvTagName": "CSV 标签值"
       },
       "resolveValues": {
-        "selectAction": "Select action",
+        "selectAction": "选择动作",
         "actions": {
-          "createNew": "Create new",
-          "linkExisting": "Link to existing",
-          "skip": "Skip"
+          "createNew": "创造新的",
+          "linkExisting": "链接到现有的",
+          "skip": "跳过"
         },
         "quickActions": {
-          "mapExactMatches": "Map exact matches",
-          "createNewForUnmatched": "Create new for unmatched",
-          "skipAll": "Skip all",
-          "reset": "Reset",
+          "mapExactMatches": "地图精确匹配",
+          "createNewForUnmatched": "创造无与伦比的新",
+          "skipAll": "全部跳过",
+          "reset": "重置",
           "tooltips": {
-            "mapExactMatchesAccounts": "Links each CSV account to an existing account that has the same name and currency. Accounts with no exact match stay unchanged.",
-            "mapExactMatchesCategories": "Links each CSV category to an existing category with the same name. Categories with no exact match stay unchanged.",
-            "mapExactMatchesTags": "Links each CSV tag to an existing tag with the same name. Tags with no exact match stay unchanged.",
-            "createNewForUnmatched": "Sets every row that isn't linked to an existing entry to \"Create new\". Already-linked rows stay unchanged.",
-            "skipAll": "Skips every tag — none are imported or created.",
-            "reset": "Clears all choices and re-runs automatic matching."
+            "mapExactMatchesAccounts": "将每个 CSV 账户链接到具有相同名称和货币的现有账户。没有完全匹配的账户保持不变。",
+            "mapExactMatchesCategories": "将每个 CSV 类别链接到同名的现有类别。没有完全匹配的类别保持不变。",
+            "mapExactMatchesTags": "将每个 CSV 标签链接到具有相同名称的现有标签。没有完全匹配的标签保持不变。",
+            "createNewForUnmatched": "将未链接到现有条目的每一行设置为“新建”。已链接的行保持不变。",
+            "skipAll": "跳过每个标签 - 不会导入或创建任何标签。",
+            "reset": "清除所有选择并重新运行自动匹配。"
           }
         },
         "accounts": {
-          "sectionTitle": "Account mapping",
-          "resolvedCount": "{resolved} of {total} resolved",
-          "csvName": "CSV account",
-          "currency": "Currency",
-          "action": "Action",
-          "target": "Target account",
-          "selectTarget": "Select an account",
-          "noMatchingCurrency": "No accounts match currency {currency}",
-          "willCreate": "Will create \"{name}\" ({currency})",
-          "empty": "No accounts found in CSV",
-          "currentBalanceLabel": "Current balance",
+          "sectionTitle": "账户映射",
+          "resolvedCount": "{resolved} 或 {total} 已解决",
+          "csvName": "CSV账户",
+          "currency": "货币",
+          "action": "行动",
+          "target": "目标账户",
+          "selectTarget": "选择一个账户",
+          "noMatchingCurrency": "没有账户匹配货币 {currency}",
+          "willCreate": "将创建“{name}”（{currency}）",
+          "empty": "在 CSV 中找不到账户",
+          "currentBalanceLabel": "当前余额",
           "currentBalancePlaceholder": "0.00",
-          "currentBalanceHint": "The balance this account holds right now — the import will set the account to exactly this value. Leave blank to use the sum of imported transactions.",
-          "skippedNote": "{count} account(s) will be skipped. Their transactions will not be imported."
+          "currentBalanceHint": "该账户当前持有的余额 - 导入会将账户设置为该值。留空以使用导入交易的总和。",
+          "skippedNote": "{count} 账户将被跳过。他们的交易将不会被导入。"
         },
         "categories": {
-          "sectionTitle": "Category mapping",
-          "csvName": "CSV category"
+          "sectionTitle": "类别映射",
+          "csvName": "CSV类别"
         },
         "tags": {
-          "sectionTitle": "Tag mapping",
-          "resolvedCount": "{resolved} of {total} resolved",
-          "csvName": "CSV tag",
-          "action": "Action",
-          "target": "Target tag",
-          "selectTarget": "Select a tag",
-          "willCreate": "Will create \"{name}\"",
-          "willSkip": "Will be skipped",
-          "noExistingTags": "No existing tags to link to",
-          "loadFailed": "Failed to load tags",
-          "empty": "No tags found in CSV"
+          "sectionTitle": "标签映射",
+          "resolvedCount": "{resolved} 或 {total} 已解决",
+          "csvName": "CSV 标签",
+          "action": "行动",
+          "target": "目标标签",
+          "selectTarget": "选择一个标签",
+          "willCreate": "将创建“{name}”",
+          "willSkip": "将被跳过",
+          "noExistingTags": "没有可链接到的现有标签",
+          "loadFailed": "加载标签失败",
+          "empty": "在 CSV 中找不到标签"
         },
-        "detectError": "Failed to proceed. Please try again.",
-        "extractFailed": "Couldn't load the values to resolve. Please go back and try again.",
-        "retry": "Try again",
+        "detectError": "无法继续。请再试一次。",
+        "extractFailed": "无法加载要解析的值。请返回并重试。",
+        "retry": "重试",
         "footer": {
-          "back": "Back",
-          "next": "Next"
+          "back": "返回",
+          "next": "下一个"
         }
       },
       "mapColumns": {
-        "columnsTitle": "Columns",
-        "assignmentsTitle": "Assignments",
-        "fieldHeader": "Field",
-        "csvColumnHeader": "CSV column",
-        "exampleHeader": "Example data",
-        "howToAssignHeader": "How to assign",
-        "usingHeader": "Using",
-        "optionalSuffix": "(optional)",
-        "choosePlaceholder": "Choose…",
-        "alreadyMatchedSuffix": "(already matched)",
-        "amountSignNote": "Determined from the amount sign",
-        "back": "Back",
-        "next": "Next",
-        "missingHint": "Still needed: {fields}",
+        "columnsTitle": "专栏",
+        "assignmentsTitle": "作业",
+        "fieldHeader": "场地",
+        "csvColumnHeader": "CSV 列",
+        "exampleHeader": "示例数据",
+        "howToAssignHeader": "如何分配",
+        "usingHeader": "使用",
+        "optionalSuffix": "（选修的）",
+        "choosePlaceholder": "选择…",
+        "alreadyMatchedSuffix": "（已经匹配）",
+        "amountSignNote": "由金额符号确定",
+        "back": "返回",
+        "next": "下一个",
+        "missingHint": "还需要：{fields}",
         "fields": {
-          "date": "Date",
-          "amount": "Amount",
-          "description": "Description",
-          "category": "Category",
-          "account": "Account",
-          "currency": "Currency",
-          "transactionType": "Transaction type",
-          "payee": "Payee"
+          "date": "日期",
+          "amount": "金额",
+          "description": "说明",
+          "category": "分类",
+          "account": "账户",
+          "currency": "货币",
+          "transactionType": "交易类型",
+          "payee": "收付款方"
         },
         "dateFormat": {
-          "label": "Date format",
-          "placeholder": "Select date format",
-          "dayFirstOption": "Day first — {example}",
-          "monthFirstOption": "Month first — {example}",
-          "suggestedBadge": "Suggested",
-          "isoDetected": "ISO date format detected — dates in this column are year-first, so no day/month choice is needed.",
-          "previewLabel": "Preview",
-          "previewUnrecognized": "unrecognized",
-          "mismatchWarning": "{count} row doesn't match this format and will be flagged as invalid. | {count} rows don't match this format and will be flagged as invalid."
+          "label": "日期格式",
+          "placeholder": "选择日期格式",
+          "dayFirstOption": "第一天 — {example}",
+          "monthFirstOption": "第一个月 — {example}",
+          "suggestedBadge": "建议",
+          "isoDetected": "检测到 ISO 日期格式 — 此列中的日期是年份优先，因此不需要选择日/月。",
+          "previewLabel": "预览",
+          "previewUnrecognized": "不被认可",
+          "mismatchWarning": "{count} 行与此格式不匹配，将被标记为无效。 | {count} 行与此格式不匹配，将被标记为无效。"
         }
       },
       "importResults": {
         "errorColumns": {
-          "row": "Row",
-          "error": "Error"
+          "row": "排",
+          "error": "错误"
         },
         "rowErrors": {
-          "payeeDefaultTagsFailed": "The transaction was imported, but the payee's default tags could not be applied.",
-          "accountUnresolved": "The account for this row could not be resolved, so the row was skipped.",
-          "readBackFailed": "The transaction was created but could not be read back, so it is missing from the imported count.",
-          "generic": "This row could not be imported."
+          "payeeDefaultTagsFailed": "交易已导入，但无法应用收款人的默认标签。",
+          "accountUnresolved": "无法解析该行的账户，因此跳过该行。",
+          "readBackFailed": "该事务已创建但无法读回，因此导入的计数中缺少该事务。",
+          "generic": "无法导入该行。"
         }
       }
     }

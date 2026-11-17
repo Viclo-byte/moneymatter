@@ -1,34 +1,34 @@
 {
   "pages": {
     "sharedWithMe": {
-      "title": "Shared with me",
-      "loadError": "Failed to load shared resources.",
+      "title": "与我分享",
+      "loadError": "无法加载共享资源。",
       "empty": {
-        "title": "Nothing shared with you yet",
-        "description": "When someone shares an account with you, it'll show up here."
+        "title": "尚未与您分享任何内容",
+        "description": "当有人与您共享账户时，该账户会显示在此处。"
       },
       "sections": {
-        "account": "Accounts",
-        "household": "Households",
-        "budget": "Trackers shared with you"
+        "account": "账户",
+        "household": "家庭",
+        "budget": "与您分享的追踪器"
       },
-      "sharedBy": "Shared by {handle}",
-      "viaHousehold": "Via {handle} household",
-      "unnamedResource": "Untitled",
+      "sharedBy": "共享者 {handle}",
+      "viaHousehold": "经由{handle}户",
+      "unnamedResource": "无题",
       "permissions": {
-        "read": "Read",
-        "write": "Write",
-        "manage": "Manage"
+        "read": "读",
+        "write": "写",
+        "manage": "管理"
       },
-      "leave": "Leave",
-      "leaveTitle": "Leave share?",
-      "leaveDescription": "You'll lose access to {resource} owned by {owner}. The owner won't be notified.",
-      "leaveConfirm": "Leave",
-      "leaveSuccess": "You've left the share.",
-      "leaveError": "Could not leave the share.",
+      "leave": "离开",
+      "leaveTitle": "留下分享吗？",
+      "leaveDescription": "您将无法访问 {owner} 拥有的 {resource}。业主不会收到通知。",
+      "leaveConfirm": "离开",
+      "leaveSuccess": "您已离开共享。",
+      "leaveError": "无法离开共享。",
       "pending": {
-        "heading": "Pending invitations",
-        "review": "Review"
+        "heading": "待处理的邀请",
+        "review": "审查"
       }
     }
   }

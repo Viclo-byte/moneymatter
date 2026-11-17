@@ -1,182 +1,182 @@
 {
   "payees": {
-    "title": "Payees",
-    "subtitle": "Master list of merchants you transact with",
-    "newPayeeButton": "New payee",
-    "searchPlaceholder": "Search payees…",
+    "title": "收付款方",
+    "subtitle": "与您进行交易的商户主列表",
+    "newPayeeButton": "新收款人",
+    "searchPlaceholder": "搜索收款人...",
     "columns": {
-      "name": "Name",
+      "name": "名称",
       "transactionCount": "# tx",
-      "netFlow": "Net flow",
-      "category": "Category",
-      "categoryHint": "Effective category for this payee. Shows the default if you've set one — otherwise the category most frequently used in past transactions. Auto-filled when creating a new transaction.",
-      "topCategory": "Top category",
-      "defaultCategory": "Default category",
-      "defaultTags": "Default tags"
+      "netFlow": "净流量",
+      "category": "分类",
+      "categoryHint": "该收款人的有效类别。如果您已设置，则显示默认值 - 否则显示过去交易中最常用的类别。创建新交易时自动填写。",
+      "topCategory": "顶级类别",
+      "defaultCategory": "默认类别",
+      "defaultTags": "默认标签"
     },
     "sort": {
-      "label": "Sort by",
-      "transactionCount": "Tx amount",
-      "netFlow": "Net flow",
-      "name": "Name",
-      "lastSeen": "Recent activity",
-      "defaultTags": "Default tags"
+      "label": "排序方式",
+      "transactionCount": "交易金额",
+      "netFlow": "净流量",
+      "name": "名称",
+      "lastSeen": "最近的活动",
+      "defaultTags": "默认标签"
     },
     "actions": {
-      "menu": "Actions",
-      "rename": "Rename",
-      "merge": "Merge into…",
-      "delete": "Delete",
-      "deleteAndIgnore": "Delete & ignore"
+      "menu": "操作",
+      "rename": "重命名",
+      "merge": "合并到…",
+      "delete": "删除",
+      "deleteAndIgnore": "删除并忽略"
     },
     "bulk": {
-      "select": "Select",
-      "selectedCount": "{count} selected",
-      "clearSelection": "Clear selection",
-      "selectAll": "Select all loaded payees",
-      "selectRow": "Select {name}",
-      "deleteTitle": "Delete {count} payee? | Delete {count} payees?",
-      "deleteDescription": "Their transactions stay, but lose the payee link. This can't be undone.",
-      "deleteAndIgnoreTitle": "Delete and ignore {count} payee? | Delete and ignore {count} payees?",
-      "deleteAndIgnoreDescription": "Their names go on the ignored list, so imports and bank syncs won't recreate them. Their transactions stay, but lose the payee link."
+      "select": "选择",
+      "selectedCount": "已选择{count}",
+      "clearSelection": "清除选择",
+      "selectAll": "选择所有已加载的收款人",
+      "selectRow": "选择{name}",
+      "deleteTitle": "删除{count}收款人？ | 删除{count}收款人？",
+      "deleteDescription": "他们的交易会保留，但会丢失收款人链接。这无法撤消。",
+      "deleteAndIgnoreTitle": "删除并忽略{count}收款人？ | 删除并忽略{count}收款人？",
+      "deleteAndIgnoreDescription": "它们的名字会出现在忽略列表中，因此导入和银行同步不会重新创建它们。他们的交易会保留，但会丢失收款人链接。"
     },
     "emptyState": {
-      "title": "No payees yet",
-      "description": "Connect a bank to detect payees automatically, or create one manually."
+      "title": "还没有收款人",
+      "description": "连接银行以自动检测收款人，或手动创建收款人。"
     },
     "form": {
-      "namePlaceholder": "Enter payee name",
-      "categoryPlaceholder": "Select a category",
+      "namePlaceholder": "输入收款人姓名",
+      "categoryPlaceholder": "选择一个类别",
       "categorizationMode": {
-        "label": "AI categorization",
+        "label": "人工智能分类",
         "enforce": {
-          "label": "Always use payee category",
-          "hint": "Payee's default category is always used. AI categorization is skipped for this payee."
+          "label": "始终使用收款人类别",
+          "hint": "始终使用收款人的默认类别。该收款人将跳过 AI 分类。"
         },
         "hint": {
-          "label": "Use as a hint",
-          "hint": "Sets the payee's default category, but AI can still override it based on the transaction details."
+          "label": "用作提示",
+          "hint": "设置收款人的默认类别，但AI仍然可以根据交易详细信息覆盖它。"
         },
         "off": {
-          "label": "Off",
-          "hint": "Payee's default category is ignored. Categorization is handled by AI or your other rules."
+          "label": "关闭",
+          "hint": "收款人的默认类别将被忽略。分类由人工智能或您的其他规则处理。"
         }
       }
     },
     "detail": {
-      "categorizationSection": "Categorization",
-      "aliasesHeading": "Aliases",
-      "aliasesEmpty": "No aliases yet. New variants will appear here when this payee matches another merchant name.",
-      "cannotDeleteCanonicalAlias": "Cannot delete the alias matching the payee's name. Rename the payee instead.",
-      "deleteAliasConfirm": "Remove this alias?",
-      "addAlias": "Add",
-      "addAliasTitle": "Add alias",
-      "addAliasDescription": "Future transactions whose merchant text normalizes to this alias will automatically link to this payee. Past transactions are unchanged.",
-      "addAliasInputLabel": "Merchant name",
-      "addAliasPlaceholder": "e.g. ACME STORE #1234",
-      "aliasDuplicate": "This alias is already attached to this payee.",
-      "aliasUsedByOtherPayee": "This alias is already used by \"{name}\".",
-      "deletePayeeTitle": "Delete payee?",
-      "deletePayeeDescription": "Linked transactions keep their category but lose the payee link. This cannot be undone.",
-      "deleteAndIgnoreTitle": "Delete this payee and ignore future matches?",
-      "deleteAndIgnoreDescription": "Deletes this payee AND adds its names (canonical + all aliases) to the ignored-names blocklist. Future syncs won't recreate it from raw merchant text. Linked transactions stay but lose their payee link.",
-      "mergeTitle": "Merge into another payee",
-      "mergeDescription": "Pick the target payee. All transactions and aliases move to the target; this payee is deleted.",
-      "confirmMerge": "Merge",
-      "topCategoryHint": "The category most frequently used in transactions linked to this payee. Used as a fallback when no default category is set.",
-      "defaultCategoryPlaceholder": "Select a category",
-      "defaultTagsLabel": "Auto-apply tags",
-      "defaultTagsPlaceholder": "Select tags to auto-apply",
-      "defaultTagsHint": "These tags are automatically added to new transactions linked to this payee (bank syncs and imports).",
-      "defaultLocationLabel": "Default location",
-      "defaultLocationEmpty": "No location set",
-      "defaultLocationHint": "Transactions linked to this payee that have no location of their own get this one, both at creation and during bank sync.",
-      "clearDefaultLocationTitle": "Remove default location?",
-      "clearDefaultLocationDescription": "New transactions linked to this payee will no longer get this location. Existing transactions keep theirs.",
-      "applyTagsToExisting": "Apply to existing transactions"
+      "categorizationSection": "分类",
+      "aliasesHeading": "别名",
+      "aliasesEmpty": "还没有别名。当此收款人与另一个商户名称匹配时，新的变体将出现在此处。",
+      "cannotDeleteCanonicalAlias": "无法删除与收款人姓名匹配的别名。改为重命名收款人。",
+      "deleteAliasConfirm": "删除这个别名？",
+      "addAlias": "添加",
+      "addAliasTitle": "添加别名",
+      "addAliasDescription": "未来交易的商户文本标准化为该别名将自动链接到该收款人。过去的交易没有变化。",
+      "addAliasInputLabel": "商户名称",
+      "addAliasPlaceholder": "例如ACME 商店 #1234",
+      "aliasDuplicate": "该别名已附加到该收款人。",
+      "aliasUsedByOtherPayee": "该别名已被“{name}”使用。",
+      "deletePayeeTitle": "删除收款人？",
+      "deletePayeeDescription": "关联交易保留其类别，但失去收款人链接。此操作无法撤消。",
+      "deleteAndIgnoreTitle": "删除此收款人并忽略未来的匹配？",
+      "deleteAndIgnoreDescription": "删除此收款人并将其名称（规范+所有别名）添加到忽略名称阻止列表中。未来的同步不会从原始商家文本重新创建它。链接交易保留，但失去收款人链接。",
+      "mergeTitle": "合并到另一个收款人",
+      "mergeDescription": "选择目标收款人。所有交易和别名都会转移到目标；该收款人已被删除。",
+      "confirmMerge": "合并",
+      "topCategoryHint": "与该收款人关联的交易中最常用的类别。当未设置默认类别时用作后备。",
+      "defaultCategoryPlaceholder": "选择一个类别",
+      "defaultTagsLabel": "自动应用标签",
+      "defaultTagsPlaceholder": "选择要自动应用的标签",
+      "defaultTagsHint": "这些标签会自动添加到链接到该收款人的新交易中（银行同步和导入）。",
+      "defaultLocationLabel": "默认位置",
+      "defaultLocationEmpty": "未设置位置",
+      "defaultLocationHint": "与该收款人关联且没有自己位置的交易在创建时和银行同步期间都会获得该交易。",
+      "clearDefaultLocationTitle": "删除默认位置？",
+      "clearDefaultLocationDescription": "与该收款人关联的新交易将不再获得该位置。现有交易保留。",
+      "applyTagsToExisting": "适用于现有交易"
     },
     "logo": {
-      "change": "Change logo",
-      "dialogTitle": "Change logo",
-      "dialogDescription": "Search for a brand logo to represent this payee.",
-      "resetToAuto": "Reset to automatic",
-      "updatedToast": "Logo updated.",
-      "resetToast": "Logo reset to automatic.",
-      "fieldLabel": "Logo",
-      "domainHint": "To find the exact brand, type the company's website domain (e.g. amazon.com) — that always matches the right logo."
+      "change": "更改标志",
+      "dialogTitle": "更改标志",
+      "dialogDescription": "搜索代表该收款人的品牌徽标。",
+      "resetToAuto": "重置为自动",
+      "updatedToast": "徽标已更新。",
+      "resetToast": "徽标重置为自动。",
+      "fieldLabel": "标识",
+      "domainHint": "要查找确切的品牌，请输入该公司的网站域名（例如 amazon.com）——它始终与正确的徽标匹配。"
     },
     "transactionsDialog": {
-      "title": "{name} — transactions",
-      "empty": "No transactions linked to this payee.",
-      "unlink": "Unlink from payee",
-      "unlinked": "Transaction unlinked from payee",
-      "unlinkConfirmTitle": "Unlink transaction?",
-      "unlinkConfirmDescription": "This transaction will no longer be linked to {name}. Future bank syncs won't re-link it automatically.",
-      "unlinkConfirmLabel": "Unlink"
+      "title": "{name} — 交易",
+      "empty": "没有与该收款人关联的交易。",
+      "unlink": "取消与收款人的关联",
+      "unlinked": "交易与收款人解除关联",
+      "unlinkConfirmTitle": "取消关联交易？",
+      "unlinkConfirmDescription": "该交易将不再与{name}挂钩。未来的银行同步不会自动重新链接它。",
+      "unlinkConfirmLabel": "取消链接"
     },
     "toasts": {
-      "created": "Payee created",
-      "updated": "Payee updated",
-      "deleted": "Payee deleted",
-      "merged": "Payees merged",
-      "aliasDeleted": "Alias removed",
-      "aliasAdded": "Alias added",
-      "deletedAndIgnored": "Payee deleted and added to ignored-names list",
-      "tagsAppliedToExisting": "Tags applied to {count} transactions",
-      "bulkDeleted": "Deleted {count} payee | Deleted {count} payees",
-      "bulkDeletedAndIgnored": "Deleted and ignored {count} payee | Deleted and ignored {count} payees"
+      "created": "收款人已创建",
+      "updated": "收款人已更新",
+      "deleted": "收款人已删除",
+      "merged": "收款人合并",
+      "aliasDeleted": "别名已删除",
+      "aliasAdded": "添加别名",
+      "deletedAndIgnored": "收款人已删除并添加到忽略名称列表中",
+      "tagsAppliedToExisting": "应用于 {count} 交易的标签",
+      "bulkDeleted": "已删除 {count} 收款人 | 已删除 {count} 收款人",
+      "bulkDeletedAndIgnored": "已删除并忽略 {count} 收款人 | 已删除并忽略 {count} 收款人"
     },
     "errors": {
-      "collision": "A payee with this name already exists. Merge instead.",
-      "generic": "Something went wrong, please try again."
+      "collision": "同名的收款人已存在。合并代替。",
+      "generic": "出了点问题，请重试。"
     },
     "tabs": {
-      "manage": "Manage",
-      "settings": "Settings"
+      "manage": "管理",
+      "settings": "设置"
     },
     "settings": {
-      "title": "Payee detection settings",
-      "description": "Control how the app auto-detects payees from your synced transactions.",
-      "howDetectionWorks": "How detection works",
+      "title": "收款人检测设置",
+      "description": "控制应用程序如何从同步交易中自动检测收款人。",
+      "howDetectionWorks": "检测的工作原理",
       "payeeFromDescription": {
-        "label": "Detect payees from transaction descriptions",
-        "description": "When your bank doesn't provide a dedicated merchant field, fall back to the transaction description (note) to auto-detect payees. Useful for bank connections that have merchant fields empty or absent. May produce noisier payee names (e.g. installment-payment prefixes) which you can rename or merge afterwards.",
-        "successNotification": "Preference updated",
-        "errorNotification": "Failed to update preference"
+        "label": "从交易描述中检测收款人",
+        "description": "当您的银行没有提供专用商户字段时，请退回到交易描述（注释）以自动检测收款人。对于商户字段为空或不存在的银行连接很有用。可能会产生更嘈杂的收款人名称（例如分期付款前缀），您可以稍后重命名或合并。",
+        "successNotification": "偏好更新",
+        "errorNotification": "无法更新偏好设置"
       },
       "promotionThreshold": {
-        "label": "Create a payee after N occurrences",
-        "description": "How many transactions must share the same merchant name before a payee is created automatically. Set to 1 to create payees from the first transaction.",
-        "successNotification": "Payee creation threshold updated",
-        "errorNotification": "Failed to update payee creation threshold"
+        "label": "N次出现后创建收款人",
+        "description": "在自动创建收款人之前，必须有多少笔交易共享相同的商户名称。设置为 1 从第一笔交易创建收款人。",
+        "successNotification": "更新收款人创建阈值",
+        "errorNotification": "无法更新收款人创建阈值"
       },
       "bulkCategorizationMode": {
-        "label": "Apply categorization mode to all payees",
-        "description": "Choose how the categorization should behave for every existing payee. This overrides each payee's individual setting.",
-        "applyButton": "Apply to all",
-        "confirmTitle": "Apply to all payees?",
-        "confirmDescription": "All payees will be switched to {mode}. You can still change each payee individually later.",
-        "successNotification": "Updated {count} payees.",
-        "errorNotification": "Failed to update payees. Please try again."
+        "label": "对所有收款人应用分类模式",
+        "description": "选择每个现有收款人的分类方式。这会覆盖每个收款人的个人设置。",
+        "applyButton": "适用于所有",
+        "confirmTitle": "适用于所有收款人？",
+        "confirmDescription": "所有收款人将切换为{mode}。您稍后仍可以单独更改每个收款人。",
+        "successNotification": "更新了 {count} 收款人。",
+        "errorNotification": "无法更新收款人。请再试一次。"
       }
     },
     "ignoredNames": {
-      "title": "Ignored merchant names",
-      "description": "Raw merchant strings that should never automatically create a payee. Useful for noise like 'Card transfer', 'From: <name>', or refund prefixes. You can still link these names to a payee manually — only automatic matching is blocked.",
-      "addPlaceholder": "e.g. Spotify",
-      "addButton": "Add",
-      "addedToast": "Added to ignored names",
-      "addError": "Failed to add to ignored names",
-      "removeTooltip": "Remove from ignored list",
-      "removedToast": "Removed from ignored names",
-      "removeError": "Failed to remove",
-      "empty": "No ignored names yet.",
-      "normalizedLabel": "Normalized",
-      "conflictTitle": "An existing payee matches",
-      "conflictDescription": "A payee with the same normalized name as \"{name}\" already exists. Continuing will delete that payee (transactions stay, lose link).",
-      "forceConfirm": "Delete payee and ignore"
+      "title": "忽略的商户名称",
+      "description": "永远不应自动创建收款人的原始商家字符串。对于“卡转账”、“来自：<name>”或退款前缀等噪音很有用。您仍然可以手动将这些姓名链接到收款人 - 仅自动匹配被阻止。",
+      "addPlaceholder": "例如Spotify",
+      "addButton": "添加",
+      "addedToast": "添加到被忽略的名称",
+      "addError": "无法添加到忽略的名称",
+      "removeTooltip": "从忽略列表中删除",
+      "removedToast": "从被忽略的名字中删除",
+      "removeError": "删除失败",
+      "empty": "还没有被忽略的名字。",
+      "normalizedLabel": "归一化",
+      "conflictTitle": "现有收款人匹配",
+      "conflictDescription": "规范化名称与“{name}”相同的收款人已存在。继续将删除该收款人（交易保留，丢失链接）。",
+      "forceConfirm": "删除收款人并忽略"
     },
-    "loadingMore": "Loading more…",
-    "txCount": "{count} tx"
+    "loadingMore": "加载更多...",
+    "txCount": "{count} TX"
   }
 }

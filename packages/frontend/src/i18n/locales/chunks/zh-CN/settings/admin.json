@@ -1,157 +1,157 @@
 {
   "settings": {
     "admin": {
-      "title": "Admin panel",
-      "description": "Administrative tools and system management",
+      "title": "管理面板",
+      "description": "管理工具和系统管理",
       "priceSync": {
-        "title": "Securities price sync",
-        "description": "Manually trigger price synchronization for all securities with holdings",
-        "button": "Trigger price sync",
-        "buttonLoading": "Syncing...",
+        "title": "证券价格同步",
+        "description": "手动触发所有持有证券的价格同步",
+        "button": "触发价格同步",
+        "buttonLoading": "正在同步...",
         "notifications": {
-          "success": "Securities prices sync completed successfully",
-          "failed": "Failed to trigger price sync",
-          "rateLimited": "Not allowed. Try again in {time}.",
-          "adminRequired": "Admin privileges required for this action"
+          "success": "证券价格同步成功完成",
+          "failed": "触发价格同步失败",
+          "rateLimited": "不允许。在 {time} 中重试。",
+          "adminRequired": "此操作需要管理员权限"
         }
       },
       "priceUpload": {
-        "title": "Manual security price upload",
-        "description": "Upload historical price data for securities via CSV or JSON files",
-        "button": "Upload security prices",
-        "dialogTitle": "Upload security prices",
+        "title": "手动安全价格上传",
+        "description": "通过 CSV 或 JSON 文件上传证券的历史价格数据",
+        "button": "上传安全价格",
+        "dialogTitle": "上传安全价格",
         "selectSecurity": {
-          "searchLabel": "Search symbol or name",
+          "searchLabel": "搜索符号或名称",
           "searchPlaceholder": "AAPL",
-          "searching": "Searching…",
-          "failed": "Failed to search securities.",
-          "noResults": "No results.",
-          "changeButton": "Change"
+          "searching": "正在寻找...",
+          "failed": "搜索证券失败。",
+          "noResults": "没有结果。",
+          "changeButton": "变化"
         },
         "dateRangeInfo": {
-          "loading": "Loading date range information...",
-          "title": "Available exchange rates date range ({currency}):",
-          "tooltipText": "You can upload security prices only for dates for which we have exchange rates available. Otherwise it won't be possible to convert security price to other currencies. If you need older data, upload exchange rates first. Otherwise depending on which option you will chose on the next steps records will be auto-filtered (omitted) or uploading request will fail."
+          "loading": "正在加载日期范围信息...",
+          "title": "可用汇率日期范围（{currency}）：",
+          "tooltipText": "您只能上传我们有可用汇率的日期的证券价格。否则将无法将证券价格转换为其他货币。如果您需要较旧的数据，请先上传汇率。否则，根据您在后续步骤中选择的选项，记录将被自动过滤（忽略）或上传请求将失败。"
         },
         "fileUpload": {
-          "title": "Upload file",
-          "supportedFormats": "CSV or JSON files supported",
+          "title": "上传文件",
+          "supportedFormats": "支持 CSV 或 JSON 文件",
           "errors": {
-            "unsupportedFormat": "Unsupported file format. Please upload CSV or JSON file.",
-            "parseFailed": "Failed to parse {fileType} file: {error}"
+            "unsupportedFormat": "不支持的文件格式。请上传 CSV 或 JSON 文件。",
+            "parseFailed": "无法解析 {fileType} 文件：{error}"
           }
         },
         "fieldMapper": {
-          "title": "Map fields",
-          "description": "Match your file's fields to the required fields below.",
-          "selectField": "Select field...",
-          "dateFormatLabel": "Date format",
-          "dateFormatDescription": "Select the date format used in your file",
+          "title": "地图字段",
+          "description": "将文件的字段与下面的必填字段相匹配。",
+          "selectField": "选择字段...",
+          "dateFormatLabel": "日期格式",
+          "dateFormatDescription": "选择文件中使用的日期格式",
           "dateFormats": {
-            "ddMMyyyySlash": "DD/MM/YYYY (e.g., 31/12/2024)",
-            "MMddyyyySlash": "MM/DD/YYYY (e.g., 12/31/2024)",
-            "yyyyMMddDash": "YYYY-MM-DD (e.g., 2024-12-31)",
-            "ddMMyyyyDash": "DD-MM-YYYY (e.g., 31-12-2024)",
-            "MMddyyyyDash": "MM-DD-YYYY (e.g., 12-31-2024)"
+            "ddMMyyyySlash": "日/月/年（例如 2024 年 12 月 31 日）",
+            "MMddyyyySlash": "月/日/年（例如 12/31/2024）",
+            "yyyyMMddDash": "YYYY-MM-DD（例如，2024-12-31）",
+            "ddMMyyyyDash": "DD-MM-YYYY（例如，2024 年 12 月 31 日）",
+            "MMddyyyyDash": "月-日-年（例如，2024 年 12 月 31 日）"
           },
-          "mappingComplete": "All required fields mapped",
-          "mappingIncomplete": "Please map all required fields to continue",
-          "fileInfo": "File:",
-          "records": "{count} records",
-          "changeFileButton": "Change file",
-          "continueButton": "Continue to preview"
+          "mappingComplete": "映射所有必填字段",
+          "mappingIncomplete": "请映射所有必填字段以继续",
+          "fileInfo": "文件：",
+          "records": "{count} 记录",
+          "changeFileButton": "更改文件",
+          "continueButton": "继续预览"
         },
         "preview": {
-          "title": "Data preview",
-          "recordsCount": "{count} record will be uploaded | {count} records will be uploaded",
-          "recordsPeriod": "for period between {oldest} and {newest}",
-          "loadingExisting": "Loading existing prices for comparison...",
+          "title": "数据预览",
+          "recordsCount": "{count} 记录即将上传 | {count}记录将上传",
+          "recordsPeriod": "对于 {oldest} 和 {newest} 之间的时间段",
+          "loadingExisting": "正在加载现有价格进行比较...",
           "warnings": {
-            "significantDifferences": "Significant price differences detected",
-            "differencesDetails": "{count} record has a price difference greater than 4% compared to existing data. Please review carefully. | {count} records have a price difference greater than 4% compared to existing data. Please review carefully."
+            "significantDifferences": "检测到显着的价格差异",
+            "differencesDetails": "{count}记录与现有数据相比价格差异大于4%。请仔细审查。 | {count} 记录与现有数据相比价格差异大于 4%。请仔细审查。"
           },
-          "filterCheckbox": "Show only records with significant differences (>4%)",
+          "filterCheckbox": "仅显示具有显着差异 (>4%) 的记录",
           "tableHeaders": {
-            "date": "Date",
-            "newPrice": "New price",
-            "existingPrice": "Existing price",
-            "difference": "Difference (%)"
+            "date": "日期",
+            "newPrice": "新价格",
+            "existingPrice": "现价",
+            "difference": "不同之处 （％）"
           },
           "noExistingPrice": "N/A",
-          "scrollForMore": "Scroll for more...",
-          "noDifferences": "No records with significant differences found.",
-          "backButton": "Back to mapping",
-          "continueButton": "Continue to options"
+          "scrollForMore": "滚动查看更多...",
+          "noDifferences": "未发现有显着差异的记录。",
+          "backButton": "返回映射",
+          "continueButton": "继续选项"
         },
         "options": {
-          "title": "Upload options",
+          "title": "上传选项",
           "autoFilter": {
-            "title": "Auto-filter dates outside available range",
-            "description": "Automatically remove dates that are outside the available exchange rate range"
+            "title": "自动过滤超出可用范围的日期",
+            "description": "自动删除超出可用汇率范围的日期"
           },
           "override": {
-            "title": "Override existing records",
-            "description": "Update existing price records instead of skipping duplicates"
+            "title": "覆盖现有记录",
+            "description": "更新现有价格记录而不是跳过重复项"
           },
-          "backButton": "Back",
-          "uploadButton": "Upload prices",
-          "uploadingButton": "Uploading..."
+          "backButton": "返回",
+          "uploadButton": "上传价格",
+          "uploadingButton": "正在上传..."
         },
         "result": {
-          "title": "Upload complete!",
-          "inserted": "✓ {count} new record inserted | ✓ {count} new records inserted",
-          "duplicates": "• {count} duplicate {action}",
-          "duplicatesUpdated": "updated",
-          "duplicatesSkipped": "skipped",
-          "filtered": "• {count} date filtered (outside range) | • {count} dates filtered (outside range)",
-          "closeButton": "Close",
-          "uploadMoreButton": "Upload more"
+          "title": "上传完成！",
+          "inserted": "✓ {count} 已插入新记录 | ✓ {count} 插入新记录",
+          "duplicates": "• {count} 条重复记录{action}",
+          "duplicatesUpdated": "已更新",
+          "duplicatesSkipped": "已跳过",
+          "filtered": "• {count} 个日期已过滤（超出范围） | • {count} 个日期已过滤（超出范围）",
+          "closeButton": "关闭",
+          "uploadMoreButton": "继续上传"
         },
         "notifications": {
-          "dateInfoLoadFailed": "Failed to load date info: {error}",
-          "uploadSuccess": "Successfully uploaded {count} price record | Successfully uploaded {count} price records",
-          "uploadFailed": "Upload failed: {error}"
+          "dateInfoLoadFailed": "加载日期信息失败：{error}",
+          "uploadSuccess": "已成功上传 {count} 条价格记录 | 已成功上传 {count} 条价格记录",
+          "uploadFailed": "上传失败：{error}"
         }
       },
       "broadcast": {
-        "title": "Broadcast notification",
-        "description": "Send an in-app notification to every user active in the last 30 days, or only to the user IDs and emails you list. With a link, clicking it opens the link in a new tab, and re-sending the same link skips users who already got it.",
+        "title": "广播通知",
+        "description": "向最近 30 天内活跃的所有用户发送应用内通知，或仅发送给指定的用户 ID 和邮箱。点击链接将在新标签页打开；再次发送同一链接时会跳过已经收到通知的用户。",
         "fields": {
-          "title": "Title",
-          "titlePlaceholder": "e.g. iOS app is in public beta 📱",
-          "message": "Message",
-          "messagePlaceholder": "Optional text shown under the title",
-          "url": "Link",
-          "urlPlaceholder": "https://…  (optional)",
-          "urlError": "Link must start with https://",
-          "icon": "Icon",
-          "recipients": "Recipients",
-          "recipientsPlaceholder": "Optional user IDs or emails, comma-separated, e.g. 12, jane@example.com. Empty = all active users",
-          "recipientsError": "Use positive whole-number IDs or valid emails, separated by commas"
+          "title": "标题",
+          "titlePlaceholder": "例如：iOS 应用已开启公测 📱",
+          "message": "消息",
+          "messagePlaceholder": "显示在标题下方的可选文字",
+          "url": "关联",
+          "urlPlaceholder": "https://…（可选）",
+          "urlError": "链接必须以 https:// 开头",
+          "icon": "图标",
+          "recipients": "接收者",
+          "recipientsPlaceholder": "可选：填写用户 ID 或邮箱，以逗号分隔，例如 12, jane{'@'}example.com。留空表示所有活跃用户",
+          "recipientsError": "使用正整数 ID 或有效电子邮件，以逗号分隔"
         },
         "icons": {
-          "info": "Info",
-          "announcement": "Announcement",
-          "success": "Success",
-          "warning": "Warning"
+          "info": "信息",
+          "announcement": "公告",
+          "success": "成功",
+          "warning": "警告"
         },
-        "button": "Send notification",
+        "button": "发送通知",
         "confirm": {
-          "title": "Send to all active users?",
-          "titleSelected": "Send to {count} users?",
-          "description": "This creates a notification for every user active in the last 30 days. It can't be undone.",
-          "descriptionSelected": "Unknown IDs and emails are skipped. It can't be undone.",
-          "button": "Send"
+          "title": "发送给所有活跃用户？",
+          "titleSelected": "发送给{count}用户？",
+          "description": "这将为过去 30 天内的每个活跃用户创建一个通知。它无法撤消。",
+          "descriptionSelected": "未知的 ID 和电子邮件将被跳过。它无法撤消。",
+          "button": "发送"
         },
         "notifications": {
-          "success": "Notification sent to {count} users",
-          "failed": "Failed to send the notification",
-          "noneCreated": "No notifications were sent: no matching users, or they already got this link"
+          "success": "发送给 {count} 用户的通知",
+          "failed": "发送通知失败",
+          "noneCreated": "未发送通知：没有匹配的用户，或者他们已经获得此链接"
         }
       },
       "tabs": {
-        "investments": "Investments",
-        "notifications": "Notifications"
+        "investments": "投资",
+        "notifications": "通知"
       }
     }
   }

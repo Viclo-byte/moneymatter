@@ -17,6 +17,7 @@ import type { ChunkRegistry, I18nChunkName, LoadedChunksMap } from './types';
 const SUPPORTED_LOCALES = Object.values(LOCALES);
 
 export const FLAG_SRCS: Record<SupportedLocale, string> = {
+  [LOCALES.SIMPLIFIED_CHINESE]: '/img/flags/cn.svg',
   [LOCALES.ENGLISH]: '/img/flags/gb.svg',
   [LOCALES.UKRAINIAN]: '/img/flags/ua.svg',
   [LOCALES.SPANISH]: '/img/flags/es.png',

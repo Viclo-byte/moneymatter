@@ -1,130 +1,145 @@
 {
   "settings": {
     "general": {
-      "title": "General",
-      "description": "Control how your financial data is calculated and displayed across the app.",
+      "title": "通用",
+      "description": "控制如何在应用程序中计算和显示财务数据。",
       "creditLimit": {
-        "label": "Include credit limits in balance",
-        "description": "When enabled, credit limits are subtracted from account balances in statistics and the balance trend chart. This shows your actual financial position instead of available credit.",
-        "successNotification": "Setting updated successfully",
-        "errorNotification": "Failed to update setting"
+        "label": "在余额中包含信用额度",
+        "description": "启用后，信用额度将从统计和余额趋势图中的账户余额中扣除。这显示了您的实际财务状况而不是可用信用。",
+        "successNotification": "设置更新成功",
+        "errorNotification": "更新设置失败"
       },
       "payday": {
-        "label": "Pay cycle starts on",
-        "description": "Day of the month your pay cycle starts. The dashboard's default period runs from this day to the day before it next month.",
-        "placeholder": "Select day",
-        "successNotification": "Pay cycle start updated"
+        "label": "付款周期开始于",
+        "description": "您的工资周期开始的日期。仪表板的默认期间从这一天到下个月的前一天。",
+        "placeholder": "选择日期",
+        "successNotification": "支付周期开始已更新"
       },
       "unrealizedLossAlert": {
-        "label": "Unrealized loss alerts",
-        "description": "Get one notification when a holding's loss crosses either threshold. Checked daily after market prices update; it won't repeat until the holding recovers.",
-        "percentLabel": "Loss percentage",
-        "percentDescription": "Alert when a holding is down at least this much from its cost.",
-        "amountLabel": "Loss amount",
-        "amountDescription": "Or when the loss reaches this amount in your base currency, whatever the percentage.",
-        "successNotification": "Loss alert settings saved"
+        "label": "未实现损失警报",
+        "description": "当控股损失超过任一阈值时收到通知。每天在市场价格更新后检查；在控股恢复之前不会重复。",
+        "percentLabel": "损失百分比",
+        "percentDescription": "当持有的资产比其成本至少下跌这么多时发出警报。",
+        "amountLabel": "损失金额",
+        "amountDescription": "或者当损失达到以您的基础货币计算的该金额时，无论百分比如何。",
+        "successNotification": "已保存丢失警报设置"
       },
       "manualTransferMatching": {
-        "label": "Match transfers with manual accounts",
-        "description": "Allow automatically detected transfers to link a synced bank transaction with one you created manually.",
-        "successNotification": "Transfer matching setting updated",
-        "errorNotification": "Failed to update transfer matching setting"
+        "label": "与手动账户匹配转账",
+        "description": "允许自动检测到的转账将同步的银行交易与您手动创建的交易链接起来。",
+        "successNotification": "转移匹配设置已更新",
+        "errorNotification": "无法更新传输匹配设置"
       },
       "pendingBankTransactions": {
-        "label": "Import pending bank transactions",
-        "description": "Import transactions your bank reports before it has booked them. They're marked as pending, don't change the account balance, and can lack the merchant name and final details. Once the bank books or cancels them, they're updated or removed.",
-        "descriptionSelfHost": "Store Enable Banking transactions before the bank books them. They're marked as pending, never change the account balance, and often lack merchant details until booked. Other providers aren't affected: SimpleFIN and LunchFlow always import booked transactions only, and Monobank imports every transaction as a regular one.",
-        "successNotification": "Pending transactions setting updated",
-        "errorNotification": "Failed to update pending transactions setting"
+        "label": "导入待处理的银行交易",
+        "description": "在银行登记之前导入您的银行报告的交易。它们被标记为待处理，不会更改账户余额，并且可能缺少商家名称和最终详细信息。一旦银行登记或取消它们，它们就会被更新或删除。",
+        "descriptionSelfHost": "在银行登记交易之前存储启用银行交易。它们被标记为待处理，永远不会更改账户余额，并且在预订之前通常缺乏商家详细信息。其他提供商不受影响：SimpleFIN 和 LunchFlow 始终仅导入预订交易，而 Monobank 将每笔交易作为常规交易导入。",
+        "successNotification": "待处理交易设置已更新",
+        "errorNotification": "无法更新待处理交易设置"
       },
       "bankSyncSchedule": {
-        "label": "Bank sync schedule",
-        "description": "Connected bank accounts sync automatically at these times, shown in your local time. Pick the same time twice to sync once a day.",
-        "placeholder": "Select time",
-        "successNotification": "Bank sync schedule updated",
-        "errorNotification": "Failed to update bank sync schedule"
+        "label": "银行同步时间表",
+        "description": "连接的银行账户会在这些时间自动同步，以您的当地时间显示。选择同一时间两次，每天同步一次。",
+        "placeholder": "选择时间",
+        "successNotification": "银行同步时间表已更新",
+        "errorNotification": "无法更新银行同步计划"
       },
       "quickStart": {
-        "label": "Quick start guide",
-        "description": "Show the onboarding checklist on the dashboard. Turn it off to hide the guide; turn it back on to bring it back at any time."
+        "label": "快速入门指南",
+        "description": "在仪表板上显示入职清单。关闭它以隐藏指南；将其重新打开以随时将其恢复。"
       },
       "savingsCategories": {
-        "label": "Count categories as savings",
-        "description": "Spending in these categories (and their subcategories) is excluded from expenses in cash-flow analytics, so it counts toward monthly savings and the savings rate.",
-        "successNotification": "Savings categories updated",
-        "errorNotification": "Failed to update savings categories"
+        "label": "将类别计为节省",
+        "description": "这些类别（及其子类别）的支出不包括在现金流分析的支出中，因此它计入每月储蓄和储蓄率。",
+        "successNotification": "储蓄类别已更新",
+        "errorNotification": "无法更新储蓄类别"
       },
       "taxCategories": {
-        "label": "Tax categories",
-        "description": "Spending in these categories is shown as taxes in the money flow chart instead of as an expense. Subcategories are included.",
-        "successNotification": "Tax categories updated",
-        "errorNotification": "Failed to update tax categories"
+        "label": "税种",
+        "description": "这些类别的支出在资金流向图中显示为税收，而不是支出。包括子类别。",
+        "successNotification": "税种已更新",
+        "errorNotification": "无法更新税种"
       },
       "filterCategoriesByType": {
-        "label": "Match categories to transaction type",
-        "description": "The transaction form lists only income categories for income and all other categories for expenses. Search still finds every category.",
-        "successNotification": "Category list setting updated",
-        "errorNotification": "Failed to update the category list setting"
+        "label": "将类别与交易类型相匹配",
+        "description": "交易表格仅列出收入类别的收入和支出的所有其他类别。搜索仍然可以找到每个类别。",
+        "successNotification": "类别列表设置已更新",
+        "errorNotification": "更新类别列表设置失败"
       },
       "incomeCategories": {
-        "label": "Income categories",
-        "description": "Categories that count as income. Subcategories are included.",
-        "successNotification": "Income categories updated",
-        "errorNotification": "Failed to update income categories"
+        "label": "收入类别",
+        "description": "计为收入的类别。包括子类别。",
+        "successNotification": "收入类别已更新",
+        "errorNotification": "无法更新收入类别"
       },
       "accountDropdowns": {
         "defaultAccount": {
-          "label": "Default account",
-          "description": "Pre-selected when you create a transaction.",
-          "placeholder": "No default — first account"
+          "label": "默认账户",
+          "description": "创建交易时预先选择。",
+          "placeholder": "无默认值 — 第一个账户"
         },
         "showArchived": {
-          "label": "Show archived accounts",
-          "description": "When off, archived accounts are hidden from account pickers."
+          "label": "显示存档账户",
+          "description": "关闭后，存档账户将对账户选择器隐藏。"
         },
-        "successNotification": "Account dropdown settings updated",
-        "errorNotification": "Failed to update account dropdown settings"
+        "successNotification": "账户下拉设置已更新",
+        "errorNotification": "无法更新账户下拉设置"
+      },
+      "iosAddExpense": {
+        "label": "iPhone 添加费用",
+        "description": "iPhone 上“添加费用”快捷方式的设置（Siri、Spotlight 和操作按钮）。",
+        "showBankAccounts": {
+          "label": "显示银行关联账户",
+          "description": "默认关闭：银行关联账户上的交易通过同步到达。"
+        },
+        "hiddenCategories": {
+          "label": "隐藏类别",
+          "description": "选中的类别及其子类别在快捷方式的类别列表中隐藏。",
+          "placeholder": "无"
+        },
+        "successNotification": "iPhone 添加费用设置已更新",
+        "errorNotification": "无法更新 iPhone 添加费用设置"
       },
       "showUpcomingTransactions": {
-        "label": "Show upcoming transactions",
-        "description": "Pin a section with overdue scheduled payments and ones due within the next 3 days at the top of the transactions list.",
-        "successNotification": "Upcoming transactions setting updated",
-        "errorNotification": "Failed to update upcoming transactions setting"
+        "label": "显示即将进行的交易",
+        "description": "将包含逾期预定付款和未来 3 天内到期付款的部分固定在交易列表顶部。",
+        "successNotification": "即将进行的交易设置已更新",
+        "errorNotification": "无法更新即将进行的交易设置"
       },
       "transactionFields": {
-        "label": "Optional transaction fields",
-        "description": "Offer a quick-add button for these fields in the transaction form. A field that already has a value is always shown.",
-        "successNotification": "Transaction fields updated",
-        "errorNotification": "Unexpected error happened. Setting not saved",
+        "label": "可选交易字段",
+        "description": "在交易表单中为这些字段提供快速添加按钮。始终显示已具有值的字段。",
+        "successNotification": "交易字段已更新",
+        "errorNotification": "发生意外错误。设置未保存",
         "fields": {
           "externalUrl": {
-            "label": "External URL",
-            "description": "Link the transaction to an order page, booking confirmation or receipt."
+            "label": "外部网址",
+            "description": "将交易链接到订单页面、预订确认或收据。"
           },
           "externalReference": {
-            "label": "External reference",
-            "description": "Keep an order number, invoice number or booking reference with the transaction."
+            "label": "外部参考",
+            "description": "在交易中保留订单号、发票号或预订参考号。"
           },
           "originalAmount": {
-            "label": "Original amount",
-            "description": "The amount actually charged in another currency, when it differs from the account's currency."
+            "label": "原金额",
+            "description": "当另一种货币与账户的货币不同时，实际收取的金额。"
           },
           "location": {
-            "label": "Location",
-            "description": "GPS coordinates of where the purchase happened. Fill from your device's location or type them in"
+            "label": "地点",
+            "description": "购买地点的 GPS 坐标。从您设备的位置填写或输入它们"
           }
         },
         "mapPicker": {
-          "label": "Map picker",
-          "description": "Pick transaction locations on a map and search addresses. Map tiles and search come from OpenStreetMap, which receives your IP address when the map opens."
+          "label": "地图选择器",
+          "description": "在地图上选择交易地点并搜索地址。地图图块和搜索来自 OpenStreetMap，它会在地图打开时接收您的 IP 地址。"
         }
       },
       "defaultPaymentType": {
-        "label": "Default payment type",
-        "description": "Preselected when you add a new transaction.",
-        "placeholder": "Select a payment type",
-        "successNotification": "Default payment type updated",
-        "errorNotification": "Failed to update default payment type"
+        "label": "默认付款类型",
+        "description": "添加新交易时预先选择。",
+        "placeholder": "选择付款类型",
+        "successNotification": "默认付款类型已更新",
+        "errorNotification": "无法更新默认付款类型"
       }
     }
   }

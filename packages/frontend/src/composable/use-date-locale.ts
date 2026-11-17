@@ -15,7 +15,7 @@ import {
   formatDistanceToNow as dateFnsFormatDistanceToNow,
   formatRelative as dateFnsFormatRelative,
 } from 'date-fns';
-import { de, enUS, es, fr, id, it, ptBR, ru, sk, uk } from 'date-fns/locale';
+import { de, enUS, es, fr, id, it, ptBR, ru, sk, uk, zhCN } from 'date-fns/locale';
 import { computed } from 'vue';
 
 // date-fns locale type
@@ -23,6 +23,7 @@ type DateFnsLocale = typeof enUS;
 
 // Keyed by SupportedLocale so adding an app locale without its date-fns counterpart fails type-check
 const localeMap: Record<SupportedLocale, DateFnsLocale> = {
+  'zh-CN': zhCN,
   en: enUS,
   uk,
   es,

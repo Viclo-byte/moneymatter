@@ -13,6 +13,7 @@ export const SUPPORTED_LOCALES = {
   RUSSIAN: 'ru',
   BRAZILIAN_PORTUGUESE: 'pt-BR',
   ITALIAN: 'it',
+  SIMPLIFIED_CHINESE: 'zh-CN',
 } as const;
 
 export type SupportedLocale = (typeof SUPPORTED_LOCALES)[keyof typeof SUPPORTED_LOCALES];
@@ -32,6 +33,10 @@ export const COMMUNITY_LOCALES: ReadonlySet<SupportedLocale> = new Set([
 ]);
 
 export const LOCALE_NAMES: Record<SupportedLocale, { native: string; english: string }> = {
+  [SUPPORTED_LOCALES.SIMPLIFIED_CHINESE]: {
+    native: '简体中文',
+    english: 'Simplified Chinese',
+  },
   [SUPPORTED_LOCALES.ENGLISH]: {
     native: 'English',
     english: 'English',
@@ -102,7 +107,10 @@ export function resolveLocale({ tag }: { tag: string | undefined | null }): Supp
 
   for (const entry of (tag ?? '').split(',')) {
     const code = entry.split(';')[0]!.trim().toLowerCase();
-    const match = code && (findLocale(code) ?? findLocale(code.split('-')[0]!));
+    const match =
+      code &&
+      (findLocale(code) ??
+        (code === 'zh' || code === 'zh-hans' ? SUPPORTED_LOCALES.SIMPLIFIED_CHINESE : findLocale(code.split('-')[0]!)));
     if (match) return match;
   }
   return DEFAULT_LOCALE;

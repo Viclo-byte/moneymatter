@@ -2,112 +2,112 @@
   "pages": {
     "importExport": {
       "progress": {
-        "jobExpired": "The import job expired or could not be found.",
-        "lostContact": "Lost contact with the import job."
+        "jobExpired": "导入作业已过期或找不到。",
+        "lostContact": "与导入工作失去联系。"
       },
       "balanceDesync": {
-        "createdAccount": "{account}: the entered balance could not be applied after import, so this account balance may be incorrect.",
-        "linkedAccount": "{account}: the balance could not be updated after import, so this account balance may be incorrect.",
-        "unnamedAccount": "An account balance could not be updated after import and may be incorrect."
+        "createdAccount": "{account}：输入的余额导入后无法应用，因此该账户余额可能不正确。",
+        "linkedAccount": "{account}：导入后无法更新余额，因此该账户余额可能不正确。",
+        "unnamedAccount": "导入后账户余额无法更新，并且可能不正确。"
       },
       "jobFailure": {
-        "interrupted": "The import was interrupted by a server restart. Some rows may already have been imported; undo this import from the import history before retrying.",
-        "baseCurrencyChangeInProgress": "A base currency change is in progress. Wait for it to finish, then retry the import.",
-        "accountCurrencyMismatch": "Currencies must match to link an existing account: {mismatches}. Link an account with the same currency or create a new one.",
-        "categoryNameTooLong": "Category name \"{name}\" is too long ({length} characters); the maximum is {max}.",
-        "payeeNameTooLong": "Payee name \"{name}\" is too long ({length} characters); the maximum is {max}.",
-        "accountMappingMissing": "These accounts from the file have no mapping: {accounts}. Go back and map each of them.",
-        "linkedAccountNotFound": "The account linked to \"{account}\" no longer exists. Go back and choose another account or create a new one."
+        "interrupted": "导入因服务器重新启动而中断。有些行可能已经被导入；重试之前，请从导入历史记录中撤消此导入。",
+        "baseCurrencyChangeInProgress": "基础货币变更正在进行中。等待其完成，然后重试导入。",
+        "accountCurrencyMismatch": "货币必须匹配才能链接现有账户：{mismatches}。链接具有相同货币的账户或创建一个新账户。",
+        "categoryNameTooLong": "类别名称“{name}”太长（{length}字符）；最大为{max}。",
+        "payeeNameTooLong": "收款人姓名“{name}”太长（{length}字符）；最大为{max}。",
+        "accountMappingMissing": "文件中的这些账户没有映射：{accounts}。返回并绘制每个的地图。",
+        "linkedAccountNotFound": "链接到“{account}”的账户不再存在。返回并选择另一个账户或创建一个新账户。"
       },
       "importResults": {
-        "findTransfers": "Find transfers"
+        "findTransfers": "查找接送服务"
       }
     }
   },
   "importShared": {
     "action": {
-      "createNew": "Create new",
-      "linkExisting": "Link to existing",
-      "skip": "Skip"
+      "createNew": "创造新的",
+      "linkExisting": "链接到现有的",
+      "skip": "跳过"
     },
-    "selectAction": "Select action",
-    "resolvedCounterWord": "resolved",
-    "quickActionsMenuLabel": "Bulk actions",
+    "selectAction": "选择动作",
+    "resolvedCounterWord": "已解决",
+    "quickActionsMenuLabel": "批量操作",
     "quickActions": {
-      "menu": "Actions"
+      "menu": "操作"
     },
     "columns": {
-      "sourceName": "Source name",
-      "currency": "Currency",
-      "action": "Action",
-      "target": "Target"
+      "sourceName": "来源名称",
+      "currency": "货币",
+      "action": "行动",
+      "target": "目标"
     },
     "account": {
-      "selectTarget": "Select account",
-      "noMatchingCurrency": "No account with currency {currency}",
-      "willCreate": "Will create {name} ({currency})",
-      "empty": "No accounts to map",
-      "willSkip": "Will not be imported"
+      "selectTarget": "选择账户",
+      "noMatchingCurrency": "没有币种为 {currency} 的账户",
+      "willCreate": "将创建{name}（{currency}）",
+      "empty": "没有要映射的账户",
+      "willSkip": "不会被进口"
     },
     "category": {
-      "selectTarget": "Select category",
-      "willCreate": "Will create {name}",
-      "empty": "No categories to map"
+      "selectTarget": "选择类别",
+      "willCreate": "将创建{name}",
+      "empty": "没有要映射的类别"
     },
     "recalculateBalance": {
-      "label": "Update account balances from imported transactions",
-      "hint": "Transactions older than an account's latest existing transaction are treated as backfill and don't change its current balance.",
-      "loadFailedHint": "Couldn't load your saved preference — defaulting to off."
+      "label": "更新导入交易的账户余额",
+      "hint": "早于账户最新现有交易的交易将被视为回填，不会更改其当前余额。",
+      "loadFailedHint": "无法加载您保存的首选项 - 默认为关闭。"
     },
     "balanceChanges": {
-      "title": "Account balance changes",
+      "title": "账户余额变动",
       "columns": {
-        "account": "Account",
-        "before": "Before",
-        "after": "After",
-        "delta": "Change",
-        "newRows": "New rows",
-        "backfillRows": "Backfill rows"
+        "account": "账户",
+        "before": "前",
+        "after": "后",
+        "delta": "变化",
+        "newRows": "新行",
+        "backfillRows": "回填行"
       },
-      "newAccount": "New account"
+      "newAccount": "新账户"
     },
     "duplicatesTable": {
       "columnHeaders": {
-        "row": "Row",
-        "match": "Match",
-        "csvTransaction": "CSV transaction",
-        "existingTransaction": "Existing transaction",
+        "row": "排",
+        "match": "匹配",
+        "csvTransaction": "CSV交易",
+        "existingTransaction": "现有交易",
         "csvShort": "CSV",
-        "existingShort": "Existing"
+        "existingShort": "现存的"
       },
       "matchTypeLabels": {
-        "exact": "Exact",
-        "idMatch": "ID match",
-        "fuzzy": "Fuzzy"
+        "exact": "精确的",
+        "idMatch": "身份匹配",
+        "fuzzy": "模糊"
       },
       "fieldLabels": {
-        "amount": "Amount",
-        "date": "Date",
-        "note": "Note",
-        "category": "Category"
+        "amount": "金额",
+        "date": "日期",
+        "note": "笔记",
+        "category": "分类"
       },
-      "importAnywayAriaLabel": "Import row {row} anyway"
+      "importAnywayAriaLabel": "无论如何导入行 {row}"
     },
     "aiMapping": {
-      "action": "AI match",
-      "tooltipCategories": "Let AI link each source category to the closest existing category. Rows you already linked to a category are left untouched.",
-      "failed": "AI matching failed. Please try again.",
-      "inProgress": "AI matching in progress…"
+      "action": "人工智能匹配",
+      "tooltipCategories": "让 AI 将每个源类别链接到最接近的现有类别。您已链接到类别的行保持不变。",
+      "failed": "AI匹配失败。请再试一次。",
+      "inProgress": "AI匹配正在进行中……"
     },
     "categoryPreset": {
-      "menuTrigger": "Apply mapping",
-      "currentLayout": "This file's layout",
-      "savedTemplates": "Saved templates",
-      "lastUsed": "Last used mapping",
-      "namePlaceholder": "Name this mapping",
-      "renameAria": "Rename mapping",
-      "deleteAria": "Delete mapping",
-      "confirmRenameAria": "Save name"
+      "menuTrigger": "应用映射",
+      "currentLayout": "该文件的布局",
+      "savedTemplates": "已保存的模板",
+      "lastUsed": "上次使用的映射",
+      "namePlaceholder": "命名此映射",
+      "renameAria": "重命名映射",
+      "deleteAria": "删除映射",
+      "confirmRenameAria": "保存名称"
     }
   }
 }

@@ -2,143 +2,143 @@
   "pages": {
     "importExport": {
       "msMoneyImport": {
-        "pageTitle": "Import from Microsoft Money",
-        "pageDescription": "Bring your accounts, categories and transactions across from a Microsoft Money .mny file.",
+        "pageTitle": "从 Microsoft Money 导入",
+        "pageDescription": "从 Microsoft Money .mny 文件中获取您的账户、类别和交易。",
         "stepper": {
           "steps": {
-            "upload": "Upload",
-            "resolve": "Map data",
-            "review": "Review",
-            "execute": "Import",
-            "done": "Done"
+            "upload": "上传",
+            "resolve": "地图数据",
+            "review": "审查",
+            "execute": "导入",
+            "done": "完成"
           }
         },
         "fileUpload": {
-          "stepTitle": "Upload your Money file",
-          "description": "Pick the .mny file Microsoft Money saved on your computer.",
-          "maxSize": ".mny file, up to 50 MB",
-          "passwordLabel": "File password (optional)",
-          "passwordPlaceholder": "Enter the file password",
-          "passwordHint": "Leave blank unless you set a password in Microsoft Money.",
-          "parsing": "Reading file…",
-          "continue": "Continue",
+          "stepTitle": "上传您的资金文件",
+          "description": "选择保存在计算机上的 .mny 文件 Microsoft Money。",
+          "maxSize": ".mny 文件，最大 50 MB",
+          "passwordLabel": "文件密码（可选）",
+          "passwordPlaceholder": "输入文件密码",
+          "passwordHint": "保留空白，除非您在 Microsoft Money 中设置了密码。",
+          "parsing": "正在读取文件...",
+          "continue": "继续",
           "errors": {
-            "invalidFormatNamed": "\"{name}\" is not a .mny file.",
-            "passwordUnsupportedChars": "This password contains characters we can't send. Try a password without emoji or non-Latin letters."
+            "invalidFormatNamed": "“{name}”不是 .mny 文件。",
+            "passwordUnsupportedChars": "该密码包含我们无法发送的字符。尝试使用不含表情符号或非拉丁字母的密码。"
           }
         },
         "errors": {
-          "uploadUnavailable": "The uploaded file is no longer available. Please upload your Money file again."
+          "uploadUnavailable": "上传的文件不再可用。请再次上传您的资金文件。"
         },
         "resolve": {
-          "prepareFailed": "Could not prepare the account and category mapping. Reload the page and try again.",
+          "prepareFailed": "无法准备账户和类别映射。重新加载页面并重试。",
           "accounts": {
-            "sectionTitle": "Accounts",
-            "currentBalanceLabel": "Current balance",
-            "currentBalancePlaceholder": "Leave blank to use the imported total",
-            "willCreateHint": "Will be created in {currency}.",
-            "currencyNotInFile": "Not in file",
-            "skippedNote": "{count} account(s) will be skipped. Their transactions — and any transfers to or from them — will not be imported."
+            "sectionTitle": "账户",
+            "currentBalanceLabel": "当前余额",
+            "currentBalancePlaceholder": "留空以使用导入的总计",
+            "willCreateHint": "将在{currency}中创建。",
+            "currencyNotInFile": "不在文件中",
+            "skippedNote": "{count} 账户将被跳过。他们的交易——以及任何转入或转出的交易——都不会被导入。"
           },
           "categories": {
-            "sectionTitle": "Categories"
+            "sectionTitle": "分类"
           },
           "quickActions": {
-            "mapExactMatches": "Map exact matches",
-            "createNewForUnmatched": "Create new for unmatched",
-            "reset": "Reset",
+            "mapExactMatches": "地图精确匹配",
+            "createNewForUnmatched": "创造无与伦比的新",
+            "reset": "重置",
             "tooltips": {
-              "mapExactMatchesAccounts": "Link every account whose name exactly matches one you already have.",
-              "mapExactMatchesCategories": "Link every category whose name exactly matches one you already have.",
-              "createNewForUnmatched": "Set every undecided row to \"create new\".",
-              "reset": "Clear all choices and match again."
+              "mapExactMatchesAccounts": "链接每个名称与您已有的账户完全匹配的账户。",
+              "mapExactMatchesCategories": "链接名称与您已有的类别完全匹配的每个类别。",
+              "createNewForUnmatched": "将每个未决定的行设置为“创建新的”。",
+              "reset": "清除所有选择并重新匹配。"
             }
           },
           "footer": {
-            "back": "Back",
-            "continue": "Continue"
+            "back": "返回",
+            "continue": "继续"
           }
         },
         "review": {
-          "transactions": "Transactions",
-          "transfersDetected": "Transfers",
-          "outOfWallet": "Out-of-wallet",
-          "duplicatesSkipped": "Duplicates skipped",
-          "willImport": "Will import",
-          "dateRange": "Date range: {from} — {to}",
-          "warningsTitle": "Some things were left out",
-          "warningsHint": "These rows are not part of the import.",
+          "transactions": "交易",
+          "transfersDetected": "转账",
+          "outOfWallet": "钱包外",
+          "duplicatesSkipped": "跳过重复项",
+          "willImport": "将导入",
+          "dateRange": "日期范围：{from} — {to}",
+          "warningsTitle": "有些东西被遗漏了",
+          "warningsHint": "这些行不是导入的一部分。",
           "warnings": {
-            "accountTypeUnsupported": "{count} account(s) skipped",
-            "orphanRowSkipped": "{count} transaction(s) skipped",
-            "transferCounterpartNotImported": "{count} transfer leg(s) imported as out-of-wallet",
-            "rowLimitReached": "{count} transaction(s) over the limit were dropped",
-            "accountCurrencyMissing": "{count} account(s) had no currency in the file, so your base currency was used — change it on the accounts step if that is wrong",
-            "rowMissingDate": "{count} transaction(s) with no readable date were skipped",
-            "accountNameMissing": "{count} account(s) had no name",
-            "accountNameDuplicated": "{count} account(s) shared a name",
-            "rowAmountUnreadable": "{count} transaction(s) with no readable amount were skipped",
-            "fileSchemaUnexpected": "{count} unexpected file structure issue(s) found"
+            "accountTypeUnsupported": "{count} 账户已跳过",
+            "orphanRowSkipped": "{count} 事务已跳过",
+            "transferCounterpartNotImported": "{count} 作为钱包外进口的转移支线",
+            "rowLimitReached": "{count} 超出限制的交易已被删除",
+            "accountCurrencyMissing": "{count} 账户文件中没有货币，因此使用了您的基础货币 - 如果错误，请在账户步骤中进行更改",
+            "rowMissingDate": "跳过没有可读日期的 {count} 交易",
+            "accountNameMissing": "{count} 账户没有姓名",
+            "accountNameDuplicated": "{count} 账户共享一个名称",
+            "rowAmountUnreadable": "{count} 没有可读金额的交易被跳过",
+            "fileSchemaUnexpected": "{count} 发现意外的文件结构问题"
           },
           "includeVoided": {
-            "label": "Import {count} voided transaction(s)",
-            "hint": "Microsoft Money keeps voided entries in the register but never applies them to your balance, so they're imported at zero and tagged \"Void\" — keeping their date, payee, category, memo and cheque number."
+            "label": "导入 {count} 无效交易",
+            "hint": "Microsoft Money 将作废的条目保留在收银机中，但从不将其应用到您的余额中，因此它们会以零导入并标记为“作废” - 保留其日期、收款人、类别、备忘录和支票号码。"
           },
-          "duplicatesTitle": "{count} possible duplicate(s)",
-          "duplicatesHint": "These already look like transactions you have. Check a row to import it anyway; unchecked duplicates are skipped.",
-          "back": "Back",
-          "importing": "Starting import…",
-          "importButton": "Import {count} transactions"
+          "duplicatesTitle": "{count} 可能重复",
+          "duplicatesHint": "这些看起来已经像是您已经进行的交易。无论如何都要检查一行以导入它；未检查的重复项将被跳过。",
+          "back": "返回",
+          "importing": "开始导入...",
+          "importButton": "导入{count}交易"
         },
         "execute": {
-          "starting": "Starting the import…",
-          "progressCount": "{processed} of {total}",
-          "failed": "The import failed.",
-          "partialImportNote": "Some transactions may already have been imported.",
-          "statusQueued": "Queued",
-          "statusRunning": "Importing",
-          "statusCompleted": "Completed",
-          "statusFailed": "Failed"
+          "starting": "开始导入...",
+          "progressCount": "{processed} 之 {total}",
+          "failed": "导入失败。",
+          "partialImportNote": "某些交易可能已经导入。",
+          "statusQueued": "排队",
+          "statusRunning": "输入",
+          "statusCompleted": "完全的",
+          "statusFailed": "失败"
         },
         "done": {
-          "successTitle": "Import finished",
-          "successDescription": "Everything from your Money file is now in your account.",
-          "partialTitle": "Imported with {count} issue(s)",
-          "partialDescription": "Most rows landed. The list below shows what didn't.",
-          "emptyTitle": "Nothing new to import",
-          "emptyDescription": "Every row was either skipped or already in your ledger, so no transactions were created.",
-          "allFailedTitle": "Nothing was imported",
-          "allFailedDescription": "No transactions could be created. See the errors below.",
-          "accountsCreated": "Accounts created",
-          "accountsLinked": "Accounts linked",
-          "accountsSkipped": "Accounts skipped",
-          "categoriesCreated": "Categories created",
-          "payeesCreated": "Payees created",
-          "transactionsImported": "Transactions imported",
-          "transfersImported": "Transfers imported",
-          "outOfWalletImported": "Out-of-wallet transfers",
-          "duplicatesSkipped": "Duplicates skipped",
-          "voidedImported": "Voided imported",
-          "mergedIntoPlanned": "Merged into planned",
-          "balanceWarningTitle": "Some balances may be off",
-          "balanceWarningBody": "We couldn't set the final balance on every account. Check them and adjust if needed.",
-          "errorsTitle": "{count} row(s) could not be imported",
-          "errorsOverflow": "…and {count} more",
-          "rowPrefix": "Row {rowIndex}:",
+          "successTitle": "导入完成",
+          "successDescription": "您的资金文件中的所有内容现在都在您的账户中。",
+          "partialTitle": "导入时存在 {count} 问题",
+          "partialDescription": "大多数行都着陆了。下面的列表显示了没有的内容。",
+          "emptyTitle": "没有什么新的东西可以导入",
+          "emptyDescription": "每行要么被跳过，要么已经在分类帐中，因此没有创建任何交易。",
+          "allFailedTitle": "没有导入任何内容",
+          "allFailedDescription": "无法创建任何交易。请参阅下面的错误。",
+          "accountsCreated": "已创建账户",
+          "accountsLinked": "关联账户",
+          "accountsSkipped": "已跳过的账户",
+          "categoriesCreated": "已创建类别",
+          "payeesCreated": "创建收款人",
+          "transactionsImported": "导入交易",
+          "transfersImported": "导入转移",
+          "outOfWalletImported": "钱包外转账",
+          "duplicatesSkipped": "跳过重复项",
+          "voidedImported": "进口作废",
+          "mergedIntoPlanned": "并入计划",
+          "balanceWarningTitle": "某些余额可能会关闭",
+          "balanceWarningBody": "我们无法为每个账户设置最终余额。检查它们并根据需要进行调整。",
+          "errorsTitle": "无法导入 {count} 行",
+          "errorsOverflow": "…以及 {count} 更多",
+          "rowPrefix": "{rowIndex}行：",
           "errors": {
-            "rowsSuppressed": "{count} more row failed to import from this row onward. Only the first {listed} errors are listed. | {count} more rows failed to import from this row onward. Only the first {listed} errors are listed.",
-            "accountBalanceDesync": "An account balance could not be updated after the import. Check it and correct it manually.",
-            "rowImportFailed": "This row could not be imported."
+            "rowsSuppressed": "{count} 从该行开始导入更多行失败。仅列出前一个 {listed} 错误。 | {count} 从该行开始导入更多行失败。仅列出前一个 {listed} 错误。",
+            "accountBalanceDesync": "导入后无法更新账户余额。检查并手动纠正。",
+            "rowImportFailed": "无法导入该行。"
           },
-          "viewTransactions": "View transactions",
-          "importAnother": "Import another file"
+          "viewTransactions": "查看交易",
+          "importAnother": "导入另一个文件"
         },
         "leaseExpired": {
-          "title": "Your uploaded file is no longer available",
-          "description": "The parsed copy of your Money file was released after a period of inactivity. Your mapping choices could not be kept, so the import needs to start from the upload step again.",
-          "action": "Start over"
+          "title": "您上传的文件不再可用",
+          "description": "经过一段时间的不活动后，您的 Money 文件的已解析副本已发布。无法保留您的映射选择，因此导入需要再次从上传步骤开始。",
+          "action": "重新开始"
         },
-        "leaseResourceLabel": "Your uploaded file"
+        "leaseResourceLabel": "您上传的文件"
       }
     }
   }

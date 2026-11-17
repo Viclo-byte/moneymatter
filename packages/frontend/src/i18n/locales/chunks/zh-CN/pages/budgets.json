@@ -1,384 +1,384 @@
 {
   "budgets": {
-    "title": "Trackers",
-    "description": "Track spending and monitor financial events",
-    "notFound": "Tracker not found",
-    "notFoundDescription": "We couldn't find this tracker. It may have been deleted or you might not have access to it.",
-    "backToList": "Back to trackers",
-    "newBudget": "New tracker",
-    "createBudget": "Create tracker",
+    "title": "追踪器",
+    "description": "跟踪支出并监控财务事件",
+    "notFound": "未找到追踪器",
+    "notFoundDescription": "我们找不到这个追踪器。它可能已被删除，或者您可能无权访问它。",
+    "backToList": "返回追踪器",
+    "newBudget": "新追踪器",
+    "createBudget": "创建追踪器",
     "creation": {
-      "success": "Tracker created",
-      "error": "Unexpected error!",
-      "nameLabel": "Tracker name",
-      "namePlaceholder": "Enter the name",
-      "fromDateLabel": "From date",
-      "toDateLabel": "To date",
-      "limitPlaceholder": "Enter the limit",
-      "submitButton": "Add tracker"
+      "success": "追踪器已创建",
+      "error": "意外错误！",
+      "nameLabel": "追踪器名称",
+      "namePlaceholder": "输入姓名",
+      "fromDateLabel": "开始日期",
+      "toDateLabel": "迄今为止",
+      "limitPlaceholder": "输入限制",
+      "submitButton": "添加追踪器"
     },
     "limitKind": {
-      "label": "Limit type",
-      "whatToChoose": "What to choose?",
-      "guideTitle": "Which limit fits?",
-      "goalNote": "Saving up for something? {goalLink} instead: goals track what you've saved, trackers track what flows in or out.",
-      "goalLink": "Create a goal",
+      "label": "限位类型",
+      "whatToChoose": "选择什么？",
+      "guideTitle": "哪个限制适合？",
+      "goalNote": "存钱买东西？相反，{goalLink}：目标跟踪您保存的内容，跟踪器跟踪流入或流出的内容。",
+      "goalLink": "创建一个目标",
       "kinds": {
         "spending": {
-          "label": "Spending",
-          "hint": "Spend at most this much. Warns when spending runs ahead of time passing.",
-          "guide": "For a thing or an event: a trip, a renovation, a year of groceries. Warns when you spend faster than time passes.",
-          "amountLabel": "Limit"
+          "label": "开支",
+          "hint": "最多花这么多。当支出超出时间时发出警告。",
+          "guide": "对于一件事或一个事件：一次旅行、一次装修、一年的杂货。当您花费的速度快于时间流逝时发出警告。",
+          "amountLabel": "限制"
         },
         "income_target": {
-          "label": "Income target",
-          "hint": "Earn at least this much. Green while you're on pace, and going over is a win.",
-          "guide": "For money you want to bring in: yearly salary, freelance revenue, rental income. Green while on pace; going over is a win.",
-          "amountLabel": "Target amount"
+          "label": "收入目标",
+          "hint": "至少赚这么多。当你跟上节奏时，就会变成绿色，超越就是胜利。",
+          "guide": "对于你想带来的钱：年薪、自由职业收入、租金收入。正常行驶时呈绿色；超越就是胜利。",
+          "amountLabel": "目标金额"
         },
         "income_cap": {
-          "label": "Income cap",
-          "hint": "Stay under this income, e.g. a tax or benefits threshold. Warns as you get close.",
-          "guide": "For income you must stay under: a small-business tax threshold, a benefits or student-aid income limit. Warns as you get close.",
-          "amountLabel": "Cap"
+          "label": "收入上限",
+          "hint": "保持在这个收入以下，例如税收或福利门槛。当您靠近时发出警告。",
+          "guide": "对于收入，您必须低于：小企业税收起征点、福利或学生援助收入限额。当您靠近时发出警告。",
+          "amountLabel": "帽"
         }
       }
     },
     "list": {
-      "loadError": "Couldn't load trackers.",
-      "tabCategory": "Category trackers",
-      "tabManual": "Manual trackers",
-      "edit": "Edit",
-      "delete": "Delete",
-      "deleteSuccess": "Tracker deleted successfully!",
-      "deleteError": "Unexpected error!",
-      "updateSuccess": "Tracker updated successfully!",
-      "updateError": "Failed to update tracker",
-      "unlinkTransactionsSuccess": "Transactions unlinked successfully!",
+      "loadError": "无法加载跟踪器。",
+      "tabCategory": "类别追踪器",
+      "tabManual": "手动追踪器",
+      "edit": "编辑",
+      "delete": "删除",
+      "deleteSuccess": "追踪器删除成功！",
+      "deleteError": "意外错误！",
+      "updateSuccess": "追踪器更新成功！",
+      "updateError": "更新追踪器失败",
+      "unlinkTransactionsSuccess": "交易解绑成功！",
       "deleteDialog": {
-        "title": "Do you want to delete this tracker?",
-        "description": "By clicking \"Accept\", all associated transactions will be unlinked from the tracker but will remain in the system."
+        "title": "您想删除该跟踪器吗？",
+        "description": "单击“接受”后，所有关联交易都将从跟踪器中取消链接，但仍保留在系统中。"
       },
-      "limitLabel": "Limit: {amount}",
-      "transactionsCount": "{count} transactions",
-      "categoriesCount": "{count} categories",
-      "noTransactions": "No transactions yet",
-      "noTimePeriod": "No time period",
+      "limitLabel": "限额：{amount}",
+      "transactionsCount": "{count} 交易",
+      "categoriesCount": "{count}类别",
+      "noTransactions": "还没有交易",
+      "noTimePeriod": "无时间段",
       "status": {
-        "ended": "Ended",
-        "lastDay": "Last day",
-        "oneDayLeft": "1 day left",
-        "daysLeft": "{count} days left",
-        "startsToday": "Starts today",
-        "startsTomorrow": "Starts tomorrow",
-        "startsInDays": "Starts in {count} days"
+        "ended": "结束",
+        "lastDay": "最后一天",
+        "oneDayLeft": "还剩 1 天",
+        "daysLeft": "{count} 剩余天数",
+        "startsToday": "今天开始",
+        "startsTomorrow": "明天开始",
+        "startsInDays": "{count} 天后开始"
       },
-      "income": "Income",
-      "expenses": "Expenses",
-      "net": "Net",
-      "used": "Used",
-      "earned": "Earned",
-      "archive": "Archive",
-      "unarchive": "Unarchive",
-      "archivedLabel": "Archived",
-      "archiveError": "Failed to update archive status",
-      "showArchived": "Show archived",
-      "hideArchived": "Hide archived",
+      "income": "收入",
+      "expenses": "支出",
+      "net": "网",
+      "used": "用过的",
+      "earned": "赢得",
+      "archive": "档案",
+      "unarchive": "取消存档",
+      "archivedLabel": "已存档",
+      "archiveError": "无法更新存档状态",
+      "showArchived": "显示已存档",
+      "hideArchived": "隐藏已存档",
       "emptyState": {
-        "title": "No trackers yet",
-        "description": "Create a tracker to start tracking your spending or monitoring specific events."
+        "title": "还没有追踪器",
+        "description": "创建跟踪器以开始跟踪您的支出或监控特定事件。"
       },
-      "searchPlaceholder": "Search trackers",
+      "searchPlaceholder": "搜索追踪器",
       "filters": {
-        "all": "All",
-        "autoAdd": "Auto-add on",
-        "handPicked": "Hand-picked",
-        "archived": "Archived"
+        "all": "全部",
+        "autoAdd": "自动添加",
+        "handPicked": "精挑细选",
+        "archived": "已存档"
       },
       "groups": {
-        "active": "Active now",
-        "upcoming": "Upcoming",
-        "noDates": "No dates",
-        "ended": "Ended",
-        "archived": "Archived",
-        "show": "show",
-        "hide": "hide"
+        "active": "现在活跃",
+        "upcoming": "即将推出",
+        "noDates": "没有日期",
+        "ended": "结束",
+        "archived": "已存档",
+        "show": "展示",
+        "hide": "隐藏"
       },
-      "showMoreEnded": "Show {count} more ended",
+      "showMoreEnded": "显示{count}更多已结束",
       "row": {
-        "auto": "auto",
-        "transactions": "{count} transaction | {count} transactions",
-        "moreCategories": "+{count} more",
-        "noLimit": "no limit",
-        "archiveSuggestion": "Archive?"
+        "auto": "汽车",
+        "transactions": "{count} 交易 | {count}交易",
+        "moreCategories": "+{count} 更多",
+        "noLimit": "没有限制",
+        "archiveSuggestion": "档案？"
       },
       "menu": {
-        "moreActions": "More actions",
-        "open": "Open",
-        "duplicate": "Duplicate"
+        "moreActions": "更多行动",
+        "open": "打开",
+        "duplicate": "复制"
       },
-      "duplicateSuccess": "Tracker duplicated",
-      "duplicateError": "Failed to duplicate tracker",
-      "archiveSuccess": "Tracker archived",
-      "unarchiveSuccess": "Tracker unarchived",
+      "duplicateSuccess": "跟踪器重复",
+      "duplicateError": "复制追踪器失败",
+      "archiveSuccess": "追踪器已存档",
+      "unarchiveSuccess": "追踪器未存档",
       "noMatch": {
-        "title": "Nothing matches \"{query}\"",
-        "titleNoQuery": "No trackers match these filters",
-        "description": "Try another name, or include archived trackers.",
-        "includeArchived": "Include archived"
+        "title": "没有匹配“{query}”",
+        "titleNoQuery": "没有跟踪器与这些过滤器匹配",
+        "description": "尝试其他名称，或包含存档的跟踪器。",
+        "includeArchived": "包括存档的"
       },
       "archivePrompt": {
-        "title": "Archive \"{name}\"?",
-        "endedDaysAgo": "{count} day ago | {count} days ago",
-        "endedMonthsAgo": "{count} month ago | {count} months ago",
-        "description": "It ended {ago}. Archived trackers move to the Archived group and keep their transactions and statistics. You can unarchive any time.",
-        "dontAsk": "Don't ask for this tracker",
-        "notNow": "Not now",
-        "dismissError": "Failed to update tracker",
-        "dismissSuccess": "Got it. We won't suggest archiving this tracker again."
+        "title": "存档“{name}”？",
+        "endedDaysAgo": "{count} 天前 | {count} 几天前",
+        "endedMonthsAgo": "{count} 一个月前 | {count} 个月前",
+        "description": "结束了{ago}。已存档的跟踪器移至已存档组并保留其交易和统计数据。您可以随时取消存档。",
+        "dontAsk": "不要索要这个追踪器",
+        "notNow": "现在不要",
+        "dismissError": "更新追踪器失败",
+        "dismissSuccess": "知道了。我们不建议再次存档此跟踪器。"
       }
     },
     "settings": {
-      "nameLabel": "Tracker name",
-      "namePlaceholder": "Enter tracker name",
-      "limitPlaceholder": "Enter limit amount (optional)",
-      "startDateLabel": "Start date",
-      "endDateLabel": "End date",
-      "notSet": "Not set"
+      "nameLabel": "追踪器名称",
+      "namePlaceholder": "输入追踪器名称",
+      "limitPlaceholder": "输入限额（可选）",
+      "startDateLabel": "开始日期",
+      "endDateLabel": "结束日期",
+      "notSet": "未设置"
     },
     "addTransactionsDialog": {
-      "title": "Add transactions to tracker",
-      "addSelected": "Add selected",
-      "clearSelection": "Clear selection"
+      "title": "将交易添加到跟踪器",
+      "addSelected": "添加选定的",
+      "clearSelection": "清除选择"
     },
     "manualBudget": {
-      "edit": "Edit",
-      "editTitle": "Edit tracker"
+      "edit": "编辑",
+      "editTitle": "编辑追踪器"
     },
     "share": {
-      "sharedByBadge": "Shared by {handle}"
+      "sharedByBadge": "共享者 {handle}"
     },
     "details": {
-      "statsLoadError": "Couldn't load this tracker's totals.",
-      "transactionsCount": "{count} transaction | {count} transactions",
-      "tagsCount": "{count} tag | {count} tags",
+      "statsLoadError": "无法加载此跟踪器的总计。",
+      "transactionsCount": "{count} 交易 | {count}交易",
+      "tagsCount": "{count} 标签 | {count} 的标签",
       "strip": {
-        "limit": "Limit",
-        "spent": "Spent",
-        "left": "Left",
-        "overBy": "Over by",
-        "earned": "Earned",
+        "limit": "限制",
+        "spent": "花费",
+        "left": "左边",
+        "overBy": "经过",
+        "earned": "赢得",
         "toGo": "To go",
-        "headroom": "Headroom",
-        "aboveTargetBy": "Above target by",
-        "income": "Income",
-        "expenses": "Expenses",
-        "net": "Net",
-        "transactions": "Transactions",
-        "perDay": "{amount} / day"
+        "headroom": "净空",
+        "aboveTargetBy": "高于目标",
+        "income": "收入",
+        "expenses": "支出",
+        "net": "网",
+        "transactions": "交易",
+        "perDay": "{amount}/天"
       },
       "tabs": {
-        "limits": "Limits"
+        "limits": "限制"
       },
-      "autoAdds": "Auto-adds",
-      "membersLabel": "Members: {count}",
+      "autoAdds": "自动添加",
+      "membersLabel": "会员：{count}",
       "actions": {
-        "share": "Share",
-        "setLimits": "Set limits",
-        "removeLimits": "Remove limits",
-        "duplicate": "Duplicate",
-        "openInTransactions": "Open in Transactions",
-        "more": "More actions"
+        "share": "分享",
+        "setLimits": "设定限制",
+        "removeLimits": "消除限制",
+        "duplicate": "复制",
+        "openInTransactions": "在交易中打开",
+        "more": "更多行动"
       },
       "shareDialog": {
-        "title": "Share \"{name}\""
+        "title": "分享“{name}”"
       },
       "removeLimitsDialog": {
-        "title": "Remove all limits?",
-        "description": "The line and its limit will be removed. Linked transactions stay in the tracker. | All {count} lines and their limits will be removed. Linked transactions stay in the tracker."
+        "title": "取消所有限制？",
+        "description": "该线及其限制将被删除。关联交易保留在跟踪器中。 | 所有 {count} 线路及其限制将被删除。关联交易保留在跟踪器中。"
       },
       "edit": {
-        "limitHint": "Clear it to track without a limit.",
-        "datesHint": "Changing the dates does not add or remove transactions already linked."
+        "limitHint": "清除它即可无限制地跟踪。",
+        "datesHint": "更改日期不会添加或删除已链接的交易。"
       }
     },
     "lines": {
-      "addLine": "Add line",
+      "addLine": "添加行",
       "empty": {
-        "title": "Split spending into lines",
-        "titleWithLimit": "Split the {amount} into lines",
-        "description": "A line is a set of categories with its own limit. Spending that fits no line shows as \"Other\"."
+        "title": "将支出分成几行",
+        "titleWithLimit": "将 {amount} 分成几行",
+        "description": "线是一组有其自身限制的类别。不符合行的支出显示为“其他”。"
       },
       "columns": {
-        "line": "Line",
-        "limit": "Limit",
-        "spent": "Spent",
-        "left": "Left"
+        "line": "线",
+        "limit": "限制",
+        "spent": "花费",
+        "left": "左边"
       },
-      "usage": "{percent}% · {spent} of {limit}",
-      "overUsage": "Over by {amount} · {spent} of {limit}",
-      "spentOnly": "{amount} spent",
-      "categoriesCount": "{count} category | {count} categories",
-      "ofLimit": "of {limit}",
-      "editLimitAria": "Edit limit for {name}",
-      "noLimitPlaceholder": "No limit",
+      "usage": "{percent}% · {spent} 之 {limit}",
+      "overUsage": "由{limit}的{amount}·{spent}过来",
+      "spentOnly": "{amount}花",
+      "categoriesCount": "{count} 类别 | {count}类别",
+      "ofLimit": "{limit} 的",
+      "editLimitAria": "编辑 {name} 的限制",
+      "noLimitPlaceholder": "无限制",
       "other": {
-        "title": "Other spending",
-        "hint": "not in any line"
+        "title": "其他支出",
+        "hint": "不在任何一行"
       },
       "total": {
-        "title": "Total · {count} line | Total · {count} lines",
-        "limitOfOverall": "{sum} of {limit}"
+        "title": "总计·{count}线 | 共·{count}行数",
+        "limitOfOverall": "{sum} 之 {limit}"
       },
       "menu": {
-        "ariaLabel": "Line actions",
-        "edit": "Edit line",
-        "delete": "Delete line"
+        "ariaLabel": "线路动作",
+        "edit": "编辑行",
+        "delete": "删除行"
       },
       "delete": {
-        "title": "Delete line?",
-        "description": "\"{name}\" will be removed and its spending will show under Other. Transactions are not affected."
+        "title": "删除行？",
+        "description": "“{name}”将被删除，其支出将显示在“其他”下。交易不受影响。"
       },
       "dialog": {
-        "addTitle": "Add line",
-        "editTitle": "Edit line",
-        "nameLabel": "Name",
-        "namePlaceholder": "e.g. Hotels",
-        "nameRequired": "Enter a name",
-        "categoriesLabel": "Categories",
-        "categoriesPlaceholder": "Pick categories",
-        "categoriesRequired": "Pick at least one category",
-        "limitLabel": "Limit (optional)",
-        "limitPlaceholder": "No limit",
-        "limitHint": "Leave empty to group spending without a limit."
+        "addTitle": "添加行",
+        "editTitle": "编辑行",
+        "nameLabel": "名称",
+        "namePlaceholder": "例如酒店",
+        "nameRequired": "输入姓名",
+        "categoriesLabel": "分类",
+        "categoriesPlaceholder": "选择类别",
+        "categoriesRequired": "至少选择一个类别",
+        "limitLabel": "限制（可选）",
+        "limitPlaceholder": "无限制",
+        "limitHint": "留空可让团体消费无限制。"
       },
       "notifications": {
-        "limitsRemoved": "Limits removed",
-        "created": "Line added",
-        "updated": "Line updated",
-        "deleted": "Line deleted",
-        "createError": "Couldn't add the line",
-        "updateError": "Couldn't update the line",
-        "deleteError": "Couldn't delete the line"
+        "limitsRemoved": "限制已取消",
+        "created": "已添加线路",
+        "updated": "线路已更新",
+        "deleted": "线路已删除",
+        "createError": "无法添加行",
+        "updateError": "无法更新线路",
+        "deleteError": "无法删除该行"
       }
     },
     "rules": {
-      "heading": "Auto-add",
-      "switchLabel": "Add matching transactions automatically",
-      "switchHintOn": "Your transactions in the date range with any of these categories or tags get added.",
-      "switchHintOff": "Only transactions you add by hand count.",
-      "switchHintTurnedOff": "Turning this off keeps every transaction already added.",
-      "categoriesLabel": "Categories",
-      "categoriesPlaceholder": "Select categories",
-      "tagsLabel": "Tags",
-      "tagsPlaceholder": "Select tags",
-      "needsCategoryOrTag": "Pick at least one category or tag",
-      "cleanupLabel": "Remove transactions that stop matching",
-      "cleanupHint": "Checked every 6 hours. Transactions you added by hand are never removed.",
-      "checkedAt": "Checked {when}",
-      "unlinked": "Removed {count} transaction. It won't be added again automatically. | Removed {count} transactions. They won't be added again automatically.",
+      "heading": "自动添加",
+      "switchLabel": "自动添加匹配交易",
+      "switchHintOn": "您在该日期范围内的具有任何这些类别或标签的交易都会被添加。",
+      "switchHintOff": "仅您手动添加的交易进行计数。",
+      "switchHintTurnedOff": "关闭此功能会保留已添加的每笔交易。",
+      "categoriesLabel": "分类",
+      "categoriesPlaceholder": "选择类别",
+      "tagsLabel": "标签",
+      "tagsPlaceholder": "选择标签",
+      "needsCategoryOrTag": "至少选择一个类别或标签",
+      "cleanupLabel": "删除停止匹配的交易",
+      "cleanupHint": "每 6 小时检查一次。您手动添加的交易永远不会被删除。",
+      "checkedAt": "已检查 {when}",
+      "unlinked": "删除了 {count} 交易。不会再次自动添加。 | 删除了 {count} 交易。它们不会再次自动添加。",
       "confirm": {
-        "title": "Save new matching rules?",
-        "description": "Once saved, all your transactions are checked against the new rules and matching ones are added.",
-        "descriptionWithCleanup": "Once saved, all your transactions are checked against the new rules. Matching ones are added, and ones the rules added that no longer match are removed. Transactions you added by hand stay.",
-        "saveAndCheck": "Save and check"
+        "title": "保存新的匹配规则？",
+        "description": "保存后，您的所有交易都会根据新规则进行检查，并添加匹配的交易。",
+        "descriptionWithCleanup": "保存后，您的所有交易都会根据新规则进行检查。添加匹配的规则，删除添加的规则不再匹配的规则。您手动添加的交易会保留。",
+        "saveAndCheck": "保存并检查"
       },
       "rejected": {
-        "title": "Not added again",
-        "description": "You removed these or rejected them as AI suggestions, so they're skipped. Allow one and it's added back if it still matches.",
-        "summary": "{count} transaction won't be added again | {count} transactions won't be added again",
-        "review": "Review",
-        "aiBadge": "AI suggestion",
-        "allowAgain": "Allow again",
-        "allowed": "Allowed again",
-        "allowError": "Couldn't allow the transaction again"
+        "title": "没有再次添加",
+        "description": "您删除了这些或将它们作为 AI 建议拒绝，因此它们被跳过。允许一个，如果仍然匹配，则会将其添加回来。",
+        "summary": "{count} 交易不会再添加 | {count}交易将不会再次添加",
+        "review": "审查",
+        "aiBadge": "人工智能建议",
+        "allowAgain": "再次允许",
+        "allowed": "再次允许",
+        "allowError": "无法再次允许交易"
       }
     },
     "smartTracking": {
       "fields": {
-        "heading": "Smart tracking",
-        "switchLabel": "Find matching transactions for me",
-        "switchHint": "Checks new and edited transactions every night. Sure matches are added for you, the rest wait for your review.",
-        "needsStartDate": "Set a start date first, AI looks from there.",
-        "noAi": "Set up an AI model in {link} to use this.",
-        "noAiLink": "Settings → AI",
-        "allowanceUsed": "AI allowance used up. {link} to keep it running.",
-        "running": "Matching is running. You can change these once it finishes.",
-        "descriptionLabel": "What belongs in this tracker?",
-        "descriptionPlaceholder": "e.g. Two weeks in Greece: flights, ferries, rental car, island hotels",
-        "descriptionRequired": "Describe what belongs here so AI knows what to look for.",
-        "preWindowLabel": "Also look before the start date",
-        "preWindowPlaceholder": "Choose how far back to look",
-        "preWindowHint": "Catches flights and hotels booked in advance.",
+        "heading": "智能追踪",
+        "switchLabel": "为我查找匹配的交易",
+        "switchHint": "每晚检查新的和编辑的交易。确定的匹配项已为您添加，其余的等待您的审核。",
+        "needsStartDate": "首先设定一个开始日期，AI 从那里开始查找。",
+        "noAi": "在{link}中设置一个AI模型来使用它。",
+        "noAiLink": "设置 → 人工智能",
+        "allowanceUsed": "AI津贴用完。 {link} 以保持其运行。",
+        "running": "匹配正在运行。完成后您可以更改它们。",
+        "descriptionLabel": "这个追踪器里有什么？",
+        "descriptionPlaceholder": "例如希腊两周：航班、渡轮、租车、岛上酒店",
+        "descriptionRequired": "描述这里属于什么，以便人工智能知道要寻找什么。",
+        "preWindowLabel": "还要查看开始日期之前",
+        "preWindowPlaceholder": "选择向后看多远",
+        "preWindowHint": "赶上提前预订的航班和酒店。",
         "preWindowOptions": {
-          "none": "Don't look earlier",
-          "twoWeeks": "2 weeks",
-          "oneMonth": "1 month",
-          "twoMonths": "2 months",
-          "threeMonths": "3 months",
-          "sixMonths": "6 months"
+          "none": "别看早了",
+          "twoWeeks": "2周",
+          "oneMonth": "1个月",
+          "twoMonths": "2个月",
+          "threeMonths": "3个月",
+          "sixMonths": "6个月"
         },
-        "costNote": "The first scan checks every transaction from the look-back window to the end date. Large ranges can use up your monthly AI allowance, or cost you directly if you use your own key.",
-        "usesIncluded": "Uses the included AI. Counts toward your monthly AI allowance.",
-        "usesOwnModel": "Uses your own model · {model}"
+        "costNote": "第一次扫描检查从回顾窗口到结束日期的每笔交易。大范围可能会耗尽您每月的人工智能津贴，或者如果您使用自己的密钥，则会直接花费您的费用。",
+        "usesIncluded": "使用附带的人工智能。计入您每月的人工智能津贴。",
+        "usesOwnModel": "使用您自己的型号·{model}"
       },
-      "pausedUntil": "Paused until {date}",
-      "connectOwnModel": "Connect your own model",
+      "pausedUntil": "暂停直到{date}",
+      "connectOwnModel": "连接您自己的模型",
       "plan": {
-        "locked": "Smart tracking is part of Plus. Upgrade, or connect your own AI key to keep using it.",
-        "connectOwnKey": "Connect your own key",
-        "upgrade": "Upgrade",
-        "startTrial": "Start free trial",
-        "trialDaysLeft": "Free trial: {n} day left | Free trial: {n} days left",
-        "trialHint": "Includes a {days}-day free trial. It starts when you turn smart tracking on."
+        "locked": "智能跟踪是 Plus 的一部分。升级或连接您自己的 AI 密钥以继续使用它。",
+        "connectOwnKey": "连接您自己的密钥",
+        "upgrade": "升级",
+        "startTrial": "开始免费试用",
+        "trialDaysLeft": "免费试用：{n} 还剩一天 | 免费试用：{n} 还剩几天",
+        "trialHint": "包括 {days} 天的免费试用。当您打开智能跟踪时它就会开始。"
       },
-      "turnedOn": "Smart tracking is on. First results in a minute or two.",
-      "undo": "Undo",
-      "unlinked": "Unlinked. AI won't add it again. | Unlinked {count} transactions. AI won't add them again.",
-      "relinkError": "Couldn't add the transactions back. Try again.",
+      "turnedOn": "智能追踪已开启。一两分钟后即可得到第一个结果。",
+      "undo": "撤消",
+      "unlinked": "未链接。 AI不会再添加它。 | 未链接的 {count} 交易。 AI不会再添加它们。",
+      "relinkError": "无法添加回交易。再试一次。",
       "strip": {
-        "tip": "Let AI find transactions for this tracker",
-        "turnOn": "Turn on",
-        "hide": "Hide",
-        "scanning": "Looking for matching transactions…",
-        "startedAt": "Started {time}",
-        "toReview": "{count} to review",
-        "checkedAt": "checked {when}",
-        "review": "Review",
-        "idle": "Smart tracking is on · nothing new to review",
-        "settings": "Settings",
-        "paused": "Paused",
-        "allowanceUsed": "AI allowance used up",
-        "unavailable": "AI connection stopped working",
-        "fixInSettings": "Fix in Settings",
-        "ended": "Smart tracking stopped · the tracker ended more than 14 days ago",
-        "noStartDate": "Set a start date to use smart tracking"
+        "tip": "让人工智能找到该追踪器的交易",
+        "turnOn": "打开",
+        "hide": "隐藏",
+        "scanning": "寻找匹配交易...",
+        "startedAt": "开始 {time}",
+        "toReview": "{count} 待审核",
+        "checkedAt": "检查{when}",
+        "review": "审查",
+        "idle": "智能追踪已开启·没有什么新内容可供回顾",
+        "settings": "设置",
+        "paused": "已暂停",
+        "allowanceUsed": "AI津贴已用完",
+        "unavailable": "AI连接停止工作",
+        "fixInSettings": "在设置中修复",
+        "ended": "智能追踪已停止 · 追踪器已于 14 天前结束",
+        "noStartDate": "设置开始日期以使用智能跟踪"
       },
       "hideTip": {
-        "title": "Hide this tip?",
-        "description": "You can still turn on smart tracking in the tracker's settings.",
-        "neverShow": "Never show again",
-        "neverShowHint": "Hides it on every tracker, not just this one.",
-        "confirm": "Hide"
+        "title": "隐藏这个提示？",
+        "description": "您仍然可以在跟踪器的设置中打开智能跟踪。",
+        "neverShow": "不再显示",
+        "neverShowHint": "将其隐藏在每个跟踪器上，而不仅仅是这个。",
+        "confirm": "隐藏"
       },
       "review": {
-        "sectionTitle": "To review ({count})",
+        "sectionTitle": "审查（{count}）",
         "confidence": {
-          "likely": "Likely",
-          "possible": "Possible"
+          "likely": "可能",
+          "possible": "可能的"
         },
-        "add": "Add",
-        "skip": "Skip",
-        "addAria": "Add {name} to {tracker}",
-        "skipAria": "Skip {name}",
-        "addAll": "Add all {count}",
-        "addAllShort": "Add all",
-        "skipAll": "Skip all",
-        "added": "Added {count} transaction to {name} | Added {count} transactions to {name}",
-        "skipped": "Skipped. AI won't suggest it again. | Skipped {count} transactions. AI won't suggest them again.",
-        "acceptError": "Couldn't add the suggested transactions. Try again.",
-        "rejectError": "Couldn't skip the suggested transactions. Try again.",
-        "restoreError": "Couldn't undo the skip. Try again."
+        "add": "添加",
+        "skip": "跳过",
+        "addAria": "将 {name} 添加到 {tracker}",
+        "skipAria": "跳过{name}",
+        "addAll": "添加全部 {count}",
+        "addAllShort": "添加全部",
+        "skipAll": "全部跳过",
+        "added": "将{count}交易添加到{name} | 将{count}交易添加到{name}",
+        "skipped": "跳过。 AI不会再建议了。 | 跳过 {count} 事务。 AI不会再推荐它们。",
+        "acceptError": "无法添加建议的交易。再试一次。",
+        "rejectError": "无法跳过建议的交易。再试一次。",
+        "restoreError": "无法撤消跳过。再试一次。"
       }
     }
   }

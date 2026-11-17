@@ -2,123 +2,123 @@
   "pages": {
     "importExport": {
       "ofxImport": {
-        "pageTitle": "Import an OFX or QFX file",
-        "pageDescription": "Import bank and credit card transactions from an OFX or QFX file.",
+        "pageTitle": "导入 OFX 或 QFX 文件",
+        "pageDescription": "从 OFX 或 QFX 文件导入银行和信用卡交易。",
         "stepper": {
           "steps": {
-            "upload": "Upload",
-            "resolve": "Map accounts",
-            "review": "Review",
-            "results": "Done"
+            "upload": "上传",
+            "resolve": "地图账户",
+            "review": "审查",
+            "results": "完成"
           }
         },
         "fileUpload": {
-          "stepTitle": "Upload your OFX or QFX file",
-          "description": "Select a statement file that you downloaded from your bank or credit card provider.",
-          "maxSize": ".ofx or .qfx file, up to 10 MB",
-          "parsing": "Reading file…",
-          "continue": "Continue",
+          "stepTitle": "上传您的 OFX​​ 或 QFX 文件",
+          "description": "选择您从银行或信用卡提供商下载的对账单文件。",
+          "maxSize": ".ofx 或 .qfx 文件，最大 10 MB",
+          "parsing": "正在读取文件...",
+          "continue": "继续",
           "errors": {
-            "invalidFormatNamed": "\"{name}\" is not an OFX or QFX file."
+            "invalidFormatNamed": "“{name}”不是 OFX 或 QFX 文件。"
           }
         },
         "errors": {
-          "uploadUnavailable": "The uploaded file is no longer available. Upload your OFX or QFX file again."
+          "uploadUnavailable": "上传的文件不再可用。再次上传您的 OFX​​ 或 QFX 文件。"
         },
         "resolve": {
           "accounts": {
-            "sectionTitle": "Accounts",
-            "nameLabel": "Account name",
-            "namePlaceholder": "Enter an account name",
-            "currentBalanceLabel": "Current balance",
-            "currentBalancePlaceholder": "Leave blank to use the sum of imported transactions",
-            "ledgerBalanceHint": "Statement balance: {balance} on {date}",
-            "transactionCount": "{count} transaction | {count} transactions",
-            "skippedNote": "{count} account(s) will be skipped. Its transactions will not be imported. | {count} accounts will be skipped. Their transactions will not be imported.",
+            "sectionTitle": "账户",
+            "nameLabel": "账户名称",
+            "namePlaceholder": "输入账户名",
+            "currentBalanceLabel": "当前余额",
+            "currentBalancePlaceholder": "留空以使用导入交易的总和",
+            "ledgerBalanceHint": "报表余额：{date} 上的 {balance}",
+            "transactionCount": "{count} 交易 | {count}交易",
+            "skippedNote": "{count} 账户将被跳过。其交易不会被导入。 | {count} 账户将被跳过。他们的交易将不会被导入。",
             "statementType": {
-              "bank": "Bank account",
-              "credit-card": "Credit card"
+              "bank": "银行账户",
+              "credit-card": "信用卡"
             }
           },
           "quickActions": {
-            "mapExactMatches": "Map exact matches",
-            "createNewForUnmatched": "Create new for unmatched",
-            "reset": "Reset",
+            "mapExactMatches": "地图精确匹配",
+            "createNewForUnmatched": "创造无与伦比的新",
+            "reset": "重置",
             "tooltips": {
-              "mapExactMatches": "Link each account to an existing account that has the same name and currency.",
-              "createNewForUnmatched": "Set each account that is not linked to an existing account to create a new account.",
-              "reset": "Clear all choices and match again."
+              "mapExactMatches": "将每个账户链接到具有相同名称和货币的现有账户。",
+              "createNewForUnmatched": "设置未链接到现有账户的每个账户以创建新账户。",
+              "reset": "清除所有选择并重新匹配。"
             }
           },
           "footer": {
-            "back": "Back",
-            "continue": "Continue"
+            "back": "返回",
+            "continue": "继续"
           }
         },
         "review": {
-          "transactions": "Transactions",
-          "accountsSkipped": "Accounts skipped",
-          "duplicatesSkipped": "Duplicates skipped",
-          "willImport": "Will import",
-          "dateRange": "Date range: {from} — {to}",
-          "warningsTitle": "Check these file details",
-          "warningsHint": "The import can continue, but some transactions need special handling.",
+          "transactions": "交易",
+          "accountsSkipped": "已跳过的账户",
+          "duplicatesSkipped": "跳过重复项",
+          "willImport": "将导入",
+          "dateRange": "日期范围：{from} — {to}",
+          "warningsTitle": "检查这些文件详细信息",
+          "warningsHint": "导入可以继续，但某些交易需要特殊处理。",
           "warnings": {
-            "dateUserFallback": "{count} transaction used the file's fallback time zone | {count} transactions used the file's fallback time zone",
-            "fitidMissing": "{count} transaction had no bank transaction ID | {count} transactions had no bank transaction ID",
-            "fitidDuplicate": "{count} duplicate bank transaction ID was found in the file | {count} duplicate bank transaction IDs were found in the file"
+            "dateUserFallback": "{count} 事务使用了文件的后备时区 | {count} 事务使用文件的后备时区",
+            "fitidMissing": "{count}交易没有银行交易ID | {count}交易没有银行交易ID",
+            "fitidDuplicate": "文件中发现 {count} 重复的银行交易 ID | 在文件中发现 {count} 重复的银行交易 ID"
           },
-          "duplicatesTitle": "{count} possible duplicate | {count} possible duplicates",
-          "duplicatesHint": "These transactions look like transactions that you already have. Check a row to import it anyway; unchecked duplicates are skipped.",
-          "back": "Back",
-          "importing": "Starting import…",
-          "importButton": "Import {count} transaction | Import {count} transactions"
+          "duplicatesTitle": "{count} 可能重复 | {count} 可能重复",
+          "duplicatesHint": "这些交易看起来就像您已经拥有的交易。无论如何都要检查一行以导入它；未检查的重复项将被跳过。",
+          "back": "返回",
+          "importing": "开始导入...",
+          "importButton": "进口{count}交易 | 导入{count}交易"
         },
         "execute": {
-          "starting": "Starting the import…",
-          "progressCount": "{processed} of {total}",
-          "failed": "The import failed.",
-          "partialImportNote": "Some transactions might already be imported.",
-          "statusQueued": "Queued",
-          "statusRunning": "Importing",
-          "statusCompleted": "Completed",
-          "statusFailed": "Failed"
+          "starting": "开始导入...",
+          "progressCount": "{processed} 之 {total}",
+          "failed": "导入失败。",
+          "partialImportNote": "某些交易可能已导入。",
+          "statusQueued": "排队",
+          "statusRunning": "输入",
+          "statusCompleted": "完全的",
+          "statusFailed": "失败"
         },
         "done": {
-          "successTitle": "Import finished",
-          "successDescription": "Your OFX or QFX transactions are now in your account.",
-          "partialTitle": "Imported with {count} issue | Imported with {count} issues",
-          "partialDescription": "Most transactions were imported. The list below shows what was not imported.",
-          "emptyTitle": "Nothing new to import",
-          "emptyDescription": "Each transaction was skipped or was already in your ledger.",
-          "failedTitle": "Nothing was imported",
-          "failedDescription": "No transactions could be created. Review the errors below.",
-          "accountsCreated": "Accounts created",
-          "accountsLinked": "Accounts linked",
-          "accountsSkipped": "Accounts skipped",
-          "payeesCreated": "Payees created",
-          "transactionsImported": "Transactions imported",
-          "duplicatesSkipped": "Duplicates skipped",
-          "mergedIntoPlanned": "Merged into planned",
-          "balanceWarningTitle": "Some balances might be incorrect",
-          "balanceWarningBody": "The final balance could not be set on each account. Review these accounts and adjust their balances if necessary.",
-          "errorsTitle": "{count} transaction could not be imported | {count} transactions could not be imported",
-          "errorsOverflow": "…and {count} more",
+          "successTitle": "导入完成",
+          "successDescription": "您的 OFX​​ 或 QFX 交易现已存入您的账户中。",
+          "partialTitle": "导入时出现 {count} 问题 | 导入时出现 {count} 问题",
+          "partialDescription": "大多数交易都是进口的。下面的列表显示了未导入的内容。",
+          "emptyTitle": "没有什么新的东西可以导入",
+          "emptyDescription": "每笔交易都被跳过或已经在您的分类帐中。",
+          "failedTitle": "没有导入任何内容",
+          "failedDescription": "无法创建任何交易。检查下面的错误。",
+          "accountsCreated": "已创建账户",
+          "accountsLinked": "关联账户",
+          "accountsSkipped": "已跳过的账户",
+          "payeesCreated": "创建收款人",
+          "transactionsImported": "导入交易",
+          "duplicatesSkipped": "跳过重复项",
+          "mergedIntoPlanned": "并入计划",
+          "balanceWarningTitle": "有些余额可能不正确",
+          "balanceWarningBody": "无法为每个账户设置最终余额。检查这些账户并在必要时调整其余额。",
+          "errorsTitle": "{count} 交易无法导入 | {count} 交易无法导入",
+          "errorsOverflow": "…以及 {count} 更多",
           "errors": {
-            "rowImportFailed": "This row could not be imported.",
-            "accountBalanceDesync": "An account balance could not be updated after the import.",
-            "rowsSuppressed": "{count} more row failed to import from this row onward. Only the first {listed} errors are listed. | {count} more rows failed to import from this row onward. Only the first {listed} errors are listed."
+            "rowImportFailed": "无法导入该行。",
+            "accountBalanceDesync": "导入后无法更新账户余额。",
+            "rowsSuppressed": "{count} 从该行开始导入更多行失败。仅列出前一个 {listed} 错误。 | {count} 从该行开始导入更多行失败。仅列出前一个 {listed} 错误。"
           },
-          "rowPrefix": "Row {rowIndex}:",
-          "viewTransactions": "View transactions",
-          "importAnother": "Import another file"
+          "rowPrefix": "{rowIndex}行：",
+          "viewTransactions": "查看交易",
+          "importAnother": "导入另一个文件"
         },
         "leaseExpired": {
-          "title": "Your uploaded file is no longer available",
-          "description": "The parsed copy of your OFX or QFX file was released after a period of inactivity. Your mapping choices could not be kept. Start the import again.",
-          "action": "Start over"
+          "title": "您上传的文件不再可用",
+          "description": "经过一段时间的不活动后，OFX 或 QFX 文件的已解析副本已发布。无法保留您的映射选择。再次开始导入。",
+          "action": "重新开始"
         },
-        "leaseResourceLabel": "Your uploaded file"
+        "leaseResourceLabel": "您上传的文件"
       }
     }
   }

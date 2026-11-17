@@ -1,295 +1,295 @@
 {
   "optimizations": {
-    "title": "Optimizations",
-    "landingDescription": "Tools to help you organize and clean up your financial data.",
-    "backToOptimizations": "Back to optimizations",
+    "title": "优化",
+    "landingDescription": "帮助您组织和清理财务数据的工具。",
+    "backToOptimizations": "返回优化",
     "cards": {
       "transfers": {
-        "title": "Transfer matching",
-        "description": "Find expense-income pairs that might be transfers between your accounts and link them automatically."
+        "title": "转账匹配",
+        "description": "查找可能在您的账户之间转移的费用-收入对并自动链接它们。"
       },
       "aiCategorization": {
-        "title": "AI categorization",
-        "description": "Let AI sort uncategorized transactions and review past runs."
+        "title": "人工智能分类",
+        "description": "让人工智能对未分类的交易进行排序并审查过去的交易。"
       },
       "applyRules": {
-        "title": "Apply a rule to past transactions",
-        "description": "Pick one of your automations and run it over transactions you already have."
+        "title": "将规则应用于过去的交易",
+        "description": "选择您的一种自动化操作并在您已有的交易上运行它。"
       },
       "reconciliation": {
-        "title": "Reconciliation",
-        "description": "Merge duplicate bank transactions, remove wrong ones, and resolve pending transactions the bank never booked."
+        "title": "和解",
+        "description": "合并重复的银行交易，删除错误的交易，并解​​决银行从未登记的待处理交易。"
       }
     },
     "aiCategorization": {
-      "title": "AI categorization",
-      "description": "Run AI over transactions that are still in your default category and let it pick a better one. You can always change a category afterwards.",
+      "title": "人工智能分类",
+      "description": "对仍在默认类别中的交易运行人工智能，并让它选择更好的交易。之后您可以随时更改类别。",
       "tabs": {
-        "categorize": "Categorize",
-        "history": "History"
+        "categorize": "分类",
+        "history": "历史"
       },
       "count": {
-        "capNote": "One run covers the {limit} most recent. Run it again to work through the rest.",
-        "allDoneTitle": "Everything is categorized",
-        "allDoneDescription": "No transactions are sitting in your default category right now."
+        "capNote": "一次运行涵盖了最新的 {limit}。再次运行它以完成其余的工作。",
+        "allDoneTitle": "一切都已分类",
+        "allDoneDescription": "目前您的默认类别中没有任何交易。"
       },
       "bar": {
-        "uncategorizedCount": "{count} uncategorized",
-        "capChip": "{limit} per run"
+        "uncategorizedCount": "{count} 未分类",
+        "capChip": "每次运行 {limit}"
       },
       "table": {
-        "selectionHint": "Select rows to categorize only those.",
-        "loadError": "Couldn't load the transactions waiting for categorization."
+        "selectionHint": "选择行以仅对这些行进行分类。",
+        "loadError": "无法加载等待分类的事务。"
       },
       "history": {
-        "emptyTitle": "No AI categorization runs yet",
-        "emptyDescription": "Once you run AI categorization, every run shows up here so you can review what it changed.",
-        "loadError": "Couldn't load the run history.",
-        "runLoadError": "Couldn't load this run's transactions.",
-        "backToRuns": "Back to all runs",
-        "runEmptyTitle": "Nothing left from this run",
-        "runEmptyDescription": "Every transaction this run categorized has since been re-categorized or deleted.",
-        "transactionCount": "{count} transaction | {count} transactions",
+        "emptyTitle": "尚未运行 AI 分类",
+        "emptyDescription": "运行 AI 分类后，每次运行都会显示在此处，以便您可以查看其更改的内容。",
+        "loadError": "无法加载运行历史记录。",
+        "runLoadError": "无法加载此运行的事务。",
+        "backToRuns": "返回所有运行",
+        "runEmptyTitle": "这次跑步没有留下任何东西",
+        "runEmptyDescription": "此后，此运行分类的每笔交易都已被重新分类或删除。",
+        "transactionCount": "{count} 交易 | {count}交易",
         "trigger": {
-          "manual": "Manual",
-          "import": "Data import",
-          "sync": "Bank sync",
-          "unknown": "Unknown"
+          "manual": "手动的",
+          "import": "数据导入",
+          "sync": "银行同步",
+          "unknown": "未知"
         },
         "triggerTooltip": {
-          "manual": "You started this run manually",
-          "import": "Started automatically after a data import",
-          "sync": "Started automatically after a bank sync",
-          "unknown": "This run's origin wasn't recorded"
+          "manual": "您手动启动了此运行",
+          "import": "数据导入后自动启动",
+          "sync": "银行同步后自动启动",
+          "unknown": "未记录此运行的起源"
         }
       },
       "setup": {
-        "title": "Run setup",
-        "model": "Model",
-        "notConfigured": "Not configured",
-        "connection": "AI model",
-        "limits": "Limits",
-        "limitsSharedKey": "3 runs per hour",
-        "limitsOwnCredentials": "Unlimited — runs on your own key",
-        "changeModel": "Change in AI settings",
-        "errorChip": "AI setup problem",
-        "loadError": "Couldn't load your AI setup."
+        "title": "运行设置",
+        "model": "模型",
+        "notConfigured": "未配置",
+        "connection": "人工智能模型",
+        "limits": "限制",
+        "limitsSharedKey": "每小时运行 3 次",
+        "limitsOwnCredentials": "无限制 — 使用您自己的密钥运行",
+        "changeModel": "AI 设置更改",
+        "errorChip": "AI设置问题",
+        "loadError": "无法加载您的 AI 设置。"
       },
       "run": {
-        "button": "Categorize with AI (all)",
-        "categorizeSelected": "Categorize {count} selected",
-        "inProgress": "Categorizing…",
-        "progressLabel": "AI categorization progress",
-        "processed": "{processed} of {total} transactions processed"
+        "button": "AI分类（全部）",
+        "categorizeSelected": "分类 {count} 选择",
+        "inProgress": "分类…",
+        "progressLabel": "AI分类进展",
+        "processed": "已处理 {processed} 交易（共 {total}）"
       },
       "confirm": {
-        "title": "Categorize all uncategorized transactions?",
-        "description": "AI will look at {count} transaction that is still in your default category and pick a category for it. You can change it afterwards. | AI will look at {count} transactions that are still in your default category and pick a category for each one. You can change any of them afterwards.",
-        "action": "Categorize all"
+        "title": "对所有未分类的交易进行分类？",
+        "description": "AI 将查看仍在您默认类别中的 {count} 交易，并为其选择一个类别。您可以稍后更改它。 | AI 将查看仍在默认类别中的 {count} 交易，并为每笔交易选择一个类别。之后您可以更改其中任何一个。",
+        "action": "全部分类"
       },
       "notifications": {
-        "started": "Categorizing {count} transaction with AI | Categorizing {count} transactions with AI",
-        "nothingToCategorize": "Everything is already categorized — nothing left for AI to do",
-        "alreadyRunning": "AI categorization is already running",
-        "rateLimited": "You've reached the manual categorization limit. Try again in {time}.",
-        "failed": "Could not start AI categorization"
+        "started": "利用人工智能对 {count} 交易进行分类 | 使用 AI 对 {count} 交易进行分类",
+        "nothingToCategorize": "一切都已分类——AI 无需再做任何事",
+        "alreadyRunning": "AI分类已经运行",
+        "rateLimited": "您已达到手动分类限制。在 {time} 中重试。",
+        "failed": "无法启动AI分类"
       }
     },
     "transferSuggestions": {
-      "description": "Find transactions that should be linked as transfers between your accounts",
-      "suggestionsFor": "Suggestions for",
-      "selectExpense": "Select a transaction to see suggestions",
-      "potentialTransfersFound": "potential transfers found",
+      "description": "查找应链接为账户之间转账的交易",
+      "suggestionsFor": "建议：",
+      "selectExpense": "选择交易以查看建议",
+      "potentialTransfersFound": "发现潜在的转移",
       "empty": {
-        "title": "No transfer suggestions found",
-        "description": "Try adjusting the date range"
+        "title": "未找到转移建议",
+        "description": "尝试调整日期范围"
       },
       "initial": {
-        "title": "Find transfer suggestions",
-        "description": "Scan your transactions to find income and expense pairs that should be linked as transfers between accounts"
+        "title": "查找转移建议",
+        "description": "扫描您的交易以查找应作为账户之间转账链接的收入和支出对"
       },
-      "scanning": "Scanning transactions...",
+      "scanning": "扫描交易...",
       "confirmLink": {
-        "title": "Link as transfer?",
-        "description": "Both transactions will be linked as a transfer between accounts. This will correct your statistics and analytics by excluding them from income and expense totals."
+        "title": "链接作为转移？",
+        "description": "两笔交易都将作为账户之间的转账进行链接。这将通过将其从收入和支出总额中排除来纠正您的统计数据和分析。"
       },
       "presets": {
-        "last3Months": "Last 3 months",
-        "last6Months": "Last 6 months",
-        "lastYear": "Last year",
-        "thisYear": "This year",
-        "previousYear": "Previous year"
+        "last3Months": "过去 3 个月",
+        "last6Months": "过去 6 个月",
+        "lastYear": "去年",
+        "thisYear": "今年",
+        "previousYear": "上一年"
       },
-      "includeOutOfWallet": "Include out-of-wallet transfers",
-      "outOfWalletSwitch": "Out-of-wallet transfers",
+      "includeOutOfWallet": "包括钱包外转账",
+      "outOfWalletSwitch": "钱包外转账",
       "skip": {
-        "action": "Reject",
-        "title": "Reject this suggestion?",
-        "description": "This pair will be hidden from future scan results. The transactions themselves won't be changed.",
-        "dontShowAgain": "Don't show this confirmation again"
+        "action": "拒绝",
+        "title": "拒绝这个建议？",
+        "description": "这对将在未来的扫描结果中隐藏。交易本身不会改变。",
+        "dontShowAgain": "不再显示此确认信息"
       },
       "notifications": {
-        "loadError": "Failed to load more suggestions",
-        "scanError": "Failed to scan for transfer suggestions",
-        "linkSuccess": "Transactions linked as transfer",
-        "linkError": "Failed to link transactions",
-        "skipSuccess": "Suggestion rejected",
-        "skipError": "Failed to reject suggestion"
+        "loadError": "无法加载更多建议",
+        "scanError": "无法扫描转移建议",
+        "linkSuccess": "作为转账链接的交易",
+        "linkError": "关联交易失败",
+        "skipSuccess": "建议被拒绝",
+        "skipError": "无法拒绝建议"
       },
       "aiReview": {
-        "label": "AI review",
-        "about": "About AI review",
-        "plusBadge": "Plus",
-        "description": "AI checks each match and shows only the ones that look like real transfers between your accounts.",
-        "cost": "Each scan uses your monthly AI allowance. With your own AI provider, the provider bills it. Choose the model in {link}.",
-        "aiSettingsLink": "AI settings",
-        "openAiSettings": "Open AI settings",
+        "label": "人工智能评审",
+        "about": "关于AI评审",
+        "plusBadge": "加",
+        "description": "AI 会检查每项匹配，并仅显示那些看起来像您账户之间真实转账的匹配。",
+        "cost": "每次扫描都会使用您每月的 AI 津贴。对于您自己的人工智能提供商，提供商会对其进行计费。选择{link}中的型号。",
+        "aiSettingsLink": "人工智能设置",
+        "openAiSettings": "打开AI设置",
         "blocked": {
           "plan": {
-            "title": "AI review is part of Plus",
-            "body": "Or connect your own AI provider in AI settings to use it on any plan."
+            "title": "AI审核是Plus的一部分",
+            "body": "或者在 AI 设置中连接您自己的 AI 提供商，以便在任何计划中使用它。"
           },
           "allowance": {
-            "pill": "Until {date}",
-            "title": "Monthly AI allowance used",
-            "body": "It resets on {date}. Connect your own AI provider to keep using it now."
+            "pill": "直到{date}",
+            "title": "使用的每月人工智能津贴",
+            "body": "它在 {date} 上重置。连接您自己的 AI 提供商以立即继续使用它。"
           },
           "setup": {
-            "pill": "Set up",
-            "title": "No AI model is answering",
-            "body": "Check your AI provider or pick a model for transfer matching."
+            "pill": "设置",
+            "title": "没有人工智能模型给出答案",
+            "body": "检查您的人工智能提供商或选择一个模型进行传输匹配。"
           }
         },
-        "connectOwnModel": "Connect your own model",
-        "reviewing": "AI is checking matches…",
+        "connectOwnModel": "连接您自己的模型",
+        "reviewing": "AI 正在检查匹配项...",
         "verdict": {
-          "likely": "Likely",
-          "possible": "Possible"
+          "likely": "可能",
+          "possible": "可能的"
         },
-        "nudge": "Cut false matches with AI review",
-        "rescanHint": "Review with AI",
-        "rescanHintTooltip": "Many pairs scored below 70%. Scan again with AI review to hide the ones that aren't transfers. Uses your AI allowance.",
+        "nudge": "通过AI审核杜绝虚假匹配",
+        "rescanHint": "人工智能审阅",
+        "rescanHintTooltip": "许多配对得分低于 70%。使用人工智能审核再次扫描，隐藏未传输的内容。使用你的人工智能津贴。",
         "rescanBanner": {
-          "title": "Many pairs scored below 70%",
-          "body": "AI review can hide the ones that aren't transfers. Uses your AI allowance."
+          "title": "许多配对得分低于 70%",
+          "body": "人工智能审查可以隐藏那些不是转移的。使用你的人工智能津贴。"
         }
       }
     },
     "reconciliation": {
-      "title": "Transactions reconciliation",
+      "title": "交易对账",
       "tabs": {
-        "transactions": "Transactions",
-        "stuckPending": "Stuck pending",
-        "history": "History"
+        "transactions": "交易",
+        "stuckPending": "卡在待处理状态",
+        "history": "历史"
       },
       "table": {
-        "hint": "Select bank transactions to merge duplicates or remove extras"
+        "hint": "选择银行交易以合并重复项或删除多余项"
       },
       "actions": {
-        "merge": "Merge",
-        "remove": "Remove"
+        "merge": "合并",
+        "remove": "消除"
       },
       "blockReasons": {
         "header": {
-          "merge": "Can't merge for {count} reasons:",
-          "remove": "Can't remove for {count} reasons:"
+          "merge": "由于 {count} 原因无法合并：",
+          "remove": "由于 {count} 原因无法删除："
         },
-        "notBankConnected": "Only bank-connected transactions can be reconciled.",
-        "planned": "Planned transactions can't be reconciled.",
-        "linkedTransfer": "Linked transfers can't be reconciled. Unlink the transfer first.",
-        "refundLinked": "Refund-linked transactions can't be reconciled. Unlink the refund first.",
-        "tooFew": "Select at least 2 transactions to merge.",
-        "tooMany": "Too many transactions selected (merge: up to {mergeMax}, remove: up to {removeMax}).",
-        "differentAccounts": "All transactions must belong to the same account."
+        "notBankConnected": "只有与银行关联的交易才能进行对账。",
+        "planned": "计划的交易无法对账。",
+        "linkedTransfer": "关联转账无法对账。首先取消链接传输。",
+        "refundLinked": "与退款相关的交易无法对账。先取消退款链接。",
+        "tooFew": "选择至少 2 个要合并的交易。",
+        "tooMany": "选择的交易过多（合并：最多 {mergeMax}，删除：最多 {removeMax}）。",
+        "differentAccounts": "所有交易必须属于同一账户。"
       },
       "merge": {
-        "title": "Merge transactions",
-        "description": "Pick the transaction to keep. The others are removed and can be restored from History.",
+        "title": "合并交易",
+        "description": "选择要保留的交易。其他的已删除并可以从历史记录中恢复。",
         "fields": {
-          "payee": "Payee",
-          "status": "Status",
-          "time": "Time"
+          "payee": "收付款方",
+          "status": "地位",
+          "time": "时间"
         },
         "status": {
-          "pending": "Pending",
-          "booked": "Booked"
+          "pending": "待办的",
+          "booked": "已预订"
         },
-        "keep": "Keep",
-        "remove": "Remove",
-        "sameInAll": "Same in all:",
-        "confirm": "Merge and remove {count} | Merge and remove {count}"
+        "keep": "保持",
+        "remove": "消除",
+        "sameInAll": "一切都一样：",
+        "confirm": "合并并删除 {count} | 合并并删除{count}"
       },
       "remove": {
-        "title": "Remove {count} transaction? | Remove {count} transactions?",
-        "description": "Removed transactions stop counting toward balances and stats. Tracker, group and subscription links are detached. You can restore them from History, but the links won't come back.",
-        "confirm": "Remove"
+        "title": "删除{count}交易？ | 删除 {count} 交易？",
+        "description": "已删除的交易将停止计入余额和统计数据。跟踪器、组和订阅链接是分离的。您可以从历史记录中恢复它们，但链接不会返回。",
+        "confirm": "消除"
       },
       "restoreDialog": {
-        "title": "Restore {count} transaction? | Restore {count} transactions?",
-        "description": "Restored transactions count toward balances and stats again. If they were merged, the kept transaction stays, so you may see duplicates again. Tracker, group and subscription links detached on removal don't come back.",
-        "confirm": "Restore"
+        "title": "恢复{count}交易？ | 恢复{count}交易？",
+        "description": "恢复的交易再次计入余额和统计数据。如果它们被合并，保留的事务将保留，因此您可能会再次看到重复项。删除后分离的跟踪器、群组和订阅链接不会再回来。",
+        "confirm": "恢复"
       },
       "notifications": {
-        "removed": "Removed {count} transaction | Removed {count} transactions",
-        "merged": "Merged, removed {count} duplicate | Merged, removed {count} duplicates",
-        "restored": "Restored {count} transaction | Restored {count} transactions",
-        "keptAsBooked": "Marked as booked",
-        "checkedWithBank": "Checked with bank",
-        "unexpectedError": "Something went wrong. Please try again.",
+        "removed": "删除 {count} 交易 | 删除了 {count} 交易",
+        "merged": "合并，删除 {count} 重复项 | 合并、删除 {count} 重复项",
+        "restored": "已恢复 {count} 交易 | 已恢复 {count} 交易",
+        "keptAsBooked": "标记为已预订",
+        "checkedWithBank": "已与银行核实",
+        "unexpectedError": "出了点问题。请再试一次。",
         "bankCheck": {
-          "allBooked": "Your bank booked the transaction | Your bank booked all {count} transactions",
-          "someBooked": "Your bank booked {count} transaction | Your bank booked {count} transactions",
-          "noneBooked": "Your bank hasn't booked any of them yet",
-          "stillPending": "{count} is still pending. | {count} are still pending.",
-          "someFailed": "Couldn't reach the bank for {count} account. | Couldn't reach the bank for {count} accounts."
+          "allBooked": "您的银行已预订交易 | 您的银行已登记所有 {count} 交易",
+          "someBooked": "您的银行已预订 {count} 交易 | 您的银行登记了 {count} 交易",
+          "noneBooked": "您的银行尚未预订其中任何一项",
+          "stillPending": "{count} 仍在等待中。 | {count} 仍在审理中。",
+          "someFailed": "无法联系 {count} 账户的银行。 | 无法联系 {count} 账户的银行。"
         }
       },
       "stuckPending": {
-        "loadError": "Couldn't load stuck pending transactions.",
-        "emptyTitle": "No stuck pending transactions",
-        "emptyDescription": "Pending transactions older than 7 days show up here so you can resolve them.",
-        "checkWithBank": "Check with bank",
-        "summaryTooOld": "{count} row is still pending after a week. It's too old to check with your bank. | {count} rows are still pending after a week. They're too old to check with your bank.",
-        "checking": "Checking with bank…",
-        "checkAgain": "Check again",
-        "keepAsBooked": "Keep as booked",
+        "loadError": "无法加载卡住的待处理事务。",
+        "emptyTitle": "没有卡住的待处理交易",
+        "emptyDescription": "超过 7 天的待处理交易会显示在此处，以便您可以解决它们。",
+        "checkWithBank": "与银行核实",
+        "summaryTooOld": "{count} 行在一周后仍处于待处理状态。它太旧了，无法与您的银行核实。 | {count} 行在一周后仍处于待处理状态。它们太旧了，无法与您的银行核实。",
+        "checking": "与银行核实...",
+        "checkAgain": "再次检查",
+        "keepAsBooked": "保持预订状态",
         "header": {
-          "title": "{count} transaction stuck in pending | {count} transactions stuck in pending",
-          "description": "Pending for more than a week in {count} account. | Pending for more than a week in {count} accounts.",
-          "titleChecked": "{count} transaction still pending | {count} transactions still pending",
-          "descriptionChecked": "Checked with your bank. Decide what to do with each one."
+          "title": "{count} 交易陷入待处理 | {count} 交易陷入待处理状态",
+          "description": "{count} 账户中待处理状态已超过一周。 | {count} 账户中待处理状态已超过一周。",
+          "titleChecked": "{count} 交易仍待处理 | {count} 交易仍待处理",
+          "descriptionChecked": "已与您的银行核实。决定如何处理每一项。"
         },
-        "checkFirstHint": "Check with your bank first. Transactions it has booked since then disappear from this list.",
+        "checkFirstHint": "请先咨询您的银行。此后所预订的交易将从该列表中消失。",
         "columns": {
-          "account": "Account",
-          "date": "Date",
-          "category": "Category",
-          "pendingFor": "Pending for",
-          "amount": "Amount",
-          "status": "Status",
-          "actions": "Actions"
+          "account": "账户",
+          "date": "日期",
+          "category": "分类",
+          "pendingFor": "待定",
+          "amount": "金额",
+          "status": "地位",
+          "actions": "操作"
         },
         "pendingDaysShort": "{count}d",
         "status": {
-          "tooOld": "Too old to check",
-          "tooOldHint": "Your bank only shares about 90 days of history, so this transaction can't be checked. Keep it if the charge happened, remove it if it didn't.",
-          "duplicate": "Possible duplicate",
-          "duplicateHint": "A booked transaction from the same payee on {date} looks like the same payment. Merge them to keep one.",
-          "notFound": "Not found at bank",
-          "notFoundHint": "Your bank has no booked copy of this transaction, so it may be a released hold. Keep it if the charge happened, remove it if it didn't."
+          "tooOld": "太旧了，无法检查",
+          "tooOldHint": "您的银行仅共享大约 90 天的历史记录，因此无法检查此交易。如果发生充电则保留它，如果没有充电则将其删除。",
+          "duplicate": "可能重复",
+          "duplicateHint": "{date} 上同一收款人的预订交易看起来像是同一笔付款。将它们合并以保留一个。",
+          "notFound": "银行没找到",
+          "notFoundHint": "您的银行没有此交易的预订副本，因此该交易可能已被解除保留。如果发生充电则保留它，如果没有充电则将其删除。"
         }
       },
       "history": {
-        "loadError": "Couldn't load reconciliation history.",
-        "emptyTitle": "No reconciliation history yet",
-        "emptyDescription": "Merged and removed transactions appear here so you can restore them.",
+        "loadError": "无法加载调节历史记录。",
+        "emptyTitle": "还没有对账历史记录",
+        "emptyDescription": "合并和删除的交易将显示在此处，以便您可以恢复它们。",
         "type": {
-          "merge": "Merged",
-          "remove": "Removed"
+          "merge": "合并",
+          "remove": "已删除"
         },
-        "restore": "Restore",
-        "kept": "Kept",
-        "removedRows": "{count} removed transaction | {count} removed transactions"
+        "restore": "恢复",
+        "kept": "保留",
+        "removedRows": "{count} 删除交易 | {count} 已删除交易"
       }
     }
   }

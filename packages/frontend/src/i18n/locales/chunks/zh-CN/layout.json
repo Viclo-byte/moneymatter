@@ -1,39 +1,40 @@
 {
   "navigation": {
-    "dashboard": "看板",
+    "dashboard": "总览",
     "accounts": "账户",
     "accountsList": "所有账户",
     "investments": "投资",
     "loans": "贷款",
     "allTransactions": "所有交易记录",
-    "transactions": "交易记录",
+    "transactions": "交易",
     "transactionGroups": "交易组",
-    "trash": "Trash",
+    "trash": "回收站",
     "analytics": "统计分析",
     "optimizations": "优化",
     "automations": "自动化",
     "accountDetails": "账户详情",
-    "helpAndDocs": "Help & docs",
-    "community": "Community",
-    "logout": "Logout",
-    "appVersion": "App version {version}",
-    "updateAvailable": "Update available",
-    "updateToVersion": "Update · {version}",
-    "settings": "Settings",
+    "helpAndDocs": "帮助和文档",
+    "community": "社区",
+    "logout": "退出登录",
+    "appVersion": "应用程序版本 {version}",
+    "updateAvailable": "可用更新",
+    "updateToVersion": "更新·{version}",
+    "settings": "设置",
     "planned": {
       "planned": "已规划",
       "subscriptions": "定期付款",
       "budgets": "预算",
-      "goals": "Goals"
+      "goals": "目标"
     },
     "venture": "风险投资",
-    "budget": "Budget"
+    "budget": "预算"
   },
   "sidebar": {
-    "collapse": "Collapse sidebar",
-    "expand": "Expand sidebar",
+    "collapse": "折叠侧边栏",
+    "expand": "展开侧边栏",
+    "resize": "调整侧边栏大小",
     "settings": {
-      "title": "Settings",
+      "title": "设置",
       "sections": {
         "label": "侧边栏小组",
         "description": "选择在侧边栏中显示哪些小组。",
@@ -54,7 +55,7 @@
       "noPortfolios": "无投资组合",
       "ventures": "风险投资",
       "cars": "车辆",
-      "loans": "Loans",
+      "loans": "贷款",
       "collapseNavigation": "折叠导航栏",
       "viaHousehold": "由 {handle} 的家庭账户共享",
       "sharedBy": "由 {handle} 共享",
@@ -64,13 +65,13 @@
   "header": {
     "add": "添加",
     "importData": "导入数据",
-    "moreActions": "More ways to add data",
-    "importDataHint": "CSV file or bank statement",
-    "attachInvoice": "Attach invoice",
-    "attachInvoiceHint": "We find the transaction it belongs to",
+    "moreActions": "添加数据的更多方式",
+    "importDataHint": "CSV 文件或银行对账单",
+    "attachInvoice": "附上发票",
+    "attachInvoiceHint": "我们找到它所属的交易",
     "language": "语言",
     "newTransaction": "添加交易",
-    "settings": "Settings",
+    "settings": "设置",
     "feedback": "意见反馈",
     "support": "帮助",
     "sync": {
@@ -80,17 +81,17 @@
       "connectBank": "连接银行",
       "syncingAccounts": "同步 {count} 个账户",
       "stuck": "同步卡住了",
-      "failed": "Sync failed, some accounts need attention"
+      "failed": "同步失败，部分账户需要注意"
     },
     "categorization": {
       "title": "AI 分类",
       "categorizing": "分类中……",
-      "completed": "AI 已分类 {count} 条交易记录| AI 已分类 {count} 条交易记录",
+      "completed": "AI 已分类 {count} 条交易记录 | AI 已分类 {count} 条交易记录",
       "completedShort": "分类完成",
       "completedWithSkipped": "已分类 {count} 个交易（跳过 {skipped} 个） | 已分类 {count} 个交易（跳过 {skipped} 个）",
       "failed": "分类失败",
       "failedShort": "失败",
-      "allSkipped": "AI couldn't confidently categorize the transaction | AI couldn't confidently categorize any of the {count} transactions",
+      "allSkipped": "人工智能无法自信地对交易进行分类 | AI 无法自信地对任何 {count} 交易进行分类",
       "queued": "正在等待开始……",
       "transactions": "交易记录"
     }
@@ -104,15 +105,15 @@
     "dialog": {
       "title": "提出反馈",
       "description": "告诉我们什么是可行的，什么是不可行的。",
-      "typeLabel": "Type",
-      "typePlaceholder": "Choose a type",
+      "typeLabel": "类型",
+      "typePlaceholder": "选择类型",
       "types": {
         "bug": "有些功能有问题",
         "featureRequest": "我想要新功能",
         "other": "其他"
       },
-      "docsHint": "Not sure how something works? Check the {link} first.",
-      "docsHintLink": "docs",
+      "docsHint": "不确定某些东西是如何工作的？首先检查{link}。",
+      "docsHintLink": "文档",
       "messageLabel": "您的反馈",
       "messagePlaceholder": "发生了什么，或者你想看到什么？",
       "messageRequired": "请在发送前填写消息。",
@@ -121,8 +122,8 @@
       "unavailable": "发送现在不可用。请使用下面的反馈板来代替。",
       "or": "或",
       "reddit": {
-        "title": "Ask the community on Reddit",
-        "description": "Get help from other users, share how you set things up, and follow updates."
+        "title": "在 Reddit 上询问社区",
+        "description": "从其他用户那里获取帮助，分享您的设置方式并关注更新。"
       },
       "board": {
         "title": "将其发布在公共反馈板",
@@ -139,7 +140,7 @@
     "progress": "已同步 {current}/{total}",
     "progressPercentage": "{percentage}%",
     "statuses": {
-      "syncing": "Syncing",
+      "syncing": "正在同步",
       "queued": "队列中",
       "synced": "已同步",
       "failed": "失败",
@@ -170,7 +171,7 @@
   "banners": {
     "recoveryMethod": {
       "title": "添加备份登录方式",
-      "description": "添加谷歌登录或通行密钥来保护您的帐户。这确保您可以随时访问您的帐户。",
+      "description": "添加谷歌登录或通行密钥来保护您的账户。这确保您可以随时访问您的账户。",
       "actionButton": "前往安全设置"
     }
   },
@@ -178,7 +179,7 @@
     "buttonLabel": "{count} 个账户需要注意 | {count} 个账户需要注意",
     "title": "Enable Banking：需要操作",
     "description": "由于数据格式发生变更，这些 Enable Banking 账户需要更新。这是一次性操作，以提高同步的可靠性。",
-    "step1Full": "To save your time, firstly try reconnecting the whole bank connection. You can find a {reconnect} button under the {connectionValidity} section on each connection page:",
+    "step1Full": "为了节省您的时间，请首先尝试重新连接整个银行连接。您可以在每个连接页面的 {connectionValidity} 部分下找到 {reconnect} 按钮：",
     "reconnectButton": "重新连接",
     "connectionValiditySection": "连接有效性",
     "connectionLabel": "连接 #{id}",
@@ -190,13 +191,13 @@
     "integrations": {
       "providers": {
         "monobank": {
-          "name": "Monobank"
+          "name": "单一银行"
         },
         "enableBanking": {
-          "name": "Enable Banking"
+          "name": "启用银行业务"
         },
         "lunchflow": {
-          "name": "Lunch Flow"
+          "name": "午餐流程"
         }
       }
     }
@@ -236,7 +237,7 @@
             "title": "探索分析"
           },
           "ai-settings": {
-            "title": "AI features"
+            "title": "人工智能特点"
           },
           "sharing": {
             "title": "共享和家庭"
@@ -269,7 +270,7 @@
           },
           "mark-transfer-out": {
             "title": "标记转出钱包",
-            "description": "追踪离开您帐户的资金"
+            "description": "追踪离开您账户的资金"
           },
           "create-category": {
             "title": "创建自定义分类",
@@ -289,7 +290,7 @@
           },
           "create-account-group": {
             "title": "创建一个账户组",
-            "description": "按类型或目的整理帐户"
+            "description": "按类型或目的整理账户"
           },
           "setup-tag-reminder": {
             "title": "设置标签提醒",
@@ -301,7 +302,7 @@
           },
           "import-csv": {
             "title": "从任何文本源导入",
-            "description": "从 CSV、PDF 或银行对帐单导入"
+            "description": "从 CSV、PDF 或银行对账单导入"
           },
           "view-annual-overview": {
             "title": "查看年度概览",
@@ -321,7 +322,7 @@
           },
           "invite-household-member": {
             "title": "邀请家庭成员",
-            "description": "与对方分享您的财务生活——他们可以访问您现在和未来的所有帐户。"
+            "description": "与对方分享您的财务生活——他们可以访问您现在和未来的所有账户。"
           },
           "share-account": {
             "title": "分享账户",
@@ -338,7 +339,7 @@
           "triggerTooltip": "快速开始——剩 {count} 个任务",
           "srDescription": "完成这些任务以开始应用",
           "progressText": "已完成 {completed}/{total}",
-          "categoryProgress": "{completed} of {total} complete"
+          "categoryProgress": "{completed} {total} 完整"
         }
       }
     }

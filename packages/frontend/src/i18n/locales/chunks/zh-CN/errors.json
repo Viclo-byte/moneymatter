@@ -6,16 +6,16 @@
       "unexpectedError": "未知错误。",
       "sessionExpired": "您的会话已过期。请重新登录",
       "payloadTooLarge": "请求过大。请尝试导入更少的项目",
-      "tooManyRequests": "Too many attempts. Please wait a moment and try again."
+      "tooManyRequests": "尝试次数太多。请稍等片刻，然后重试。"
     },
     "auth": {
-      "reauthenticationRequired": "For your security, sign in again to make this change.",
-      "passwordTooShort": "Password is too short.",
-      "passwordTooLong": "Password is too long.",
-      "providerNotConfigured": "This sign-in provider isn't configured on this server.",
-      "accountAlreadyLinked": "This account is already linked to another user.",
-      "cannotUnlinkLastAccount": "You can't remove your only sign-in method.",
-      "passkeyAlreadyRegistered": "This passkey is already registered."
+      "reauthenticationRequired": "为了您的安全，请重新登录以进行此更改。",
+      "passwordTooShort": "密码太短。",
+      "passwordTooLong": "密码太长。",
+      "providerNotConfigured": "此服务器上未配置此登录提供程序。",
+      "accountAlreadyLinked": "该账户已链接到另一个用户。",
+      "cannotUnlinkLastAccount": "您无法删除唯一的登录方法。",
+      "passkeyAlreadyRegistered": "该密钥已被注册。"
     },
     "notFound": {
       "title": "这个页面不存在",

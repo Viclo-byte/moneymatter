@@ -8,130 +8,130 @@
       "currentPlanEyebrow": "当前订阅",
       "updatePaymentMethod": "更新付款方式",
       "manageBilling": "管理账单",
-      "manageInAppStore": "Manage in the App Store",
-      "currentPlan": "Current plan",
-      "recommended": "Recommended",
+      "manageInAppStore": "在 App Store 中管理",
+      "currentPlan": "目前计划",
+      "recommended": "受到推崇的",
       "previousPlan": "之前的订阅",
       "yourPlan": "您的订阅",
-      "planned": "Planned",
+      "planned": "计划",
       "voteOnRoadmap": "在未来规划投票",
       "roadmapNote": "无收费。投票后我们会让你知道几时能达到目标。",
       "saveUpTo": "最高可省 {percent}%",
       "portalFailed": "无法打开支付页面。请重试。",
-      "pastDueNote": "Your last payment failed. Stripe will retry your card automatically over the next few days. Update your payment method via Manage billing to keep access after {date}.",
-      "priceNote": "Prices are in USD, excluding tax. Your local currency and any applicable tax are shown at checkout.",
+      "pastDueNote": "您上次付款失败。 Stripe 将在接下来的几天内自动重试您的卡。通过“管理账单”更新您的付款方式，以在 {date} 之后保持访问权限。",
+      "priceNote": "价格以美元为单位，不含税。结帐时会显示您的当地货币和任何适用的税费。",
       "cycleHint": {
-        "year": "Yearly is 6 months of monthly. Billed once a year.",
-        "month": "Cancel any month. Yearly costs half."
+        "year": "每年是每月的 6 个月。每年计费一次。",
+        "month": "取消任何一个月。每年费用减半。"
       },
       "price": {
-        "yearFootnote": "{amount} / mo · {struck} · {save}",
-        "monthFootnote": "or {amount} / year · {save}",
-        "save": "save {amount}"
+        "yearFootnote": "{amount} / 莫·{struck}·{save}",
+        "monthFootnote": "或 {amount} / 年 · {save}",
+        "save": "保存{amount}"
       },
       "current": {
-        "lifetime": "{plan} · lifetime",
-        "lifetimeMeta": "Everything in Plus. No renewal, no card on file.",
-        "earlyAdopterNote": "Thank you for being here early. Everything in Plus as it exists today is yours for life. Features we add from here on, and anything that costs us per user to run, belong to the paid plans. Want them? 50% off any plan, forever, applied automatically at checkout.",
-        "seats": "1 household seat | {count} household seats",
+        "lifetime": "{plan}·寿命",
+        "lifetimeMeta": "一切尽在Plus。没有更新，没有记录卡。",
+        "earlyAdopterNote": "感谢您早早来到这里。现在 Plus 中的所有内容都是您终生拥有的。我们从现在开始添加的功能以及每个用户运行所需的任何费用都属于付费计划。想要它们吗？任何计划永久享受 50% 折扣，结帐时自动应用。",
+        "seats": "1 个家庭座位 | {count}家用座椅",
         "subscription": "{tier} · {cycle}",
-        "trial": "{count} day left in your trial | {count} days left in your trial",
-        "trialProgress": "Day {used} of {total}",
-        "trialEnded": "Trial ended",
-        "trialEndedMeta": "Your {days}-day trial is over. Pick a plan to keep adding to it.",
-        "trialEndsOn": "Ends {date}",
-        "trialExcluded": "Backup restore isn't available during the trial",
-        "subscriptionEnded": "Subscription ended",
-        "endedMeta": "Your data is safe. Pick a plan to keep adding to it.",
-        "renewsOn": "Renews on {date}",
-        "activating": "Activating your plan",
-        "activatingNote": "Payment received. Stripe usually confirms within a few seconds.",
-        "activationTimedOut": "Your payment went through but the plan is still being set up. Refresh in a minute; if nothing changes, contact support.",
-        "activationUnreachable": "We could not reach the server to confirm your payment. Reload the page; if the plan is still missing, contact support.",
-        "accessContinuesUntil": "Access continues until {date}",
-        "billedByAppStore": "Billed through the App Store",
-        "accessUntil": "Access until {date}, then read-only",
-        "resumesOn": "Resumes automatically on {date}",
-        "pausedNote": "While paused the account is read-only.",
-        "noFurtherCharges": "No further charges",
-        "cancelNote": "Changed your mind? Renew in the billing portal and your renewal date stays the same.",
-        "monthlyHint": "Switch to yearly and save {amount} a year.",
-        "noCard": "No card on file",
-        "readOnlyHelp": "What does read-only mean?"
+        "trial": "{count} 试用期还剩一天 | {count} 试用期还剩几天",
+        "trialProgress": "{total} 之日 {used}",
+        "trialEnded": "审判结束",
+        "trialEndedMeta": "您的 {days} 天试用期已结束。选择一个计划并继续添加。",
+        "trialEndsOn": "结束 {date}",
+        "trialExcluded": "试用期间无法进行备份恢复",
+        "subscriptionEnded": "订阅结束",
+        "endedMeta": "您的数据是安全的。选择一个计划并继续添加。",
+        "renewsOn": "在 {date} 上续订",
+        "activating": "激活您的计划",
+        "activatingNote": "付款已收到。 Stripe 通常会在几秒钟内确认。",
+        "activationTimedOut": "您的付款已完成，但计划仍在制定中。一分钟刷新；如果没有任何变化，请联系支持人员。",
+        "activationUnreachable": "我们无法联系服务器来确认您的付款。重新加载页面；如果该计划仍然缺失，请联系支持人员。",
+        "accessContinuesUntil": "访问持续到 {date}",
+        "billedByAppStore": "通过 App Store 计费",
+        "accessUntil": "访问直到{date}，然后只读",
+        "resumesOn": "在 {date} 上自动恢复",
+        "pausedNote": "暂停时，该账户是只读的。",
+        "noFurtherCharges": "不再收取任何费用",
+        "cancelNote": "改变主意了吗？在计费门户中续订，您的续订日期保持不变。",
+        "monthlyHint": "切换为每年并节省 {amount} 一年。",
+        "noCard": "档案中没有卡",
+        "readOnlyHelp": "只读是什么意思？"
       },
       "status": {
-        "pastDue": "Payment failed",
-        "active": "Active",
-        "paused": "Paused",
-        "readOnly": "Read-only",
-        "trial": "Plus features",
-        "processing": "Processing",
-        "earlyAdopter": "Early adopter",
-        "endsOn": "Ends {date}"
+        "pastDue": "付款失败",
+        "active": "启用",
+        "paused": "已暂停",
+        "readOnly": "只读",
+        "trial": "附加功能",
+        "processing": "加工",
+        "earlyAdopter": "早期采用者",
+        "endsOn": "结束 {date}"
       },
       "cta": {
-        "activating": "Activating…",
-        "switchTo": "Switch to {tier}",
-        "switchToCycle": "Switch to {cycle} billing",
-        "subscribeAgain": "Subscribe again",
-        "getTier": "Get {tier}"
+        "activating": "激活…",
+        "switchTo": "切换至{tier}",
+        "switchToCycle": "切换到{cycle}计费",
+        "subscribeAgain": "再次订阅",
+        "getTier": "获取{tier}"
       },
       "ctaNote": {
-        "keepIt": "Update your payment method to keep it.",
-        "viaPortal": "Changed in the billing portal.",
-        "viaAppStore": "Plan changes happen in the App Store",
-        "billedToday": "Billed today. Cancel anytime.",
-        "earlyAdopter": "50% off for life, applied at checkout"
+        "keepIt": "更新您的付款方式以保留它。",
+        "viaPortal": "在计费门户中进行了更改。",
+        "viaAppStore": "App Store 中发生计划变更",
+        "billedToday": "今天结帐了。随时取消。",
+        "earlyAdopter": "终生 50% 折扣，结帐时应用"
       },
       "plans": {
-        "essential": "Essential",
-        "plus": "Plus",
-        "premium": "Premium",
-        "early_adopter": "Early Adopter"
+        "essential": "基本的",
+        "plus": "加",
+        "premium": "优质的",
+        "early_adopter": "早期采用者"
       },
       "cycle": {
-        "month": "Monthly",
-        "year": "Yearly"
+        "month": "每月",
+        "year": "每年"
       },
       "perCycle": {
-        "month": "/month",
-        "year": "/year"
+        "month": "/月",
+        "year": "/年"
       },
       "tiers": {
         "essential": {
-          "name": "Essential",
-          "tagline": "Manual entry and everything that's local math.",
+          "name": "基本的",
+          "tagline": "手动输入和本地数学的一切。",
           "features": {
-            "imports": "CSV, OFX, YNAB, Wallet, MS Money imports",
-            "investments": "Investments, loans, vehicles",
-            "ownAiKey": "AI features on your own API key",
-            "backup": "Backup export and restore",
-            "mcp": "MCP server access",
-            "seats": "2 household seats"
+            "imports": "CSV、OFX、YNAB、钱包、MS Money 导入",
+            "investments": "投资、贷款、车辆",
+            "ownAiKey": "您自己的 API 密钥上的 AI 功能",
+            "backup": "备份导出和恢复",
+            "mcp": "MCP服务器访问",
+            "seats": "2个家庭座位"
           }
         },
         "plus": {
-          "name": "Plus",
-          "tagline": "Everything around bring-your-own bank connections.",
+          "name": "加",
+          "tagline": "一切都自带银行联系。",
           "features": {
-            "everythingInEssential": "Everything in Essential",
-            "bankProviders": "Bank connections (Monobank, Enable Banking, SimpleFIN, LunchFlow, Walutomat)",
-            "ourAiKey": "AI features on our key, fair-use capped",
-            "firePlanner": "FIRE planner",
-            "seats": "5 household seats"
+            "everythingInEssential": "一切尽在 Essential",
+            "bankProviders": "银行连接（Monobank、Enable Banking、SimpleFIN、LunchFlow、Walutomat）",
+            "ourAiKey": "我们关键的人工智能功能，合理使用上限",
+            "firePlanner": "消防规划师",
+            "seats": "5个家庭座位"
           }
         },
         "premium": {
-          "name": "Premium",
-          "tagline": "Bank sync we run for you. Planned – help us prioritise it.",
-          "priceTba": "Price to be announced",
-          "priceNote": "Priced once bank-sync costs are known.",
+          "name": "优质的",
+          "tagline": "我们为您运行银行同步。计划 – 帮助我们确定优先顺序。",
+          "priceTba": "价格待公布",
+          "priceNote": "一旦知道银行同步成本就定价。",
           "features": {
-            "everythingInPlus": "Everything in Plus",
-            "builtInBankSync": "Bank sync built into the app – no third-party account to set up",
-            "realtimePrices": "Realtime security prices",
-            "higherAiCap": "AI features on our key, higher cap",
-            "seats": "10 household seats"
+            "everythingInPlus": "一切尽在Plus",
+            "builtInBankSync": "应用程序内置银行同步 - 无需设置第三方账户",
+            "realtimePrices": "实时安全价格",
+            "higherAiCap": "人工智能功能是我们的关键，更高的上限",
+            "seats": "10个家庭座位"
           }
         }
       }

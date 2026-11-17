@@ -4,7 +4,7 @@
       "title": "选择基础货币",
       "description": "您的基础货币应该是您日常使用的货币。其他货币的所有交易都将依据此货币统计。",
       "submitButton": "确认货币",
-      "trialStarted": "Your free trial has started, everything is unlocked for {count} day. {link} | Your free trial has started, everything is unlocked for {count} days. {link}",
+      "trialStarted": "您的免费试用已经开始，{count} 日的所有内容均已解锁。 {link} | 您的免费试用已开始，{count} 天的所有内容均已解锁。 {link}",
       "logout": "登出",
       "labels": {
         "baseCurrency": "基础货币"
@@ -27,7 +27,7 @@
         },
         "userAlreadyExists": {
           "signIn": "使用此电子邮件的帐号已存在",
-          "signUp": "An account with this email already exists",
+          "signUp": "使用此电子邮件的账户已存在",
           "link": "此帐号已绑定到另一个用户"
         },
         "accountNotLinked": {
@@ -38,13 +38,13 @@
         "genericError": {
           "signIn": "登录失败。请重试。",
           "signUp": "登录失败。请重试。",
-          "link": "Failed to link account. Please try again."
+          "link": "关联账户失败。请再试一次。"
         },
         "unauthorizedClient": "此应用无权使用此身份验证方式",
         "temporarilyUnavailable": "验证服务暂时不可用。请稍后再试。",
-        "unableToLinkAccount": "We couldn't link this account because this server doesn't treat the provider's email as verified. Contact your administrator.",
-        "emailDoesNotMatch": "The email on this provider account doesn't match your account email. Use a provider account with the same email.",
-        "emailNotVerified": "Check your email to verify your address, then sign in again."
+        "unableToLinkAccount": "我们无法链接此账户，因为此服务器不会将提供商的电子邮件视为已验证。请联系您的管理员。",
+        "emailDoesNotMatch": "此提供商账户上的电子邮件与您的账户电子邮件不匹配。使用具有相同电子邮件地址的提供商账户。",
+        "emailNotVerified": "检查您的电子邮件以验证您的地址，然后重新登录。"
       }
     }
   }

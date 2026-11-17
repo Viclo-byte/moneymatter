@@ -1,0 +1,35 @@
+name: Sync official stable updates
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '17 2 * * 1'
+permissions:
+  contents: write
+  pull-requests: write
+concurrency:
+  group: chinese-upstream-sync
+  cancel-in-progress: false
+jobs:
+  sync:
+    if: github.repository == 'Viclo-byte/moneymatter'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+      - name: Merge upstream into a review branch
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git remote add upstream https://github.com/letehaha/moneymatter.git
+          git fetch upstream main
+          if git merge-base --is-ancestor upstream/main HEAD; then exit 0; fi
+          git switch -C sync/official-stable
+          git merge --no-edit upstream/main
+          git push --force origin HEAD:sync/official-stable
+          if ! gh pr view sync/official-stable --json number >/dev/null 2>&1; then
+            gh pr create --base main --head sync/official-stable --title 'Sync official stable updates' --body 'Merge the official stable branch while preserving the Chinese localization. Review new translation keys and dependency changes, run scripts/check-chinese.mjs and both builds, then deploy the tested release. Production is not updated automatically.'
+          fi

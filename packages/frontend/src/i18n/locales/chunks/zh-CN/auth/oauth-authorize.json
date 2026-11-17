@@ -2,7 +2,7 @@
   "oauth": {
     "authorize": {
       "title": "{name} 想要访问您的 MoneyMatter 数据",
-      "redirect_notice": "After approval you will be redirected to {host}. Only continue if you recognize this address.",
+      "redirect_notice": "批准后，您将被重定向到 {host}。仅当您认识该地址时才继续。",
       "description": "此应用正在请求这些权限：",
       "approve": "同意",
       "deny": "拒绝",
@@ -14,23 +14,23 @@
       "delete_warning": "仅授权您完全信任的应用",
       "unknown_app": "某个应用",
       "steps": {
-        "permissions": "Permissions",
-        "tools": "Tools"
+        "permissions": "权限",
+        "tools": "工具"
       },
-      "continue": "Continue",
-      "back": "Back",
+      "continue": "继续",
+      "back": "返回",
       "toolsets": {
-        "intro": "Pick what {name} can work with. Each extra set adds tools that {name} loads into every chat.",
-        "add_all": "Add all",
-        "core_only": "Core only",
-        "always_on": "{count} tool, always on | {count} tools, always on",
-        "tool_count": "{count} tool | {count} tools",
-        "selected": "{count} tool selected | {count} tools selected",
-        "of_total": "of {total}",
-        "counter_label": "Selected tools",
-        "fits_cap": "Fits every app, including ChatGPT and VS Code Copilot ({cap} tools max).",
-        "over_cap": "Over {cap} tools. ChatGPT and VS Code Copilot won't load this many.",
-        "load_error": "Couldn't load the toolsets. Allow access to use the core tools, and reconnect later to add more."
+        "intro": "选择允许 {name} 使用的功能。启用更多工具集后，{name} 会在每次聊天中加载相应工具。",
+        "add_all": "添加全部",
+        "core_only": "仅核心",
+        "always_on": "{count} 个工具，始终启用 | {count} 个工具，始终启用",
+        "tool_count": "{count} 个工具 | {count} 个工具",
+        "selected": "已选择 {count} 个工具 | 已选择 {count} 个工具",
+        "of_total": "共 {total} 个",
+        "counter_label": "已选工具",
+        "fits_cap": "兼容所有客户端，包括 ChatGPT 和 VS Code Copilot（最多 {cap} 个工具）。",
+        "over_cap": "已超过 {cap} 个工具，ChatGPT 和 VS Code Copilot 无法全部加载。",
+        "load_error": "无法加载工具集。允许访问使用核心工具，并稍后重新连接以添加更多工具。"
       }
     },
     "scopes": {

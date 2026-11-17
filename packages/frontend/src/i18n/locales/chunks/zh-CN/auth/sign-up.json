@@ -2,7 +2,7 @@
   "auth": {
     "signup": {
       "title": "注册帐号",
-      "divider": "Or continue with email",
+      "divider": "或者继续使用电子邮件",
       "submitButton": "注册",
       "alreadyHaveAccount": "已经有帐号了？",
       "signInLink": "登录",
@@ -21,20 +21,20 @@
         "invalidPassword": "密码无效。",
         "userExists": "使用此电邮的用户已存在。",
         "signupsDisabled": "此实例的管理员禁止新用户注册。",
-        "genericErrorRetry": "An error occurred. Please try again.",
+        "genericErrorRetry": "发生错误。请再试一次。",
         "oauthFailed": "无法使用 {provider} 登录。请重试。",
-        "oauthNotConfigured": "{provider} sign-in is not configured on this server."
+        "oauthNotConfigured": "此服务器上未配置 {provider} 登录。"
       }
     },
     "shared": {
-      "divider": "Or continue with",
+      "divider": "或者继续",
       "passkeyButton": {
         "signIn": "使用通行密钥登录",
         "register": "添加通行密钥"
       },
       "oauthButton": {
-        "signIn": "Sign in with {provider}",
-        "signUp": "Sign up with {provider}"
+        "signIn": "使用 {provider} 登录",
+        "signUp": "使用 {provider} 注册"
       }
     }
   }

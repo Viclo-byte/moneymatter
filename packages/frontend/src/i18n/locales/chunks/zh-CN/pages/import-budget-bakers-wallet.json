@@ -2,139 +2,139 @@
   "pages": {
     "importExport": {
       "budgetBakersWalletImport": {
-        "pageTitle": "Import from Wallet (BudgetBakers)",
-        "pageDescription": "Import your transactions exported from the Wallet app by BudgetBakers.",
+        "pageTitle": "从钱包导入 (BudgetBakers)",
+        "pageDescription": "导入 BudgetBakers 从电子钱包应用程序导出的交易。",
         "fileUpload": {
-          "stepTitle": "Upload your Wallet CSV file",
-          "description": "Upload one or more Wallet CSV export files to import transactions. All files must have the same columns.",
-          "maxSize": "Maximum file size: 10 MB",
-          "parsing": "Parsing…",
+          "stepTitle": "上传您的电子钱包 CSV 文件",
+          "description": "上传一个或多个电子钱包 CSV 导出文件以导入交易。所有文件必须具有相同的列。",
+          "maxSize": "最大文件大小：10 MB",
+          "parsing": "正在解析...",
           "errors": {
-            "invalidFormatNamed": "\"{name}\" is not a CSV file.",
-            "parseFailed": "Failed to parse file. Please check the format and try again.",
+            "invalidFormatNamed": "“{name}”不是 CSV 文件。",
+            "parseFailed": "无法解析文件。请检查格式并重试。",
             "merge": {
-              "emptySelection": "Select at least one CSV file",
-              "fileReadFailed": "Couldn't read \"{file}\"",
-              "fileEmpty": "\"{file}\" is empty",
-              "fileNoDataRows": "\"{file}\" has no data rows",
-              "headerMismatch": "Columns in \"{file}\" don't match the first file. All files must have the same columns in the same order.",
-              "forbiddenHeader": "\"{file}\" uses a reserved column name",
-              "tooManyRows": "Selected files total more than {max} rows. Remove some files or rows and try again.",
-              "parseError": "Couldn't parse \"{file}\". Make sure it's a valid CSV."
+              "emptySelection": "选择至少一个 CSV 文件",
+              "fileReadFailed": "无法读取“{file}”",
+              "fileEmpty": "“{file}”为空",
+              "fileNoDataRows": "“{file}”没有数据行",
+              "headerMismatch": "“{file}”中的列与第一个文件不匹配。所有文件必须具有相同顺序的相同列。",
+              "forbiddenHeader": "“{file}”使用保留的列名",
+              "tooManyRows": "选定的文件总数超过 {max} 行。删除一些文件或行，然后重试。",
+              "parseError": "无法解析“{file}”。确保它是有效的 CSV。"
             }
           },
-          "continue": "Continue"
+          "continue": "继续"
         },
         "preview": {
-          "accountsHelper": "Configure how each detected account will be handled during import.",
-          "accounts": "Accounts",
-          "transactions": "Transactions",
-          "rowPrefix": "Row {rowIndex}: "
+          "accountsHelper": "配置导入期间如何处理每个检测到的账户。",
+          "accounts": "账户",
+          "transactions": "交易",
+          "rowPrefix": "{rowIndex}行："
         },
         "accountRow": {
-          "transactionsCount": "{count} transactions | {count} transaction | {count} transactions",
-          "modeLabel": "Action",
-          "modePlaceholder": "Select action",
-          "modeCreateNew": "Create new account",
-          "modeLinkExisting": "Link to existing account",
-          "currentBalanceLabel": "Current balance (optional)",
+          "transactionsCount": "{count} 交易 | {count} 交易 | {count}交易",
+          "modeLabel": "行动",
+          "modePlaceholder": "选择动作",
+          "modeCreateNew": "创建新账户",
+          "modeLinkExisting": "链接到现有账户",
+          "currentBalanceLabel": "当前余额（可选）",
           "currentBalancePlaceholder": "e.g. 1234.56",
-          "currentBalanceHint": "Leave blank to start from the sum of imported transactions.",
-          "linkTargetLabel": "Existing account",
-          "linkTargetPlaceholder": "Select account",
-          "keepBalanceNote": "The existing account's current balance will be preserved. History will be back-filled."
+          "currentBalanceHint": "留空将从导入交易的总和开始。",
+          "linkTargetLabel": "现有账户",
+          "linkTargetPlaceholder": "选择账户",
+          "keepBalanceNote": "现有账户的当前余额将被保留。历史将会被回填。"
         },
         "execute": {
-          "starting": "Starting import…",
+          "starting": "开始导入...",
           "progressCount": "{processed} / {total}",
-          "statusQueued": "Queued",
-          "statusRunning": "Importing…",
-          "statusCompleted": "Complete",
-          "statusFailed": "Failed",
-          "failed": "Import failed.",
-          "partialImportNote": "Some rows may have already been imported before this failure. Re-importing could create duplicates."
+          "statusQueued": "排队",
+          "statusRunning": "输入…",
+          "statusCompleted": "完全的",
+          "statusFailed": "失败",
+          "failed": "导入失败。",
+          "partialImportNote": "在此失败之前，某些行可能已经导入。重新导入可能会产生重复项。"
         },
         "done": {
-          "successTitle": "Import complete",
-          "successDescription": "Your Wallet data has been successfully imported.",
-          "partialTitle": "Imported with {count} error(s)",
-          "partialDescription": "Some rows were imported successfully, but others encountered errors.",
-          "allFailedTitle": "Import failed",
-          "allFailedDescription": "No rows were imported. Review the errors below and try again.",
-          "accountsCreated": "Accounts created",
-          "accountsLinked": "Accounts linked",
-          "accountsSkipped": "Accounts skipped",
-          "categoriesCreated": "Categories created",
-          "tagsCreated": "Tags created",
-          "transactionsImported": "Transactions imported",
-          "transfersImported": "Transfers imported",
-          "outOfWalletImported": "Out-of-wallet imported",
-          "mergedIntoPlanned": "Merged into planned",
-          "duplicatesSkipped": "Duplicates skipped",
-          "errorsTitle": "{count} row(s) failed | {count} row failed | {count} rows failed",
-          "errorsOverflow": "+{count} more",
+          "successTitle": "导入完成",
+          "successDescription": "您的钱包数据已成功导入。",
+          "partialTitle": "导入时出现 {count} 错误",
+          "partialDescription": "某些行已成功导入，但其他行遇到错误。",
+          "allFailedTitle": "导入失败",
+          "allFailedDescription": "没有导入任何行。检查以下错误并重试。",
+          "accountsCreated": "已创建账户",
+          "accountsLinked": "关联账户",
+          "accountsSkipped": "已跳过的账户",
+          "categoriesCreated": "已创建类别",
+          "tagsCreated": "已创建标签",
+          "transactionsImported": "导入交易",
+          "transfersImported": "导入转移",
+          "outOfWalletImported": "钱包外进口",
+          "mergedIntoPlanned": "并入计划",
+          "duplicatesSkipped": "跳过重复项",
+          "errorsTitle": "{count} 行失败 | {count} 行失败 | {count} 行失败",
+          "errorsOverflow": "+{count} 更多",
           "errors": {
-            "rowImportFailed": "This row could not be imported.",
-            "payeeDefaultTagsFailed": "The transaction was imported, but the payee's default tags could not be applied.",
-            "accountBalanceDesync": "An account balance could not be updated after the import and may be incorrect."
+            "rowImportFailed": "无法导入该行。",
+            "payeeDefaultTagsFailed": "交易已导入，但无法应用收款人的默认标签。",
+            "accountBalanceDesync": "导入后账户余额无法更新，并且可能不正确。"
           },
-          "balanceWarningTitle": "Some account balances may be incorrect",
-          "balanceWarningBody": "We couldn't reset the balance on one or more existing accounts after import. Review the affected accounts.",
-          "viewTransactions": "View transactions",
-          "importAnother": "Import another file"
+          "balanceWarningTitle": "部分账户余额可能不正确",
+          "balanceWarningBody": "导入后，我们无法重置一个或多个现有账户的余额。查看受影响的账户。",
+          "viewTransactions": "查看交易",
+          "importAnother": "导入另一个文件"
         },
         "stepper": {
           "steps": {
-            "upload": "Upload",
-            "resolve": "Resolve",
-            "review": "Review",
-            "results": "Done"
+            "upload": "上传",
+            "resolve": "解决",
+            "review": "审查",
+            "results": "完成"
           }
         },
         "resolve": {
-          "resolvedCounterWord": "resolved",
+          "resolvedCounterWord": "已解决",
           "accounts": {
-            "sectionTitle": "Accounts",
-            "currentBalanceLabel": "Current balance (optional)",
-            "currentBalancePlaceholder": "Leave blank to use imported total",
-            "willCreateHint": "Will create a new {currency} account",
-            "skippedNote": "{count} account(s) will be skipped. Their transactions — and any transfers to or from them — will not be imported."
+            "sectionTitle": "账户",
+            "currentBalanceLabel": "当前余额（可选）",
+            "currentBalancePlaceholder": "留空以使用导入的总计",
+            "willCreateHint": "将创建一个新的{currency}账户",
+            "skippedNote": "{count} 账户将被跳过。他们的交易——以及任何转入或转出的交易——都不会被导入。"
           },
           "categories": {
-            "sectionTitle": "Categories"
+            "sectionTitle": "分类"
           },
           "quickActions": {
-            "mapExactMatches": "Map exact matches",
-            "createNewForUnmatched": "Create new for unmatched",
-            "reset": "Reset",
+            "mapExactMatches": "地图精确匹配",
+            "createNewForUnmatched": "创造无与伦比的新",
+            "reset": "重置",
             "tooltips": {
-              "mapExactMatchesAccounts": "Link every account whose name exactly matches an existing account",
-              "mapExactMatchesCategories": "Link every category whose name exactly matches an existing category",
-              "createNewForUnmatched": "Set all still-unresolved rows to create a new entry",
-              "reset": "Clear all choices and auto-match by name again"
+              "mapExactMatchesAccounts": "链接名称与现有账户完全匹配的每个账户",
+              "mapExactMatchesCategories": "链接名称与现有类别完全匹配的每个类别",
+              "createNewForUnmatched": "设置所有尚未解析的行以创建新条目",
+              "reset": "清除所有选择并再次按名称自动匹配"
             }
           },
           "footer": {
-            "back": "Back",
-            "continue": "Continue"
+            "back": "返回",
+            "continue": "继续"
           }
         },
         "review": {
-          "transactions": "Transactions",
-          "transfersDetected": "Transfers detected",
-          "outOfWallet": "Out of wallet",
-          "duplicatesSkipped": "Duplicates skipped",
-          "willImport": "Will import",
-          "warningsTitle": "{count} warning(s)",
-          "rowPrefix": "Row {rowIndex}:",
-          "duplicatesTitle": "{count} possible duplicate(s)",
-          "duplicatesHint": "Checked rows will be imported anyway; unchecked duplicates are skipped.",
-          "back": "Back",
-          "importButton": "Import {count} transactions",
-          "importing": "Importing…"
+          "transactions": "交易",
+          "transfersDetected": "检测到转移",
+          "outOfWallet": "钱包外资金",
+          "duplicatesSkipped": "跳过重复项",
+          "willImport": "将导入",
+          "warningsTitle": "{count} 警告",
+          "rowPrefix": "{rowIndex}行：",
+          "duplicatesTitle": "{count} 可能重复",
+          "duplicatesHint": "无论如何都会导入选中的行；未检查的重复项将被跳过。",
+          "back": "返回",
+          "importButton": "导入{count}交易",
+          "importing": "输入…"
         },
         "errors": {
-          "fileMissing": "No file loaded. Please upload your Wallet export again."
+          "fileMissing": "没有加载文件。请再次上传您的电子钱包导出内容。"
         }
       }
     }

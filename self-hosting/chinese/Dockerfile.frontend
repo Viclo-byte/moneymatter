@@ -1,0 +1,2 @@
+FROM letehaha/budget-tracker-fe@sha256:fdfdea4d990171f36162a94524e8dcad924c693295b12b0a5a75b3d7a7cbec56
+COPY --chown=nginx:nginx frontend-dist/ /app/

@@ -1,25 +1,26 @@
 {
   "settings": {
     "navigation": {
-      "currencies": "Currencies",
-      "categories": "Categories",
-      "tags": "Tags",
-      "accountsGroups": "Accounts groups",
-      "importData": "Import/Export",
+      "currencies": "货币",
+      "categories": "分类",
+      "tags": "标签",
+      "accountsGroups": "账户组",
+      "importData": "导入/导出",
       "ai": "AI",
-      "security": "Security",
-      "admin": "Admin",
-      "sharedWithMe": "Shared with me",
-      "household": "Household",
-      "personalGroup": "Personal",
-      "workspaceGroup": "Workspace",
-      "appearance": "Appearance",
-      "language": "Language",
-      "general": "General",
-      "payees": "Payees",
-      "planBilling": "Plan & billing",
-      "collapse": "Collapse"
+      "security": "证券",
+      "admin": "行政",
+      "sharedWithMe": "与我分享",
+      "household": "家庭",
+      "personalGroup": "个人的",
+      "workspaceGroup": "工作空间",
+      "appearance": "外貌",
+      "language": "语言",
+      "general": "通用",
+      "payees": "收付款方",
+      "planBilling": "计划和计费",
+      "collapse": "坍塌",
+      "resize": "调整导航大小"
     },
-    "backToSettings": "Back to settings"
+    "backToSettings": "返回设置"
   }
 }

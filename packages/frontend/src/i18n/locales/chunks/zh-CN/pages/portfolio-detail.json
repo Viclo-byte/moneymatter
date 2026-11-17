@@ -1,155 +1,155 @@
 {
   "portfolioDetail": {
-    "loading": "Loading...",
-    "loadingDetails": "Loading portfolio details...",
-    "loadError": "Failed to load portfolio details.",
-    "tryAgain": "Try again",
-    "notFoundTitle": "Portfolio not found",
-    "notFoundDescription": "We couldn't find this portfolio. It may have been deleted or you might not have access to it.",
-    "backToInvestments": "Back to investments",
-    "subtitle": "Portfolio overview",
+    "loading": "加载中...",
+    "loadingDetails": "正在加载投资组合详细信息...",
+    "loadError": "无法加载投资组合详细信息。",
+    "tryAgain": "重试",
+    "notFoundTitle": "未找到投资组合",
+    "notFoundDescription": "我们找不到这个投资组合。它可能已被删除，或者您可能无权访问它。",
+    "backToInvestments": "回到投资",
+    "subtitle": "产品组合概览",
     "actions": {
-      "transfer": "Transfer",
-      "edit": "Edit",
-      "delete": "Delete",
+      "transfer": "转账",
+      "edit": "编辑",
+      "delete": "删除",
       "exchangeCurrency": "兑换货币"
     },
     "balance": {
-      "totalValue": "Total value",
-      "baseCurrencyEquivalent": "≈ {value} in {code}",
-      "loadError": "Failed to load portfolio summary.",
+      "totalValue": "总价值",
+      "baseCurrencyEquivalent": "≈ {value} 于 {code}",
+      "loadError": "无法加载投资组合摘要。",
       "metrics": {
-        "costBasis": "Cost basis",
-        "unrealized": "Unrealized",
-        "realized": "Realized",
-        "totalReturn": "Total return"
+        "costBasis": "成本基础",
+        "unrealized": "未实现",
+        "realized": "已实现",
+        "totalReturn": "总回报"
       }
     },
     "cashBalances": {
-      "title": "Cash balances",
-      "emptyState": "No cash balances",
+      "title": "现金余额",
+      "emptyState": "无现金余额",
       "tabs": {
-        "balances": "Balances",
-        "cashTransactions": "Transactions",
-        "buysSells": "Buys & sells"
+        "balances": "余额",
+        "cashTransactions": "交易",
+        "buysSells": "买卖"
       },
       "cashTransactions": {
-        "addButton": "Add cash transaction",
-        "emptyState": "No cash transactions yet",
-        "deposit": "Deposit",
-        "withdrawal": "Withdrawal",
-        "transferIn": "Transfer in",
-        "transferOut": "Transfer out",
-        "exchange": "Currency exchange",
-        "deleteConfirm": "Delete this cash transaction?",
-        "linkedTransactionNote": "This transfer has a linked account transaction. What would you like to do with it?",
-        "keepLinkedTransaction": "Keep account transaction. Original transaction details will be restored.",
-        "deleteLinkedTransaction": "Also delete the linked account transaction",
-        "adjustmentBadge": "Adjustment",
-        "noCashBadge": "No cash impact",
-        "markedAsAdjustment": "Marked as a balance correction",
-        "markedAsContribution": "Marked as a real contribution",
-        "adjustmentError": "Failed to update this transfer",
-        "rowActions": "Transaction actions",
-        "emptyStateDescription": "Deposits, withdrawals and transfers for this portfolio will appear here.",
-        "edit": "Edit",
+        "addButton": "添加现金交易",
+        "emptyState": "还没有现金交易",
+        "deposit": "订金",
+        "withdrawal": "提款",
+        "transferIn": "转入",
+        "transferOut": "转出",
+        "exchange": "货币兑换",
+        "deleteConfirm": "删除这笔现金交易吗？",
+        "linkedTransactionNote": "此转账有关联账户交易。你想用它做什么？",
+        "keepLinkedTransaction": "保留账户交易。原始交易详细信息将被恢复。",
+        "deleteLinkedTransaction": "同时删除关联账户交易",
+        "adjustmentBadge": "调整",
+        "noCashBadge": "无现金影响",
+        "markedAsAdjustment": "标记为平衡修正",
+        "markedAsContribution": "标记为真实贡献",
+        "adjustmentError": "无法更新此传输",
+        "rowActions": "交易动作",
+        "emptyStateDescription": "该投资组合的存款、取款和转账将显示在此处。",
+        "edit": "编辑",
         "editDialog": {
-          "title": "Edit cash transaction",
-          "description": "Change how this transaction is treated in reports.",
-          "save": "Save changes"
+          "title": "编辑现金交易",
+          "description": "更改报告中处理此事务的方式。",
+          "save": "保存更改"
         }
       },
       "buysSells": {
-        "emptyState": "No buy/sell transactions",
-        "shares": "shares"
+        "emptyState": "没有买卖交易",
+        "shares": "股份"
       }
     },
     "holdings": {
-      "title": "Holdings",
-      "subtitle": "{count} symbols",
-      "filterPlaceholder": "Filter by symbol or name...",
-      "addButton": "Add symbol",
-      "importButton": "Import transactions",
-      "importButtonShort": "Import"
+      "title": "持仓",
+      "subtitle": "{count} 符号",
+      "filterPlaceholder": "按符号或名称过滤...",
+      "addButton": "添加符号",
+      "importButton": "进口交易",
+      "importButtonShort": "导入"
     },
     "holdingsTable": {
-      "loadError": "Could not load holdings",
-      "empty": "No holdings yet",
-      "noFilterResults": "No matching holdings",
-      "noFilterResultsDescription": "No holdings match your search. Try a different symbol or name.",
-      "clearFilterButton": "Clear search",
+      "loadError": "无法加载馆藏",
+      "empty": "还没有持股",
+      "noFilterResults": "没有匹配的持仓",
+      "noFilterResultsDescription": "没有符合您搜索条件的馆藏。尝试不同的符号或名称。",
+      "clearFilterButton": "清除搜索",
       "headers": {
-        "symbol": "Symbol",
-        "name": "Name",
-        "shares": "Shares",
-        "price": "Price",
-        "avgCostPerShare": "AC/Share",
-        "totalCost": "Total cost",
-        "marketValue": "Market value",
-        "unrealizedGain": "Unrealized gain",
-        "realizedGain": "Realized gain"
+        "symbol": "象征",
+        "name": "名称",
+        "shares": "股份",
+        "price": "价格",
+        "avgCostPerShare": "交流电/共享",
+        "totalCost": "总成本",
+        "marketValue": "市场价值",
+        "unrealizedGain": "未实现收益",
+        "realizedGain": "已实现收益"
       },
       "transactions": {
-        "loading": "Loading transactions…",
-        "empty": "No transactions found.",
-        "addFirstButton": "Add first transaction"
+        "loading": "正在加载交易...",
+        "empty": "未发现任何交易。",
+        "addFirstButton": "添加第一笔交易"
       },
-      "closedPositions": "Closed positions ({count})",
-      "stalePrice": "Last available price. Market value and gains may be outdated.",
+      "closedPositions": "平仓 ({count})",
+      "stalePrice": "最后可用价格。市场价值和收益可能已经过时。",
       "deleteHolding": {
-        "ariaLabel": "Delete holding",
-        "title": "Delete holding",
-        "description": "This will permanently delete the {symbol} holding and all of its transactions. This action cannot be undone.",
-        "confirmLabel": "Delete holding",
-        "success": "Holding deleted.",
-        "error": "Failed to delete the holding."
+        "ariaLabel": "删除馆藏",
+        "title": "删除馆藏",
+        "description": "这将永久删除 {symbol} 持有及其所有交易。此操作无法撤消。",
+        "confirmLabel": "删除馆藏",
+        "success": "保留已删除。",
+        "error": "无法删除馆藏。"
       },
       "addTransactionDialog": {
         "title": "新增交易",
-        "description": "Add a new transaction to your portfolio."
+        "description": "将新交易添加到您的投资组合中。"
       },
-      "tryAgainLater": "Please try again later",
-      "emptyDescription": "Add your first transaction to start tracking your investments",
-      "addFirstHolding": "Add first holding",
-      "importTransactions": "Or import from a file"
+      "tryAgainLater": "请稍后重试",
+      "emptyDescription": "添加您的第一笔交易以开始跟踪您的投资",
+      "addFirstHolding": "添加第一个控股",
+      "importTransactions": "或者从文件导入"
     },
     "transactionsList": {
-      "title": "Transactions",
-      "addButton": "Add transaction",
-      "loadingMore": "Loading more transactions…",
+      "title": "交易",
+      "addButton": "添加交易",
+      "loadingMore": "正在加载更多交易...",
       "headers": {
-        "date": "Date",
-        "type": "Type",
-        "note": "Note",
-        "quantity": "Quantity",
-        "price": "Price",
-        "fees": "Fees",
-        "amount": "Amount",
-        "refAmount": "Base amount",
-        "refFees": "Base fees",
-        "settlementAmount": "Cash",
-        "settlementCurrency": "Cash ccy",
-        "settlementFees": "Cash fees",
-        "settlementRate": "FX rate",
-        "createdAt": "Added on"
+        "date": "日期",
+        "type": "类型",
+        "note": "笔记",
+        "quantity": "数量",
+        "price": "价格",
+        "fees": "费用",
+        "amount": "金额",
+        "refAmount": "基础金额",
+        "refFees": "基本费用",
+        "settlementAmount": "现金",
+        "settlementCurrency": "现金 CCY",
+        "settlementFees": "现金费用",
+        "settlementRate": "外汇汇率",
+        "createdAt": "添加于"
       },
       "categories": {
-        "buy": "Buy",
-        "sell": "Sell",
-        "dividend": "Dividend",
-        "transfer": "Transfer",
-        "tax": "Tax",
-        "fee": "Fee",
-        "cancel": "Cancel",
-        "other": "Other"
+        "buy": "买",
+        "sell": "卖",
+        "dividend": "股利",
+        "transfer": "转账",
+        "tax": "税",
+        "fee": "费用",
+        "cancel": "取消",
+        "other": "其他"
       },
       "headerTooltips": {
-        "amount": "Transaction total in the security's trading currency.",
-        "refAmount": "Transaction total converted to your base currency.",
-        "settlementAmount": "Cash actually paid or received in your account, in its settlement currency."
+        "amount": "以证券交易货币计的交易总额。",
+        "refAmount": "交易总额转换为您的基础货币。",
+        "settlementAmount": "您的账户中实际支付或收到的现金以其结算货币表示。"
       },
       "deleteTransaction": {
-        "tooltip": "Delete transaction"
+        "tooltip": "删除交易"
       }
     }
   }

@@ -1,75 +1,75 @@
 {
   "pages": {
     "household": {
-      "title": "Household",
-      "description": "Invite trusted people to share access to all the accounts you own. Members see your accounts and (with write access) can record transactions on them.",
+      "title": "家庭",
+      "description": "邀请值得信赖的人共享您拥有的所有账户的访问权限。会员可以查看您的账户并（具有写入权限）可以在其中记录交易。",
       "myHousehold": {
-        "title": "My household",
-        "description": "People here get access to every account you own. Per-account shares always override household access."
+        "title": "我的家人",
+        "description": "这里的人们可以访问您拥有的每个账户。每个账户的共享始终优先于家庭访问。"
       },
-      "youOwner": "You — owner",
-      "noMembers": "No one has joined your household yet.",
-      "loadMembersError": "Couldn't load household members. Try refreshing.",
+      "youOwner": "你——主人",
+      "noMembers": "尚未有人加入您的家庭。",
+      "loadMembersError": "无法加载家庭成员。尝试清爽一下。",
       "permissions": {
-        "read": "Read",
-        "write": "Write",
-        "manage": "Manage"
+        "read": "读",
+        "write": "写",
+        "manage": "管理"
       },
       "writeScope": {
-        "all": "Can edit any transaction",
-        "own": "Can edit only their own transactions"
+        "all": "可以编辑任何交易",
+        "own": "只能编辑自己的交易"
       },
       "invite": {
-        "emailLabel": "Email",
+        "emailLabel": "电子邮件",
         "emailPlaceholder": "person{'@'}example.com",
-        "permissionLabel": "Permission",
-        "writeScopeLabel": "Write scope",
-        "submit": "Send household invite",
-        "sent": "Invitation sent.",
-        "error": "Couldn't send the invitation.",
-        "emailDeliveryFailed": "Invitation created, but the email couldn't be delivered. You can resend it from the invitations panel."
+        "permissionLabel": "允许",
+        "writeScopeLabel": "写入范围",
+        "submit": "发送家庭邀请",
+        "sent": "邀请已发送。",
+        "error": "无法发送邀请。",
+        "emailDeliveryFailed": "邀请已创建，但无法发送电子邮件。您可以从邀请面板重新发送。"
       },
       "revoke": {
-        "action": "Remove",
-        "title": "Remove household member?",
-        "description": "{handle} will lose access to every account in your household. Per-account shares (if any) are unaffected.",
-        "confirm": "Remove",
-        "success": "Member removed.",
-        "error": "Couldn't remove this member."
+        "action": "消除",
+        "title": "删除家庭成员？",
+        "description": "{handle} 将失去对您家庭中每个账户的访问权限。每个账户的份额（如果有）不受影响。",
+        "confirm": "消除",
+        "success": "会员已删除。",
+        "error": "无法删除该成员。"
       },
       "permissionChange": {
-        "setRead": "Make read-only",
-        "setWrite": "Allow writes",
-        "success": "Permission updated.",
-        "error": "Couldn't update permission."
+        "setRead": "设为只读",
+        "setWrite": "允许写入",
+        "success": "权限已更新。",
+        "error": "无法更新权限。"
       },
       "imIn": {
-        "title": "Households I'm in",
-        "description": "Other people's households you've joined. Leaving drops your access to every account they shared this way.",
-        "empty": "You haven't joined anyone else's household.",
-        "unnamedHousehold": "{'@'}{handle}'s household",
-        "loadError": "Couldn't load the households you're in. Try again later."
+        "title": "我所在的家庭",
+        "description": "您加入的其他人的家庭。离开后，您将无法访问他们通过这种方式共享的每个账户。",
+        "empty": "您还没有加入其他人的家庭。",
+        "unnamedHousehold": "{'@'}{handle}的家",
+        "loadError": "无法加载您所在的家庭。请稍后重试。"
       },
       "leave": {
-        "action": "Leave",
-        "title": "Leave this household?",
-        "description": "You'll lose access to every account {owner} shares through their household. Per-account shares (if any) are unaffected.",
-        "confirm": "Leave",
-        "success": "You left the household.",
-        "error": "Couldn't leave the household."
+        "action": "离开",
+        "title": "离开这个家？",
+        "description": "您将无法访问 {owner} 通过其家庭共享的每个账户。每个账户的份额（如果有）不受影响。",
+        "confirm": "离开",
+        "success": "你离开了这个家庭。",
+        "error": "无法离开家。"
       },
       "pending": {
-        "badge": "Pending",
-        "resend": "Resend",
-        "cancel": "Cancel",
-        "cancelTitle": "Cancel invitation?",
-        "cancelDescription": "Cancel the pending invitation sent to {email}? They will no longer be able to accept it.",
-        "cancelConfirm": "Cancel invitation",
-        "cancelSuccess": "Invitation cancelled.",
-        "cancelError": "Failed to cancel invitation.",
-        "resendSuccess": "Invitation resent.",
-        "resendError": "Failed to resend invitation.",
-        "resendDeliveryFailed": "Invitation updated, but the email could not be sent. Try again later."
+        "badge": "待办的",
+        "resend": "重新发送",
+        "cancel": "取消",
+        "cancelTitle": "取消邀请？",
+        "cancelDescription": "取消发送至 {email} 的待处理邀请吗？他们将无法再接受。",
+        "cancelConfirm": "取消邀请",
+        "cancelSuccess": "邀请已取消。",
+        "cancelError": "取消邀请失败。",
+        "resendSuccess": "邀请已重新发送。",
+        "resendError": "重新发送邀请失败。",
+        "resendDeliveryFailed": "邀请已更新，但无法发送电子邮件。稍后再试。"
       }
     }
   }
