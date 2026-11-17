@@ -19,7 +19,7 @@
       "header": {
         "title": "顶部工具栏",
         "description": "选择顶部工具栏显示的按钮。",
-        "supportButton": "帮助按钮"
+        "supportButton": "“赞助作者”按钮"
       },
       "currency": {
         "title": "货币符号",
