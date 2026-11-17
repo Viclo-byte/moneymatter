@@ -39,38 +39,38 @@
       "offer": "早期采用者可享受 50% 折扣的 Essential。"
     },
     "empty": {
-      "title": "给你的钱一个工作",
-      "description": "大约两分钟的设置时间，每周几分钟的保持时间。",
-      "action": "开始预算",
+      "title": "让每笔钱都有去处",
+      "description": "约两分钟完成设置，每周花几分钟掌握预算。",
+      "action": "创建预算",
       "exampleBadge": "预算示例",
       "steps": {
         "accounts": {
           "title": "选择纳入预算的账户",
-          "description": "支票、现金、信用卡。储蓄可以留在外面。"
+          "description": "纳入日常使用的活期、现金和信用卡账户，储蓄账户可不纳入。"
         },
         "suggested": {
           "title": "从建议预算项开始",
-          "description": "过去 3 个月的热门分类，平均值已填写。"
+          "description": "按近三个月的主要支出分类生成预算项，并预填平均金额。"
         },
         "available": {
-          "title": "看看还剩下什么",
-          "description": "每次购买都计入其排队数，因此你可以看到可用的产品，而不是猜测。"
+          "title": "随时掌握剩余额度",
+          "description": "每笔支出都会计入对应预算项，剩余额度一目了然。"
         }
       },
       "example": {
         "groups": {
           "bills": "账单",
-          "everyday": "每天",
-          "life": "生活"
+          "everyday": "日常开销",
+          "life": "生活规划"
         },
         "lines": {
-          "rent": "租",
-          "utilities": "公用事业",
+          "rent": "房租",
+          "utilities": "水电燃气",
           "subscriptions": "订阅",
-          "groceries": "杂货",
+          "groceries": "日常采购",
           "eatingOut": "外出就餐",
-          "transport": "运输",
-          "funMoney": "好玩的钱",
+          "transport": "交通出行",
+          "funMoney": "休闲娱乐",
           "savings": "储蓄目标"
         }
       }
@@ -85,27 +85,27 @@
       "restorePlan": "恢复{name}",
       "restored": "预算恢复",
       "restoreError": "无法恢复预算",
-      "currencyMismatch": "预算为 {planCurrency}。你的基础货币现在是 {baseCurrency}，因此无法恢复。",
+      "currencyMismatch": "预算为 {planCurrency}。你的本位币现在是 {baseCurrency}，因此无法恢复。",
       "purge": "永久删除",
       "purgePlan": "永久删除{name}",
       "purgeTitle": "永久删除{name}？",
-      "purgeDescription": "它的路线、目标和分配的金额将被永久删除。你的交易不会受到影响。",
+      "purgeDescription": "将永久删除此预算的预算项、目标和分配金额，交易记录不受影响。",
       "purged": "预算永久删除",
       "purgeError": "无法删除预算",
       "settingsRow": "最近删除",
-      "settingsRowHint": "{count} 预算，保留 {days} 天 | {count} 预算，保留 {days} 天",
+      "settingsRowHint": "{count} 份预算，保留 {days} 天 | {count} 份预算，保留 {days} 天",
       "replaceTitle": "替换你当前的预算？",
-      "replaceDescription": "你一次可以有一份预算。 {restored} 成为你的预算，{current} 移至最近删除，持续 30 天。",
+      "replaceDescription": "同时只能使用一份预算。恢复 {restored} 后，当前的 {current} 将移入“最近删除”，保留 30 天。",
       "replaceConfirm": "替换"
     },
     "create": {
-      "title": "开始预算",
+      "title": "创建预算",
       "description": "设置预算周期，并选择纳入预算的账户。",
       "noAccountsTitle": "尚无预算账户",
-      "noAccountsDescription": "预算需要你拥有至少一个支票、储蓄、现金或信用卡账户。在“账户”页面上添加一个，然后返回。",
+      "noAccountsDescription": "请先在“账户”页面添加至少一个自己管理的活期、储蓄、现金或信用卡账户，再创建预算。",
       "goToAccounts": "前往账户",
-      "cadenceLabel": "重置",
-      "startsOnLabel": "开始于",
+      "cadenceLabel": "预算周期",
+      "startsOnLabel": "起始日期",
       "startsOnOutOfRange": "选择从 {from} 到今天的日期。",
       "accountsLabel": "账户",
       "accountsPlaceholder": "选择账户",
@@ -116,12 +116,12 @@
       "success": "已创建预算",
       "suggestedLinesFailed": "建议预算项添加失败，可稍后在预算页面重新添加。",
       "error": "无法创建预算",
-      "suggestedLinesLabel": "智能预填充",
-      "suggestedLinesHint": "将你最近 3 个月的支出分为指定的组和行，每个金额为平均值。没有历史记录，添加入门套件。需要几秒钟。稍后更改或删除其中任何一个。",
-      "askQuestionsLabel": "先问我几个问题",
-      "askQuestionsHint": "只需几个简短的步骤即可实现更贴合。",
+      "suggestedLinesLabel": "自动生成预算项",
+      "suggestedLinesHint": "按近三个月的主要支出分类生成预算项，以各项平均支出作为建议额度。暂无记录时使用初始模板。生成需要几秒，之后均可修改或删除。",
+      "askQuestionsLabel": "先回答几个问题，获得更合适的建议",
+      "askQuestionsHint": "简单了解你的生活习惯，生成更贴合的预算项。",
       "askQuestionsNeedsAi": "此功能需要 AI，暂改用标准模板生成建议预算项。",
-      "customEveryLabel": "每一个",
+      "customEveryLabel": "每隔",
       "customEveryPlaceholder": "例如：10",
       "customUnitLabel": "单位",
       "customUnitPlaceholder": "选择单位",
@@ -133,7 +133,7 @@
       "recommended": "受到推崇的"
     },
     "suggest": {
-      "title": "塑造你的预算项",
+      "title": "定制预算项",
       "descriptionHistory": "结合你的回答和最近三个月的支出，生成预算建议。",
       "descriptionNoHistory": "暂无支出记录，将根据你的回答推荐预算项。",
       "steps": {
@@ -185,7 +185,7 @@
       },
       "focus": {
         "questionHistory": "你想密切关注什么？",
-        "hintHistory": "选择所有适用的选项。每个都有更详细的预算项。",
+        "hintHistory": "选择想细化管理的开支，将为这些领域生成更详细的预算项。",
         "questionNoHistory": "你还花什么钱？",
         "hintNoHistory": "选择适用的项目，每项将单独建立一个预算项。",
         "perMonth": "{amount}/月"
@@ -221,7 +221,7 @@
       "previous": "上期",
       "next": "下一期",
       "current": "当前",
-      "pickerTitle": "选择期间",
+      "pickerTitle": "选择预算周期",
       "dayOf": "{totalDays} 之日 {day}"
     },
     "tiles": {
@@ -246,7 +246,7 @@
       "archiveLine": "归档线",
       "archiveSelected": "归档",
       "archiveTitle": "存档“{name}”？",
-      "archiveDescription": "从这个时期开始就停止计数了。过去的时期保留其数字。你可以稍后从“已存档”恢复它。",
+      "archiveDescription": "从本期起停止统计此预算项，历史数据保留。之后可在“已归档”中恢复。",
       "selectLine": "选择{name}",
       "selectAll": "全选预算项",
       "selectMode": "选择预算项",
@@ -254,13 +254,13 @@
       "clearSelection": "清除选择",
       "selectedCount": "{count}线已选 | {count}线已选",
       "archiveManyTitle": "归档 {count} 个预算项？ | 归档 {count} 个预算项？",
-      "archiveManyDescription": "从这个时期开始，他们就停止计数了。过去的时期保留其数字。你可以稍后从“已存档”恢复它们。",
+      "archiveManyDescription": "从本期起停止统计这些预算项，历史数据保留。之后可在“已归档”中恢复。",
       "deleteLine": "删除预算项",
       "deleteTitle": "删除“{name}”？",
-      "deleteDescription": "其分配的金额将被删除，其支出将显示在你的预算项外。这无法撤销。",
-      "deleteHistoryDescription": "它会从每个期间（包括过去的期间）中删除，并且分配的金额也会被删除。它的支出将显示为超出你的界限。这无法撤销。",
+      "deleteDescription": "将删除此预算项的分配金额，相关支出改为未归入预算项的支出。此操作无法撤销。",
+      "deleteHistoryDescription": "将从所有周期（含历史周期）删除此预算项及其分配金额，相关支出改为未归入预算项的支出。此操作无法撤销。",
       "deletePermanently": "永久删除",
-      "deleteArchiveHint": "我们建议将其存档以保留其历史记录。你可以稍后从“已存档”恢复它。",
+      "deleteArchiveHint": "若要保留历史数据，建议改为归档。之后仍可恢复。",
       "addLine": "添加预算项",
       "noLines": "暂无预算项",
       "noLinesDescription": "添加预算项，为一组分类设置支出额度。",
@@ -290,7 +290,7 @@
       "createTitle": "新增预算项",
       "editTitle": "编辑预算项",
       "nameLabel": "名称",
-      "namePlaceholder": "杂货",
+      "namePlaceholder": "例如：日常采购",
       "categoriesLabel": "分类",
       "categoriesPlaceholder": "选择分类",
       "created": "预算项已添加",
@@ -323,7 +323,7 @@
       "readyToAssign": "待分配金额",
       "assign": "分配",
       "assignTitle": "分配待分配余额",
-      "toLabel": "To",
+      "toLabel": "转入预算项",
       "toPlaceholder": "选择转入预算项",
       "amountLabel": "金额",
       "assignSubmit": "分配 {amount}",
@@ -340,10 +340,10 @@
         "outsideSpending": "未归入预算项的支出",
         "fromLines": "预算项调整（退回结转余额或补足超支）",
         "assigned": "本期已分配",
-        "cashHint": "计划账户中的现金减去信用额度。",
+        "cashHint": "纳入预算的账户余额总和，扣除信用额度。",
         "inLinesHint": "当前已分配至各预算项的全部金额。",
         "driftHint": "汇率变化及未由交易记录反映的余额调整。",
-        "committedLaterHint": "后期已经分配了。",
+        "committedLaterHint": "已提前分配给后续周期的金额。",
         "leftOverFrom": "{period} 剩下的"
       },
       "settingLabel": "从待分配余额中分配预算",
@@ -351,16 +351,16 @@
       "createHint": "收入先进入待分配余额，再分配到各预算项。之后可在设置中更改。",
       "enableConfirm": "打开",
       "enableConfirmTitle": "启用待分配余额模式？",
-      "enableConfirmDescription": "池从当前时间段开始。较早的时段不会显示已准备好分配。",
-      "zeroSumLabel": "准备好在 0 处分配",
-      "zeroSumHint": "标头要求你分配剩余的内容，直到准备分配为 0。",
+      "enableConfirmDescription": "从本期开始计算待分配余额，历史周期不受影响。",
+      "zeroSumLabel": "将待分配余额分配至零",
+      "zeroSumHint": "页面顶部会提示继续分配剩余资金，直到待分配余额为零。",
       "assignAmount": "分配 {amount}",
       "zeroSumNag": "剩下的就分配到0处准备分配",
       "allAssigned": "所有资金已分配",
       "overAssigned": "超额分配 {amount}",
       "fix": "解决这个问题",
-      "fixTitle": "减少过度分配",
-      "fromLabel": "取自",
+      "fixTitle": "收回超额分配金额",
+      "fromLabel": "从预算项收回",
       "fromPlaceholder": "选择转出预算项",
       "fixSubmit": "收回{amount}",
       "fixNoLines": "在此期间没有什么可以收回的。"
@@ -387,7 +387,7 @@
       "transactionCount": "{count} 交易 | {count}交易",
       "nothingScheduled": "没有安排",
       "trend": {
-        "title": "分配与花费",
+        "title": "已分配与已支出",
         "assigned": "已分配",
         "spent": "已支出",
         "over": "超过",
@@ -399,7 +399,7 @@
       "goal": "目标"
     },
     "groups": {
-      "headerLabel": "线组",
+      "headerLabel": "预算分组",
       "add": "添加群组",
       "collapseAll": "折叠所有组",
       "expandAll": "展开所有组",
@@ -415,34 +415,34 @@
       "deleteDescription": "组内已归档预算项将变为未分组。此操作无法撤销。",
       "deleted": "群组已删除",
       "deleteError": "无法删除该组",
-      "createTitle": "新组",
-      "editTitle": "编辑组",
+      "createTitle": "新增预算分组",
+      "editTitle": "编辑预算分组",
       "nameLabel": "分组名称",
       "namePlaceholder": "例如账单",
       "created": "群组已创建",
       "updated": "群组已更新",
       "error": "无法保存群组",
       "lineGroupLabel": "分组",
-      "lineGroupPlaceholder": "选择一个组",
+      "lineGroupPlaceholder": "选择预算分组",
       "noGroup": "无组",
-      "layoutTitle": "管理布局",
-      "layoutDescription": "在组内和组之间拖动预算项，然后拖动组以重新排序。",
+      "layoutTitle": "调整预算布局",
+      "layoutDescription": "拖动预算项可调整顺序或更换分组，拖动分组可调整分组顺序。",
       "ungrouped": "未分组",
       "layoutSaved": "布局已保存",
       "layoutError": "无法保存布局"
     },
     "options": {
       "title": "选项",
-      "manageLayout": "管理布局",
-      "rowBars": "排吧",
+      "manageLayout": "调整预算布局",
+      "rowBars": "进度条样式",
       "rowBarSpending": "支出进度条",
-      "rowBarGoal": "球门栏",
-      "rowBarCombined": "组合酒吧",
+      "rowBarGoal": "目标进度条",
+      "rowBarCombined": "综合进度条",
       "rowBarSplit": "分段进度条",
-      "rowBarNone": "没有酒吧"
+      "rowBarNone": "不显示进度条"
     },
     "goals": {
-      "askHint": "在此分配此金额以保持正常状态。",
+      "askHint": "向此预算项分配该金额，以达到当前所需进度。",
       "progressFraction": "{progress} / {target} ({percent}%)",
       "status": {
         "underfunded": "资金不足",
@@ -454,9 +454,9 @@
       "noGoal": "没有设定目标",
       "create": "创建目标",
       "title": {
-        "budget_another": "预算{amount}",
-        "refill_up_to": "补充最多 {amount}",
-        "reach_balance": "到达{amount}"
+        "budget_another": "每期分配 {amount}",
+        "refill_up_to": "每期补足至 {amount}",
+        "reach_balance": "累计达到 {amount}"
       },
       "dueBy": "作者：{date}",
       "progressOf": "{progress} 之 {target} ({percent}%)",
@@ -478,36 +478,36 @@
         "by_date": "按日期",
         "open_ended": "开放式"
       },
-      "behaviorLabel": "它是如何运作的",
+      "behaviorLabel": "目标计算方式",
       "behavior": {
         "budget_another": "预算另一个",
         "refill_up_to": "补充最多",
         "reach_balance": "达到平衡"
       },
       "behaviorDescription": {
-        "budget_another": "预算每个期间的新鲜金额。一路上的支出是预期的，并且永远不会改变要求。",
+        "budget_another": "每期重新分配指定金额。日常支出不会改变本期需要分配的金额。",
         "refill_up_to": "每期将可用金额补足至目标值，上期结余计入目标，只需分配差额。",
-        "reach_balance": "跟踪余额本身。支出会阻碍进度并立即提高要求。"
+        "reach_balance": "以实际可用余额计算进度。发生支出后，距目标的差额增加，需要补充分配。"
       },
-      "refillUpToLabel": "将队列重新填充至",
-      "refillUpToHint": "恢复各期间的余额。",
-      "totalToBudgetLabel": "总计预算",
-      "totalToBudgetHint": "划分到各个期间直至该日期。",
-      "openEndedHint": "没有截止日期。进度跟踪生产线平衡。",
+      "refillUpToLabel": "每期补足至",
+      "refillUpToHint": "每期应恢复到的可用余额。",
+      "totalToBudgetLabel": "计划分配总额",
+      "totalToBudgetHint": "将总额分摊到目标日期前的各预算周期。",
+      "openEndedHint": "不设截止日期，按此预算项的可用余额计算进度。",
       "targetBalanceLabel": "目标余额",
       "amountPlaceholder": "0.00",
       "amountEachWeek": "每周金额",
       "amountEachTwoWeeks": "每两周金额",
       "amountEachYear": "每年金额",
-      "repeatsOnLabel": "重复于",
-      "weekdayPlaceholder": "选择工作日",
+      "repeatsOnLabel": "重复日期",
+      "weekdayPlaceholder": "选择星期几",
       "dueDateLabel": "到期日",
       "firstPaymentDateLabel": "首次付款日期",
-      "firstDueDateLabel": "第一个到期日",
-      "firstDueDateHint": "每年的这个日期重复一次。资金分布在之前的各个时期。",
+      "firstDueDateLabel": "首次到期日",
+      "firstDueDateHint": "每年在此日期到期，所需资金均摊到此前的各预算周期。",
       "repeatLabel": "重复",
       "repeatHint": "到期后开始新的周期。",
-      "repeatEveryLabel": "每一个",
+      "repeatEveryLabel": "每隔",
       "repeatEveryPlaceholder": "1",
       "repeatUnitLabel": "单位",
       "repeatUnitPlaceholder": "选择单位",
@@ -515,8 +515,8 @@
         "months": "几个月",
         "years": "年"
       },
-      "stopAtBalanceLabel": "达到平衡时停止",
-      "stopAtBalanceHint": "一旦保存的余额（结转加上分配）达到此上限，就停止询问。",
+      "stopAtBalanceLabel": "达到指定余额后停止追加",
+      "stopAtBalanceHint": "结转余额与已分配金额合计达到上限后，不再要求追加分配。",
       "startedLabel": "开始",
       "summary": {
         "budget_another": "预算 {amount} {when}",
@@ -546,7 +546,7 @@
       "fundingPlan": "资助计划",
       "leftAfter": "之后剩余 {amount}",
       "subtitle": {
-        "weeklyOn": "{weekday} 每周",
+        "weeklyOn": "每周{weekday}",
         "biweekly": "每两周一次",
         "yearlyDue": "每年·到期 {date}",
         "noDeadline": "无截止日期"
@@ -575,27 +575,27 @@
           "frequency": "每月",
           "each": "每个月",
           "need": "本月需要 {amount}",
-          "needLabel": "这个月需要",
+          "needLabel": "本月需分配",
           "budgeted": "本月预算",
           "target": "本月目标",
           "snooze": "这个月小睡一下",
           "amountEach": "每月金额",
           "fundingCap": "每月资金上限",
           "current": "本月",
-          "yearlyHint": "分布在每个年度周期的几个月中。"
+          "yearlyHint": "按每个年度周期中的月份均摊。"
         },
         "period": {
           "frequency": "每个时期",
           "each": "每个时期",
           "need": "本期需要{amount}",
-          "needLabel": "需要这个时期",
+          "needLabel": "本期需分配",
           "budgeted": "本期预算",
           "target": "本期目标",
           "snooze": "暂停这段时间",
           "amountEach": "每期金额",
           "fundingCap": "每期资金上限",
           "current": "这个时期",
-          "yearlyHint": "分布在每个年度周期的各个时期。"
+          "yearlyHint": "按每个年度周期中的预算期数均摊。"
         }
       },
       "periodGoals": "本期目标",

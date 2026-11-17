@@ -60,7 +60,7 @@
       "settingsSaveFailed": "无法保存你的设置。请重试。"
     },
     "notifications": {
-      "subscriptionCurrencyNotConnected": "订阅摘要无法将 {currencies} 转换为你的基础货币。在“设置”→“货币”中连接货币。",
+      "subscriptionCurrencyNotConnected": "订阅摘要无法将 {currencies} 转换为你的本位币。在“设置”→“货币”中连接货币。",
       "backgroundJobFailed": "后台任务执行失败：{error}",
       "inviteLinkCopied": "邀请链接已复制到剪贴板"
     },
@@ -487,10 +487,10 @@
     "currencies": {
       "setBase": {
         "overlay": {
-          "title": "更改你的基础货币",
-          "description": "我们正在将每笔金额重新计算为你的新基础货币。这可能需要几分钟 - 请保持此选项卡打开。",
+          "title": "更改你的本位币",
+          "description": "我们正在将每笔金额重新计算为你的新本位币。这可能需要几分钟 - 请保持此选项卡打开。",
           "takingLong": "这比平常需要更长的时间。你的数据是安全的——我们仍在努力解决这一问题。",
-          "failedTitle": "基础货币变更失败",
+          "failedTitle": "本位币变更失败",
           "unreachableTitle": "无法验证更改状态",
           "unreachableDescription": "服务器没有响应。你可以关闭此屏幕 - 如果更改仍在运行，应用将再次锁定你的下一个操作。",
           "dismiss": "关闭",

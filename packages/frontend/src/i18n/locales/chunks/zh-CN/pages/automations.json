@@ -142,7 +142,7 @@
       "currencyPlaceholder": "选择币种",
       "currency": {
         "transaction": "交易币种",
-        "base": "基础货币（{code}）",
+        "base": "本位币（{code}）",
         "specific": "在{code}"
       },
       "accountsPlaceholder": "选择账户",
@@ -206,7 +206,7 @@
       "missingRef": "（已删除）",
       "currency": {
         "transaction": "（交易货币）",
-        "base": "（基础货币）"
+        "base": "（本位币）"
       },
       "transactionTypeValue": {
         "income": "收入",

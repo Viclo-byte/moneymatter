@@ -98,7 +98,7 @@
           "importing": "输入…",
           "importButton": "导入{count}交易",
           "unpriceableTitle": "{count} 行无法定价 — 未找到汇率",
-          "unpriceableDescription": "这些行使用的货币没有存储汇率，无法转换为基础货币。你必须跳过它们或取消导入。",
+          "unpriceableDescription": "这些行使用的货币没有存储汇率，无法转换为本位币。你必须跳过它们或取消导入。",
           "unpriceableWillBeSkipped": "无价将被跳过",
           "currency": "币种",
           "skipAndImport": "跳过并导入",

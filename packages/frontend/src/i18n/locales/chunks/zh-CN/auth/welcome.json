@@ -14,7 +14,7 @@
       },
       "errors": {
         "unableToLoadCurrencies": "无法加载货币列表。请稍后再试",
-        "unableToSetCurrency": "意外错误。无法设置基础货币。请稍后再试或联系客服。"
+        "unableToSetCurrency": "意外错误。无法设置本位币。请稍后再试或联系客服。"
       }
     },
     "oauthCallback": {

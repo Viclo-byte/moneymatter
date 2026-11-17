@@ -175,7 +175,7 @@
   "budgetPlans": {
     "planNotFound": "未找到预算计划。",
     "activePlanExists": "你已经有一个有效的预算计划。",
-    "baseCurrencyChanged": "删除此预算计划后，你的基础货币发生了变化，因此无法再恢复。",
+    "baseCurrencyChanged": "删除此预算计划后，你的本位币发生了变化，因此无法再恢复。",
     "epochInFuture": "预算计划无法在未来开始。",
     "epochTooFarBack": "预算计划在今天之前启动的时间不得超过 {{max}} 个周期。",
     "intervalOutOfRange": "这个间隔对于这个节奏来说太长了。",
@@ -253,7 +253,7 @@
     "currencyForSecurityNotFound": "未找到担保货币。",
     "currencyNotFound": "未找到货币",
     "transactionNotFound": "未找到投资交易",
-    "userBaseCurrencyNotFound": "未找到用户基础货币",
+    "userBaseCurrencyNotFound": "未找到用户本位币",
     "insufficientSharesToSell": "股份不足，无法出售。在此更新后，你将拥有 {{adjustedQuantity}} 股，但正在尝试出售 {{sellQuantity}} 股。",
     "sourceAndDestinationMustDiffer": "源和目标组合必须不同",
     "transferAmountMustBePositive": "转账金额必须大于零",
@@ -544,7 +544,7 @@
       "invalidPasswordHeader": "提供的文件密码无效。",
       "warnings": {
         "accountTypeUnsupported": "投资和贷款账户被跳过。投资属于投资组合，贷款使用不接受导入交易的专用流程。",
-        "accountCurrencyDefaulted": "有些账户没有此文件可以解析的货币，因此它们默认为你的基础货币。如果错误，请在账户步骤中选择另一项。",
+        "accountCurrencyDefaulted": "有些账户没有此文件可以解析的货币，因此它们默认为你的本位币。如果错误，请在账户步骤中选择另一项。",
         "accountNameMissing": "某些账户在此文件中没有名称，并作为“账户 <number>”导入。导入后重命名它们。",
         "accountNameDuplicated": "多个账户在此文件中共享一个名称。重复次数被编号——“储蓄（2）”等等——所以它们保持独立的账户。",
         "transferCounterpartNotImported": "一些转账将资金转移到不属于此导入的账户。这些行作为转出你跟踪账户的内容导入。",
@@ -578,17 +578,17 @@
     "tokenLimitExceededSuggestion": "使用较小的文件或将语句分成几个部分。推荐：最多包含 ~{{maxTransactions, number}} 交易的语句。"
   },
   "currencies": {
-    "notSupportedForBaseCurrency": "不支持将基础货币更改为{{currency}}。仅支持以下货币：{{supportedCurrencies}}。",
+    "notSupportedForBaseCurrency": "不支持将本位币更改为{{currency}}。仅支持以下货币：{{supportedCurrencies}}。",
     "listIsEmpty": "货币列表为空",
     "noBaseCurrency": "尚未设置本位币，请先完成初始设置。",
-    "alreadyBaseCurrency": "所选货币已经是基础货币",
-    "baseCurrencyLockedByShares": "当你拥有活动的共享资源时，无法更改基础货币。先撤销或保留它们。",
-    "baseCurrencyLockedByBudgetPlan": "当你有有效的预算计划时，无法更改基础货币。先删除计划。",
-    "baseCurrencyLockedByHousehold": "当你属于活跃家庭时，无法更改基础货币。首先撤销或离开你的家庭成员资格。",
-    "baseCurrencyChangeInProgress": "基础货币变更正在进行中。请等待它完成。",
-    "baseCurrencyChangeSyncInProgress": "银行同步仍在完成。请在几分钟后再次尝试更改你的基础货币。",
+    "alreadyBaseCurrency": "所选货币已经是本位币",
+    "baseCurrencyLockedByShares": "当你拥有活动的共享资源时，无法更改本位币。先撤销或保留它们。",
+    "baseCurrencyLockedByBudgetPlan": "当你有有效的预算计划时，无法更改本位币。先删除计划。",
+    "baseCurrencyLockedByHousehold": "当你属于活跃家庭时，无法更改本位币。首先撤销或离开你的家庭成员资格。",
+    "baseCurrencyChangeInProgress": "本位币变更正在进行中。请等待它完成。",
+    "baseCurrencyChangeSyncInProgress": "银行同步仍在完成。请在几分钟后再次尝试更改你的本位币。",
     "baseCurrencyChangeDrainCheckFailed": "无法验证银行同步是否空闲。请重试。",
-    "baseCurrencyChangeInProgressOtherUser": "另一个参与者当前正在更改其基础货币。请在迁移完成后重试。",
+    "baseCurrencyChangeInProgressOtherUser": "另一个参与者当前正在更改其本位币。请在迁移完成后重试。",
     "cannotFindForRefAmount": "找不到货币来计算参考金额！",
     "cannotCalculateRefAmount": "无法计算参考金额",
     "currencyNotConnected": "询问货币未连接",
@@ -601,7 +601,7 @@
     "usernameAlreadyTaken": "用户名“{{username}}”已被占用"
   },
   "userCurrencies": {
-    "baseCurrencyExists": "基础货币已经存在！",
+    "baseCurrencyExists": "本位币已经存在！",
     "currencyCodeNotExist": "已传递代码的货币不存在。",
     "currencyNotExist": "代码为“{{currencyCode}}”的货币不存在。",
     "cannotDeleteDefaultCurrency": "不能删除默认货币，请先将其他货币设为默认。",
@@ -749,7 +749,7 @@
     "transactionsNotFoundOrNotBelongToUser": "未找到一笔或多笔交易或不属于用户。",
     "cannotLinkDifferentTransactionType": "无法将交易与定期付款以外的类型关联",
     "summaryCurrencyNotConnected": "无法计算订阅摘要：货币 {{currencyCodes}} 未连接到你的账户。在“设置”→“货币”中连接它。",
-    "summaryBaseCurrencyNotSet": "未设置基础货币。在设置中设置默认货币以查看订阅摘要。",
+    "summaryBaseCurrencyNotSet": "未设置本位币。在设置中设置默认货币以查看订阅摘要。",
     "payeeNotFoundOrNotBelongToUser": "未找到收付款方或不属于用户。",
     "tagsNotFoundOrNotBelongToUser": "未找到一个或多个标签或不属于用户。",
     "validation": {
@@ -884,7 +884,7 @@
     "accountNotEligible": "{{accountName}} 不能计入储蓄目标，请选择现金、活期、储蓄、投资或加密货币账户。",
     "shareCapacityExceeded": "{{accountName}} 有 {{free}}% 免费：你请求了 {{requested}}%，而其他目标已使用 {{usedByOtherGoals}}%。",
     "fixedAmountsBelowTarget": "固定金额总计为 {{total}} {{currencyCode}}，低于 {{target}} {{currencyCode}} 目标。提高金额或按百分比计算账户。",
-    "currencyRateUnavailable": "{{currencyCode}} 目前无法转换为你的基础货币。选择其他货币或稍后重试。",
+    "currencyRateUnavailable": "{{currencyCode}} 目前无法转换为你的本位币。选择其他货币或稍后重试。",
     "reachedNotification": {
       "title": "达到的目标：{{name}}",
       "message": "你已保存 {{amount}} {{currencyCode}}。"

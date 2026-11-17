@@ -26,7 +26,7 @@
       "empty": "AI在此文件中未找到任何交易。",
       "pickSecurity": "选择安全…",
       "pickCurrency": "货币…",
-      "searchPlaceholder": "按符号搜索…",
+      "searchPlaceholder": "按证券代码搜索…",
       "searching": "正在寻找…",
       "parsedSymbolHint": "我们无法自动匹配 {symbol} — 请在下面选择正确的证券。",
       "startTyping": "开始输入搜索内容",
@@ -59,7 +59,7 @@
       },
       "tooltips": {
         "security": "我们根据人工智能提取的股票自动选择证券。如果匹配错误，请点击该字段以覆盖该匹配。",
-        "currency": "交易现金方结算的货币（例如美元、欧元）。它不会改变持有的存储方式 - 使用交易日期的历史汇率将金额标准化为你的基础货币。",
+        "currency": "交易现金方结算的货币（例如美元、欧元）。它不会改变持有的存储方式 - 使用交易日期的历史汇率将金额标准化为你的本位币。",
         "parentRowDuplicates": "除非跳过，否则此持仓中可能出现的 {count} 重复交易将作为新交易导入。 | 除非跳过，否则此持仓中的 {count} 可能重复的交易将作为新交易导入。"
       }
     },
@@ -85,7 +85,7 @@
       }
     },
     "warnings": {
-      "csvRowMissingSymbol": "{row} 行：缺少符号",
+      "csvRowMissingSymbol": "{row} 行：缺少证券代码",
       "csvRowInvalidDate": "行 {row}：无法解析的日期“{value}”",
       "csvRowUnmappedSide": "行 {row}：未映射的边值“{value}”",
       "csvRowInvalidQuantity": "行 {row}：无效数量“{value}”",

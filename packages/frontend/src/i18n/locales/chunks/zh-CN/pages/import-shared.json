@@ -12,7 +12,7 @@
       },
       "jobFailure": {
         "interrupted": "导入因服务器重新启动而中断。有些行可能已经被导入；重试之前，请从导入历史记录中撤销此导入。",
-        "baseCurrencyChangeInProgress": "基础货币变更正在进行中。等待其完成，然后重试导入。",
+        "baseCurrencyChangeInProgress": "本位币变更正在进行中。等待其完成，然后重试导入。",
         "accountCurrencyMismatch": "货币必须匹配才能关联现有账户：{mismatches}。关联具有相同货币的账户或创建一个新账户。",
         "categoryNameTooLong": "分类名称“{name}”太长（{length}字符）；最大为{max}。",
         "payeeNameTooLong": "收付款方姓名“{name}”太长（{length}字符）；最大为{max}。",

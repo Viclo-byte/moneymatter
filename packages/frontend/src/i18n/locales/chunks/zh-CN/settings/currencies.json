@@ -28,7 +28,7 @@
       },
       "empty": {
         "title": "尚无其他货币",
-        "description": "在上面添加新货币以便在基础货币外追踪余额和汇率。"
+        "description": "在上面添加新货币以便在本位币外追踪余额和汇率。"
       },
       "exchangeRate": {
         "disableLiveUpdate": "禁用实时更新以便设置自定义汇率。",
@@ -56,7 +56,7 @@
           "trashed": "（在回收站中）",
           "types": {
             "account": "账户",
-            "portfolio": "投资组合显示货币",
+            "portfolio": "投资组合显示币种",
             "holding": "持仓",
             "portfolioCash": "投资组合现金",
             "portfolioTransfer": "投资组合转让",
@@ -73,14 +73,14 @@
         }
       },
       "setBase": {
-        "button": "设为基础货币",
+        "button": "设为本位币",
         "buttonShort": "设为基础",
         "processing": "处理中…",
         "tooltip": "标记为基本货币。所有统计和仪表盘信息将以此货币显示。\n\n交易将按交易记录日期的汇率重新计算。",
         "dialog": {
-          "title": "更改基础货币？",
+          "title": "更改本位币？",
           "warningTitle": "警告：",
-          "warningText": "更改基础货币应是深思熟虑后的决定。即使没有实际限制，理想的做法是只更换一次基础货币。",
+          "warningText": "更改本位币应是深思熟虑后的决定。即使没有实际限制，理想的做法是只更换一次本位币。",
           "descriptionText": "每次你更改基本货币时，所有交易都将使用历史汇率重新计算。 由于浮点数计算法与报价货币汇率之间的正常差异，随着时间的推移，重复重新计算可能会时参考余额产生小幅差异。参考余额将用于显示统计和设置预算限制。",
           "roundingTitle": "四舍五入是如何计算的？",
           "roundingIntro": "货币转换采用银行家舍入法（IEEE 754 标准），亦称“向最近偶数舍入”。这能最大限度减少多次计算过程后累积的舍入误差。",
@@ -92,10 +92,10 @@
           "processingTimeInfo": "如果你的货币不普遍，可能需要一段时间。",
           "restrictionWarning": "在修改进行中时，你将无法创建新账户、交易记录和任何与余额相关的交易。",
           "confirmation": "你确定要继续吗？",
-          "changeButton": "更改基础货币",
+          "changeButton": "更改本位币",
           "cancelButton": "取消"
         },
-        "successMessage": "已成功更改基础货币。",
+        "successMessage": "已成功更改本位币。",
         "errors": {
           "changeFailed": "未知错误。更改基本货币失败。",
           "lockedHousehold": "你仍在 {count} 个家庭账户内。请先在设置 → 家庭内退出家庭账户。 | 你仍在 {count} 个家庭账户内。请先在设置 → 家庭内退出家庭账户。",

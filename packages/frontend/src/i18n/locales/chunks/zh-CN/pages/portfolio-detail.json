@@ -66,9 +66,9 @@
     },
     "holdings": {
       "title": "持仓",
-      "subtitle": "{count} 符号",
-      "filterPlaceholder": "按符号或名称过滤…",
-      "addButton": "添加符号",
+      "subtitle": "{count} 证券代码",
+      "filterPlaceholder": "按证券代码或名称过滤…",
+      "addButton": "添加证券代码",
       "importButton": "进口交易",
       "importButtonShort": "导入"
     },
@@ -76,7 +76,7 @@
       "loadError": "持仓加载失败",
       "empty": "还没有持仓",
       "noFilterResults": "没有匹配的持仓",
-      "noFilterResultsDescription": "没有符合你搜索条件的持仓。尝试不同的符号或名称。",
+      "noFilterResultsDescription": "没有符合你搜索条件的持仓。尝试不同的证券代码或名称。",
       "clearFilterButton": "清除搜索",
       "headers": {
         "symbol": "象征",
@@ -145,7 +145,7 @@
       },
       "headerTooltips": {
         "amount": "以证券交易货币计的交易总额。",
-        "refAmount": "交易总额转换为你的基础货币。",
+        "refAmount": "交易总额转换为你的本位币。",
         "settlementAmount": "你的账户中实际支付或收到的现金以其结算货币表示。"
       },
       "deleteTransaction": {

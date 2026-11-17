@@ -73,7 +73,7 @@
             "orphanRowSkipped": "{count} 事务已跳过",
             "transferCounterpartNotImported": "{count} 作为钱包外进口的转移支线",
             "rowLimitReached": "{count} 超出限制的交易已被删除",
-            "accountCurrencyMissing": "{count} 账户文件中没有货币，因此使用了你的基础货币 - 如果错误，请在账户步骤中进行更改",
+            "accountCurrencyMissing": "{count} 账户文件中没有货币，因此使用了你的本位币 - 如果错误，请在账户步骤中进行更改",
             "rowMissingDate": "跳过没有可读日期的 {count} 交易",
             "accountNameMissing": "{count} 账户没有姓名",
             "accountNameDuplicated": "{count} 账户共享一个名称",
