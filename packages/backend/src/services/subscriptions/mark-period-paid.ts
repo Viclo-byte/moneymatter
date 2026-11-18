@@ -2,6 +2,7 @@ import { SUBSCRIPTION_PERIOD_STATUSES } from '@bt/shared/types';
 import { findOrThrowNotFound } from '@common/utils/find-or-throw-not-found';
 import { t } from '@i18n/index';
 import { ConflictError, ValidationError } from '@js/errors';
+import InstallmentPlans from '@models/installment-plans.model';
 import SubscriptionPeriods from '@models/subscription-periods.model';
 import { findOneTransaction } from '@models/transactions-query';
 import { withTransaction } from '@services/common/with-transaction';
@@ -10,10 +11,12 @@ import { createTransaction } from '@services/transactions/create-transaction';
 import { buildTransactionFromSubscription } from './build-transaction-from-subscription';
 import { ensureNextPeriodExists } from './ensure-next-period';
 import { findSubscriptionOrThrow, validateAccountOwnership } from './helpers';
+import { payInstallmentPeriod } from './installment-plan/settle';
 import { withoutPeriodSettlement } from './period-settlement-context';
 import { stampSubscriptionPayeeAndTags } from './stamp-payee-and-tags';
 
 interface MarkPeriodPaidParams {
+  generation?: number;
   userId: number;
   subscriptionId: string;
   periodId: string;
@@ -37,6 +40,7 @@ interface MarkPeriodPaidParams {
 
 export const markPeriodPaid = withTransaction(
   async ({
+    generation,
     userId,
     subscriptionId,
     periodId,
@@ -47,14 +51,30 @@ export const markPeriodPaid = withTransaction(
     time,
     accountId,
   }: MarkPeriodPaidParams) => {
-    const subscription = await findSubscriptionOrThrow({ id: subscriptionId, userId });
+    const subscription = await findSubscriptionOrThrow({ id: subscriptionId, userId, lock: true });
 
     const period = await findOrThrowNotFound({
       query: SubscriptionPeriods.findOne({
         where: { id: periodId, subscriptionId },
+        lock: true,
       }),
       message: 'Subscription period not found.',
     });
+
+    const installmentPlan = await InstallmentPlans.findOne({ where: { subscriptionId }, lock: true });
+    if (installmentPlan)
+      return payInstallmentPeriod({
+        subscription,
+        plan: installmentPlan,
+        period,
+        generation,
+        createTransaction: shouldCreateTransaction,
+        transactionId,
+        amount,
+        time,
+        accountId,
+        notes,
+      });
 
     if (period.status === SUBSCRIPTION_PERIOD_STATUSES.paid) {
       throw new ConflictError({ message: 'This period is already paid.' });

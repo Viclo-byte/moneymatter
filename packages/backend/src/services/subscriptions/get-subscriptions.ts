@@ -16,6 +16,7 @@ import { applyCachedLogos, enqueueLogoResolution } from '@services/brand-logos';
 import { col, fn, literal, Op } from 'sequelize';
 
 import { OPEN_STATUSES } from './ensure-next-period';
+import { readPlan } from './installment-plan/plans';
 import { sortSubscriptions, type SubscriptionSortBy } from './sort-subscriptions';
 import { resolveNextExpectedDate } from './subscription-date.utils';
 import { getSubscriptionTagIds, loadSubscriptionTagIds } from './subscription-tags';
@@ -144,6 +145,7 @@ interface SubscriptionPeriodItem {
 }
 
 interface SubscriptionDetail extends SubscriptionBase {
+  installmentPlan: import('@bt/shared/types').InstallmentPlanDetail | null;
   transactions: SubscriptionLinkedTransaction[];
   nextExpectedDate: string | null;
   periods: SubscriptionPeriodItem[];
@@ -377,6 +379,7 @@ export const getSubscriptionById = async ({
 
   return {
     ...raw,
+    installmentPlan: await readPlan(id),
     expectedAmount: centsToApiDecimalOrNull(raw.expectedAmount),
     tagIds: await getSubscriptionTagIds({ subscriptionId: id }),
     transactions,

@@ -15,6 +15,7 @@ const schema = z.object({
 
 export default createController(schema, async ({ user, params, body }) => {
   const period = await markPeriodPaid({
+    generation: body?.generation,
     userId: user.id,
     subscriptionId: params.id,
     periodId: params.periodId,

@@ -1,6 +1,7 @@
 import type { BackupRestoreWarning } from '@bt/shared/types';
 import { DEACTIVATION_REASON } from '@bt/shared/types';
 import Currencies from '@models/currencies.model';
+import InstallmentSettlements from '@models/installment-settlements.model';
 import { encryptCredentials } from '@services/bank-data-providers/utils/credential-encryption';
 import { copyLogoImageIfPresent } from '@services/logo-images/logo-images.service';
 import { syncRefundLinkedFlags } from '@services/tx-refunds/sync-refund-linked-flags';
@@ -50,6 +51,7 @@ function buildRowOverrides({
   ctx: InsertContext;
 }): Row {
   const overrides: Row = {};
+  if (def.fileName === 'installment-settlements') overrides.state = 'reverting';
 
   // userId / ownerUserId → the logged-in target user (constant substitution).
   if (hasColumn({ plan, field: 'userId' })) overrides.userId = ctx.targetUserId;
@@ -373,5 +375,12 @@ export async function insertRestoreTables({
   // is complete.
   await remapEmbeddedReferences({ archive, insertedIds, transaction });
 
+  for (const row of archive.data.get('installment-settlements') ?? []) {
+    const id = insertedIds.get('InstallmentSettlements')?.get(String(row.id));
+    if (!id) continue;
+    if (row.state !== 'settled' && row.state !== 'reverted')
+      throw new Error('Invalid installment settlement state in backup');
+    await InstallmentSettlements.update({ state: row.state }, { where: { id }, transaction });
+  }
   return { insertedByTable, warnings, insertedIds };
 }

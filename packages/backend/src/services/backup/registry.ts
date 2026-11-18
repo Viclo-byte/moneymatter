@@ -24,6 +24,7 @@ export type BackupParentScope =
   | 'transactionTemplates'
   | 'trackers'
   | 'subscriptions'
+  | 'installmentPlans'
   | 'ventureEvents'
   | 'subscriptionPeriods'
   | 'importBatches'
@@ -84,6 +85,27 @@ export interface BackupTableDef<Name extends string = BackupFileName> {
  * storage values via `raw: true` — see the export service.
  */
 const TABLE_DEFS = [
+  {
+    fileName: 'installment-plans',
+    model: models.InstallmentPlans,
+    tier: 6,
+    scope: { strategy: 'viaParent', fk: 'subscriptionId', parent: 'subscriptions' },
+    restoreMode: 'insert',
+  },
+  {
+    fileName: 'installment-schedule-items',
+    model: models.InstallmentScheduleItems,
+    tier: 7,
+    scope: { strategy: 'viaParent', fk: 'planId', parent: 'installmentPlans' },
+    restoreMode: 'insert',
+  },
+  {
+    fileName: 'installment-settlements',
+    model: models.InstallmentSettlements,
+    tier: 8,
+    scope: { strategy: 'viaParent', fk: 'planId', parent: 'installmentPlans' },
+    restoreMode: 'insert',
+  },
   // tier 1 — the Users row is updated in place on restore, never inserted.
   {
     fileName: 'user',
@@ -578,7 +600,7 @@ const TABLE_DEFS = [
 ] as const satisfies readonly BackupTableDef<string>[];
 
 export type BackupFileName = (typeof TABLE_DEFS)[number]['fileName'];
-export const BACKUP_TABLES: readonly BackupTableDef[] = TABLE_DEFS;
+export const BACKUP_TABLES: readonly BackupTableDef[] = TABLE_DEFS.toSorted((a, b) => a.tier - b.tier);
 
 interface BackupReferenceDef {
   fileName: BackupReferenceFileName;

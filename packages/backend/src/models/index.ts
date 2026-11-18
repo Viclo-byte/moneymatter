@@ -28,6 +28,9 @@ import GoalAccountsModel from './goal-accounts.model';
 import GoalsModel from './goals.model';
 import ImportBatchAccountEffectsModel from './import-batch-account-effects.model';
 import ImportBatchesModel from './import-batches.model';
+import InstallmentPlans from './installment-plans.model';
+import InstallmentScheduleItems from './installment-schedule-items.model';
+import InstallmentSettlements from './installment-settlements.model';
 import HoldingsModel from './investments/holdings.model';
 import InvestmentTransactionModel from './investments/investment-transaction.model';
 import PortfolioBalancesModel from './investments/portfolio-balances.model';
@@ -98,6 +101,9 @@ const DBConfig: Record<string, unknown> = {
 };
 
 const models = [
+  InstallmentPlans,
+  InstallmentScheduleItems,
+  InstallmentSettlements,
   UsersModel,
   AccountsModel,
   BalancesModel,

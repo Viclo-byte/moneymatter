@@ -1,4 +1,5 @@
 import { api } from '@/api/_api';
+import type { InstallmentPlanDetail, InstallmentPlanInput } from '@bt/shared/types';
 import type {
   RecordId,
   RemindBeforePreset,
@@ -31,6 +32,7 @@ export interface SubscriptionListItem extends SubscriptionModel {
 }
 
 export interface SubscriptionDetail extends SubscriptionModel {
+  installmentPlan?: InstallmentPlanDetail | null;
   nextExpectedDate: string | null;
   periods: SubscriptionPeriodModel[];
   /** The detail endpoint always includes the tag association, unlike bare subscription rows. */
@@ -169,6 +171,16 @@ export const loadSubscriptionsSummary = async ({
 };
 
 export interface SubscriptionPayPreview {
+  installment?: {
+    principal: number;
+    interest: number;
+    total: number;
+    linked: boolean;
+    sourceAccountId: string;
+    destinationAccountId: string | null;
+    generation: number;
+    revision: number;
+  };
   /** True when the subscription's billed currency differs from its account's currency. */
   isCrossCurrency: boolean;
   /** ISO code the booked expense will be denominated in (the account's currency), or null when no account is linked. */
@@ -194,6 +206,7 @@ export interface LinkedPaymentCandidate {
 }
 
 export const markSubscriptionPeriodPaid = async ({
+  generation,
   id,
   periodId,
   transactionId,
@@ -219,8 +232,10 @@ export const markSubscriptionPeriodPaid = async ({
    * "create a transaction" flow for account-less subscriptions.
    */
   accountId?: string | null;
+  generation?: number;
 }): Promise<SubscriptionPeriodModel> => {
   const payload: Record<string, unknown> = {};
+  if (generation !== undefined) payload.generation = generation;
   if (transactionId !== undefined) payload.transactionId = transactionId;
   if (notes !== undefined) payload.notes = notes;
   if (createTransaction !== undefined) payload.createTransaction = createTransaction;
@@ -270,3 +285,15 @@ export const getSubscriptionPayPreview = async ({
 }): Promise<SubscriptionPayPreview> => {
   return api.get(`/subscriptions/${id}/pay-preview`, { periodId });
 };
+
+export const saveInstallmentPlan = (id: string, input: InstallmentPlanInput): Promise<InstallmentPlanDetail> =>
+  api.put(`/subscriptions/${id}/installment-plan`, input);
+export const editInstallmentItem = (
+  id: string,
+  itemId: string,
+  input: { revision: number; principal: number; interest: number; total: number; dueDate: string },
+): Promise<InstallmentPlanDetail> => api.put(`/subscriptions/${id}/installment-plan/items/${itemId}`, input);
+export const payoffInstallment = (
+  id: string,
+  input: { revision: number; generation: number; principal: number; interest: number },
+): Promise<SubscriptionPeriodModel> => api.post(`/subscriptions/${id}/installment-plan/payoff`, input);

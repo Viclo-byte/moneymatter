@@ -6,6 +6,7 @@ import { withTransaction } from '@services/common/with-transaction';
 
 import { ensureNextPeriodExists } from './ensure-next-period';
 import { findSubscriptionOrThrow } from './helpers';
+import { assertNoInstallmentPlan } from './installment-plan/guards';
 
 interface SkipPeriodParams {
   userId: number;
@@ -14,7 +15,8 @@ interface SkipPeriodParams {
 }
 
 export const skipPeriod = withTransaction(async ({ userId, subscriptionId, periodId }: SkipPeriodParams) => {
-  const subscription = await findSubscriptionOrThrow({ id: subscriptionId, userId });
+  const subscription = await findSubscriptionOrThrow({ id: subscriptionId, userId, lock: true });
+  await assertNoInstallmentPlan(subscriptionId);
 
   const period = await findOrThrowNotFound({
     query: SubscriptionPeriods.findOne({

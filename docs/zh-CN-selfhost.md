@@ -20,12 +20,10 @@ MCP：https://money.topeggs.win/mcp
 
 ```sh
 node scripts/check-chinese.mjs
-NODE_OPTIONS=--max-old-space-size=6144 npm run build -w packages/frontend
+VITE_APP_COMMIT_HASH="$(git rev-parse HEAD)" NODE_OPTIONS=--max-old-space-size=6144 npm run build -w packages/frontend
 npm run build -w packages/backend
-mkdir -p release/frontend-dist release/backend-dist
-cp -R packages/frontend/dist/. release/frontend-dist/
-cp -R packages/backend/dist/. release/backend-dist/
-cp self-hosting/chinese/Dockerfile.* release/
+# release 目录必须为空；输出同时包含新增数据库迁移和 SHA-256 文件清单。
+node scripts/package-chinese-release.mjs release
 ```
 
 将 `release/`、`self-hosting/docker-compose.yml` 和 `self-hosting/chinese/compose.chinese.yml` 放到服务器 `/opt/moneymatter/`。`.env` 只在服务器生成，不提交到 GitHub。执行：
@@ -34,6 +32,8 @@ cp self-hosting/chinese/Dockerfile.* release/
 cd /opt/moneymatter
 docker compose -f docker-compose.yml -f compose.chinese.yml up -d --build
 ```
+
+后端轻量镜像必须同时复制 `backend-dist/` 和 `backend-migrations/`，否则前端新功能上线后数据库可能缺表。容器入口会先运行数据库迁移，成功后再启动应用。
 
 前端和后端使用 Docker 中的中文构建产物；官方基础镜像按摘要固定，避免未验证的更新。数据库、Redis、汇率服务仅在 Docker 内部网络可达，网站入口只绑定 `127.0.0.1:5008`，由 OpenResty 提供 HTTPS。首次数据库初始化可能需要十多分钟。
 

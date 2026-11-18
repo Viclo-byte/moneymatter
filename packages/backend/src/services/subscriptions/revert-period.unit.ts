@@ -1,6 +1,9 @@
+jest.mock('@models/installment-plans.model', () => ({ __esModule: true, default: { findOne: jest.fn() } }));
+jest.mock('./installment-plan/settle', () => ({ revertInstallmentPeriod: jest.fn() }));
 import { SUBSCRIPTION_PERIOD_STATUSES } from '@bt/shared/types';
 import { beforeEach, describe, expect, it, jest } from '@jest/globals';
 import { NotFoundError } from '@js/errors';
+import InstallmentPlans from '@models/installment-plans.model';
 
 // ── Mocks (hoisted before importing the module under test) ──────────────────
 
@@ -74,6 +77,7 @@ const givenPeriod = ({ period }: { period: ReturnType<typeof makePeriod> }) => {
 
 beforeEach(() => {
   jest.resetAllMocks();
+  jest.mocked(InstallmentPlans.findOne).mockResolvedValue(null);
   findSubscription.mockResolvedValue({ completedAt: null, update: jest.fn() } as never);
   bankLinked.mockResolvedValue(false);
   removeTransaction.mockResolvedValue(undefined as never);

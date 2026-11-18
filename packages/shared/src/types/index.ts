@@ -39,3 +39,4 @@ export * from './client-logs';
 export * from './sse';
 export * from './mcp';
 export * from './testing';
+export * from './installment-plan';

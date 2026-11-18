@@ -15,6 +15,8 @@ import Accounts from '@models/accounts.model';
 import BankDataProviderConnections from '@models/bank-data-provider-connections.model';
 import BudgetLines from '@models/budget-lines.model';
 import Categories from '@models/categories.model';
+import InstallmentPlans from '@models/installment-plans.model';
+import InstallmentSettlements from '@models/installment-settlements.model';
 import PortfolioTransfers from '@models/investments/portfolio-transfers.model';
 import Portfolios from '@models/investments/portfolios.model';
 import Notifications from '@models/notifications.model';
@@ -24,10 +26,12 @@ import Subscriptions from '@models/subscriptions.model';
 import Tags from '@models/tags.model';
 import Trackers from '@models/trackers.model';
 import TransactionAutomations from '@models/transaction-automations.model';
+import { updateTransactions } from '@models/transactions-query';
 import Transactions from '@models/transactions.model';
 import type { SettingsSchema } from '@models/user-settings.model';
 import VentureEventLinks from '@models/venture/venture-event-links.model';
 import { Model, type ModelStatic, Op, type Transaction, type WhereOptions } from 'sequelize';
+import { v4 as uuidv4 } from 'uuid';
 
 import type { BackupFileName } from '../registry';
 import type { ParsedArchive } from './load-archive';
@@ -148,6 +152,97 @@ export async function remapEmbeddedReferences({
     bankConnections: String(BankDataProviderConnections.getTableName()),
     transactionAutomations: String(TransactionAutomations.getTableName()),
   };
+
+  // An archive copied while its source remains live must not share a global
+  // transferId with that source: the existing transfer delete follows that token.
+  const installmentTransferTokens = new Map<string, string>();
+  for (const row of archive.data.get('installment-settlements') ?? []) {
+    if (row.state !== 'settled' || !insertedIds.get('InstallmentSettlements')?.has(String(row.id))) continue;
+    const ids = row.transactionIds as unknown;
+    if (
+      !Array.isArray(ids) ||
+      !ids.length ||
+      ids.length > 3 ||
+      ids.some((id) => typeof id !== 'string' || !insertedIds.get(tables.transactions)?.has(id))
+    )
+      throw new Error('An active installment settlement is missing its restored transaction legs');
+    const snapshot = row.snapshot as Record<string, unknown>;
+    const oldToken = snapshot?.transferId;
+    if (typeof oldToken !== 'string' || !ids.some((id) => insertedIds.get(tables.transactions)?.get(id) !== id))
+      continue;
+    const token = installmentTransferTokens.get(oldToken) ?? uuidv4();
+    installmentTransferTokens.set(oldToken, token);
+    await updateTransactions({
+      access: 'unscoped-internal',
+      planned: 'include',
+      balanceAdjustments: 'include',
+      where: { id: { [Op.in]: ids.map((id) => insertedIds.get(tables.transactions)!.get(id)!) }, transferId: oldToken },
+      values: { transferId: token },
+      transaction,
+      hooks: false,
+    });
+  }
+
+  await rewriteColumn({
+    model: InstallmentPlans,
+    fileName: 'installment-plans',
+    column: 'configuration',
+    archive,
+    insertedIds,
+    transaction,
+    mutate: ({ draft }) => {
+      if (!draft || typeof draft !== 'object') return;
+      const config = draft as Record<string, unknown>;
+      for (const [field, table] of [
+        ['sourceAccountId', 'Accounts'],
+        ['destinationAccountId', 'Accounts'],
+        ['interestCategoryId', 'Categories'],
+      ]) {
+        if (typeof config[field!] === 'string') {
+          const mapped = insertedIds.get(table!)?.get(config[field!] as string);
+          if (!mapped && config.linkedSettlementEnabled)
+            throw new Error('Installment backup references an account or category that was not restored');
+          config[field!] = mapped ?? null;
+        }
+      }
+    },
+  });
+  await rewriteColumn({
+    model: InstallmentSettlements,
+    fileName: 'installment-settlements',
+    column: 'transactionIds',
+    archive,
+    insertedIds,
+    transaction,
+    mutate: ({ draft }) => {
+      remapIdArrayInPlace({ arr: draft, targetTable: tables.transactions, insertedIds });
+    },
+  });
+  await rewriteColumn({
+    model: InstallmentSettlements,
+    fileName: 'installment-settlements',
+    column: 'snapshot',
+    archive,
+    insertedIds,
+    transaction,
+    mutate: ({ draft }) => {
+      if (!draft || typeof draft !== 'object') return;
+      const snapshot = draft as Record<string, unknown>;
+      if (typeof snapshot.transferId === 'string')
+        snapshot.transferId = installmentTransferTokens.get(snapshot.transferId) ?? snapshot.transferId;
+      for (const field of ['sourceAccountId', 'destinationAccountId'])
+        if (typeof snapshot[field] === 'string')
+          snapshot[field] = remapId({ insertedIds, targetTable: tables.accounts, oldId: snapshot[field] as string });
+      for (const field of ['principalTransactionId', 'interestTransactionId'])
+        if (typeof snapshot[field] === 'string')
+          snapshot[field] = remapId({
+            insertedIds,
+            targetTable: tables.transactions,
+            oldId: snapshot[field] as string,
+          });
+      remapIdArrayInPlace({ arr: snapshot.cancelledItemIds, targetTable: 'InstallmentScheduleItems', insertedIds });
+    },
+  });
 
   // Shared by the two link tables that snapshot a transaction's pre-link state.
   // Only categoryId/accountId are owned ids; transferId is a shared token — leave it.

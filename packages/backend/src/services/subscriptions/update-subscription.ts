@@ -9,6 +9,7 @@ import {
   SubscriptionMatchingRules,
 } from '@bt/shared/types';
 import { Money, centsToApiDecimalOrNull } from '@common/types/money';
+import InstallmentPlans from '@models/installment-plans.model';
 import SubscriptionPeriods from '@models/subscription-periods.model';
 import Subscriptions from '@models/subscriptions.model';
 import { resolveManualLogoFields } from '@services/brand-logos';
@@ -28,6 +29,7 @@ import {
   validatePayeeOwnership,
   validateTagsOwnership,
 } from './helpers';
+import { planError } from './installment-plan/plans';
 import { assertInstallmentScheduleComplete, assertMaxOccurrencesNotBelowConsumed } from './installments';
 import { resolveOpenPeriodStatus } from './resolve-period-status';
 import { getSubscriptionTagIds } from './subscription-tags';
@@ -64,7 +66,33 @@ interface UpdateSubscriptionParams extends EntityLogoPayload {
 
 export const updateSubscription = withTransaction(
   async ({ id, userId, tagIds, ...fields }: UpdateSubscriptionParams) => {
-    const subscription = await findSubscriptionOrThrow({ id, userId });
+    const subscription = await findSubscriptionOrThrow({ id, userId, lock: true });
+
+    const plan = await InstallmentPlans.findOne({ where: { subscriptionId: id } });
+    if (plan) {
+      const fixed = [
+        'type',
+        'accountId',
+        'expectedCurrencyCode',
+        'frequency',
+        'intervalUnit',
+        'intervalCount',
+        'dueDate',
+        'maxOccurrences',
+        'startDate',
+        'endDate',
+      ] as const;
+      for (const key of fixed)
+        if (fields[key] !== undefined && fields[key] !== subscription[key])
+          planError('Edit this installment through its payment plan.');
+      if (
+        fields.expectedAmount !== undefined &&
+        (fields.expectedAmount === null ||
+          !subscription.expectedAmount?.equals(Money.fromDecimal(fields.expectedAmount)))
+      )
+        planError('Edit installment amounts through the payment plan.');
+      if (fields.matchingRules?.rules.length) planError('Installment plans cannot use transaction matching.');
+    }
 
     if (fields.accountId !== undefined && fields.accountId !== null) {
       await validateAccountOwnership({ accountId: fields.accountId, userId });
