@@ -1,5 +1,7 @@
 # 分期付款计划与关联账户结算：研究报告和待确认方案
 
+实现进展：用户后续已授权开发，现行实现与验收见 [实现记录](./installment-settlement-implementation.zh-CN.md)。本报告保留研究时点结论。
+
 研究及复核日期：2026-11-18（Asia/Shanghai）。状态：**用户已确认本金方向；余额公式复核通过，继续自动化设计，业务代码尚未实施**。
 
 原始需求见 [需求快照](./installment-settlement-requirements.zh-CN.md)，版本管理见 [版本约定](./installment-settlement-versioning.zh-CN.md)。原始需求保留为历史快照，其中旧转账方向由用户在 2026-11-18 的确认修正；本报告第 3 节为有效方向。本文检查源代码、Git 元数据，并使用项目 Money 和现有余额纯函数做精确计算验证，没有连接生产数据库、调用真实交易接口或修改真实账本。
