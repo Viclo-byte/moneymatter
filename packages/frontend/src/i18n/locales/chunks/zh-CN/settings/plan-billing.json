@@ -57,7 +57,8 @@
         "cancelNote": "改变主意了吗？在计费门户中续订，你的续订日期保持不变。",
         "monthlyHint": "切换为每年并节省 {amount} 一年。",
         "noCard": "未绑定银行卡",
-        "readOnlyHelp": "只读是什么意思？"
+        "readOnlyHelp": "只读是什么意思？",
+        "lifetimePurchaseMeta": "无需续费，也无需绑定银行卡。"
       },
       "status": {
         "pastDue": "付款失败",

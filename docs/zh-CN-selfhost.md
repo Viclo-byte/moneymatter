@@ -44,3 +44,7 @@ docker compose -f docker-compose.yml -f compose.chinese.yml up -d --build
 在 ChatGPT 的自定义 MCP 配置中使用 `https://money.topeggs.win/mcp`，选择 OAuth，登录本站后选择授权范围及工具集。为保持工具数兼容，先启用日常记账核心工具。读写和永久删除为不同权限，按实际需要授权。可在本站“设置 → AI 集成”撤销连接。
 
 本站维护 AGPL-3.0 授权，完整中文修改源码公开于本 Fork。账户口令、Cookie 和服务器密钥不包含在本仓库中。
+
+## v0.33.18 更新
+
+已合并官方正式标签 v0.33.18（216d26e6885c706a2b98b27755e071d5d95dfb2b），保留中文校订，并补齐“显示收付款方图标”等新增文案。此版 package-lock 只变更前端版本号，运行依赖未变，继续使用已固定的官方基础镜像。没有新增数据库迁移。
