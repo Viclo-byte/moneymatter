@@ -90,9 +90,9 @@ export const assertRecurrenceConsistent = (recurrence: SubscriptionRecurrence): 
   if (problem) throw new ValidationError({ message: t({ key: problem.key, variables: problem.variables }) });
 };
 
-export const findSubscriptionOrThrow = async ({ id, userId }: { id: string; userId: number }) => {
+export const findSubscriptionOrThrow = async ({ id, userId, lock }: { id: string; userId: number; lock?: boolean }) => {
   return findOrThrowNotFound({
-    query: Subscriptions.findOne({ where: { id, userId } }),
+    query: Subscriptions.findOne({ where: { id, userId }, ...(lock ? { lock: true } : {}) }),
     message: 'Subscription not found.',
   });
 };

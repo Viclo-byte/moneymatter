@@ -77,6 +77,7 @@ export async function processAutoRecordPeriods(): Promise<ProcessResult> {
     for (const period of subscription.periods) {
       try {
         await markPeriodPaid({
+          generation: period.settlementGeneration,
           userId: subscription.userId,
           subscriptionId: subscription.id,
           periodId: period.id,

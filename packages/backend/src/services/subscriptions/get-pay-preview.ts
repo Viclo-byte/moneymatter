@@ -3,6 +3,8 @@ import { Money, centsToApiDecimalOrNull } from '@common/types/money';
 import { findOrThrowNotFound } from '@common/utils/find-or-throw-not-found';
 import { ValidationError } from '@js/errors';
 import * as Accounts from '@models/accounts.model';
+import InstallmentPlans from '@models/installment-plans.model';
+import InstallmentItems from '@models/installment-schedule-items.model';
 import Payees from '@models/payees.model';
 import SubscriptionPeriods from '@models/subscription-periods.model';
 import SubscriptionTransactions from '@models/subscription-transactions.model';
@@ -28,6 +30,16 @@ export interface LinkedPaymentCandidate {
 }
 
 export interface SubscriptionPayPreview {
+  installment?: {
+    principal: number;
+    interest: number;
+    total: number;
+    linked: boolean;
+    sourceAccountId: string;
+    destinationAccountId: string | null;
+    generation: number;
+    revision: number;
+  };
   /** True when the subscription's billed currency differs from its account's currency. */
   isCrossCurrency: boolean;
   /** ISO code the booked expense will be denominated in (the account's currency), or null when no account is linked. */
@@ -157,6 +169,34 @@ export const getSubscriptionPayPreview = withTransaction(
     periodId?: RecordId;
   }): Promise<SubscriptionPayPreview> => {
     const subscription = await findSubscriptionOrThrow({ id: subscriptionId, userId });
+
+    const plan = await InstallmentPlans.findOne({ where: { subscriptionId } });
+    if (plan) {
+      const item = await InstallmentItems.findOne({
+        where: { planId: plan.id, ...(periodId ? { periodId } : { status: 'pending' }) },
+        order: [['occurrenceNumber', 'ASC']],
+      });
+      if (!item) throw new ValidationError({ message: 'Installment schedule item not found.' });
+      const period = item.periodId ? await SubscriptionPeriods.findByPk(item.periodId) : null;
+      return {
+        isCrossCurrency: false,
+        accountCurrencyCode: plan.currencyCode,
+        subscriptionCurrencyCode: plan.currencyCode,
+        expectedAmount: item.total.toNumber(),
+        convertedAmount: item.total.toNumber(),
+        linkedPayments: [],
+        installment: {
+          principal: item.principal.toNumber(),
+          interest: item.interest.toNumber(),
+          total: item.total.toNumber(),
+          linked: plan.configuration.linkedSettlementEnabled,
+          sourceAccountId: plan.sourceAccountId,
+          destinationAccountId: plan.configuration.destinationAccountId ?? null,
+          generation: period?.settlementGeneration ?? item.generation,
+          revision: plan.revision,
+        },
+      };
+    }
 
     const linkedPayments = periodId ? await findLinkedPaymentsForPeriod({ userId, subscription, periodId }) : [];
 

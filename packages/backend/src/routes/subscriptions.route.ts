@@ -9,6 +9,7 @@ import getPeriods from '@controllers/subscriptions/get-periods';
 import { getSubscriptionById, getSubscriptions } from '@controllers/subscriptions/get-subscriptions';
 import getSubscriptionsSummary from '@controllers/subscriptions/get-subscriptions-summary';
 import getUpcomingPayments from '@controllers/subscriptions/get-upcoming-payments';
+import { getPlan, savePlan, editItem, payoff, previewPlan } from '@controllers/subscriptions/installment-plan';
 import linkTransactions from '@controllers/subscriptions/link-transactions';
 import markPeriodPaid from '@controllers/subscriptions/mark-period-paid';
 import resetLogo from '@controllers/subscriptions/reset-logo';
@@ -50,6 +51,12 @@ router.post('/:id/transactions', checkBaseCurrencyLock, linkTransactions);
 router.delete('/:id/transactions', checkBaseCurrencyLock, unlinkTransactions);
 
 router.get('/:id/suggest-matches', suggestMatches);
+
+router.get('/:id/installment-plan', getPlan);
+router.post('/:id/installment-plan/preview', previewPlan);
+router.put('/:id/installment-plan', checkBaseCurrencyLock, savePlan);
+router.put('/:id/installment-plan/items/:itemId', checkBaseCurrencyLock, editItem);
+router.post('/:id/installment-plan/payoff', checkBaseCurrencyLock, payoff);
 
 // Period payment routes
 router.get('/:id/pay-preview', getPayPreview);

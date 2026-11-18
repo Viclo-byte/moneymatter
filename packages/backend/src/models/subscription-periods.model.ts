@@ -70,6 +70,9 @@ export default class SubscriptionPeriods extends Model implements SubscriptionPe
   })
   notes!: string | null;
 
+  @Column({ type: DataType.INTEGER, allowNull: false, defaultValue: 0 })
+  declare settlementGeneration: number;
+
   declare createdAt: Date;
   declare updatedAt: Date;
 

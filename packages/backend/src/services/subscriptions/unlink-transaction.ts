@@ -3,6 +3,7 @@ import SubscriptionPeriods from '@models/subscription-periods.model';
 import { withTransaction } from '@services/common/with-transaction';
 
 import { findSubscriptionOrThrow } from './helpers';
+import { assertNoInstallmentPlan } from './installment-plan/guards';
 
 interface UnlinkTransactionParams {
   userId: number;
@@ -12,7 +13,8 @@ interface UnlinkTransactionParams {
 
 export const unlinkTransaction = withTransaction(
   async ({ userId, subscriptionId, periodId }: UnlinkTransactionParams) => {
-    await findSubscriptionOrThrow({ id: subscriptionId, userId });
+    await findSubscriptionOrThrow({ id: subscriptionId, userId, lock: true });
+    await assertNoInstallmentPlan(subscriptionId);
 
     const period = await findOrThrowNotFound({
       query: SubscriptionPeriods.findOne({

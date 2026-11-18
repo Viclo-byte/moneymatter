@@ -151,6 +151,13 @@ import { getVentureDealMetricsTool } from './tools/get-venture-deal-metrics';
 import { getVentureEventTool } from './tools/get-venture-event';
 import { getVenturePlatformTool } from './tools/get-venture-platform';
 import { ignorePayeeNameTool } from './tools/ignore-payee-name';
+import {
+  getInstallmentPlanTool,
+  saveInstallmentPlanTool,
+  editInstallmentItemTool,
+  payoffInstallmentTool,
+  previewInstallmentPlanTool,
+} from './tools/installment-plan';
 import { keepPendingAsBookedTool } from './tools/keep-pending-as-booked';
 import { linkLoanPaymentsTool } from './tools/link-loan-payments';
 import { linkRefundTool } from './tools/link-refund';
@@ -423,6 +430,11 @@ export const ALL_TOOLS: readonly ToolDef[] = [
   listVenturePlatformsTool,
   mergeDuplicateTransactionsTool,
   mergePayeesTool,
+  previewInstallmentPlanTool,
+  getInstallmentPlanTool,
+  saveInstallmentPlanTool,
+  editInstallmentItemTool,
+  payoffInstallmentTool,
   paySubscriptionPeriodTool,
   previewSubscriptionPaymentTool,
   previewTransactionAutomationTool,

@@ -202,6 +202,7 @@ export interface SubscriptionModel extends EntityLogoFields {
 }
 
 export interface SubscriptionPeriodModel {
+  settlementGeneration?: number;
   id: RecordId;
   subscriptionId: RecordId;
   dueDate: string;

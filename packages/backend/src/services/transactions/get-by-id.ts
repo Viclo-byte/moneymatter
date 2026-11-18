@@ -11,6 +11,7 @@ import {
   canUserAccessResource,
 } from '@services/sharing/auth/can-user-access-resource.service';
 import { getAccessibleTrackerIdsForUser } from '@services/sharing/auth/get-accessible-tracker-ids.service';
+import { assertInstallmentTransactionWritable } from '@services/subscriptions/installment-plan/guards';
 import { Includeable, Op } from 'sequelize';
 
 import { withTransaction } from '../common/with-transaction';
@@ -220,6 +221,7 @@ export const getWritableTransactionById = withTransaction(
     }
     const { tx, access } = fetched;
     assertOwnScopeOk({ access, callerUserId: userId, txCreatorUserId: tx.userId });
+    await assertInstallmentTransactionWritable(tx.id, access.ownerUserId);
     return {
       tx,
       ctx: {

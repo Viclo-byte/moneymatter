@@ -9,7 +9,11 @@ import { CacheClient } from '@js/utils/cache';
 import { logger } from '@js/utils/logger';
 import * as Accounts from '@models/accounts.model';
 import { namespace } from '@models/connection';
+import InstallmentPlans from '@models/installment-plans.model';
+import InstallmentItems from '@models/installment-schedule-items.model';
+import InstallmentSettlements from '@models/installment-settlements.model';
 import ResourceShares from '@models/resource-shares.model';
+import Subscriptions from '@models/subscriptions.model';
 import { updateTransactions } from '@models/transactions-query';
 import * as Users from '@models/users.model';
 import { Op, type Transaction } from 'sequelize';
@@ -201,6 +205,19 @@ const runDestroyInTx = withTransaction(
   }): Promise<DestroyInTxResult | null> => {
     const user = await Users.default.findByPk(userId);
     if (!user) return null;
+
+    // Remove settlement guards only inside this authorized full-user destroy transaction.
+    // A failed wipe/restore rolls back the guard release together with the ledger.
+    const subscriptions = await Subscriptions.findAll({ where: { userId }, order: [['id', 'ASC']], lock: true });
+    const plans = await InstallmentPlans.findAll({
+      where: { subscriptionId: { [Op.in]: subscriptions.map((s) => s.id) } },
+    });
+    const planIds = plans.map((p) => p.id);
+    if (planIds.length) {
+      await InstallmentSettlements.destroy({ where: { planId: { [Op.in]: planIds } } });
+      await InstallmentItems.destroy({ where: { planId: { [Op.in]: planIds } } });
+      await InstallmentPlans.destroy({ where: { id: { [Op.in]: planIds } } });
+    }
 
     // Snapshot share recipients BEFORE the destroy. The post-commit fan-out emits
     // notifications about resources that may not exist anymore by then; collecting after

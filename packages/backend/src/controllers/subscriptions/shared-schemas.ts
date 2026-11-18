@@ -57,6 +57,7 @@ export const getPeriodsQuerySchema = z.object({
 /** Body of paying a period: the REST controller and the MCP tool share it. */
 export const markPeriodPaidBodySchema = z
   .object({
+    generation: z.number().int().nonnegative().optional(),
     transactionId: recordId().nullable().optional(),
     notes: z.string().max(5000).nullable().optional(),
     // Create the expense transaction from the subscription instead of linking

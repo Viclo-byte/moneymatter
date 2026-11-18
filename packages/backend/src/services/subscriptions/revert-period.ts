@@ -2,6 +2,7 @@ import { SUBSCRIPTION_PERIOD_STATUSES, TRANSACTION_DELETION_REASON } from '@bt/s
 import { findOrThrowNotFound } from '@common/utils/find-or-throw-not-found';
 import { ConflictError, NotFoundError } from '@js/errors';
 import { isBankLinkedAccount } from '@models/accounts.model';
+import InstallmentPlans from '@models/installment-plans.model';
 import SubscriptionPeriods from '@models/subscription-periods.model';
 import Transactions from '@models/transactions.model';
 import { withTransaction } from '@services/common/with-transaction';
@@ -10,6 +11,7 @@ import { deleteTrashed } from '@services/transactions/trash/delete-trashed';
 import { Op } from 'sequelize';
 
 import { findSubscriptionOrThrow } from './helpers';
+import { revertInstallmentPeriod } from './installment-plan/settle';
 
 interface RevertPeriodParams {
   userId: number;
@@ -27,7 +29,7 @@ interface RevertPeriodParams {
 export const revertPeriod = withTransaction(
   async ({ userId, subscriptionId, periodId, assertCanDeleteTransaction }: RevertPeriodParams) => {
     // Validates the subscription exists and belongs to the user (throws 404 otherwise).
-    const subscription = await findSubscriptionOrThrow({ id: subscriptionId, userId });
+    const subscription = await findSubscriptionOrThrow({ id: subscriptionId, userId, lock: true });
 
     // Locked so the delete decision below and the delete itself see one consistent period: a
     // concurrent unlink or revert waits for this transaction instead of changing it underneath.
@@ -38,6 +40,10 @@ export const revertPeriod = withTransaction(
       }),
       message: 'Subscription period not found.',
     });
+
+    const installmentPlan = await InstallmentPlans.findOne({ where: { subscriptionId }, lock: true });
+    if (installmentPlan)
+      return revertInstallmentPeriod(subscription, installmentPlan, period, assertCanDeleteTransaction);
 
     if (
       period.status === SUBSCRIPTION_PERIOD_STATUSES.upcoming ||

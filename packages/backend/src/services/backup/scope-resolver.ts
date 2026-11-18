@@ -5,6 +5,7 @@ import BudgetPlans from '@models/budget-plans.model';
 import Categories from '@models/categories.model';
 import Goals from '@models/goals.model';
 import ImportBatches from '@models/import-batches.model';
+import InstallmentPlans from '@models/installment-plans.model';
 import Portfolios from '@models/investments/portfolios.model';
 import Payees from '@models/payees.model';
 import SubscriptionPeriods from '@models/subscription-periods.model';
@@ -51,6 +52,11 @@ export function createScopeResolver({ userId }: { userId: number }) {
     transactionGroups: () => idsWhere({ model: TransactionGroups, where: { userId } }),
     transactionTemplates: () => idsWhere({ model: TransactionTemplates, where: { userId } }),
     trackers: () => idsWhere({ model: Trackers, where: { userId } }),
+    installmentPlans: async () =>
+      idsWhere({
+        model: InstallmentPlans,
+        where: { subscriptionId: { [Op.in]: await getScope({ scope: 'subscriptions' }) } },
+      }),
     subscriptions: () => idsWhere({ model: Subscriptions, where: { userId } }),
     ventureEvents: () => idsWhere({ model: VentureEvents, where: { userId } }),
     subscriptionPeriods: async () => {

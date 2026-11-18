@@ -8,6 +8,7 @@ import { withTransaction } from '@services/common/with-transaction';
 import { Op } from 'sequelize';
 
 import { findSubscriptionOrThrow } from './helpers';
+import { assertNoInstallmentPlan } from './installment-plan/guards';
 import { stampSubscriptionPayeeAndTags } from './stamp-payee-and-tags';
 
 interface LinkTransactionsParams {
@@ -19,7 +20,8 @@ interface LinkTransactionsParams {
 
 export const linkTransactionsToSubscription = withTransaction(
   async ({ subscriptionId, transactionIds, userId, matchSource }: LinkTransactionsParams) => {
-    const subscription = await findSubscriptionOrThrow({ id: subscriptionId, userId });
+    const subscription = await findSubscriptionOrThrow({ id: subscriptionId, userId, lock: true });
+    await assertNoInstallmentPlan(subscriptionId);
 
     // Validate all transactions belong to user. Plans are linkable — a subscription
     // may well be tracked ahead of the charge — so they stay in the lookup.

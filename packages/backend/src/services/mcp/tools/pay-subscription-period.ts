@@ -16,6 +16,9 @@ export const paySubscriptionPeriodTool = defineTool({
   // The REST body takes `time` as any date string; the tool takes an ISO 8601 one, and the full
   // body schema below still parses it into the Date the service wants.
   input: {
+    generation: bodyShape.generation.describe(
+      'Required for installment plans: the settlement generation returned by the current payment preview; never reuse an old preview after an edit or revert',
+    ),
     subscriptionId: recordId().describe('ID of the subscription'),
     periodId: recordId().describe('ID of the period to pay (from get_subscription_periods)'),
     transactionId: bodyShape.transactionId.describe(
@@ -42,6 +45,7 @@ export const paySubscriptionPeriodTool = defineTool({
 
     return markPeriodPaid({
       userId,
+      generation: body.generation,
       subscriptionId,
       periodId,
       transactionId: body.transactionId,
