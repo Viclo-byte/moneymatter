@@ -54,6 +54,7 @@ import {
 } from '@lucide/vue';
 import { computed, defineAsyncComponent, ref, watch } from 'vue';
 import { useI18n } from 'vue-i18n';
+import Big from 'big.js';
 import { useRoute, useRouter } from 'vue-router';
 
 import BrandLogo from '@/components/common/brand-logo.vue';
@@ -67,6 +68,7 @@ import EditScheduleDialog from './components/edit-schedule-dialog.vue';
 import LinkedTransactionsSection from './components/linked-transactions-section.vue';
 import SubscriptionMarkPaidDialog from './components/subscription-mark-paid-dialog.vue';
 import SubscriptionTypeBadge from './components/subscription-type-badge.vue';
+import InstallmentPlanPanel from './components/installment-plan-panel.vue';
 import { daysUntilDue, hasUpcomingDue } from './subscription-due-status';
 import { formatFrequency, getTransactionTypePrefix, getTransactionTypeStyles } from './utils';
 
@@ -287,8 +289,17 @@ const installmentProgress = computed(() => {
   // A completed installment has consumed its whole schedule (every period paid OR
   // skipped), so the bar is full even when some periods were skipped not paid.
   const percent = isCompleted.value ? 100 : total > 0 ? Math.min(100, Math.round((paid / total) * 100)) : 0;
-  const remainingTotal =
-    sub.expectedAmount != null && sub.expectedCurrencyCode != null
+  const remainingTotal = sub.installmentPlan
+    ? formatAmountByCurrencyCode(
+        Number(
+          sub.installmentPlan.items
+            .filter((i) => i.status === 'pending')
+            .reduce((sum, i) => sum.plus(i.total), new Big(0))
+            .toString(),
+        ),
+        sub.installmentPlan.currencyCode,
+      )
+    : sub.expectedAmount != null && sub.expectedCurrencyCode != null
       ? formatAmountByCurrencyCode(remaining * sub.expectedAmount, sub.expectedCurrencyCode)
       : null;
 
@@ -445,6 +456,8 @@ const { mutate: revertMutation, isPending: isReverting } = useMutation({
  * - No transaction → period simply returns to unpaid
  */
 const revertDescriptionKey = computed(() => {
+  if (subscription.value?.installmentPlan?.configuration.linkedSettlementEnabled)
+    return 'planned.subscriptions.installment.revertDescription';
   const period = revertTarget.value;
   if (period?.transactionId && period.transactionAutoCreated) {
     return 'planned.subscriptions.periods.dialogs.revertDescriptionDeletesTransaction';
@@ -583,6 +596,8 @@ async function openTransaction({ transactionId }: { transactionId: string }) {
         </PopoverContent>
       </Popover>
     </div>
+
+    <InstallmentPlanPanel v-if="isInstallment" :subscription="subscription" />
 
     <!-- Summary cards: each one is a read-only digest of the slice its editor owns. -->
     <div class="@container mb-6">
@@ -861,7 +876,10 @@ async function openTransaction({ transactionId }: { transactionId: string }) {
           </p>
         </div>
         <div class="flex items-center gap-2">
-          <DesktopOnlyTooltip :content="$t('planned.subscriptions.periods.tooltips.skip')">
+          <DesktopOnlyTooltip
+            v-if="!subscription.installmentPlan"
+            :content="$t('planned.subscriptions.periods.tooltips.skip')"
+          >
             <Button
               variant="ghost"
               size="sm"
@@ -962,7 +980,7 @@ async function openTransaction({ transactionId }: { transactionId: string }) {
                   </Button>
                 </DesktopOnlyTooltip>
                 <DesktopOnlyTooltip
-                  v-if="isStatusActionable({ status: period.status })"
+                  v-if="!subscription.installmentPlan && isStatusActionable({ status: period.status })"
                   :content="$t('planned.subscriptions.periods.tooltips.skip')"
                 >
                   <Button
@@ -975,7 +993,7 @@ async function openTransaction({ transactionId }: { transactionId: string }) {
                   </Button>
                 </DesktopOnlyTooltip>
                 <DesktopOnlyTooltip
-                  v-if="period.transactionId"
+                  v-if="period.transactionId && !subscription.installmentPlan"
                   :content="$t('planned.subscriptions.periods.tooltips.unlinkTransaction')"
                 >
                   <Button

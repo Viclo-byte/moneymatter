@@ -109,6 +109,7 @@ const isBankAccount = computed(() => {
 
 /** Recording choices offered for the active subscription; the radio is shown only when there is more than one. */
 const modeOptions = computed<RecordMode[]>(() => {
+  if (estimate.value?.installment) return ['transaction'];
   const options: RecordMode[] = linkedPayments.value.length > 0 ? ['existing'] : [];
   if (!hasAccount.value) return [...options, 'mark', 'transaction'];
   return [...options, isBankAccount.value ? 'mark' : 'transaction'];
@@ -241,6 +242,13 @@ async function triggerPay({ subscription, periodId }: { subscription: PayableSub
     amount.value = String(preview.convertedAmount);
   }
 
+  if (preview?.installment) {
+    amount.value = String(preview.installment.total);
+    recordMode.value = 'transaction';
+    isDialogOpen.value = true;
+    return;
+  }
+
   if (linkedPayments.value.length > 0) {
     recordMode.value = 'existing';
     isDialogOpen.value = true;
@@ -273,6 +281,17 @@ function confirmPay() {
 
   const id = activeSubscription.value.id;
   const periodId = activePeriodId.value;
+
+  if (estimate.value?.installment) {
+    markPaid({
+      id,
+      periodId,
+      createTransaction: true,
+      generation: estimate.value.installment.generation,
+      time: paidDate.value,
+    });
+    return;
+  }
 
   if (recordMode.value === 'existing') {
     const transactionId = selectedLinkedPaymentId.value;
@@ -317,6 +336,20 @@ defineExpose({ triggerPay, isPending });
     </template>
 
     <div class="grid gap-4">
+      <div v-if="estimate?.installment" class="rounded-md border p-3 text-sm" role="status">
+        <p>
+          {{
+            $t('planned.subscriptions.installment.paymentPreview', {
+              principal: estimate.installment.principal,
+              interest: estimate.installment.interest,
+              total: estimate.installment.total,
+            })
+          }}
+        </p>
+        <p v-if="estimate.installment.linked" class="text-muted-foreground mt-2">
+          {{ $t('planned.subscriptions.installment.direction') }}
+        </p>
+      </div>
       <p v-if="isPreviewUnavailable" class="text-muted-foreground text-xs">
         {{ $t('dialogs.subscriptionMarkPaid.previewUnavailable') }}
       </p>
@@ -385,6 +418,7 @@ defineExpose({ triggerPay, isPending });
 
         <InputField
           v-model="amount"
+          :disabled="!!estimate?.installment"
           type="number"
           step="0.01"
           min="0.01"
